@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,sBAAuB,CACtB,gBAAgB,CCCR,OAAO,CDChB,6DACgC,CAC/B,OAAO,CAAE,IAAI",
-"sources": ["../scss/usual.scss","../scss/usual/_color.scss"],
-"names": [],
-"file": "usual.css"
-}
