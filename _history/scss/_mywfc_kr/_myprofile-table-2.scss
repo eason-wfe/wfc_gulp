@@ -1,0 +1,69 @@
+.row-cus-child{
+	& > *{
+		height: 45px;
+	}
+}
+.layout-gridsys-table{
+	select{
+		vertical-align: top;
+		height: 34px;
+		margin:{
+			bottom: 3px;
+		}
+	}
+	input{
+		max-width: 100%;
+		text-indent: 8px;
+	}
+}
+@media (max-width: 767px){
+	// .row-cus-mailing{
+	// 	& > *{
+	// 		height: 60px;
+	// 	}
+	// }
+	// .row-cus-mail-address{
+	// 	& > *{
+	// 		height: 100px;
+	// 	}
+	// }
+	// .row-cus-child{
+	// 	& > *{
+	// 		height: 60px;
+	// 	}
+	// }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.row-cus-mail-address{
+		& > *{
+			height: 75px;
+		}
+	}
+}
+//
+.is-vertical-middle{
+	padding-top: 0;
+	height:64px;
+ }
+ .is-vertical-middle:before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+ }
+ .is-vertical-middle-text{
+	display: inline-block;
+	vertical-align: middle;
+ }
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+.layout-gridsys-table-title,
+.layout-gridsys-table .col-xs-3.col-sm-2{
+	background-color: #fffeec;	
+}

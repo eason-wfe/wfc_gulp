@@ -1,0 +1,123 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit5";
+// @import "usual/title-deco5-2";
+@import "uikit/tmp-pager";
+// ASIDE MENU
+@import "uikit/tmp-aside";
+@import "uikit/tmp-aside-lb";
+@import "mypage/mypage-aside";
+// TITLE
+// @import "_mywfc_kr/mypage-title-icon";
+// UI
+@import "mypage/profile";
+// UI
+@import "uikit/uikit-collapse";
+@import "mypage/mypage-innerbox";
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// FROM KO NOTIC
+@import "usual/color-kr";
+@import "activity/act-state";
+@import "_comm_kr/comm-card";
+@import "_comm_kr/notic-card";
+@import "_comm_kr/notic-post";
+.layout-collapse{
+	border-top: none;
+}
+.layout-collapse-content{
+	li{
+		padding: {
+			top: 20px;
+			bottom: 20px;
+		}
+	}
+}
+.pagerArea .pager{
+	margin:{
+		top: 0;
+	}
+	padding:{
+		top: 0;
+	}
+}
+@media (max-width: 991px){
+	.layout-collapse-content{
+		ul{
+			padding: 15px 15px;
+		}
+	}
+}
+@media (min-width: 992px){
+	.layout-collapse-content{
+		ul{
+			padding: 15px 30px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// LAYOUT CARD
+.has-sign{
+	.layout-card-item{
+		padding-left: 20px;
+		position: relative;
+		img{
+			width: 13px;
+			position: absolute;
+			left: 0;top: 21px;
+		}
+		&.is-visited{
+			.layout-card-link{color: #888;}
+			img{display: none;}
+		}
+	}
+}
+.layout-card-item{
+	padding-left: 0;
+	padding-right: 0;
+	&:last-child{
+		border-bottom: 0;
+	}
+}
+.layout-card-link{
+	padding: 0;
+	&:link{
+		color: #333;
+	}
+	&:visited{
+		color: #888;
+	}
+}
+.notic-w{
+	@extend %row2;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// ARTICLE SHOW
+.post-btnbox{
+	button{
+		background-color: $color5;
+		&.is-border{
+			border-color: $color5!important;
+		}
+		&:hover{
+			background-color: $color5-dark;
+		}
+	}
+} 

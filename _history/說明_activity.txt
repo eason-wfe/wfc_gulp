@@ -1,0 +1,10 @@
+activity.html:
+活動分類色彩:
+　在 li.act-box-item tag 上加 class =
+　act-box-item-color-{分類代碼}
+　例如美語嘉年華為 act-box-item-color-e
+　有額外新增二色為 act-box-item-color-11 & act-box-item-color-12
+
+圖片尺寸 :
+　手機 130 x 130
+　桌機 160 x 115

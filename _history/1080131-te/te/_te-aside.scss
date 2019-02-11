@@ -1,0 +1,132 @@
+// QR-BOX
+@media (min-width: 992px) {
+	.layout-sub {
+		padding: 0;
+		.layout-title-level-3 {
+			font-size: 15px;
+		}
+	}
+	.te-qrbox {
+		padding: 25px;
+		font-size: 0;
+	}
+	.te-qrbox-item {
+		display: inline-block;
+		width: calc(50% - 6px);
+		&:first-child {
+			margin-right: 12px;
+		}
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// CALL TO ACTOPN BOX
+.te-ctabox {
+	background-color: $te-color-1;
+	.layout-btn {
+		background-color: $te-color-2;
+		border: solid 2px #fff !important;
+		color: #fff !important;
+		&:hover {
+			background-color: #ff7017;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.te-ctabox {
+		bottom: 27px;
+	}
+	.footer-rise {
+		.te-ctabox {
+			bottom: 74px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.te-ctabox {
+		bottom: 3px;
+	}
+	.footer-rise {
+		.te-ctabox {
+			bottom: 70px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.layout-btn + .layout-btn {
+		margin-top: 0;
+	}
+	.row .panel-heading,
+	.te-qrbox{
+		display: none;
+	}
+	.te-ctabox {
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		font-size: 0;
+		padding: 8px 15px;
+		transition: bottom 0.15s;
+		border-top: solid 2px #fff;
+		.layout-btn {
+			padding: {
+				top: 4px;
+				bottom: 4px;
+			}
+			display: inline-block;
+			width: calc(50% - 6px);
+			&:nth-child(2) {
+				margin-right: 12px;
+			}
+		}
+		.layout-content {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+	}
+	//
+	.footer-rise {
+		.te-ctabox {
+			transition: bottom 0.15s;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.te-ctabox {
+		padding: 25px;
+		border: solid 5px #fff;
+		.layout-btn {
+			height: 52px;
+			font-size: 19px;
+		}
+	}
+	.btn-block + .btn-block {
+		margin: 10px 0 20px;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// BACK TO TOP
+@media (max-width: 767px) {
+	.backToTop {
+		bottom: 164px;
+	}
+	.footer-rise {
+		.backToTop {
+			bottom: 214px;
+		}
+	}
+}

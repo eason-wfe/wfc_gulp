@@ -1,0 +1,25 @@
+// TITLE LEVEL 3 DESC
+.layout-title-level-3{
+	@include img-path-ratio("parents/icon01.png",2);
+	display: block;
+	background:{
+		repeat: no-repeat;
+		position: 0 0;
+	}
+	min-height: 53px;
+	padding-top: 26px;
+	padding-left: 50px;
+	&.icon2{
+		@include img-path-ratio("parents/icon02.png",2);
+	}
+	&.icon3{
+		@include img-path-ratio("parents/icon03.png",2);
+	}
+	&.icon4{
+		@include img-path-ratio("parents/icon04.png",2);
+	}
+	&.icon5{
+		@include img-path-ratio("parents/icon05.png",2);
+	}
+
+}

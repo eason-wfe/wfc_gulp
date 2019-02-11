@@ -1,0 +1,100 @@
+﻿$w: 930px;
+$h: $w / 2;
+body{
+	overflow-x: hidden;
+}
+.slider {
+	width: $w;
+	height: $h;
+	margin: 0 auto;
+	position: relative;
+	clear: both;
+}
+.slider-box {
+	width: $w * 4;
+	position: absolute;
+	left: 0;
+}
+.slider-item {
+	width: $w;
+	height: $h;
+	float: left;
+	background: {
+		size: cover !important;
+		position: center center!important;
+	}
+}
+@media (max-width: 991px){
+	.slider{
+		width: 100%;
+		overflow: hidden;
+	}
+}
+@media (min-width: 992px){
+	.slider{
+		width: 930px;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.slider-nav {
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 0;
+	& > span {
+		width: 20px;
+		height: 20px;
+		margin: 5px;
+		display: inline-block;
+		border-radius: 50%;
+		border: solid 3px #fff;
+		background-color: #ccc;
+		&.active {
+			background-color: #ff9000;
+		}
+		cursor: pointer;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+%slideer{
+	@include img-path-ratio("slider-arrow.png",2);
+	width: 20px;height: 36px;
+	cursor: pointer;
+}
+.slider-btn {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 50%;
+	margin-top: -15px;
+}
+.slider-pre {
+	@extend %slideer;
+	background:{
+		position: -40px 0px;
+	}
+	float: left;
+}
+
+.slider-nex {
+	@extend %slideer;
+	background:{
+		position: -40px -36px;
+	}
+	float: right;
+}

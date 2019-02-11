@@ -1,0 +1,64 @@
+.fc-box{
+
+}
+.fc-item{
+	font-size: 0;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	& > *{
+		display: inline-block;
+		vertical-align: top;
+	}
+	border-bottom: solid 1px #f1f1f1;
+}
+.fc-img{
+	width: 76px;height: 76px;
+	background:{
+		size: cover;
+		position: center center;
+	}
+	margin-right: 10px;
+}
+.fc-msg{
+	width: calc( 100% - 10px - 76px );
+	padding-top: 3px;
+	& > *{
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+.fc-child{
+	color: #000;
+}
+.fc-teacher{
+	font-weight: bold;
+}
+.fc-class{
+
+}
+.fc-date{
+	font-size: 12px; color: #888;
+}
+@media (max-width: 991px){
+	.fc-item{
+		&:last-child{
+			border: none;
+		}
+	}
+}
+@media (min-width: 992px){
+	.fc-box{
+		overflow: hidden;
+	}
+	.fc-item{
+		width: calc( 50% - 10px );
+		&:nth-child(odd){
+			margin-right: 20px;
+		}
+		float: left;
+		&:last-child,
+		&:nth-last-child(2){
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,235 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/color-kr";
+@import "usual/unit1";
+@import "usual/title-deco5-sign";
+// TITLE
+@import "_event_kr/event-title-icon";
+// UIKIT
+@import "uikit/uikit-slick";
+// COLOR
+@import "_event_kr/event-event-color";
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// VIDEO
+.vbox{
+	background-color: #000;
+	.vbox-in{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 359px){
+	.vbox{
+		.vbox-in{
+			width: 100%;
+			margin:{
+				top: 10px;
+			}
+		}
+	}	
+}
+@media (min-width: 992px){
+	.vbox{
+		.vbox-in{
+			width: 80%;
+		}
+	}	
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.layout-main-deco{
+	.sectionTitle{
+		margin: 0;
+		h2 span{
+			padding: 0;
+		}
+	}
+}
+@media (max-width: 991px){
+	.layout-main-deco{
+		display: none;
+	}
+	.sectionTitle h2 span{
+		padding:{
+			left: 0;
+			right: 0;
+		}
+	}	
+}
+@media (min-width: 992px){
+	.layout-main-deco{
+		height: 106px;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+@media (min-width: 992px){
+	.layout-main-vision{
+		padding:{
+			top: 40px;
+		}
+		& + .layout-main{
+			padding-top: 20px;
+		}
+	}	
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.layout-main{
+	overflow: hidden;
+	button{
+		float: right;
+		border-radius: 18px;
+		margin-top: 15px;
+	}	
+}
+@media (max-width: 991px){
+	.layout-main{
+		& + .layout-main-vision{
+			margin:{
+				top: 30px;
+			}
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// SLIDER
+body{
+	overflow-x: hidden;
+}
+.slick{
+	width: 100%;
+}
+.slick-list{
+	overflow: hidden;
+}
+@media (max-width: 991px){
+	.slick,
+	.slick-track{
+		height: 200px;
+	}
+}
+@media (min-width: 992px){
+	.slick,
+	.slick-track{
+		height: 465px;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// BUTTON
+.eventbtn{
+	button{
+		color: #fff!important;
+		&:hover{
+			opacity: .9;
+		}
+		& + button{
+			margin-right: 5px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// CARD
+.layout-main-card{
+	
+}
+@media (max-width: 991px){
+	.layout-main-card{
+		.sectionTitle{
+			margin:{
+				bottom: 0;
+			}
+			padding:{
+				top: 20px;
+			}
+			span{
+				color: $color3-kr;
+			}
+		}
+	}
+}
+@media (min-width: 992px){
+	.layout-main-card{
+		.sectionTitle{
+			margin:{
+				bottom: 0;
+			}
+		}		
+	}
+
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// CARNIVAL HISTORY
+.carhis-word{
+	background:{
+		color: #eaeaea;
+	}
+	padding: 15px;
+}
+@media (max-width: 459px){
+	.carhis-img{
+		width: 100%;
+	}
+	.carhis-word{
+
+	}
+}
+@media (min-width: 460px){
+	.carhis{
+		overflow: hidden;
+	}
+	.carhis-img{
+		float: left;
+		width: 145px;
+		height: 85px;
+	}
+	.carhis-word{
+		width: calc( 100% - 145px);
+		min-height: 85px;
+		float: right;
+	}
+}

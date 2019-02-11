@@ -1,0 +1,158 @@
+// eason
+$te-color-1: #bbedff;
+$te-color-2: #ff8017;
+//
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit2";
+//
+@import "te/te-aside";
+//
+@import "uikit/tmp-owl-nav";
+//
+@import "uikit/uikit-collapse";
+@import "te/te-qabox";
+/* 
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+.layout-container-full {
+	background-color: #bbedff;
+	@include img-path("dec_bg1.png");
+	color: #028bc8;
+	.layout-main {
+		border-radius: 6px;
+		background-color: rgba(187, 237, 255, 0.45);
+		border: solid 1px #0aa0e2;
+	}
+}
+.layout-main-full-bg {
+	background-color: $te-color-1;
+}
+.layout-main-full-inbox {
+	border: solid 1px #0aa0e2;
+	color: #028bc8;
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// VIDEO BOX
+@media (max-width: 991px) {
+	.layout-videobox {
+		margin-bottom: 24px;
+	}
+}
+@media (min-width: 992px) {
+	.layout-videobox {
+		margin-bottom: 30px;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// ZIPPY
+@media (max-width: 767px) {
+	.te-zippy-box {
+		font-size: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.te-zippy-img {
+		width: 150px;
+	}
+}
+@media (min-width: 768px) {
+	.te-zippy {
+		position: relative;
+	}
+	.te-zippy-box {
+		position: absolute;
+		top: 95px;
+		right: 50px;
+	}
+	.te-zippy-img {
+		width: 175px;
+	}
+}
+@media (min-width: 1200px) {
+	.te-zippy-box {
+		top: 60px;
+	}
+	.te-zippy-img {
+		width: 230px;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+@media (max-width: 991px) {
+	.layout-sub {
+		padding: 0;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+@media (max-width: 991px) {
+	.container-main {
+		padding-bottom: 130px;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// QA
+.layout-collapse {
+	border-top: none;
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// OWL-CAROUSEL CUSTOMER
+.owl-carousel-type-1 {
+	.caption {
+		height: 295px;
+		background-color: #ddf3ff !important;
+	}
+}
+@media (min-width: 1200px) {
+	.owl-carousel-type-1 {
+		.owl-nav {
+			display: none;
+		}
+	}
+}

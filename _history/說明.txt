@@ -1,0 +1,19 @@
+原始結構( scss 環境 )
+|-css
+|-image
+|-js
+|-plugins
+|-(v scss file)
+|-scss
+|-.sass-cache
+|-.settings
+|-.buildpath
+|-.project
+|-config.rb
+
+
+原始結構(加 scss 環境前 )
+|-css
+|-img
+|-js
+|-plugins

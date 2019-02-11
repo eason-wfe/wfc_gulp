@@ -1,0 +1,14 @@
+list
+https://new.worldfamilyclub.com.tw/pages/activity.cshtml
+
+step1
+https://www.worldfamilyclub.com.tw/ActSignUp.aspx
+
+step2
+https://www.worldfamilyclub.com.tw/ActSignUp.aspx
+
+step3
+https://www.worldfamilyclub.com.tw/ActSignUp.aspx
+
+history
+https://www.worldfamilyclub.com.tw/ActSignUpRecord.aspx
