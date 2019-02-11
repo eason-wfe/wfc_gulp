@@ -1,0 +1,161 @@
+// eason
+// SECTION ATTENTION
+.layout-collapse {
+	cursor: pointer;
+	border-top-style: solid;
+	border-top-width: 1px;
+	.act-subtitle {
+		padding-top: 20px;
+	}
+	position: relative;
+	.layout-title-level-3 {
+		font-size: 24px;
+	}
+	&.open {
+		.layout-collapse-arrow {
+			transform: rotate(180deg);
+		}
+	}
+}
+.layout-collapse-arrow {
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	@include img-path-ratio("collapse-arrow.png", 2);
+	background: {
+		position: 5px 8px;
+		repeat: no-repeat;
+	}
+	position: absolute;
+}
+.layout-collapse-content {
+	display: none;
+	padding-top: 15px;
+	line-height: 1.3;
+	h3 {
+		font-size: 17px;
+		font-weight: bold;
+		margin-bottom: 3px;
+		font-family: inherit;
+		color: #000;
+	}
+	h4 {
+		font-size: 15px;
+		margin-bottom: 3px;
+		font-weight: bold;
+		color: #000;
+	}
+	ul {
+		padding-left: 20px;
+	}
+	li {
+		padding: 3px 0;
+	}
+	& > ul {
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 991px) {
+	.layout-collapse-arrow {
+		right: 0;
+		bottom: -2px;
+	}
+}
+@media (min-width: 992px) {
+	.layout-collapse-arrow {
+		right: 0;
+		bottom: 0;
+	}
+}
+/*
+================================
+================================
+================================
+================================
+================================
+================================
+*/
+// COLOR 1
+.color-1 {
+	.layout-collapse {
+		border-top-color: $color1;
+	}
+	.layout-title-level-3 {
+		color: $color1;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color1;
+		}
+	}
+}
+// COLOR 2
+.color-2 {
+	.layout-collapse {
+		border-top-color: $color2;
+	}
+	.layout-title-level-3 {
+		color: $color2;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color2;
+		}
+	}
+}
+// COLOR 3
+.color-3 {
+	.layout-collapse {
+		border-top-color: $color3;
+	}
+	.layout-title-level-3 {
+		color: $color3;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color3;
+		}
+	}
+}
+// COLOR 4
+.color-4 {
+	.layout-collapse {
+		border-top-color: $color4;
+	}
+	.layout-title-level-3 {
+		color: $color4;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color4;
+		}
+	}
+}
+// COLOR 5
+.color-5 {
+	.layout-collapse {
+		border-top-color: $color5;
+	}
+	.layout-title-level-3 {
+		color: $color5;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color5;
+		}
+	}
+}
+// COLOR 6
+.color-6 {
+	.layout-collapse {
+		border-top-color: $color6;
+	}
+	.layout-title-level-3 {
+		color: $color6;
+	}
+	.layout-collapse-arrow {
+		background: {
+			color: $color6;
+		}
+	}
+}

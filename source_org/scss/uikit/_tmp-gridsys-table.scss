@@ -1,0 +1,107 @@
+// .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+// .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+// .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+// .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+$border-color: #ddd;
+$color-form-title: #f1f1f1;
+@mixin low-level{
+	border-right: solid 1px $border-color;
+	border-bottom: solid 1px $border-color;
+	padding: 0 5px;
+	min-height: 64px;
+	height: 64px;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.layout-gridsys-table{
+	select{
+		vertical-align: top;
+		height: 34px;
+		margin:{
+			bottom: 3px;
+		}
+	}
+	.col-xs-3.col-sm-2{
+		background-color: $color-form-title;
+	}
+	input{
+		max-width: 80%;
+		line-height: 30px;
+		margin:{
+			bottom: 3px;
+		}
+	}	
+}
+.row-cus-border-top{
+	border-top: solid 2px #aaa;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.layout-gridsys-table{
+	width: 100%;
+	border-top: solid 1px $border-color;
+	border-left: solid 1px $border-color;
+	background-color: #fafafa;
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+		@include low-level;
+	}
+}
+//
+.layout-gridsys-table-full{
+	font-size: 0;
+	& > *{
+		vertical-align: top;
+	}
+}
+.layout-gridsys-table-title,
+.layout-gridsys-table-content{
+	@include low-level;
+	display: inline-block;
+		font-size: 15px;
+}
+.layout-gridsys-table-title{
+	width: 25%;
+	background-color: $color-form-title;
+}
+.layout-gridsys-table-content{
+	width: 75%;
+}
+@media (min-width: 768px){
+	.layout-gridsys-table-title{
+		width: 16.66666667%;
+	}
+	.layout-gridsys-table-content{
+		width: 83.33333333%;
+	}
+}
+@media (min-width: 992px){
+	.layout-gridsys-table-title{
+		width: 98.16px;
+	}
+	.layout-gridsys-table-content{
+		width: calc( 50% - 98.16px );
+	}
+}
+@media (min-width: 1200px){
+	.layout-gridsys-table-title{
+		width: 124.41px;
+	}
+	.layout-gridsys-table-content{
+		width: calc( 50% - 124.41px );
+	}
+}

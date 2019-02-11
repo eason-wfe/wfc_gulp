@@ -1,0 +1,38 @@
+// eason
+.act-areabox-adsbox {
+	position: relative;
+	margin: {
+		bottom: 8px;
+	}
+}
+.act-areabox-struc {
+	font-size: 15px;
+	width: calc(100% - 45px);
+	margin: {
+		bottom: 5px;
+	}
+}
+.act-areabox-address {
+	font-size: 15px;
+	width: calc(100% - 45px);
+	color: #777;
+}
+.act-areabox-map {
+	width: 37px;
+	height: 37px;
+	@include img-path-ratio("activity/sprite.png", 2);
+	background: {
+		position: -1px -2px;
+	}
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.act-areabox-switch {
+	cursor: pointer;
+}
+@media (min-width: 992px) {
+	.act-areabox-tag {
+		// display: none; //1070910 AWD bug
+	}
+}

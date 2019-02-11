@@ -1,0 +1,89 @@
+$in-padding: 16px;
+.forum-fil-day-hot{
+	background-color: $f-color2;
+}
+//
+.forum-fil-day-hot-radio{
+	width: 240px;
+	padding: $in-padding;
+	overflow: hidden;
+	.uikit-radio{
+		height: 22px;
+		min-height: 22px;
+		margin-bottom: 0;
+		border: solid 1px $color4;
+		//
+		float: left;
+		width: calc( 50% - 6px );
+		&:first-child{
+			margin-right: 12px;
+		}
+	}
+	.uikit-radio-input{
+		margin-top: -200px;
+		&:hover + .uikit-radio-label{
+			background:{
+				color: $color4;
+			}
+			color: #fff;
+		}
+		&:checked + .uikit-radio-label{
+			background:{
+				position: 8px -76px;
+				color: $color4;
+			}
+			color: #fff;
+		}
+	}
+	.uikit-radio-label{
+		line-height: 1;
+		min-height: 22px;
+		font-size: 14px;
+		padding:{
+			top: 3px;
+			bottom: 0;
+			left: 24px;
+		}
+		@include img-path-ratio("forum/checkbox_radio.png",2);
+		background:{
+			position: 8px 4px;
+			color: #fff;
+		}
+	}
+}
+//
+.forum-fil-day-hot-info{
+	padding: $in-padding;
+	font-size: 14px;
+}
+.forum-fil-day-hot-state{
+	color: #000;
+	line-height: 1.3;
+}
+.forum-fil-day-hot-text{
+	color: #7979c6;
+}
+@media (max-width: 991px){
+	.forum-fil-day-hot-radio{
+		margin: 0 auto;
+	}	
+	.forum-fil-day-hot-info{
+		padding-top: 0;
+		overflow: hidden;
+	}
+}
+@media (min-width: 992px){
+	.forum-fil-day-hot{
+		overflow: hidden;
+	}
+	.forum-fil-day-hot-radio{
+		float: left;
+		border-right: solid 2px #fff;
+	}
+	.forum-fil-day-hot-info{
+		width: calc( 100% - 240px );
+		float: left;
+		border-left: solid 2px #fff;
+		margin-left: -2px;
+	}
+}

@@ -1,0 +1,104 @@
+// eason 1070813
+// LOGBAR ======================================
+#menuBar{
+	clear: both;
+}
+.logbar-spacer{
+	display: inline-block;
+	margin: 0 5px;
+	border-right: 1px #ccc solid;
+	width: 0;height: 10px;
+	position: relative;
+	top: 1px;
+}
+.logbar-m-share,
+.logbar-pc-share{
+	display: inline-block;
+	li{
+		display: inline-block;
+	}
+}
+.dotted-bottom{
+	border-bottom: dotted 1px #ccc;
+}
+/*
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+*/
+// LOGBAR MOBI
+@media (max-width: 767px){
+	.navbar-default .navbar-toggle{
+		background-color: $color-light-block;
+		border-color: #a5a5a5;
+		&:hover{
+			background-color: #000;
+			border-color: #a5a5a5;
+		}
+	}
+	.navbar-nav > li.dropdown.singleDrop .dropdown-menu{
+		padding: 0;
+	}
+	.navbar-nav > li.dropdown.singleDrop > .dropdown-menu{
+		padding-left: 15px;
+	}
+	.navbar-collapse li.dropdown.dropdown-submenu .dropdown-menu:before{
+		height: calc(100% - 5px);
+		top: -4px;
+		left: 13px;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	////
+	.logbar-m{
+		border-radius: 6px;
+		background-color: #f3f3f3;
+		padding: 8px 0;
+		width: calc(100% - 14px);
+		margin-left: 7px;
+		margin-top: 7px;
+	}
+	.logbar-m-link,
+	.logbar-m-out,.logbar-m-in,
+	.logbar-m-welcome,
+	.logbar-m-share{
+		display: inline-block;
+		line-height: 35px;
+	}
+	.logbar-m-row1,
+	.logbar-m-row2{
+		text-align: center;
+	}
+	.logbar-m-welcome{
+		font-family: arial;
+	}
+	.logbar-m-welcome,
+	.logbar-m-link{
+		color: #000;
+		padding: 0 8px;
+		min-width: 32px;
+	}
+	.logbar-m-menber-info{
+		margin: 12px;
+		padding: 12px;
+		border-radius: 6px;
+		background-color: #ececec;
+		position: relative;
+		&:after{
+			content: "";display: block;
+			width: 0;height: 0;
+			border-style: solid;
+			border-color: transparent transparent #ececec transparent;
+			border-width: 0 6px 12px 6px;
+			position: absolute;
+			right: 20px;
+			top: -12px;
+		}
+	}
+}

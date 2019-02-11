@@ -1,0 +1,321 @@
+// ATTENTION
+.act-step2,
+.act-step3 {
+	.act-attention {
+		border-top: none;
+		.act-subtitle {
+			padding-top: 10px;
+		}
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// TABLE
+// .table>thead>tr>th
+.act-price {
+	background-color: #fafafa;
+	th,
+	td {
+		font-size: 14px;
+		vertical-align: middle !important;
+		line-height: 1 !important;
+	}
+}
+
+.act-price-thead {
+	background-color: #f1f1f1;
+	th {
+		text-align: center;
+		border-bottom: none !important;
+	}
+}
+.act-price-num {
+	text-align: right;
+}
+@media (max-width: 991px) {
+	.act-price-col-1 {
+		width: 90px;
+	}
+	.act-price-mobi-br {
+		display: block;
+	}
+	.act-price-thead {
+		text-align: center;
+	}
+}
+@media (min-width: 992px) {
+	.act-price {
+		th,
+		td {
+			font-size: 15px;
+		}
+	}
+	.act-price-thead th {
+		text-align: left;
+	}
+	.table > thead > tr > td,
+	.table > thead > tr > th,
+	.table > tbody > tr > th {
+		padding: 17px 10px;
+	}
+}
+
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// SETS
+.act-sets-item {
+	line-height: 24px;
+}
+@media (min-width: 992px) {
+	.act-sets {
+		overflow: hidden;
+	}
+	.act-sets-item {
+		// float: left;
+		// width: 33.3%;
+		font-size: 13px; 
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+//  SET BTNS
+.act-setbtns {
+	font-size: 0;
+	.layout-btn {
+		border: none;
+		padding: {
+			right: 0;
+			left: 0;
+		}
+	}
+}
+.layout-btn.act-btn-reset {
+	background-color: #512c58 !important;
+	&:hover {
+		background-color: #8c08a5 !important;
+	}
+}
+@media (max-width: 991px) {
+	.act-setbtns {
+		.layout-btn {
+			width: calc(33.3% - 4px);
+			margin: {
+				right: 3px;
+				bottom: 6px;
+			}
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.act-setbtns {
+		.layout-btn {
+			font-size: 14.5px;
+			width: calc(20% - 4px);
+			margin: {
+				right: 5px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+.act-donebox {
+	padding: 20px;
+	border-radius: 12px;
+	background-color: #ffdcea;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.act-donebox-p {
+	font-size: 15px;
+	color: $color6;
+	margin-bottom: 0;
+	&.is-important{
+		font-size: 17px;
+		font-weight: bold;
+	}
+}
+.act-donebox-p-dark {
+	font-size: 15px;
+	color: $color6-dark;
+	margin-bottom: 0;
+}
+.act-donebox-strong {
+	.act-donebox-p,
+	.act-donebox-p-dark {
+		font-size: 17px;
+		font-weight: bold;
+		text-align: right;
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// BTN
+.layout-btn {
+	margin-bottom: 4px;
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// CHECKBOX & RADIO
+.uikit-radio,
+.uikit-checkbox {
+	background-color: $color1-light;
+}
+//
+.uikit-checkbox-input:checked + .uikit-checkbox-label,
+.uikit-radio-input:checked + .uikit-radio-label {
+	background-color: $color1;
+}
+@media (min-width: 992px) {
+	.act-parent {
+		overflow: hidden;
+		.uikit-radio {
+			float: left;
+			width: 49%;
+			&:first-child {
+				margin-right: 2%;
+			}
+		}
+	}
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// PAYMENT
+.act-payment {
+	background-color: #f4f4f4;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 12px;
+	hr {
+		border-top-color: #fff;
+		margin: 10px;
+	}
+	.uikit-checkbox {
+		margin-top: 8px;
+	}
+}
+.act-payment-item {
+	padding: 4px;
+	.uikit-radio-label {
+		padding-right: 5px;
+	}
+}
+.act-payment-input{
+	width: 100%;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// STATE ICON 
+$color-2nd: #187bc1;
+.is-2nd{
+	&.act-state{
+		border-color: $color-2nd;
+	}
+	.act-state-word,
+	.act-state-data{
+		background-color: $color-2nd
+	}	
+}
+
+@media (min-width: 992px){
+	.act-step1,.act-step3{
+		.is-2nd{
+			left: 360px;
+		}			
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// ATTENTION
+.is-attention-1st{
+	border-bottom: dotted 1px $color1-light;
+}
+.layout-attention{
+	.act-attention-arrow{
+		bottom: 50%;
+		transform: translateY(50%);
+	}
+	.act-attention.open{
+		.act-attention-arrow{
+			transform: translateY(50%) rotate(180deg);
+		}
+	}
+}
+.act-attention{
+	padding: {
+		top: 15px;
+		bottom: 15px;
+	}
+}
+.attention-check{
+	text-align: right;
+	padding:{
+		top: 15px;
+	}
+}
+@media (min-width: 992px){
+	.layout-attention{
+		padding: {
+			top: 30px;
+			bottom: 30px;
+		}
+	}
+}

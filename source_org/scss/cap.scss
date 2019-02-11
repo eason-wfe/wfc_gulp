@@ -1,0 +1,126 @@
+// eason
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit2";
+/*
+=========================
+=========================
+=========================
+=========================
+=========================
+*/
+// CAP LIST
+.cap-list {
+	margin: {
+		left: 20px;
+		bottom: 20px;
+	}
+}
+.cap-list-item {
+	margin-bottom: 12px;
+}
+/*
+=========================
+=========================
+=========================
+=========================
+=========================
+*/
+// CAP STUDIO BOX
+.cap-studio-box {
+	.cap-studio-video {
+	}
+}
+.cap-studio-hat {
+	font-size: 0;
+	text-align: center;
+}
+.cap-studio-hat-list {
+	display: inline-block;
+	img {
+		width: 100%;
+	}
+}
+@media (max-width: 991px) {
+	$gutter: 20px;
+	.cap-studio {
+		margin-top: 20px;
+	}
+	.cap-studio-video {
+		margin-bottom: $gutter;
+	}
+	.cap-studio-hat-list {
+		margin: {
+			right: $gutter;
+			bottom: $gutter;
+		}
+		width: calc(50% - 10px);
+		&:nth-child(even),
+		&:last-child {
+			margin-right: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+@media (min-width: 992px) {
+	$gutter: 25px;
+	.cap-studio {
+		margin-top: 25px;
+	}
+	.cap-studio-video {
+		margin-bottom: $gutter;
+	}
+	.cap-studio-hat {
+	}
+	.cap-studio-hat-list {
+		width: calc(100% / 5 - 20px);
+		margin-right: $gutter;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+/*
+=========================
+=========================
+=========================
+=========================
+=========================
+*/
+// BTN
+@media (max-width: 991px) {
+	.layout-btn {
+		margin-bottom: 12px;
+	}
+}
+/*
+=========================
+=========================
+=========================
+=========================
+=========================
+*/
+
+.cap-aside-mobi {
+}
+@media (max-width: 991px) {
+	.cap-aside-pc,
+	.panel-heading {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.cap-aside-mobi {
+		display: none;
+	}
+	.cap-aside-pc {
+		.layout-title-level-3 {
+			color: #000;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}

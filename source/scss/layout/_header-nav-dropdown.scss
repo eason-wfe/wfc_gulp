@@ -1,0 +1,126 @@
+// eason 1070813
+
+@media (min-width: 768px) and (max-width: 1560px){
+	.dropdown-submenu-left-mg-lg{
+		.dropdown-menu{
+			left: auto!important;
+			right: 100%!important;
+			margin:{
+				right: 7px;
+			}
+			border-left: none!important;
+			border-right: 4px solid $color5!important;
+			&:after{
+				left: auto!important;
+				right: -11px!important;
+				border-style: solid!important;
+				border-color: transparent transparent transparent $color5!important;
+				border-width: 8px 0 8px 7px!important;
+			}
+			&:before{
+				left: auto!important;
+				right: -11px!important;
+			}
+		}
+		.fa-chevron-right:before{
+			display: none;
+		}
+		.fa-chevron-left:before{
+			display: block;
+		}
+	}	
+}
+@media (min-width: 768px){
+	.color-1 ul .dropdown-menu{
+		&:after{
+			border-style: solid;
+			border-width: 8px 7px 8px 0;
+			border-color: transparent $color1 transparent transparent;
+			top: 20%;
+			margin-top: -10px;
+			content: "";
+			display: inline-block;
+			top: 27px;
+			left: -11px;
+			position: absolute;
+		}
+	}
+	.navbar-nav > li.dropdown.singleDrop .dropdown-menu{
+		min-width: 210px;
+		.dropdown-menu{
+			&:after{top: 21px;}
+			&:before{
+				content: "";
+				display: block;
+				height: 100px;
+				width: 20px;
+				position: absolute;
+				top: 50px;
+				left: -20px;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+
+/*
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+*/
+// fix color-2
+
+	.dropdown.singleDrop.color-2.open > a span{
+		color: $color2!important;
+	}
+	.navbar-nav>li.color-2.singleDrop>.dropdown-menu{
+		li{
+			a:hover{
+				background-color: $color2;
+				color: #fff;
+			}
+			.dropdown-menu{
+				&:after{
+					border-style: solid;
+					border-width: 8px 7px 8px 0;
+					border-color: transparent $color2 transparent transparent;
+				}
+			}
+		}
+
+	}
+@media (min-width: 768px){
+	.navbar-nav>li.color-2.singleDrop>.dropdown-menu{
+		border-top: solid 4px $color2;
+		li{
+			.dropdown-menu{
+				border-left: solid 4px $color2;
+			}
+		}
+	}
+}
+
+/*
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+*/
+// fix nav-mobi-hidden
+@media (max-width: 1023px){
+	.nav-mobi-hidden{
+		display: none;
+	}
+}

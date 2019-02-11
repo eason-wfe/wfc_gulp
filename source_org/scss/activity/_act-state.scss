@@ -1,0 +1,61 @@
+/// act-state-word
+.act-state {
+	font-size: 0;
+	border: 1px solid $color7;
+	padding: 2px;
+	border-radius: 14px;
+	display: inline-block;
+}
+.act-state-inside {
+	color: #fff;
+	border-radius: 11px;
+	overflow: hidden;
+	font-size: 0;
+	display: inline-block;
+}
+%set2 {
+	display: inline-block;
+	line-height: 1;
+	background-color: $color7;
+	font-size: 15px;
+}
+.act-state-word {
+	@extend %set2;
+	padding: 3px 5px 3px 8px;
+	text-align: center;
+}
+.act-state-data {
+	@extend %set2;
+	margin-left: 2px;
+	padding: 3px 8px 3px 5px;
+}
+// -------------
+// .act-state-sm
+.act-state-sm {
+	.act-state-word {
+		padding: 1px 6px 2px;
+	}
+	.act-state-data {
+		display: none;
+	}
+}
+@media (max-width: 359px) {
+	.act-state-word,
+	.act-state-data {
+		font-size: 13px;
+	}
+}
+/*
+==========================
+==========================
+==========================
+==========================
+==========================
+*/
+.act-state-muted{
+	border: 1px solid #888;
+	.act-state-inside,
+	.act-state-word{
+		background-color: #888;
+	}	
+}

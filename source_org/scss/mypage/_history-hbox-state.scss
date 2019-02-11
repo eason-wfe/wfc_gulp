@@ -1,0 +1,123 @@
+$color-car-1 :#eb1e79;
+$color-car-2 :#187bbf;
+$color-cancel :#868686;
+.h-state-word{
+	font-size: 13px;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.state-car-1{
+	&.h-state{
+		border-color: $color-car-1;
+	}
+	.h-state-word{
+		background-color: $color-car-1;
+	}
+}
+.state-car-2{
+	&.h-state{
+		border-color: $color-car-2;
+	}
+	.h-state-word{
+		background-color: $color-car-2;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.state-te-sl{
+	&.h-state{
+		border-color: $te-section-btn-1;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-1;
+	}
+}
+.state-te-bl{
+	&.h-state{
+		border-color: $te-section-btn-2;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-2;
+	}
+}
+.state-te-rll{
+	&.h-state{
+		border-color: $te-section-btn-3;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-3;
+	}
+}
+.state-te-rl{
+	&.h-state{
+		border-color: $te-section-btn-4;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-4;
+	}
+}
+.state-te-fc{
+	&.h-state{
+		border-color: $te-section-btn-5;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-5;
+	}
+}
+.state-te-cl{
+	&.h-state{
+		border-color: $te-section-btn-6;
+	}
+	.h-state-word{
+		background-color: $te-section-btn-6;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.state-cap-checking{
+	&.h-state{
+		border-color: $color-car-2;
+	}
+	.h-state-word{
+		background-color: $color-car-2;
+	}
+}
+.state-cap-false{ 
+	&.h-state{
+		border-color: $color-cancel;
+	}
+	.h-state-word{
+		background-color: $color-cancel;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.is-cancel{
+	.h-state{
+		border-color: $color-cancel;
+	}
+	.h-state-word{
+		background-color: $color-cancel;
+		// color: ;
+	}
+}

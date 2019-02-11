@@ -1,0 +1,55 @@
+doctype html
+html(lang='zh-Hant-TW')
+  head <?php include "html_model/head.html";?>
+    // CSS FRO THIS PAGE ONLY
+    link(href='css/download.css', rel='stylesheet', text='text/css')
+  body.body-wrapper
+    // loaded
+    .main-wrapper
+      //
+        ====================================
+        ——— HEADER
+        =====================================
+      header#pageTop.header-wrapper <?php include "html_model/header/header-1.html";?>
+        // NAVBAR
+        nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+          .container <?php include "html_model/header/header-2.html";?>
+            //
+              ====================================
+              ——— BREAD CRUMB
+              =====================================
+            .layout-breadcrumb-box
+              .container
+                nav(aria-label='breadcrumb')
+                  ol.breadcrumb.text-truncate
+                    li.breadcrumb-item
+                      a(href='#') 首頁
+                    li.breadcrumb-item
+                      | 下戴專區
+      .container.container-main.container-col-1
+        .row
+          .layout-col-12
+            .layout-main
+              .sectionTitle.text-center.color-1.mt-0
+                h2
+                  span.shape.shape-left
+                  span 下戴專區
+                  span.shape.shape-right
+              ul.dlbox
+                li.dlitem
+                  a.dllink(href='https://drive.google.com/file/d/1gz--YtQrDXggI0g2pszTtmKi4hIEsVE0/view', target='_blank')
+                    | 產品損壞更換 
+                    img(src='img/download/pdf.png')
+                li.dlitem
+                  a.dllink(href='https://drive.google.com/file/d/1oiexjRu8VCAQoZTTzfTc7oKyUF9rJ9Gq/view', target='_blank')
+                    | 2017電話美語課本 
+                    img(src='img/download/pdf.png')
+                li.dlitem
+                  a.dllink(href='https://www.worldfamilyclub.com.tw/WFM/QuickStart_201302.pdf', target='_blank')
+                    | 產品使用~上手指南 
+                    img(src='img/download/pdf.png')
+      <?php include "html_model/footer.html";?>
+      <?php include "html_model/floating-ui.html";?>
+      <?php include "html_model/tabmenu.html";?>
+      <?php include "html_model/js-for-all.html";?>
+      // JS FOR THIS PAGE ONLY

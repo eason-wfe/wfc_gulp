@@ -1,0 +1,78 @@
+// eason
+@import "usual/color";
+@import "usual/unit1";
+@import "usual/color-activity";
+//
+@import "uikit/tmp-owl-nav";
+/*
+======================
+======================
+======================
+======================
+======================
+======================
+*/
+// OWL-CAROUSEL CUSTOMER
+.owl-carousel-type-1 {
+	.caption {
+		background-color: #e9f5cc !important;
+	}
+}
+@media (max-width: 767px) {
+	.owl-carousel-type-1 {
+		.thumbnailContent .caption {
+			height: 295px; 
+		}
+	}
+}
+@media (min-width: 768px) {
+	.owl-carousel-type-1 {
+		.thumbnailContent .caption {
+			height: 355px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.owl-carousel-type-1 {
+		.owl-nav {
+			display: none;
+		}
+	}
+}
+/*
+=========================
+=========================
+=========================
+=========================
+=========================
+=========================
+*/
+.act-sort-level-2{
+	background-color: $color1;
+	margin-bottom: 3px;
+	font-size: 16px;
+	// font-weight: normal;
+	line-height: 18px;
+	padding: 6px 6px 4px;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	text-transform: capitalize;
+}
+.act-age{
+	font-size: 14px;
+	line-height: 1;
+	color: $color1;
+	display: inline-block;
+}
+.layout-content{
+	font-size: 14px;
+	line-height: 1.6;
+	padding:{
+		top: 5px;
+		bottom: 8px;
+	}
+}
+.layout-title-level-3{
+	margin-bottom: 0;
+}

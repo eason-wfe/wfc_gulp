@@ -1,0 +1,45 @@
+.vbox{
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.vbox-list{
+	overflow: hidden;
+}
+.vbox-item{
+	float: left;
+	&:last-child{margin-right: 0!important;}
+}
+.vbox-link{
+	display: block;
+	
+}
+.vbox-img{
+	width: 100%;
+}
+.vbox-table{
+	display: table;
+	width: 100%;
+	height: 43px;
+	background-color: #fafafa;
+	padding: 5px 10px 7px;
+}
+.vbox-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+$vtt: color .5s;
+.vbox-msg{
+	text-align: center;
+	@extend %row2;
+	color: #555;
+	transition: $vtt;
+	max-height: 43px;
+}
+@media (min-width: 992px){
+	.vbox-link:hover{
+		.vbox-msg{
+			color: #000;
+			transition: $vtt;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+// eason
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit1";
+@import "usual/color-activity";
+// step1 & step2
+@import "activity/act-layout";
+@import "activity/act-color-set";
+@import "activity/act-state";
+@import "activity/act-titlebox";
+@import "activity/act-attention";
+@import "activity/act-areabox";
+@import "activity/act-adsbox";
+// step2
+@import "uikit/uikit-checkbox-radio";
+@import "uikit/tmp-dropdown";
+/*
+step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
+step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
+step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
+*/
+.act-step2 {
+	.act-state {
+		display: none;
+	}
+}
+.act-step2,
+.act-step3 {
+	.act-titlebox-btnbox {
+		display: none;
+	}
+}
+@media (max-width: 359px) {
+	.layout-main {
+		padding: 16px;
+	}
+}
+@media (max-width: 991px) {
+	.act-step1,
+	.act-step3 {
+		.act-state {
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.act-step2 {
+		.act-titlebox-info {
+			margin-top: 37px;
+		}
+	}
+	.act-step1,
+	.act-step3 {
+		.act-state {
+			position: absolute;
+			left: 289px;
+			top: 108px;
+		}
+	}
+}
+@import "activity/signup-step1";
+@import "activity/signup-step2";

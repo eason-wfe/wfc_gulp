@@ -1,0 +1,38 @@
+// eason
+// LIGHT BOX USUAL
+// 全站共用 ex: login / forget pw
+.lightbox-usual{
+	.panel-heading{
+		background-color: $color1;
+	}
+	.panel-close{
+		color: #79a511;
+	}
+	////
+	.btn{
+		background-color: $color1;
+		border: none!important;
+		box-shadow: none!important;
+		&:hover{
+			background-color: $color1-dark;
+			color: #fff;
+		}
+	}
+	.help-block{
+		margin-top: 10px;
+		a{
+			color: #000;
+			&:hover{
+				color: #000;
+				text-decoration: underline!important;
+			}
+		}
+	}	
+}
+@media (max-width: 767px){
+	.lightbox-usual{
+		.modal-dialog{
+			width: 280px;
+		}
+	}
+}

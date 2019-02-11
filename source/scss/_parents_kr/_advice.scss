@@ -1,0 +1,160 @@
+$step-color-1: #ef878f;
+$step-color-2: #a7d050;
+$step-color-3: #f89a57;
+.ac{
+	margin:{
+		left: auto;
+		right: auto;
+	}
+}
+.is-1st{
+	.ac-cir{
+		background-color: $step-color-1;
+	}
+}
+.is-2nd{
+	.ac-cir{
+		background-color: $step-color-2;
+	}
+}
+.is-3rd{
+	.ac-cir{
+		background-color: $step-color-3;
+	}
+}
+.ac-cir{
+	color: #fff;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	padding:{
+		left: 38px;
+		right: 30px;
+	}
+}
+.ac-step{
+	font:{
+		size: 23px;
+		weight: bold;
+	}
+	margin-bottom: 5px;
+	padding-left: 23px;
+	text-transform: uppercase;
+}
+.ac-img{
+	border: solid 1px #e4e4e4;
+}
+@media (max-width: 767px){
+	.ac{
+		width: 280px;
+		margin-top: 30px;
+	}
+	.ac-item{
+		margin-bottom: 28px;
+	}
+	.ac-cir{
+		margin:{
+			left: auto;
+			right: auto;
+		}
+	}
+	.is-1st{
+		.ac-cir{
+			padding-top: 43px;
+		}
+	}
+	.is-2nd{
+		.ac-cir{
+			padding-top: 43px;
+		}
+	}
+	.is-3rd{
+		.ac-cir{
+			padding-top: 37px;
+		}
+	}
+	.ac-img{
+		width: 100%;
+		margin:{
+			top: -43px;
+		}
+	}
+}
+@media (min-width: 768px){
+	$mw: 30px;
+	.ac{
+		margin-top: 40px;
+	}
+	.ac-item{
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 50px;
+		& > *{
+			position: relative;
+			z-index: 1;
+		}
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 100px;
+			left: 25%;
+			right: 25%;
+			height: 1px;
+		}
+	}
+	.is-1st{
+		& > *{
+			float: left;
+		}
+		.ac-cir{
+			margin-right: $mw;
+			padding-top: 51px;
+		}
+		&:before{
+			background-color: $step-color-1
+		}
+	}
+	.is-2nd{
+		& > *{
+			float: right;
+		}
+		.ac-cir{
+			margin-left: $mw;
+			padding-top: 60px;
+		}
+		&:before{
+			background-color: $step-color-2;
+		}
+	}
+	.is-3rd{
+		& > *{
+			float: left;
+		}
+		.ac-cir{
+			margin-right: $mw;
+			padding-top: 43px;
+		}
+		&:before{
+			background-color: $step-color-3;
+		}
+	}
+	.ac-img{
+		width: calc( 100% - 30px - 200px );
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.ac{
+		// width: 85%;
+	}
+}
+@media (min-width: 1200px){
+	.ac{
+		// width: 85%;
+	}
+}
+@media (max-width: 359px){
+	.ac{
+		width: 240px;
+	}
+}

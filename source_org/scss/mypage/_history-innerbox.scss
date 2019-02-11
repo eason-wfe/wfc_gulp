@@ -1,0 +1,144 @@
+.innerbox{
+	margin-bottom: 15px;
+}
+.inner-1{
+	background-color: #fbfff1;
+}
+.inner-2{
+	background-color: #f5fcff;
+}
+.inner-3{
+	background-color: #fff9ea;
+}
+.inner-4{
+	background-color: #f9f1ff;
+}
+.inner-5{
+	background-color: #fff4f4;
+}
+@media (max-width: 991px){
+	.innerbox{
+		border-radius: 15px;
+	}
+	.inner-1,.inner-2,.inner-3{
+		margin: {
+			left: 15px;
+			right: 15px;
+		}
+		
+	}
+	.layout-main-card{
+		.layout-collapse-arrow {
+			right: 15px;
+			bottom: 3px;
+		}
+	}
+	.layout-main{
+		padding: 15px;
+		.layout-title-level-3{
+			margin: 0;
+		}
+	}
+	.inner-5{
+		padding:{
+			top: 1px;
+			bottom: 20px;
+		}
+	}
+	#target1,#target2,#target3{
+		padding-bottom: 12px!important;
+	}
+}
+@media (min-width: 992px){
+	.innerbox{
+		padding: 5px 24px;
+		border-radius: 30px;
+	}
+	.layout-main{
+		padding-bottom: 50px;
+	}
+	#target1,#target2,#target3,#target4,#target5{
+		padding:{
+			top: 28px;
+			bottom: 28px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.linkBox{
+	overflow: hidden;
+	li{
+		float: left;
+	}
+	a{
+		display: block;
+		line-height: 36px;
+		text-align: center;
+		border-radius: 18px;
+		color: #fff;
+		&:hover{
+			color: #fff;
+		}
+	}
+	.link1{
+		background-color: $color1;
+		&:hover{
+			background-color: $color1-dark;
+		}
+	}
+	.link2{
+		background-color: $color2;
+		&:hover{
+			background-color: $color2-dark;
+		}
+	}
+	.link3{
+		background-color: $color3;
+		&:hover{
+			background-color: $color3-dark;
+		}
+	}
+	.link4{
+		background-color: $color4;
+		&:hover{
+			background-color: $color4-dark;
+		}
+	}
+	.link5{
+		background-color: $color5;
+		&:hover{
+			background-color: $color5-dark;
+		}
+	}
+}
+@media (max-width: 767px){
+	.linkBox{
+		li{
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+}
+@media (min-width: 768px){
+	.linkBox{
+		&.share4 li{
+			width: calc( 25% - 6px );
+			margin-right: 8px;
+		}
+		&.share5 li{
+			width: calc( 20% - 4px );
+			margin-right: 5px;
+		}
+		&.share4 li,&.share5 li{
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}

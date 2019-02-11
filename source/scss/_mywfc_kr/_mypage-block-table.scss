@@ -1,0 +1,35 @@
+.mypage-blockbox{
+	display: block;
+}
+.mypage-block1{
+	display: table;
+	width: 100%;
+}
+.mypage-block1-item{
+	color: $color2-kr;
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 18px;
+	line-height: 16px;
+	p{
+		opacity: .9;
+		font-size: 15px;
+		color: $color2-kr;
+		line-height: 1;
+		margin:{
+			top: 5px;
+			bottom: 0;
+		}
+	}
+	span{
+		color: #333;
+		margin-left: 5px;
+	}
+}
+@media (max-width: 991px){
+	.mypage-block1{
+		padding-left: 70px;
+		min-height: 60px;
+	}
+}

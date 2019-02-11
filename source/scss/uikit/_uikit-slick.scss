@@ -1,0 +1,118 @@
+%slider{
+	@include img-path-ratio("slider-arrow.png",2);
+	width: 20px;height: 36px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-15px);
+	transition: .5s;
+	&:before{
+		display: none;
+	}
+	&:hover,
+	&:focus{
+		@include img-path-ratio("slider-arrow.png",2);
+		opacity: .8;
+		transition: .5s;
+	}
+}
+.slick-dotted.slick-slider{
+	margin-bottom: 0;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.slick {
+	position: relative;
+	height: 300px;
+	margin: 0 auto;
+	width: 100%;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.slick-track{
+	height: 300px;
+}
+.slick-list {
+	overflow: visible;
+}
+.slick-slide {
+	background:{
+		size: cover;
+		position: center top;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.slick-next,.slick-prev{
+	z-index: 1000;
+}
+.slick-prev {
+	@extend %slider;
+	left: 20px;
+	background:{
+		position: -40px 0px!important;
+	}
+}
+.slick-next {
+	@extend %slider;
+	right: 20px;
+	background:{
+		position: -40px -36px!important;
+	}
+}
+.slick-darkarrow{
+	.slick-prev{
+		background:{
+			position: -61px 0px!important;
+		}
+	}
+	.slick-next{
+		background:{
+			position: -61px -36px!important;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.slick-dots {
+	position: absolute;
+	bottom: 20px;
+	width: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	button{
+		&:after,
+		&:before{
+			display: none;
+		}
+	}
+	li{
+		border-radius: 50%;
+		border: solid 3px #fff;
+		background-color: #ccc;
+	}
+	.slick-active{
+		background-color: #ff9000;
+	}	
+}

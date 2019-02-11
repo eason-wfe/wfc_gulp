@@ -1,0 +1,56 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit1";
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.card{
+	background-color: #f00;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+@media (max-width: 413px){
+	.card{
+		width: 100%;
+	}
+	.item-234{
+		.layout-sharewidth-item{
+			width: 100%;
+			margin:{
+				right: 0;
+			}
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.mapicon{
+	@include img-path-ratio("nav-menu-icon.png",2);
+	background-repeat: no-repeat;
+	width: 52px;
+	height: 54px;
+}
+.mapicon-1{
+	background-position: 0px -26px;
+}
+.mapicon-2{
+	background-position:  0 -135px;
+}
+.mapicon-3{
+	background-position: 0 -245px;
+}
+.mapicon-4{
+	background-position:  0 -358px;
+}
+.mapicon-5{
+	background-position:  0 -465px;
+}

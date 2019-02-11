@@ -1,0 +1,217 @@
+// eason
+@import "usual/color";
+.pagerArea {
+	min-width: 245px;
+	& > .pager {
+		font-size: 0;
+		li {
+			padding: 0;
+			&.prev {
+				a {
+					// padding-left: 12px;
+				}
+			}
+			&.next {
+				a {
+					i {
+						margin-left: 3px;
+					}
+				}
+			}
+			&.prev,
+			&.next {
+				a {
+					font-size: 16px !important;
+					
+				}
+			}
+			&.page {
+				a {
+					display: inline-block;
+					text-align: center;
+					margin: 0 5px;
+				}
+			}
+			a{
+				box-shadow: none!important;
+				border-radius: 50%!important;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.pagerArea {
+		& > .pager {
+			li {
+				&.page {
+					font-size: 12px;
+					a {
+						width: 19px !important;
+						height: 19px;
+						line-height: 19px !important;
+					}
+				}
+				&.prev,&.next{
+					a{
+						//here
+						width: 30px !important;
+						height: 30px;
+						line-height: 30px !important;
+					}
+				}
+				&.prev{
+					a{
+						padding-left: 8px;
+					}
+				}
+				&.next{
+					a{
+						padding-left: 7px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.pagerArea {
+		& > .pager {
+			li {
+				&.next {
+					a {
+						i {
+							margin-left: -7px !important;
+						}
+					}
+				}
+				&.prev{
+					a{
+						padding-left: 12px;
+					}
+				}
+				&.page {
+					font-size: 16px;
+					a {
+						width: 40px !important;
+					}
+				}
+				a{
+					//here
+					width: 40px !important;
+					height: 40px;
+					line-height: 40px !important;
+				}
+			}
+		}
+	}
+}
+/*
+=================================
+=================================
+=================================
+=================================
+=================================
+=================================
+*/
+// COLOR
+.pagerArea > .pager {
+	li {
+		color: #333;
+		font-weight: bold;
+	}
+	li.prev,
+	li.next{
+		a{
+			
+		}
+		i:before{
+			// color: #fff;
+		}
+	}
+	li.now a:hover {
+		color: #fff !important;
+	}
+	//
+	li.now{
+		a{
+			color: #fff!important;
+		}
+	}
+}
+////
+.pagerArea.color-1 > .pager {
+	li.prev a,
+	li.next a,
+	li.now a{
+		background-color: $color1!important;
+	}
+	li.page a:hover {
+		background-color: $color1-light;
+		color: $color1-dark;
+	}
+}
+.pagerArea.color-2 > .pager {
+	li.prev a,
+	li.next a,
+	li.now a{
+		background-color: $color2!important;
+	}
+	li.page a:hover {
+		background-color: $color2-light;
+		color: $color2-dark;
+	}
+}
+.pagerArea.color-3 > .pager {
+	li.prev a,
+	li.next a,
+	li.now a{
+		background-color: $color3!important;
+	}
+	li.page a:hover {
+		background-color: $color3-light;
+		color: $color3-dark;
+	}
+}
+.pagerArea.color-4 > .pager {
+	li.prev a,
+	li.next a,
+	li.now a{
+		background-color: $color4!important;
+	}
+	li.page a:hover {
+		background-color: $color4-light;
+		color: $color4-dark;
+	}
+}
+.pagerArea.color-5 > .pager {
+	li.prev a,
+	li.next a,
+	li.now a{
+		background-color: $color5!important;
+	}
+	li.page a:hover {
+		background-color: $color5-light;
+		color: $color5-dark;
+	}
+}
+/*
+=================================
+=================================
+=================================
+=================================
+=================================
+=================================
+*/
+.pagerArea .pager {
+	margin-bottom: 0;
+}
+@media (max-width: 991px) {
+	.pagerArea .pager {
+		margin-top: 25px;
+	}
+}
+@media (min-width: 992px) {
+	.pagerArea .pager {
+		margin-top: 50px;
+	}
+}
