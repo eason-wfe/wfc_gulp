@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	$ = require('gulp-load-plugins')();
 
+// DIRECTORY
 gulp.task('rename',function(){
 	gulp.src('./source/**/*.php')
 	.pipe($.rename(function(path){
@@ -9,13 +10,17 @@ gulp.task('rename',function(){
 	.pipe(gulp.dest('./public/'))
 });
 
+// CLEAN
 gulp.task('clean',function(){
-	return gulp.src(['./public/*.php','./public/'])
+	// return gulp.src(['./public/*.php','./node_modules'])
+	return gulp.src('./node_modules')
 		.pipe($.clean())
 });
 
+// PUG TO PHP
 gulp.task('pug',function(){
 	gulp.src('./source/**/*.pug')
+	.pipe($.plumber())
 	.pipe($.pug({
 		pretty: true
 	}))
@@ -24,3 +29,10 @@ gulp.task('pug',function(){
 	}))
 	.pipe(gulp.dest('./public/'))
 })
+
+// SYSTEM
+gulp.task('watch',function(){
+	gulp.watch('./source/**/*.pug', ['pug']);
+})
+
+gulp.task('default',['pug','watch']);

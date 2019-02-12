@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-     <?php include "html_model/head.html";?>
+  <head><?php include "html_model/head.html";?>
     <!-- CSS FRO THIS PAGE ONLY-->
-    <link href="css/download.css" rel="stylesheet" text="text/css">
+    <link href="css/sitemap.css" rel="stylesheet" text="text/css">
   </head>
   <body class="body-wrapper">
     <!-- loaded-->
@@ -13,8 +12,7 @@
       ——— HEADER
       =====================================
       -->
-      <header class="header-wrapper" id="pageTop">
-         <?php include "html_model/header/header-1.html";?>
+      <header class="header-wrapper" id="pageTop"><?php include "html_model/header/header-1.html";?>
         <!-- NAVBAR-->
         <nav class="navbar navbar-default lightHeader" id="menuBar" role="navigation">
           <div class="container"><?php include "html_model/header/header-2.html";?></div>
@@ -28,7 +26,7 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb text-truncate">
                   <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                  <li class="breadcrumb-item">下戴專區</li>
+                  <li class="breadcrumb-item">網站地圖</li>
                 </ol>
               </nav>
             </div>
@@ -40,13 +38,25 @@
           <div class="layout-col-12">
             <div class="layout-main">
               <div class="sectionTitle text-center color-1 mt-0">
-                <h2><span class="shape shape-left"></span><span>下戴專區</span><span class="shape shape-right"></span></h2>
+                <h2><span class="shape shape-left"></span><span>網站地圖</span><span class="shape shape-right"></span></h2>
               </div>
-              <ul class="dlbox">
-                <li class="dlitem"><a class="dllink" href="https://drive.google.com/file/d/1gz--YtQrDXggI0g2pszTtmKi4hIEsVE0/view" target="_blank">產品損壞更換 <img src="img/download/pdf.png"></a></li>
-                <li class="dlitem"><a class="dllink" href="https://drive.google.com/file/d/1oiexjRu8VCAQoZTTzfTc7oKyUF9rJ9Gq/view" target="_blank">2017電話美語課本 <img src="img/download/pdf.png"></a></li>
-                <li class="dlitem"><a class="dllink" href="https://www.worldfamilyclub.com.tw/WFM/QuickStart_201302.pdf" target="_blank">產品使用~上手指南 <img src="img/download/pdf.png"></a></li>
-              </ul>
+              <div class="layout-sharewidth item-234">
+                <div class="card layout-sharewidth-item">1
+                  <div class="mapicon mapicon-1"></div>
+                </div>
+                <div class="card layout-sharewidth-item">2
+                  <div class="mapicon mapicon-2"></div>
+                </div>
+                <div class="card layout-sharewidth-item">3
+                  <div class="mapicon mapicon-3"></div>
+                </div>
+                <div class="card layout-sharewidth-item">4
+                  <div class="mapicon mapicon-4"></div>
+                </div>
+                <div class="card layout-sharewidth-item">5
+                  <div class="mapicon mapicon-5"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

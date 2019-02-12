@@ -1,0 +1,249 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(rel='stylesheet', href='css/dweLicense.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') DWE 畢業
+									li.breadcrumb-item
+										| 美語檢定
+			//
+				====================================
+				——— CONTAINER STR
+				=====================================
+			// main only
+			.container.container-main.container-col-1
+				.row
+					.layout-col-12
+						// TABLE
+						.layout-main.session-one.layout-main-pageback.layout-main-pageback-color-2
+							|<?php include "html_model/uikit/page-back.html";?>
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span 美語檢定
+									span.shape.shape-right
+							h3.layout-title-level-2.color-2.dwel-title
+								img.layout-title-level-2-str(src='img/title_star.png')
+								| 							劍橋小院士
+								img.layout-title-level-2-str(src='img/title_star.png')
+							// LEVEL 3
+							h3.layout-title-level-3.color-2.mt-0.text-center.mb-2 劍橋兒童英語認証成績比較表*
+							table.table.dwel-table
+								thead
+									tr.dwel-thead
+										th 能力
+										th.text-center(colspan='3') 閱讀與寫作測驗
+								tbody
+									tr
+										td.dwel-table-middle 級數
+										td.dwel-table-middle.text-center.dwel-table-yellow
+											| 寰宇
+											br
+											| **
+										td.text-center 臺灣
+										td.dwel-table-middle.text-center
+											| 世界
+											br
+											| **
+									tr
+										td Starters
+										td.dwel-table-yellow.text-center 4.14
+										td.text-center 4.06
+										td.text-center 4.01
+									tr
+										td Movers
+										td.dwel-table-yellow.text-center 4.00
+										td.text-center 3.50
+										td.text-center 3.55
+									tr
+										td Flyers
+										td.dwel-table-yellow.text-center 3.63
+										td.text-center 3.28
+										td.text-center 3.36
+							table.table.dwel-table
+								thead
+									tr.dwel-thead.dwel-table-pc-hidden
+										th 能力
+										th.text-center(colspan='3') 聽力測驗
+									tr.dwel-thead.dwel-table-mobi-hidden
+										th.text-center(colspan='4') 聽力測驗
+								tbody
+									tr
+										td.dwel-table-middle.dwel-table-pc-hidden 級數
+										td.dwel-table-middle.text-center.dwel-table-yellow
+											| 寰宇
+											br
+											| **
+										td.text-center 臺灣
+										td.dwel-table-middle.text-center
+											| 世界
+											br
+											| **
+									tr
+										td.dwel-table-pc-hidden Starters
+										td.dwel-table-yellow.text-center 4.76
+										td.text-center 4.07
+										td.text-center 3.74
+									tr
+										td.dwel-table-pc-hidden Movers
+										td.dwel-table-yellow.text-center 4.50
+										td.text-center 3.63
+										td.text-center 3.41
+									tr
+										td.dwel-table-pc-hidden Flyers
+										td.dwel-table-yellow.text-center 3.36
+										td.text-center 3.48
+										td.text-center 3.38
+							table.table.dwel-table
+								thead
+									tr.dwel-thead.dwel-table-pc-hidden
+										th 能力
+										th.text-center(colspan='3') 口說測驗
+									tr.dwel-thead.dwel-table-mobi-hidden
+										th.text-center(colspan='4') 口說測驗
+								tbody
+									tr
+										td.dwel-table-middle.dwel-table-pc-hidden 級數
+										td.dwel-table-middle.text-center.dwel-table-yellow
+											| 寰宇
+											br
+											| **
+										td.text-center 臺灣
+										td.dwel-table-middle.text-center
+											| 世界
+											br
+											| **
+									tr
+										td.dwel-table-pc-hidden Starters
+										td.dwel-table-yellow.text-center 4.95
+										td.text-center 4.58
+										td.text-center 4.17
+									tr
+										td.dwel-table-pc-hidden Movers
+										td.dwel-table-yellow.text-center 4.71
+										td.text-center 4.55
+										td.text-center 4.48
+									tr
+										td.dwel-table-pc-hidden Flyers
+										td.dwel-table-yellow.text-center 4.84
+										td.text-center 4.60
+										td.text-center 4.45
+							table.table.dwel-table
+								thead
+									tr.dwel-thead.dwel-table-pc-hidden
+										th 能力
+										th.text-center(colspan='3') 合計
+									tr.dwel-thead
+										th.text-center.dwel-table-mobi-hidden(colspan='4') 合計
+								tbody
+									tr
+										td.dwel-table-middle.dwel-table-pc-hidden 級數
+										td.dwel-table-middle.text-center.dwel-table-yellow
+											| 寰宇
+											br
+											| **
+										td.text-center 臺灣
+										td.dwel-table-middle.text-center
+											| 世界
+											br
+											| **
+									tr
+										td.dwel-table-pc-hidden Starters
+										td.dwel-table-yellow.text-center 13.85
+										td.text-center 12.71
+										td.text-center 11.92
+									tr
+										td.dwel-table-pc-hidden Movers
+										td.dwel-table-yellow.text-center 13.21
+										td.text-center 11.68
+										td.text-center 11.44
+									tr
+										td.dwel-table-pc-hidden Flyers
+										td.dwel-table-yellow.text-center 11.83
+										td.text-center 11.36
+										td.text-center 11.19
+							.layout-content
+								| YLE 劍橋兒童英語認證（Cambridge YLE Tests）是劍橋大學 ESOL 考試院特別為檢測 6-12
+								| 歲兒童的英語能力所設計的一套英語檢定認證系統，是目前世界上最具公信力的國際兒童英語能力認證證書。共分三個級數：Starters、Movers 和 Flyers。
+						// FLYERS
+						.layout-main.dwel-door
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span Flyers 劍橋兒童英語認證第三級
+									span.shape.shape-right
+							.layout-content
+								| YLE 劍橋兒童英語認證的最高級認證 Flyers 相當於 Main Suite 劍橋主流英語認證初級 KET 的程度，也就是與 CEFR（歐洲語言學習、教學、評量共同參考架構）A2 級所代表的英語能力相對應。
+							|<?php include "html_model/dwe/dwel-list.html";?>
+							button.btn.layout-btn.color-2(type='button') ... 更多
+						// MOVERS
+						.layout-main.dwel-door
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span Movers 劍橋兒童英語認證第二級
+									span.shape.shape-right
+							.layout-content
+								| Movers 相當於 CEFR（歐洲語言學習、教學、評量共同參考架構）A1 級所代表的英語能力相對應。
+							|<?php include "html_model/dwe/dwel-list.html";?>
+							button.btn.layout-btn.color-2(type='button') ... 更多
+						// STARTERS
+						.layout-main.dwel-door
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span Starters 劍橋兒童英語認證第一級
+									span.shape.shape-right
+							.layout-content
+								// none
+								|<?php include "html_model/dwe/dwel-list.html";?>
+								button.btn.layout-btn.color-2(type='button') ... 更多
+						// KET
+						.layout-main.dwel-door
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span KET 劍橋國際英語認證初級
+									span.shape.shape-right
+							.layout-content
+								| Main Suite 劍橋國際英語認證初級 KET 相當於 YLE 劍橋兒童英語認證的最高級認證 Flyers 的程度，也就是與 CEFR（歐洲語言學習、教學、評量共同參考架構）A2 級所代表的英語能力相對應。
+							|<?php include "html_model/dwe/dwel-list.html";?>
+							button.btn.layout-btn.color-2(type='button') ... 更多
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/dwe.js')

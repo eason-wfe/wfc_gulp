@@ -1,0 +1,196 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/learnPoint.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') 我的專區
+									li.breadcrumb-item
+										| 學習點數
+			// aside + main
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
+						.panel-heading.bg-color-5.border-color-5
+							h3.panel-title 我的專區
+							.aside-lb-close x
+						|<?php include "html_model/mypage/aside-file.html";?>
+						aside.layout-sub.px-4.py-4
+							ul.art-list-f2
+								|<?php include "html_model/mypage/aside.html";?>
+					.col-xs-12.col-sm-12.col-md-9
+						.layout-main
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									span.shape.shape-left
+									span 學習點數
+									span.shape.shape-right
+							h3.layout-title-level-3.color-5 關於學習點數
+							.layout-content
+								| 為讓家長與小朋友在學習過程中，擁有更多的樂趣並有更大的學習動力，推出「學習點數」（紅利積點)，讓家長與小朋友可以獲得更多的成就感。
+							h3.layout-title-level-3.color-5 集點方式
+							.layout-contetn
+								| 只要使用以下服務，就可以集到相關點數喔！
+							|<?php include "html_model/learn_point/tb1.html";?>
+							.layout-collapse.color-5.mt-3
+								h3.layout-title-level-3 學習點數累計規則
+								.layout-collapse-arrow  
+							.layout-collapse-content
+								|<?php include "html_model/learn_point/attention1.html";?>
+						button.btn.layout-btn.btn-block.layout-btn-lg.color-5(type='button')
+							| 兌換專區
+						hr
+						hr
+						hr
+						hr
+						hr
+						.layout-main.mb-1
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									span.shape.shape-left
+									span 兌換專區
+									span.shape.shape-right
+							h3.layout-title-level-3.color-5 學習點數查詢
+							.layout-content
+								ol.pl-3
+									li
+										| 您於
+										span.is-blue 寰宇家庭俱樂部
+										| 會員有效期到
+										span.is-blue 2100/12/31
+									li
+										| 您目前有效的學習點數是
+										span.is-blue  43 點
+										| 。
+									li
+										| 即將到期的學習點數：
+										span.is-blue 2點
+										| ，請於
+										span.is-blue 2020/03/31
+										| 前兌換完畢。
+							h3.layout-title-level-3.color-5 點數明細查詢
+							.slg-outer.mt-1.mb-2
+								.slg
+									.dropGeneral.roundTwo.layout-drop-sm.is-year
+										select.select-drop
+											option(value='0') 2019
+											option(value='1') 2018
+											option(value='2') 2017
+									.slg-w 年
+									.dropGeneral.roundTwo.layout-drop-sm.is-day
+										select.select-drop
+											option(value='0') 01
+											option(value='1') 02
+											option(value='2') 03
+									.slg-w 月
+								.slg-w ~
+								.slg
+									.dropGeneral.roundTwo.layout-drop-sm.is-year
+										select.select-drop
+											option(value='0') 2019
+											option(value='1') 2018
+											option(value='2') 2017
+									.slg-w 年
+									.dropGeneral.roundTwo.layout-drop-sm.is-day
+										select.select-drop
+											option(value='0') 01
+											option(value='1') 02
+											option(value='2') 03
+									.slg-w 月
+								button.btn.layout-btn.color-5.is-xxs(type='button')
+									| 查尋
+							|<?php include "html_model/learn_point/tb2.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+						.layout-main
+							h3.layout-title-level-3.color-5.mt-0.mb-1 兌換專區
+							.layout-contet.mb-2
+								| 您目前剩餘可兌換點數有
+								span.is-blue 43 點
+							ul.shop.layout-sharewidth.item-234
+								|<?php include "html_model/learn_point/shop-item.html";?>
+								|<?php include "html_model/learn_point/shop-item.html";?>
+								|<?php include "html_model/learn_point/shop-item.html";?>
+								|<?php include "html_model/learn_point/shop-item.html";?>
+								|<?php include "html_model/learn_point/shop-item.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+						button.btn.layout-btn.btn-block.layout-btn-lg.color-5(type='button')
+							| 確定兌換
+						hr
+						hr
+						hr
+						hr
+						hr
+						hr
+						hr
+						hr
+						.layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| 兌換明細
+									span.shape.shape-right
+							ul.layout-card
+								|<?php include "html_model/learn_point/feedback-item.html";?>
+								|<?php include "html_model/learn_point/feedback-item.html";?>
+							.shop-total
+								| 總計消費點數 : 300 點
+			|<?php include "html_model/learn_point/lightbox.html";?>
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/tmpAsideLb.js')
+			script.
+				$(function(){
+					$(".art-list-f2-item").eq(3).find(".art-list-f2-link").addClass("now");
+						// ^ 演示用，請參考
+						// COLLAPSE
+						$(".layout-collapse").click(function(){
+						$(".layout-collapse-content").slideToggle(300);
+						$(".layout-collapse").toggleClass("open");
+					});
+					// DROP MENU
+					$(".select-drop").selectbox();
+					//
+					$(".shop-pic").click(function(){
+						$("#dweShop").removeAttr("style");
+					}).css({"height": $(".shop-pic").width() * 1 });
+					$(".shop .uikit-checkbox-input").click(function(){
+						var $parent = $(this).parent().parent();
+						if( $(this).is(":checked") ){
+							$parent.addClass("is-selected");
+						}else{
+							$parent.removeClass("is-selected");
+						}
+					});
+				});

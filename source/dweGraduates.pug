@@ -1,0 +1,83 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(rel='stylesheet', href='css/dweGraduates.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') DWE 畢業
+									li.breadcrumb-item
+										| 畢業榮譽榜
+			//
+				====================================
+				——— CONTAINER STR
+				=====================================
+			// main only
+			.container.container-main.container-col-1
+				.row
+					.layout-col-12
+						.layout-main.layout-main-pageback.layout-main-pageback-color-2
+							|<?php include "html_model/uikit/page-back.html";?>
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0.mb-4
+								h2
+									// h2 only
+									span.shape.shape-left
+									span 畢業榮譽榜
+									span.shape.shape-right
+							.dweg-dropbox
+								.dweg-dropbox-item
+									.dweg-dropbox-p 畢業年度
+									.dropGeneral.roundTwo.layout-drop-sm.bg-color-2.dweg-dropbox-year
+										select.select-drop
+											option(value='0') 2018
+											option(value='1') 2017
+											option(value='2') 2016
+											option(value='3') 2015
+								.dweg-dropbox-item
+									.dweg-dropbox-p 畢業年齡
+									.dropGeneral.roundTwo.layout-drop-sm.bg-color-2.dweg-dropbox-age
+										select.select-drop
+											option(value='0') 九歳以上
+											option(value='1') 九至七歳
+											option(value='2') 七至五歳
+											option(value='3') 五至三歳
+							ul.dweg-list.mt-3
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+								|<?php include "html_model/dwe/dweg-item.html";?>
+							.pagerArea.text-center.color-2
+								|<?php include "html_model/uikit/pager-item.html";?>
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/dweGraduates.js', type='text/javascript')
+			script(src='js/dwe.js')

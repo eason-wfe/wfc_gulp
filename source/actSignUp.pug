@@ -1,0 +1,387 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(href='css/actSignUp.css?v1080117', rel='stylesheet', type='text/css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') xxxx
+									li.breadcrumb-item
+										| ( 請依下方註解變化 )
+			//
+				====================================
+				——— CONTAINER STEP-1
+				=====================================
+			.container.container-main.container-col-1.act-step1
+				| v step1 breadcrumb : 首頁 > 活動報名 > 青蛙與 Pompom 公主
+				.row
+					.layout-col-12
+						.layout-main.layout-box-shadow
+							|<?php include "html_model/activity/act-titlebox.html";?>
+							script.
+								$('.act-state').removeClass('act-state-sm');
+								// [^ 註 ^]
+								// 針對以上 include 的 html 片段矯正
+								// 實際作業請直接在該 tag 增減 class
+						.layout-main.layout-box-shadow
+							h3.layout-title-level-3.mt-0.color-1 活動內容
+							.layout-content
+								| 生活中有那些不同的交通方式呢？我們可以開車四處走走，也可以搭火車到目的地，甚至還能搭飛機到各國旅遊呢！
+								| 互動式的投影動畫，佐以美語叔叔阿姨專業的說故事技巧，讓孩子們不受空間限制，彷彿身在其中，跟著Froggy和Bunny一起體驗許多美好的事物！
+							h3.layout-title-level-3.color-1 活動費用
+							.layout-content.mb-4 每位小孩NT$500元，父母免費，報名兩位小孩（含）以上者，第二位小孩一歲以下免費（仍須報名，以活動日期評定），活動適用CAP優惠專案。
+							.act-attention
+								h3.layout-title-level-3.color-1 注意事項
+								.act-attention-arrow  
+							.act-attention-content
+								|<?php include "html_model/activity/act-attention.html";?>
+						.layout-main.layout-box-shadow
+							h3.layout-title-level-3.color-1.mt-0 攜帶教具
+							.layout-content
+								| 蘋果、蜜蜂、大免子、鳥、牛、狗、母子鴨、青蛙、青蛙毛巾、蟲
+								.act-toy
+									img.act-toy-img(src='img/activity/toy/toy-1.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-2.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-3.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-4.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-5.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-6.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-7.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-8.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-9.jpg')
+									img.act-toy-img(src='img/activity/toy/toy-10.jpg')
+							.act-layout
+								.act-layout-left
+									h3.layout-title-level-3.mt-0.color-1 Songs 歌曲
+									table.table.act-table-course
+										tbody
+											tr
+												td Baby's in the Bathtub
+												td PA1 #05
+											tr
+												td Wiggly Worm 
+												td PA2 #02
+											tr
+												td I Like to Take a Bath
+												td PA2 #05
+											tr
+												td Spread Your Arms 
+												td PA2 #10 
+											tr
+												td Scrub, Scrub, Scrub 
+												td SA2 #27
+									ul.act-prepare-bookbox
+										li.act-prepare-bookitem SA!-Sing Along! 歌唱教學系列
+										li.act-prepare-bookitem PA!-Play Along! 跟著玩系列
+										li.act-prepare-bookitem LA!-Listen Along! 系列
+										li.act-prepare-bookitem L Set-Let’s Play 系列
+								.act-layout-right
+									h3.layout-title-level-3.color-1 Vocabulary 活動單字
+									ul.act-prepare-sound
+										li.act-prepare-sound-item
+											a.act-prepare-sound-link(href='') car
+										li.act-prepare-sound-item
+											a.act-prepare-sound-link(href='') train
+										li.act-prepare-sound-item
+											a.act-prepare-sound-link(href='') airplane
+										li.act-prepare-sound-item
+											a.act-prepare-sound-link(href='') boat
+										li.act-prepare-sound-item
+											a.act-prepare-sound-link(href='') bus
+						.layout-main.layout-box-shadow
+							h3.layout-title-level-3.mt-0.color-1 活動地點
+							.layout-content.act-areabox-adsbox
+								.act-areabox-struc 台北_9樓大會議室
+								.act-areabox-address 台北市松山區八德路3 段32號9樓
+								a.act-areabox-map(href='https://goo.gl/maps/xXiKnqG8Gy22', target='_blank')
+							h3.layout-title-level-3.color-1 搭乘捷運
+							.layout-content
+								| 2號出口出站 - 直行右轉新光路 - 沿新光路，步行約8-10分鐘即可到達目的地。
+							h3.layout-title-level-3.color-1 搭乘公車
+							.layout-content
+								| 迄站 <大遠百百貨 / 捷運三多商圈站 / 85大樓> 12、100、70、83、紅16、紅18、紅21、三多幹線，抵達迄站後沿新光路，步行約8-10分鐘即可抵達目的地。
+							h3.layout-title-level-3.color-1 自行開車
+							.layout-content
+								| 經由國道一號 - 於高雄端出口下中正交流道 - 直走右轉三多一路，車程約15分鐘 - 左轉自強三路 - 右轉新光路即可抵達目的地。
+							h3.layout-title-level-3.color-1 停車資訊
+							.layout-content
+								| 高雄大遠百平面及地下停車場（每小時50元）約800個停車位。
+						.layout-main.layout-box-shadow.layout-section-first
+							//
+								[^ 註 ^]
+								規則: tag .layout-main + class .layout-first-section
+								只用在第一組 .layout-main , 目的在加載 js 效果
+								手機版預設第一組展開 , 非第一組預設收闔
+								( 固非第一組不需要加此 class )
+							.act-section
+								h3.layout-title-level-3.mt-0.color-1 場次資訊
+								.dropGeneral.roundTwo.border-color-1.layout-drop-sm
+									//
+										[^ 註 ^]
+										規則：tag .dropGeneral 加 class .layout-drop-sm
+										使下拉選單變成小號尺寸
+									select.select-drop
+										option(value='0') 全部地區
+										option(value='1') 台北
+										option(value='2') 新竹
+										option(value='3') 高雄
+							|<?php include "html_model/activity/act-areabox.html";?>
+						.layout-main.layout-box-shadow
+							|<?php include "html_model/activity/act-areabox.html";?>
+						.layout-main.layout-box-shadow
+							|<?php include "html_model/activity/act-areabox.html";?>
+							// <div class="layout-main layout-box-shadow"></div>
+			//
+				====================================
+				——— CONTAINER STEP-2
+				=====================================
+			.container.container-main.container-col-1.act-step2
+				| v step2 breadcrumb : 首頁 > 活動報名 > 青蛙與 Pompom 公主 > 報名活動 / 候補活動
+				.row
+					.layout-col-12
+						.layout-main.layout-box-shadow
+							|<?php include "html_model/activity/act-titlebox.html";?>
+						.layout-main.layout-box-shadow
+							.act-layout
+								.act-layout-left
+									h3.layout-title-level-3.mt-0.color-1 場次時間
+									.layout-content 2018/09/16(日)15:00~16:00
+									// 
+									h3.layout-title-level-3.color-1 活動地點
+									.layout-content.act-areabox-adsbox
+										.act-areabox-struc 台北_9樓大會議室
+										.act-areabox-address 台北市松山區八德路3 段32號9樓
+										a.act-areabox-map(href='https://goo.gl/maps/xXiKnqG8Gy22', target='_blank')
+									// 
+									h3.layout-title-level-3.color-1 每人費用
+									.layout-content
+										table.table.act-price
+											thead
+												tr.act-price-thead
+													th.act-price-col-1
+														span.act-price-mobi-br 每人
+														span.act-price-mobi-br 費用表
+													th.act-price-col-2 費用
+													th.act-price-col-3
+														span.act-price-mobi-br CAP
+														span.act-price-mobi-br 優惠價
+											tbody
+												tr
+													th 會員
+													td.act-price-num 0
+													td.act-price-num -
+												tr
+													th 第二位大人
+													td.act-price-num (wfc未定)
+													td.act-price-num (wfc未定)
+												tr
+													th 小孩
+													td.act-price-num 500
+													td.act-price-num 400
+												tr
+													th
+														span.act-price-mobi-br 第二位小孩
+														span.act-price-mobi-br 一歲以下
+													td.act-price-num 免費
+													td.act-price-num 0
+									// 
+									h3.layout-title-level-3.color-1 CAP 優惠價
+									.layout-content 符合
+									h3.layout-title-level-3.color-1 ATM 轉帳
+									.layout-content
+										b 8664-020192-0000
+										br
+										| 									* 請於報名七日內(含假日)，以ATM轉帳完成繳款，若逾期未繳款者，系統將取消此筆報名資料。
+								.act-layout-right
+									h3.layout-title-level-3.color-1 選擇大人人數
+									.layout-content.act-parent
+										.uikit-radio
+											input.uikit-radio-input(type='radio', name='parent')
+											label.uikit-radio-label 1 位大人 ( $500 )
+										.uikit-radio
+											input.uikit-radio-input(type='radio', name='parent')
+											label.uikit-radio-label 2 位大人 ( $1,000 )
+									// 
+									h3.layout-title-level-3.color-1 選擇小孩
+									.layout-content
+										.uikit-checkbox
+											input.uikit-checkbox-input(type='checkbox')
+											label.uikit-checkbox-label 歐陽小明 ( 1 歲 )( $500 )
+										.uikit-checkbox
+											input.uikit-checkbox-input(type='checkbox')
+											label.uikit-checkbox-label 歐陽小新 ( 3 歲 )( $500 )
+										.uikit-checkbox
+											input.uikit-checkbox-input(type='checkbox')
+											label.uikit-checkbox-label 王大明 ( 11 個月 )( $0 )
+									// 
+									h3.layout-title-level-3.color-1 選擇座位
+									br
+									.act-setbtns
+										button.btn.layout-btn.color-1(type='button')
+											| 劃位 A 區
+										button.btn.layout-btn.color-1(type='button')
+											| 劃位 B 區
+										button.btn.layout-btn.color-1(type='button')
+											| 劃位 C 區
+										button.btn.layout-btn.color-1(type='button')
+											| 劃位 D 區
+										button.btn.layout-btn.color-1.act-btn-reset(type='button')
+											| 重選位置
+									.layout-content
+										ul.act-sets
+											li.act-sets-item 樓下D區24排14號
+											li.act-sets-item 樓下D區24排14號
+											li.act-sets-item 樓下D區24排14號
+											li.act-sets-item 樓下D區24排14號
+											li.act-sets-item 樓下D區24排14號
+									.layout-content
+										.act-donebox.act-donebox-strong
+											p.act-donebox-p 本次活動報名費用共計
+											p.act-donebox-p-dark ( CAP優惠價 ) NT $0
+											p.act-donebox-p 活動保留款餘額抵扣
+											p.act-donebox-p-dark NT $0
+											p.act-donebox-p 尚須繳納的費用
+											p.act-donebox-p-dark NT $0
+										.act-donebox
+											p.act-donebox-p
+												| ※ 若本場次有名額釋出或本活動有加開場次，將以APP
+												span.act-donebox-p-dark 推播或簡訊
+												| 											通知
+											br
+											p.act-donebox-p.is-important
+												| ※ 請留意！收到APP
+												span.act-donebox-p-dark 推播或簡訊
+												| 											，不代表報名成功，確認報名，請來電客服中心，謝謝！
+									.layout-content
+										.uikit-checkbox
+											input.uikit-checkbox-input(type='checkbox')
+											label.uikit-checkbox-label 發票捐増喜憨兒基金會
+									h3.layout-title-level-3.color-1 請選擇付款方式：
+									.layout-content
+										.act-payment
+											.act-payment-item
+												.uikit-radio
+													input.uikit-radio-input(type='radio', name='payment')
+													label.uikit-radio-label 登記於寰宇家庭俱樂部之活動專用信用卡
+												b 卡號：
+												select
+													option 1111-2222-3333-4444
+													option 8888-3333-2222-1111
+											hr
+											.act-payment-item
+												.uikit-radio
+													input.uikit-radio-input(type='radio', name='payment')
+													label.uikit-radio-label 郵局劃撥
+												b 戶名：
+												| 寰宇家庭股份有限公司，帳號：18552033
+												br
+												| 											請註明會員編號、姓名、並備註『活動款』。
+										.act-payment
+											b 請確認您的電子信箱：
+											br
+											| 										確認報名成功後，我們將以電子郵件方式寄出活動預習單給您，謝謝！
+											br
+											| 										您的電子信箱是：
+											input.act-payment-input(type='text')
+											.uikit-checkbox
+												input.uikit-checkbox-input(type='checkbox')
+												label.uikit-checkbox-label 未使用電子信箱
+						.layout-main.layout-box-shadow.layout-attention
+							.is-attention-1st
+								.act-attention
+									h3.layout-title-level-3.mt-0.mb-0.color-1 注意事項
+									.act-attention-arrow
+								.act-attention-content
+									|<?php include "html_model/activity/act-attention.html";?>
+							div
+								.act-attention
+									h3.layout-title-level-3.mt-0.mb-0.color-1 活動報名注意事項
+									.act-attention-arrow
+								.act-attention-content
+									|<?php include "html_model/activity/act-attention2.html";?>
+							.attention-check
+								input(type='checkbox')
+								label 我已詳讀並同意遵守以下活動報名注意事項及規則
+						button.btn.btn-block.layout-btn.layout-btn-lg.color-1(type='button')
+							| 確定報名 / 確定候補
+			//
+				====================================
+				——— CONTAINER STEP-3
+				=====================================
+			.container.container-main.container-col-1.act-step3
+				| v step3 breadcrumb : 首頁 > 活動報名 > 青蛙與 Pompom 公主 > 報名成功 / 候補成功
+				.row
+					.layout-col-12
+						.layout-main.layout-box-shadow
+							|<?php include "html_model/activity/act-titlebox.html";?>
+							script.
+								$('.act-state').removeClass('act-state-sm');
+								// [^ 註 ^]
+								// 針對以上 include 的 html 片段矯正
+								// 實際作業請直接在該 tag 增減 class
+						.layout-main.layout-box-shadow
+							.act-layout
+								.act-layout-left
+									h3.layout-title-level-3.mt-0.color-1 場次時間
+									.layout-content 2018/09/16(日)15:00~16:00
+									// 
+									h3.layout-title-level-3.color-1 活動地點
+									.layout-content.act-areabox-adsbox
+										.act-areabox-struc 台北_9樓大會議室
+										.act-areabox-address 台北市松山區八德路3 段32號9樓
+										a.act-areabox-map(href='https://goo.gl/maps/xXiKnqG8Gy22', target='_blank')
+								.act-layout-right
+									h3.layout-title-level-3.color-1 大人人數
+									.layout-content 2人 ( $1000 )
+									// 
+									h3.layout-title-level-3.color-1 小孩人數
+									.layout-content
+										| 歐陽小明 ( 1 歲 ) ( $50 )
+										br
+										| 									歐陽小新 ( 3 歲 ) ( $50 )
+									// 
+									h3.layout-title-level-3.color-1 第二位小孩 1 歲以下
+									.layout-content
+										| 王大明 ( 11 個月 ) ( $0 )
+									// 
+									h3.layout-title-level-3.color-1 座位表
+									.layout-content
+										ul.act-sets
+											li.act-sets-item 1樓A區2排2號
+											li.act-sets-item 1樓A區2排4號
+											li.act-sets-item 1樓A區2排6號
+											li.act-sets-item 1樓A區2排8號
+											li.act-sets-item 1樓A區2排10號
+									// 
+									h3.layout-title-level-3.color-1 應收 / 己收
+									.layout-content
+										| 800 / 0
+						button.btn.btn-block.layout-btn.layout-btn-lg.color-1(type='button')
+							| 繼續報名
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/actSignUp.js', type='text/javascript')

@@ -1,0 +1,119 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		// owl
+		link(href='assets/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+		link(href='assets/plugins/fancybox/jquery.fancybox.min.css', rel='stylesheet')
+		// wow
+		link(href='assets/plugins/animate/animate.css', rel='stylesheet')
+		// IT
+		link(rel='stylesheet', href='css/magazine.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										// <li class="breadcrumb-item text-truncate" style="width: 150px;">
+										a(href='') 會員服務
+									li.breadcrumb-item
+										| 寰宇家庭雜誌
+			.container.container-main.container-col-2
+				.row
+					.hidden-xs.hidden-sm.col-md-4.col-lg-3.sticky-top
+						|<?php include "html_model/article/art-aside.html";?>
+					.col-xs-12.col-sm-12.col-md-8.col-lg-9
+						.layout-main
+							.sectionTitle.text-center.color-4.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span 寰宇家庭雜誌
+									span.shape.shape-right
+							.mgz-visionbox.wow.fadeInUp
+								.mgz-cover
+									img.mgz-cover-img(src='img/magazine/cover/151.jpg')
+									img.mgz-cover-img(src='img/magazine/cover/152.jpg')
+									img.mgz-cover-img(src='img/magazine/cover/153.jpg')
+									img.mgz-cover-img(src='img/magazine/cover/154.jpg')
+									img.mgz-cover-img(src='img/magazine/cover/155.jpg')
+									img.mgz-cover-img(src='img/magazine/cover/156.jpg')
+									//
+										[^ 註 ^]
+										雜誌排列順序為舊 -> 新，
+										新的在最下方
+								ul.mgz-introduce
+									li 雙月刊．逢單月出刊
+									li 學習類文章（專家學者）
+									li 教育類文章（會員分享）
+									li 學習支援服務
+									li 寰宇家庭影音訊息
+									li 會員服務訊息
+									li 美語活動訊息
+									li 寶貝秀－可愛照片分享
+						.layout-main
+							h3.layout-title-level-3.color-4.mt-0.mb-2 豐富內容
+							.owl-carousel.teamSlider.wow.fadeInUp
+								.block
+									.thumbnail.thumbnailContent
+										img(src='img/magazine/page/01.jpg')
+								.block
+									.thumbnail.thumbnailContent
+										img(src='img/magazine/page/02.jpg')
+								.block
+									.thumbnail.thumbnailContent
+										img(src='img/magazine/page/03.jpg')
+								.block
+									.thumbnail.thumbnailContent
+										img(src='img/magazine/page/04.jpg')
+								.block
+									.thumbnail.thumbnailContent
+										img(src='img/magazine/page/05.jpg')
+						.layout-main
+							h3.layout-title-level-3.color-4.mt-0.mb-2 會員專屬雜誌
+							.layout-sharewidth.item-3.item-re-lg-2.wow.fadeInUp
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/156.jpg')
+									.mgz-unit 第 156 期
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/155.jpg')
+									.mgz-unit 第 155 期
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/154.jpg')
+									.mgz-unit 第 154 期
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/153.jpg')
+									.mgz-unit 第 153 期
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/152.jpg')
+									.mgz-unit 第 152 期
+								.layout-sharewidth-item
+									img(src='img/magazine/cover/151.jpg')
+									.mgz-unit 第 151 期
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			// owl
+			script(src='assets/plugins/owl-carousel/owl.carousel.js')
+			// wow
+			script(src='assets/plugins/wow/wow.min.js')
+			script(src='js/magazine.js')

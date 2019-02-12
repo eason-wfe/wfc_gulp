@@ -1,0 +1,85 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(rel='stylesheet', href='css/library.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										| 多媒體學習
+			// main only
+			.container.container-main.container-col-1
+				.row
+					.layout-col-12
+						.layout-main.pt-5.pb-4.mb-1
+							// LEVEL 1
+							.sectionTitle.text-center.color-3.my-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span 多媒體學習
+									span.shape.shape-right
+						// 3.1
+						.layout-main
+							h3.layout-title-level-3.color-3.mt-0 【 Super Fun ! 】
+							.layout-content
+								| Super Fun是由美語叔叔、阿姨與Zippy家族人物，還有小朋友喜愛的Froggy、Bunny一起陪孩子唱唱、跳跳，玩美語唷！
+							.layout-videobox.layout-sharewidth.item-2.mt-2.lib-sort-super
+								|<?php include "html_model/library/lib-videobox-super.html";?>
+							button.btn.layout-btn.color-3(type='button') 看更多 »
+						// 3.2
+						.layout-main
+							h3.layout-title-level-3.color-3.mt-0 【 歡樂TV 】
+							.layout-content
+								| 愛下廚的美語叔叔Chris是個烹飪高手呢！讓我們跟著Chris叔叔還有廚房小助手們一起來動手做做看，學習簡單又美味的餐點吧！
+							.layout-videobox.layout-sharewidth.item-2.mt-2.lib-sort-funny
+								|<?php include "html_model/library/lib-videobox-funny.html";?>
+							button.btn.layout-btn.color-3(type='button') 看更多 »
+						// 3.3
+						.layout-main
+							h3.layout-title-level-3.color-3.mt-0 【 ABC Channel 】
+							.layout-content
+								| 多元化的美語學習，由美語叔叔、阿姨們帶領大家一起透過唱歌、跳舞、玩遊戲、製作點心、冒險探索來玩美語唷！
+							.layout-videobox.layout-sharewidth.item-2.mt-2.lib-sort-abc
+								|<?php include "html_model/library/lib-videobox-abc.html";?>
+							button.btn.layout-btn.color-3(type='button') 看更多 »
+						// 3.4 ( !注意! 此單元因 flash 限制，故手機版不提供使用 )
+						.layout-main.layout-main-gbox
+							h3.layout-title-level-3.color-3.mt-0 【 美語遊戲 】
+							.layout-content
+								| 透過遊戲提供給孩子們不同的衍生性美語學習體驗。
+							.lib-gbox.layout-sharewidth.item-4.mt-2
+								|<?php include "html_model/library/lib-gamebox.html";?>
+							button.btn.layout-btn.color-3(type='button') 看更多 »
+						// 3.5 ( !注意! 此單元因 flash 限制，故手機版不提供使用 )
+						.layout-main.layout-main-gbox
+							h3.layout-title-level-3.color-3.mt-0 【 美語故事 】
+							.layout-content
+								| 透過故事可以培養孩子們的觀察、認知、推理、聯想等各項能力。
+							.lib-gbox.layout-sharewidth.item-4.mt-2
+								|<?php include "html_model/library/lib-gamebox.html";?>
+							button.btn.layout-btn.color-3(type='button') 看更多 »
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY

@@ -1,0 +1,95 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='css/online.css', rel='stylesheet', text='text/css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										| 線上客服
+			.container.container-main.container-col-1
+				.row
+					.layout-col-12
+						.layout-main
+							.sectionTitle.text-center.color-1.mt-0.mb-5
+								h2
+									span.shape.shape-left
+									span 線上客服
+									span.shape.shape-right
+							.on-text
+								h3.layout-title-level-3.color-1.mt-0 會員編號 :
+								input(type='text')
+							.on-text
+								h3.layout-title-level-3.color-1.mt-0 姓　　名 :
+								input(type='text')
+							.on-text
+								h3.layout-title-level-3.color-1.mt-0 聯絡電話 :
+								input(type='text')
+							.on-text
+								h3.layout-title-level-3.color-1.mt-0 電子郵件 :
+								input(type='text')
+							.on-check
+								input#checkMem(type='checkbox', name='checkMem')
+								label(for='checkMem') 尚未成為會員
+							h3.layout-title-level-3.color-1 我要諮詢 :
+							.on-radio.on-radio-0
+								input#options1(type='radio', name='options', checked='')
+								label(for='options1') 「迪士尼美語世界」產品使用
+							.on-radio.on-radio-1
+								input#options2(type='radio', name='options')
+								label(for='options2') 「CAP 親子學習計畫」
+							.on-radio.on-radio-2
+								input#options3(type='radio', name='options')
+								label(for='options3') 「迪士尼美語世界」畢業申請（劍橋兒童英檢獎助學金申請)
+							.on-radio.on-radio-3
+								input#options4(type='radio', name='options')
+								label(for='options4') 「電話美語」使用
+							.on-radio.on-radio-4
+								input#options5(type='radio', name='options')
+								label(for='options5') 「寰宇家庭會刊」、「Kids' World 兒童世界」或「Zippy 妙妙筆」使用
+							.on-radio.on-radio-5
+								input#options6(type='radio', name='options')
+								label(for='options6') 活動相關問題
+							.on-radio.on-radio-6
+								input#options7(type='radio', name='options')
+								label(for='options7') 網站建議及使用
+							.on-radio.on-radio-7
+								input#options8(type='radio', name='options')
+								label(for='options8') 客服中心
+							.on-radio.on-radio-8
+								input#options9(type='radio', name='options')
+								label(for='options9') 其他問題
+							textarea
+							button.btn.layout-btn.color-1.mt-3(type='button')
+								| 送出
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script.
+				for( var a=0,max=$(".on-radio").length;a<max;a ++ ){
+				var $target = $(".on-radio-" + a + " label");
+				if( /「/i.test( $target.html() ) ){
+				$target.css({"textIndent":-5});
+				}
+				}

@@ -13,8 +13,7 @@ TW (x back-prefix -tw x)
 4. html_model/footer.html
 -->
 <html lang="ko">
-  <head>
-    <!-- ?php include "html_model/head.html";?-->
+  <head><?php include "html_model/head.html";?>
     <!-- CSS FOR THIS PAGE ONLY-->
     <link type="text/css" href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
     <link type="text/css" href="css/apply_kr.css" rel="stylesheet">
@@ -27,27 +26,24 @@ TW (x back-prefix -tw x)
       ——— HEADER
       =====================================
       -->
-      <header class="header-wrapper" id="pageTop">
-        <!-- ?php include "html_model/header/header-1.html";?-->
+      <header class="header-wrapper" id="pageTop"><?php include "html_model/header/header-1.html";?>
         <!-- NAVBAR-->
         <nav class="navbar navbar-default lightHeader" id="menuBar" role="navigation">
-          <div class="container">
-            <!-- ?php include "html_model/header/header-2-kr.html";?-->
-            <!--
-            ====================================
-            ——— BREAD CRUMB
-            =====================================
-            -->
-            <div class="layout-breadcrumb-box">
-              <div class="container">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb text-truncate">
-                    <li class="breadcrumb-item"><a href="#">index</a></li>
-                    <li class="breadcrumb-item"><a href="">WFC EVENT</a></li>
-                    <li class="breadcrumb-item">Apply</li>
-                  </ol>
-                </nav>
-              </div>
+          <div class="container"><?php include "html_model/header/header-2-kr.html";?></div>
+          <!--
+          ====================================
+          ——— BREAD CRUMB
+          =====================================
+          -->
+          <div class="layout-breadcrumb-box">
+            <div class="container">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb text-truncate">
+                  <li class="breadcrumb-item"><a href="#">index</a></li>
+                  <li class="breadcrumb-item"><a href="">WFC EVENT</a></li>
+                  <li class="breadcrumb-item">Apply</li>
+                </ol>
+              </nav>
             </div>
           </div>
         </nav>
@@ -359,12 +355,11 @@ TW (x back-prefix -tw x)
             </div>
           </div>
         </div>
-      </div>
-      <!-- ?php include "html_model/_event_kr/lightbox-apply.html";?-->
-      <!-- ?php include "html_model/footer-kr.html";?-->
-      <!-- ?php include "html_model/floating-ui.html";?-->
-      <!-- ?php include "html_model/tabmenu-kr.html";?-->
-      <!-- ?php include "html_model/js-for-all.html";?-->
+      </div><?php include "html_model/_event_kr/lightbox-apply.html";?>
+      <!-- DIFFERENT--><?php include "html_model/footer-kr.html";?>
+      <?php include "html_model/tabmenu-kr.html";?>
+      <!-- THE SAME--><?php include "html_model/floating-ui.html";?>
+      <?php include "html_model/js-for-all.html";?>
       <!-- JS FOR THIS PAGE ONLY-->
       <script src="js/fullScreen.js"></script>
       <script>

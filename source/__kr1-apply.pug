@@ -13,7 +13,7 @@ doctype html
   4. html_model/footer.html
 html(lang='ko')
   head
-    // ?php include "html_model/head.html";?
+    |<?php include "html_model/head.html";?>
     // CSS FOR THIS PAGE ONLY
     link(type='text/css', href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
     link(type='text/css', href='css/apply_kr.css', rel='stylesheet')
@@ -25,25 +25,25 @@ html(lang='ko')
         ——— HEADER
         =====================================
       header#pageTop.header-wrapper
-        // ?php include "html_model/header/header-1.html";?
+        |<?php include "html_model/header/header-1.html";?>
         // NAVBAR
         nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
           .container
-            // ?php include "html_model/header/header-2-kr.html";?
-            //
-              ====================================
-              ——— BREAD CRUMB
-              =====================================
-            .layout-breadcrumb-box
-              .container
-                nav(aria-label='breadcrumb')
-                  ol.breadcrumb.text-truncate
-                    li.breadcrumb-item
-                      a(href='#') index
-                    li.breadcrumb-item
-                      a(href='') WFC EVENT
-                    li.breadcrumb-item
-                      | Apply
+            |<?php include "html_model/header/header-2-kr.html";?>
+          //
+            ====================================
+            ——— BREAD CRUMB
+            =====================================
+          .layout-breadcrumb-box
+            .container
+              nav(aria-label='breadcrumb')
+                ol.breadcrumb.text-truncate
+                  li.breadcrumb-item
+                    a(href='#') index
+                  li.breadcrumb-item
+                    a(href='') WFC EVENT
+                  li.breadcrumb-item
+                    | Apply
       // main only
       .container.container-main.container-col-1
         .row
@@ -320,11 +320,8 @@ html(lang='ko')
                 li.cal-item.is-sun.is-other
                   .cal-day 01
                   .cal-week 토
-      // ?php include "html_model/_event_kr/lightbox-apply.html";?
-      // ?php include "html_model/footer-kr.html";?
-      // ?php include "html_model/floating-ui.html";?
-      // ?php include "html_model/tabmenu-kr.html";?
-      // ?php include "html_model/js-for-all.html";?
+      |<?php include "html_model/_event_kr/lightbox-apply.html";?>
+      include partials/public_footer_kr.pug
       // JS FOR THIS PAGE ONLY
       script(src='js/fullScreen.js')
       script.
