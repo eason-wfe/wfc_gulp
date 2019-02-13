@@ -1,0 +1,130 @@
+html
+  head
+  body
+    li.layout-card-item.is-lession
+      //        
+        [^ 註1 ^]
+        不同活動形，視覺用色也不同，於 tag .layout-card-item 加 class
+        .is-lession
+        .is-song
+        .is-cap
+        .is-talk
+        .is-mom
+        
+        [^ 註2 ^]
+        狀態為「取消」時，在 tag .layout-card-item 加 class .is-cancel 使視覺正確
+        
+      //?php include "html_model/activity/act-state_kr.html";?
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') Lession
+          //            
+            			[^ 註 ^]
+            			規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
+            			請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
+            			
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 단내형
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color 1430 Green-CAP-Book6-Lesson6Green_CAP-Book06 Lesson
+        p 수행자 : uncle Ban
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41
+    // v demo v 
+    li.layout-card-item.is-song
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') Song
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 호명성
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color Wiggly Worm
+        p 수행자 : uncle Ban
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41
+    li.layout-card-item.is-cap.is-cancel
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') CAP
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 호명성
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color When You Are at the Zoo
+        p 수행자 : Candy mom
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41
+    li.layout-card-item.is-talk
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') Free Talk
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 단내형
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color When You Are at the Zoo
+        p 수행자 : Candy mom
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41
+    li.layout-card-item.is-mom
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') Mommy and Daddy
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 호명성
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color When You Are at the Zoo
+        p 수행자 : Candy mom
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41
+    li.layout-card-item.is-cap
+      .act-state.act-state-sm
+        .act-state-inside
+          .act-state-word(data-width='117') CAP
+      .mypage-btnbox
+        a.mypage-btn-cancel(href='')
+          | 취소
+          span.mypage-btn-cancel-x x
+      .mypage-lt
+        | 단내형
+        span 2018/10/24
+      a.layout-card-link(href='')
+        span.is-color When You Are at the Zoo
+        p 수행자 : Candy mom
+      .mypage-date-cancel
+        span 콜백시간
+        span.sign :
+        span 15:23:41

@@ -1,0 +1,38 @@
+//   ====================================
+  ——— LIGHT BOX MODAL
+  ===================================== 
+html
+  head
+  body
+    #dweShop.modal.fade.customModal(tabindex='-1', role='dialog', style='display: block;visibility: hidden;z-index: -1;')
+      .modal-dialog
+        .modal-content
+          .panel
+            .panel-heading
+              h3.panel-title 세부 정보
+              a.panel-close(href='') x
+            .panel-body
+              .goods-name
+                b 상품명 :
+                | My Book 1 My Book 1
+              .zoom-pc ▼ 마우스를 아래로 움직여 확대하고 검토하십시오.
+              .zoom-mobi ▼ 아래를 클릭하면 확대하고 검토 할 수 있습니다.
+              .zoom-box
+                .zoom-outer
+                  .zoomer
+                    a.cloud-zoom(href='img/cloudzoom/l.jpg', rel='transparentImage: 'data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', useWrapper: false, showTitle: true, adjustY:0, adjustX:0')
+                      img(src='img/cloudzoom/s.jpg')
+                ul.zoom-nav
+                  li.zoom-item
+                    img(src='img/cloudzoom/l.jpg')
+                  li.zoom-item
+                    img(src='img/cloudzoom/pl.jpg')
+                  li.zoom-item
+                    img(src='img/cloudzoom/s.jpg')
+                  li.zoom-item
+                    img(src='img/cloudzoom/ps.jpg')
+                  li.zoom-item
+                    img(src='img/cloudzoom/l.jpg')
+              .lb-content
+                b 제품 설명 :
+                | 다양한 쇼를 통하여 WF클럽 원어민들과 영어로 대화해 보세요. 엄마, 아빠, 친구들 모두 함께 즐기고 체험하면서 집에서 INPUT한 영어를 WF클럽 원어민에게 마음껏 뽐내보세요!

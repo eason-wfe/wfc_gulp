@@ -1,0 +1,44 @@
+html
+  head
+  body
+    .act-titlebox.act-color-z
+      //        
+        [^ 註 ^]
+        規則 : tag .act-titlebox 
+        + calss .act-color-k 分類 翻轉世界 色系
+        + class .act-color-p 分類 布偶劇場 色系
+        ... 依此類推
+        
+        現有十個分類-尾代號 e p a z d b f k w c 
+        預備新增用色-尾代號 11 12
+        
+      |  
+      //?php include "html_model/activity/act-state.html";?
+      |  
+      //?php include "html_model/activity/act-state.html";?
+      //is-2nd
+      |  
+      img.act-titlebox-img(src='img/activity/act_vision.jpg')
+      .act-titlebox-info
+        .act-titlebox-sort.text-truncate
+          b.act-titlebox-icon z
+          span.act-titlebox-sortname 人偶秀系列
+          span.act-titlebox-sortname-en Family ShowcaseFamily ShowcaseFamily Showcase
+        .act-titlebox-title
+          h1.act-titlebox-titlename 青蛙與 Pompom 公主
+          .act-titlebox-titlename-en Princess Pompom and the frog
+        .act-titlebox-age 適合 0 ~ 36 月小朋友
+        //          
+          		[註]
+          		規則 : tag .act-titlebox-link + class .unclick
+          		報名前 & 報名後不同狀態下 , 不同按鈕反灰視覺
+          		
+        ul.act-titlebox-btnbox
+          li.act-titlebox-item
+            a.act-titlebox-link(href='') 活動資訊
+          li.act-titlebox-item
+            a.act-titlebox-link.unclick(href='') 場次資訊
+          li.act-titlebox-item
+            a.act-titlebox-link(href='') 預習單
+          li.act-titlebox-item
+            a.act-titlebox-link(href='') 交通資訊

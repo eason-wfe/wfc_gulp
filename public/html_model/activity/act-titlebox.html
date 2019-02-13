@@ -1,53 +1,42 @@
-<div class="act-titlebox act-color-z">
-<!--
-[^ 註 ^]
-規則 : tag .act-titlebox 
-+ calss .act-color-k 分類 翻轉世界 色系
-+ class .act-color-p 分類 布偶劇場 色系
-... 依此類推
 
-現有十個分類-尾代號 e p a z d b f k w c 
-預備新增用色-尾代號 11 12
--->
-	<?php include "html_model/activity/act-state.html";?>
-	<?php include "html_model/activity/act-state.html";?><!--is-2nd-->
-	<img class="act-titlebox-img" src="img/activity/act_vision.jpg">
-	<div class="act-titlebox-info">
-		<div class="act-titlebox-sort text-truncate">
-			<b class="act-titlebox-icon">z</b>
-			<span class="act-titlebox-sortname">人偶秀系列</span>
-			<span class="act-titlebox-sortname-en">Family ShowcaseFamily ShowcaseFamily Showcase</span>
-		</div>
-		<div class="act-titlebox-title">
-			<h1 class="act-titlebox-titlename">
-				青蛙與 Pompom 公主
-			</h1>
-			<div class="act-titlebox-titlename-en">
-				Princess Pompom and the frog
-			</div>
-		</div>
-		<div class="act-titlebox-age">
-			適合 0 ~ 36 月小朋友
-		</div>
-		<!--
-		[註]
-		規則 : tag .act-titlebox-link + class .unclick
-		報名前 & 報名後不同狀態下 , 不同按鈕反灰視覺
-		-->
-		<ul class="act-titlebox-btnbox">
-			<li class="act-titlebox-item">
-				<a href="" class="act-titlebox-link">活動資訊</a>
-			</li>
-			<li class="act-titlebox-item">
-				<a href="" class="act-titlebox-link unclick">場次資訊</a>
-			</li>
-			<li class="act-titlebox-item">
-				<a href="" class="act-titlebox-link">預習單</a>
-			</li>
-			<li class="act-titlebox-item">
-				<a href="" class="act-titlebox-link">交通資訊</a>
-			</li>
-		</ul>
-	</div>
-
-</div>
+<html>
+  <head></head>
+  <body>
+    <div class="act-titlebox act-color-z">
+      <!--        
+      [^ 註 ^]
+      規則 : tag .act-titlebox 
+      + calss .act-color-k 分類 翻轉世界 色系
+      + class .act-color-p 分類 布偶劇場 色系
+      ... 依此類推
+      
+      現有十個分類-尾代號 e p a z d b f k w c 
+      預備新增用色-尾代號 11 12
+      
+      --> 
+      <!--?php include "html_model/activity/act-state.html";?--> 
+      <!--?php include "html_model/activity/act-state.html";?-->
+      <!--is-2nd--> <img class="act-titlebox-img" src="img/activity/act_vision.jpg"/>
+      <div class="act-titlebox-info">
+        <div class="act-titlebox-sort text-truncate"><b class="act-titlebox-icon">z</b><span class="act-titlebox-sortname">人偶秀系列</span><span class="act-titlebox-sortname-en">Family ShowcaseFamily ShowcaseFamily Showcase</span></div>
+        <div class="act-titlebox-title">
+          <h1 class="act-titlebox-titlename">青蛙與 Pompom 公主</h1>
+          <div class="act-titlebox-titlename-en">Princess Pompom and the frog</div>
+        </div>
+        <div class="act-titlebox-age">適合 0 ~ 36 月小朋友</div>
+        <!--          
+        		[註]
+        		規則 : tag .act-titlebox-link + class .unclick
+        		報名前 & 報名後不同狀態下 , 不同按鈕反灰視覺
+        		
+        -->
+        <ul class="act-titlebox-btnbox">
+          <li class="act-titlebox-item"><a class="act-titlebox-link" href="">活動資訊</a></li>
+          <li class="act-titlebox-item"><a class="act-titlebox-link unclick" href="">場次資訊</a></li>
+          <li class="act-titlebox-item"><a class="act-titlebox-link" href="">預習單</a></li>
+          <li class="act-titlebox-item"><a class="act-titlebox-link" href="">交通資訊</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

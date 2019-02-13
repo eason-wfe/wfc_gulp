@@ -1,0 +1,31 @@
+//   ====================================
+  ——— LIGHT BOX MODAL
+  ===================================== 
+html
+  head
+  body
+    #dweShop.modal.fade.customModal(tabindex='-1', role='dialog', style='display: block;visibility: hidden;z-index: -1;')
+      .modal-dialog
+        .modal-content
+          .panel
+            .panel-heading
+              h3.panel-title 商品明細
+              a.panel-close(href='') x
+            .panel-body
+              .goods-name
+                b 名稱:
+                | My Book 1 My Book 1
+              img.lb-img(src='img/cloudzoom/s.jpg')
+              .lb-content
+                b.lb-title 兌換所需點數 :
+                .lb-content 25 點 / 個
+                b.lb-title 說明 :
+                .lb-content
+                  | ◆ Zippy可愛文具系列
+                  br
+                  | ◆ 可愛別針使用時建議家長在一旁協助歐
+                b.lb-title 規格 :
+                .lb-content
+                  | 適合年齡:3歲以上
+                  br
+                  | 產品尺寸:5.5CM (直徑)

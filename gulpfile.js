@@ -61,6 +61,12 @@ gulp.task('partials',function(){
 	.pipe(gulp.dest('./public/html_model/'))
 });
 
+gulp.task('h2p',function(){
+	gulp.src('./org/html_model/**/*.html')
+	.pipe($.html2pug())
+	.pipe(gulp.dest('./source/partials/'))
+});
+
 // STYLESHEET
 gulp.task('sass',function(){
 	gulp.src('./source/scss/**/*.scss')

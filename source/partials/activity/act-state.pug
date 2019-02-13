@@ -1,0 +1,16 @@
+html
+  head
+  body
+    .act-state.act-state-sm
+      //        
+        [^ 註 ^]
+        規則 1 : tag .act-state + class .act-state-sm
+        使用在 活動報名 頁 , 讓會員報名狀態 icon 在有限空間呈現小尺寸的顯示狀態
+        反之不加 class 呈現大尺寸 , 及更清楚的時間資訊
+        
+        規則 2 : tag .act-state + act-state-muted
+        在報名狀態為「己取消」時加，以控制視覺成為灰色
+        
+      .act-state-inside
+        .act-state-word 己報名
+        .act-state-data 2018 / 09 / 15 下午 13:30
