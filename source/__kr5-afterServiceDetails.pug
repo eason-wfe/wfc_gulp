@@ -1,0 +1,77 @@
+doctype html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(href='css/board_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										a(href='') My WFC
+									li.breadcrumb-item
+										a(href='') My Page
+									li.breadcrumb-item
+										| After service application
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-xs-12.col-md-3.sticky-top.aside-lb
+						.panel-heading.bg-color-5.border-color-5
+							h3.panel-title My Page
+							.aside-lb-close x
+						|<?php include "html_model/_mywfc_kr/mypage-aside.html";?>
+						script.
+							// 此 js 為 demo 用，請刪除
+							$(".art-list-f2").find(".art-list-f2-item").eq(5).find(".art-list-f2-link").addClass("now");
+					.col-xs-12.col-xs-12.col-md-9
+						.layout-main
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span After service application
+									span.shape.shape-right
+							//
+								신청일​ : 2018-03-28
+								신청품목 : 함께노래하기! DVD 7
+								늘량유무 : 정상적인손실
+								배송일  2018-5-28
+								tracking code : A12345689
+								배송현황조회 : 배송완료
+								--------------------------------------
+								申請日期 : 2018-03-28
+								申請項目 : 一起唱歌! DVD 7
+								檢測結果 : 正常損耗
+								交貨日期 : 2018-5-28
+								追緃碼 : A12345689
+								查看送貨狀態 : 發貨完成
+							ul.layout-card
+								|<?php include "html_model/_mywfc_kr/as-card-item.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+		include partials/public_footer_kr.pug
+		// JS FOR THIS PAGE ONLY
+		script(src='js/tmpAsideLb.js')
+		script(src='js/statePaddingShare.js')

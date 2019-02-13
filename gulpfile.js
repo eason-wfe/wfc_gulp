@@ -1,19 +1,10 @@
 var gulp = require('gulp'),
 	$ = require('gulp-load-plugins')();
 
-// DIRECTORY
-gulp.task('rename',function(){
-	gulp.src('./source/partials/**/*.html')
-	.pipe($.rename(function(path){
-		path.extname = '.pug'
-	}))
-	// .pipe(gulp.dest('./public/html_model/'))
-});
-
 // CLEAN
 gulp.task('clean',function(){
 	// return gulp.src(['./public/*.php','./node_modules'])
-	return gulp.src('./node_modules')
+	return gulp.src('./node_modules', {read: false})
 		.pipe($.clean())
 });
 
@@ -59,22 +50,6 @@ gulp.task('partials',function(){
 		pretty: true
 	}))
 	.pipe(gulp.dest('./public/html_model/'))
-});
-
-gulp.task('h2p',function(){
-	gulp.src('./org/html_model/**/*.html')
-	.pipe($.html2pug())
-	.pipe(gulp.dest('./source/partials/'))
-});
-
-// STYLESHEET
-gulp.task('sass',function(){
-	gulp.src('./source/scss/**/*.scss')
-	.pipe($.plumber())
-	.pipe($.sass({
-		outpurStyle: 'compressed'
-	}).on('error', $.sass.logError))
-	.pipe(gulp.dest('./public/css/'))
 });
 
 // SYSTEM

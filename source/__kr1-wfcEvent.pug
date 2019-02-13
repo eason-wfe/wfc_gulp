@@ -1,0 +1,145 @@
+doctype html
+//
+	KOREA
+	1. css/layout_kr.css ( in head.html )
+	2. html_model/header-2-kr.html
+	3. html_model/tabmenu-kr.html
+	4. html_model/footer-kr.html
+	//
+	TW (x back-prefix -tw x)
+	1. css/layout.css ( in head.html )
+	2. html_model/header-2.html
+	3. html_model/tabmenu.html
+	4. html_model/footer.html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FOR THIS PAGE ONLY
+		link(href='assets/plugins/slick/slick.css', rel='stylesheet')
+		link(href='assets/plugins/slick/slick-theme.css', rel='stylesheet')
+		link(type='text/css', href='css/wfcEvent_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										a(href='') WFC EVENT
+									li.breadcrumb-item
+										| Event 소개
+			.slider-outbox.slider-show
+				//
+					slider-show
+					slider-activity
+					slider-carnival
+					slider-camp
+				.slider-d-top
+				.slider-d-left
+				.slider-d-right
+				.slick
+					.vbox
+						.vbox-in
+							.layout-video-fluid
+								iframe(src='https://player.vimeo.com/video/243244233', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+					div(style='background-image: url(img/event/1.jpg)')
+					div(style='background-image: url(img/event/2.jpg)')
+					div(style='background-image: url(img/event/3.jpg)')
+				.container.container-main.container-col-1
+					.row
+						.layout-col-12
+							.layout-main
+								.etitle.icon2
+									.etitle-icon
+									.etitle-w 쇼
+								.layout-content
+									| 방과후, 비키네 집에 모인 프로기, 버니가 무언가를 하고 있네요? 아~ 숫자 놀이를 즐기고 있군요. 비키, 조사야, 프로기 그리고 버니와 숫자를 세며 즐겁게 놀아 봐요. 오리, 개구리, 새, 구름, 벌, 징글 블록 그리고 더 많은 것들을 세어 볼 수 있어요!
+								button.btn.layout-btn.layout-btn-sm(type='button')
+									| More »
+			.slider-outbox.slider-activity
+				.slider-d-top
+				.slider-d-left
+				.slider-d-right
+				.slick
+					div(style='background-image: url(img/event/1.jpg)')
+					div(style='background-image: url(img/event/2.jpg)')
+					div(style='background-image: url(img/event/3.jpg)')
+				.container.container-main.container-col-1
+					.row
+						.layout-col-12
+							.layout-main
+								.etitle.icon1
+									.etitle-icon
+									.etitle-w 액티비티
+								.layout-content
+									| 방과후, 비키네 집에 모인 프로기, 버니가 무언가를 하고 있네요? 아~ 숫자 놀이를 즐기고 있군요. 비키, 조사야, 프로기 그리고 버니와 숫자를 세며 즐겁게 놀아 봐요. 오리, 개구리, 새, 구름, 벌, 징글 블록 그리고 더 많은 것들을 세어 볼 수 있어요!
+								button.btn.layout-btn.layout-btn-sm(type='button')
+									| More »
+			.slider-outbox.slider-carnival
+				.slider-d-top
+				.slider-d-left
+				.slider-d-right
+				.slick
+					div(style='background-image: url(img/event/1.jpg)')
+					div(style='background-image: url(img/event/2.jpg)')
+					div(style='background-image: url(img/event/3.jpg)')
+				.container.container-main.container-col-1
+					.row
+						.layout-col-12
+							.layout-main
+								.etitle.icon3
+									.etitle-icon
+									.etitle-w 카니발
+								.layout-content
+									| 방과후, 비키네 집에 모인 프로기, 버니가 무언가를 하고 있네요? 아~ 숫자 놀이를 즐기고 있군요. 비키, 조사야, 프로기 그리고 버니와 숫자를 세며 즐겁게 놀아 봐요. 오리, 개구리, 새, 구름, 벌, 징글 블록 그리고 더 많은 것들을 세어 볼 수 있어요!
+								button.btn.layout-btn.layout-btn-sm(type='button')
+									| More »
+			.slider-outbox.slider-camp
+				.slider-d-top
+				.slider-d-left
+				.slider-d-right
+				.slick
+					div(style='background-image: url(img/event/1.jpg)')
+					div(style='background-image: url(img/event/2.jpg)')
+					div(style='background-image: url(img/event/3.jpg)')
+				.container.container-main.container-col-1
+					.row
+						.layout-col-12
+							.layout-main
+								.etitle.icon4
+									.etitle-icon
+									.etitle-w 캠프
+								.layout-content
+									| 방과후, 비키네 집에 모인 프로기, 버니가 무언가를 하고 있네요? 아~ 숫자 놀이를 즐기고 있군요. 비키, 조사야, 프로기 그리고 버니와 숫자를 세며 즐겁게 놀아 봐요. 오리, 개구리, 새, 구름, 벌, 징글 블록 그리고 더 많은 것들을 세어 볼 수 있어요!
+								button.btn.layout-btn.layout-btn-sm(type='button')
+									| More »
+			include partials/public_footer_kr.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='assets/plugins/slick/slick.min.js', type='text/javascript')
+			script.
+				$(function(){
+				$('.slick').slick({
+				dots: true,
+				autoplay: false,
+				autoplaySpeed: 2000,
+				arrows : true,
+				zIndex : 500
+				});
+				});

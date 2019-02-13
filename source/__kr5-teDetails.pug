@@ -1,0 +1,90 @@
+doctype html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(type='text/css', href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(href='css/teDetails_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										a(href='') My WFC
+									li.breadcrumb-item
+										a(href='') My Page
+									li.breadcrumb-item
+										| TE details
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-xs-12.col-md-3.sticky-top.aside-lb
+						.panel-heading.bg-color-5.border-color-5
+							h3.panel-title My Page
+							.aside-lb-close x
+						|<?php include "html_model/_mywfc_kr/mypage-aside.html";?>
+						script.
+							// 此 js 為 demo 用，請刪除
+							$(".art-list-f2").find(".art-list-f2-item").eq(2).find(".art-list-f2-link").addClass("now");
+					.col-xs-12.col-xs-12.col-md-9
+						.layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| TE details
+									span.shape.shape-right
+							.te-dropbox
+								.dropGeneral.roundTwo.layout-drop-sm.is-child
+									select.select-drop
+										option(value='0') Family 
+										option(value='1') 단내형
+										option(value='2') 호명성
+								.dropGeneral.roundTwo.layout-drop-sm.is-type
+									select.select-drop
+										option(value='0') Lession
+										option(value='1') Song
+										option(value='2') CAP
+										option(value='3') Free Talk
+										option(value='4') Mommy and Daddy
+							ul.layout-card
+								|<?php include "html_model/_mywfc_kr/td-card-item.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+								include partials/public_footer_kr.pug
+								// JS FOR THIS PAGE ONLY
+								script(src='js/tmpAsideLb.js')
+								script.
+									$('.select-drop').selectbox();
+									function share(){
+									var $window = $(window),
+									$ww = $window.width(),
+									$item = $(".per-unit"),
+									$state = $(".act-state-word");
+									$sw = $state.data("width");
+									$state.css({"width":$sw});
+									if ($ww > 991 + 17){
+									$item.css({"paddingLeft":$sw + 15});
+									}
+									}
+									share();

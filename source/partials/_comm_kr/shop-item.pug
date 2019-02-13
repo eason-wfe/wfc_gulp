@@ -1,0 +1,29 @@
+.shop-item.layout-sharewidth-item
+	.uikit-checkbox
+		input.uikit-checkbox-input(type='checkbox')
+		label.uikit-checkbox-label
+	a.shop-pic(data-toggle='modal', href='#dweShop', style='background-image: url(img/shop/ps.jpg)')
+	.shop-name
+		.shop-name-cell
+			.shop-cell2
+				| My book My Book My book
+	.shop-numbox
+		a.shop-num-subtract(href='') -
+		.shop-num 수량
+		a.shop-num-add(href='') +
+	.shop-price ₩ 8,000
+// v demo
+.shop-item.layout-sharewidth-item.is-selected
+	.uikit-checkbox
+		input.uikit-checkbox-input(type='checkbox', checked='')
+		label.uikit-checkbox-label
+	a.shop-pic(data-toggle='modal', href='#dweShop', style='background-image: url(img/shop/s.jpg)')
+	.shop-name
+		.shop-name-cell
+			.shop-cell2
+				| Marval
+	.shop-numbox
+		a.shop-num-subtract(href='') -
+		.shop-num 3
+		a.shop-num-add(href='') +
+	.shop-price ₩ 25,000

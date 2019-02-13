@@ -1,57 +1,54 @@
-html
-	head
-	body
-		li.layout-card-item.is-show
-			//        
+li.layout-card-item.is-show
+	//        
+		[^ 註 ^]
+		狀態為「過期」時，在 tag .layout-cardlink 加 class .is-cancel 使視覺正確
+
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='60') 가능
+			//            
 				[^ 註 ^]
-				狀態為「過期」時，在 tag .layout-cardlink 加 class .is-cancel 使視覺正確
+				規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
+				請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
 
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='60') 가능
-					//            
-						[^ 註 ^]
-						規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
-						請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
-
-			a.layout-card-link(href='')
-				| 01
-				span 주말클럽이벤트참석회쿠폰
-				| x 6 장 / 무료이벤트참석 / 1부모 2자녀
-			.mypage-datebox
-				.mypage-date 발행일자 : 2018-11-25 16:00
-				.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31
-		// v demo v 
-		li.layout-card-item.is-show.is-cancel
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='60') 만료된
-			a.layout-card-link(href='')
-				| 02
-				span 주말클럽이벤트참석회쿠폰
-				| x 6 장 / 무료이벤트참석 / 1부모 2자녀
-			.mypage-datebox
-				.mypage-date 발행일자 : 2017-12-31 15:00
-				.mypage-date 사용가능기간 : 2018-01-01 ~ 2018-5-15
-		li.layout-card-item.is-show
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='60') 가능
-			a.layout-card-link(href='')
-				| 03
-				span 주말클럽이벤트참석회쿠폰
-				| x 6 장 / 무료이벤트참석 / 1부모 2자녀
-			.mypage-datebox
-				.mypage-date 발행일자 : 2018-11-25 16:00
-				.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31
-		li.layout-card-item.is-show
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='60') 가능
-			a.layout-card-link(href='')
-				| 04
-				span 주말클럽이벤트참석회쿠폰
-				| x 6 장 / 무료이벤트참석 / 1부모 2자녀
-			.mypage-datebox
-				.mypage-date 발행일자 : 2018-11-25 16:00
-				.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31
+	a.layout-card-link(href='')
+		| 01
+		span 주말클럽이벤트참석회쿠폰
+		| x 6 장 / 무료이벤트참석 / 1부모 2자녀
+	.mypage-datebox
+		.mypage-date 발행일자 : 2018-11-25 16:00
+		.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31
+// v demo v 
+li.layout-card-item.is-show.is-cancel
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='60') 만료된
+	a.layout-card-link(href='')
+		| 02
+		span 주말클럽이벤트참석회쿠폰
+		| x 6 장 / 무료이벤트참석 / 1부모 2자녀
+	.mypage-datebox
+		.mypage-date 발행일자 : 2017-12-31 15:00
+		.mypage-date 사용가능기간 : 2018-01-01 ~ 2018-5-15
+li.layout-card-item.is-show
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='60') 가능
+	a.layout-card-link(href='')
+		| 03
+		span 주말클럽이벤트참석회쿠폰
+		| x 6 장 / 무료이벤트참석 / 1부모 2자녀
+	.mypage-datebox
+		.mypage-date 발행일자 : 2018-11-25 16:00
+		.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31
+li.layout-card-item.is-show
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='60') 가능
+	a.layout-card-link(href='')
+		| 04
+		span 주말클럽이벤트참석회쿠폰
+		| x 6 장 / 무료이벤트참석 / 1부모 2자녀
+	.mypage-datebox
+		.mypage-date 발행일자 : 2018-11-25 16:00
+		.mypage-date 사용가능기간 : 2018-03-28 ~ 2018-12-31

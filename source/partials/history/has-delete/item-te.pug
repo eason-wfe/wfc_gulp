@@ -1,122 +1,119 @@
-html
-	head
-	body
-		.layout-card-item
-			//is-cancel
-			//        
+.layout-card-item
+	//is-cancel
+	//        
+		[^ 註 ^]
+		未刪除的活動，不另加 class
+		被刪除的活動，加 class = is-cancel，給刪除日期
+
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-sl
+			//            
 				[^ 註 ^]
-				未刪除的活動，不另加 class
-				被刪除的活動，加 class = is-cancel，給刪除日期
+				報名狀態 + calss
+				Song Lessons 歌曲練習 = .state-te-sl
+				Book Lessons 課程練習 = .state-te-bl
+				Right Light Lessons 對錯練習 = .state-te-rll
+				Reading Lessons 朗讀練習 = .state-te-rl
+				Free Conversation 自由對話 = .state-te-fc
+				CAP Lessons CAP 練習 = .state-te-cl
 
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-sl
-					//            
-						[^ 註 ^]
-						報名狀態 + calss
-						Song Lessons 歌曲練習 = .state-te-sl
-						Book Lessons 課程練習 = .state-te-bl
-						Right Light Lessons 對錯練習 = .state-te-rll
-						Reading Lessons 朗讀練習 = .state-te-rl
-						Free Conversation 自由對話 = .state-te-fc
-						CAP Lessons CAP 練習 = .state-te-cl
-
-					.act-state-inside
-						.act-state-word.h-state-word.te-state(data-width='130') Song Lessons
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
-		// REPEAT DEMO 
-		.layout-card-item.is-cancel
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-bl
-					.act-state-inside
-						.act-state-word.h-state-word.te-state Book Lessons
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
-		.layout-card-item
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-rll
-					.act-state-inside
-						.act-state-word.h-state-word.te-state Right Light Lessons
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
-		.layout-card-item
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-rl
-					.act-state-inside
-						.act-state-word.h-state-word.te-state Reading Lessons
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
-		.layout-card-item
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-fc
-					.act-state-inside
-						.act-state-word.h-state-word.te-state Free Conversation
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
-		.layout-card-item
-			.h-name 歐陽大明、歐陽曉英
-			.h-box.te-box
-				.act-state.act-state-sm.h-state.state-te-cl
-					.act-state-inside
-						.act-state-word.h-state-word.te-state CAP Lessons
-				.h-item.share-box
-					a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
-					.h-date.is-small.cancel-target.share-right
-						.h-cancel-date
-							| 取消日期：2018/11/01
-							span.h-cancel-time 09:00
-						a.mypage-btn-cancel.h-cancel-btn(href='')
-							| 取消
-							span.mypage-btn-cancel-x x
-				.h-item.align-right
-					.h-date.is-small 報名日期：2018/11/01 09:00
+			.act-state-inside
+				.act-state-word.h-state-word.te-state(data-width='130') Song Lessons
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00
+// REPEAT DEMO 
+.layout-card-item.is-cancel
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-bl
+			.act-state-inside
+				.act-state-word.h-state-word.te-state Book Lessons
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00
+.layout-card-item
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-rll
+			.act-state-inside
+				.act-state-word.h-state-word.te-state Right Light Lessons
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00
+.layout-card-item
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-rl
+			.act-state-inside
+				.act-state-word.h-state-word.te-state Reading Lessons
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00
+.layout-card-item
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-fc
+			.act-state-inside
+				.act-state-word.h-state-word.te-state Free Conversation
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00
+.layout-card-item
+	.h-name 歐陽大明、歐陽曉英
+	.h-box.te-box
+		.act-state.act-state-sm.h-state.state-te-cl
+			.act-state-inside
+				.act-state-word.h-state-word.te-state CAP Lessons
+		.h-item.share-box
+			a.h-msg.is-big.share-left.main-msg(href='') When You Are at the Zoo
+			.h-date.is-small.cancel-target.share-right
+				.h-cancel-date
+					| 取消日期：2018/11/01
+					span.h-cancel-time 09:00
+				a.mypage-btn-cancel.h-cancel-btn(href='')
+					| 取消
+					span.mypage-btn-cancel-x x
+		.h-item.align-right
+			.h-date.is-small 報名日期：2018/11/01 09:00

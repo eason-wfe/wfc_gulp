@@ -1,0 +1,96 @@
+li.layout-card-item.is-active
+  //
+    [^ 註1 ^]
+    不同活動形，視覺用色也不同，於 tag .layout-cardlink 加 class
+    .is-active
+    .is-show
+    .is-carnival
+    .is-camp
+    [^ 註2 ^]
+    狀態為「取消」時，在 tag .layout-cardlink 加 class .is-cancel 使視覺正確
+  |<?php include "html_model/activity/act-state_kr.html";?>
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 등록된
+      //
+        [^ 註 ^]
+        規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
+        請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
+  .mypage-btnbox
+    a.mypage-btn-google(href='') 주소
+    a.mypage-btn-cancel(href='')
+      | 취소
+      span.mypage-btn-cancel-x x
+  a.layout-card-link(href='')
+    | 이벤트짜 : 2018-11-25 16:00 / 수훤 
+    span Cristmas active (전연령)
+    p 서울특별시	강남구 역삼로25길 35 2층 (역삼동, 케이큐브타워)
+  .ed-info 1부모 2자녀，단내형、진호재、호명성、호명성
+  .ed-info.is-color 금액 27,000(신용 카드 결제)
+  .mypage-date-cancel
+    span 취소날짜
+    span.sign  :
+    span 2018-11-25
+    span 16:00
+// v demo v
+li.layout-card-item.is-show.is-cancel
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 취소
+  .mypage-btnbox
+    a.mypage-btn-google(href='') 주소
+    a.mypage-btn-cancel(href='')
+      | 취소
+      span.mypage-btn-cancel-x x
+  a.layout-card-link(href='')
+    | 이벤트짜 : 2018-11-25 16:00 / 수훤 
+    span Cristmas Show (전연령)
+    p 서울특별시	강남구 역삼로25길 35 2층 (역삼동, 케이큐브타워)
+  .ed-info 1부모 2자녀，단내형、진호재、호명성、호명성
+  .ed-info.is-color 금액 27,000(신용 카드 결제)
+  .mypage-date-cancel
+    span 취소날짜
+    span.sign  :
+    span 2018-11-25
+    span 16:00
+li.layout-card-item.is-carnival
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 등록된
+  .mypage-btnbox
+    a.mypage-btn-google(href='') 주소
+    a.mypage-btn-cancel(href='')
+      | 취소
+      span.mypage-btn-cancel-x x
+  a.layout-card-link(href='')
+    | 이벤트짜 : 2018-11-25 16:00 / 수훤 
+    span Cristmas carnival (전연령)
+    p 서울특별시	강남구 역삼로25길 35 2층 (역삼동, 케이큐브타워)
+  .ed-info 1부모 2자녀，단내형、진호재、호명성、호명성
+  .ed-info.is-color 좌석정보 : 5좌석 , 2층 RowC 30수、2층 RowC 31수、2층 RowC 32수、2층 RowC 33수、2층 RowC 34수
+  .ed-info.is-color 금액 27,000(신용 카드 결제)
+  .mypage-date-cancel
+    span 취소날짜
+    span.sign  :
+    span 2018-11-25
+    span 16:00
+li.layout-card-item.is-camp
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 등록된
+  .mypage-btnbox
+    a.mypage-btn-google(href='') 주소
+    a.mypage-btn-cancel(href='')
+      | 취소
+      span.mypage-btn-cancel-x x
+  a.layout-card-link(href='')
+    | 이벤트짜 : 2018-11-25 16:00 / 수훤 
+    span Cristmas camp (전연령)
+    p 서울특별시	강남구 역삼로25길 35 2층 (역삼동, 케이큐브타워)
+  .ed-info 1부모 2자녀，단내형、진호재、호명성、호명성
+  .ed-info.is-color 금액 27,000(신용 카드 결제)
+  .mypage-date-cancel
+    span 취소날짜
+    span.sign  :
+    span 2018-11-25
+    span 16:00

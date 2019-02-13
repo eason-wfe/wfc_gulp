@@ -94,10 +94,6 @@
       <?php include "html_model/tabmenu.html";?>
       <!--THE SAME--><?php include "html_model/floating-ui.html";?>
       <?php include "html_model/js-for-all.html";?>
-      <html>
-        <head></head>
-        <body></body>
-      </html>
       <!-- JS FOR THIS PAGE ONLY-->
       <script src="js/dweGraduates.js" type="text/javascript"></script>
       <script src="js/dwe.js"></script>

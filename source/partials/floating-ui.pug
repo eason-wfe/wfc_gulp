@@ -1,69 +1,66 @@
 //   ====================================
 	——— BACK TO TOP
 	===================================== 
-html
-	head
-	body
-		.scrolling
-			a.backToTop#backToTop(href='#pageTop')
-				i.fa.fa-arrow-up(aria-hidden='true')
-		//       ====================================
-			——— LOGIN MODAL
-			===================================== 
-		.modal.fade.customModal.lightbox-usual#loginModal(tabindex='-1', role='dialog')
-			//         
-				[^ 註 ^]
-				規則：tag .customModal + class .lightbox-usual
-				為全站共用燈箱所用
+.scrolling
+	a.backToTop#backToTop(href='#pageTop')
+		i.fa.fa-arrow-up(aria-hidden='true')
+//       ====================================
+	——— LOGIN MODAL
+	===================================== 
+.modal.fade.customModal.lightbox-usual#loginModal(tabindex='-1', role='dialog')
+	//         
+		[^ 註 ^]
+		規則：tag .customModal + class .lightbox-usual
+		為全站共用燈箱所用
 
-			.modal-dialog.layout-lightbox-vertical-middle
-				//          
-					[^ 註 ^]
-					規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
-					將 pop window 垂直置中
+	.modal-dialog.layout-lightbox-vertical-middle
+		//          
+			[^ 註 ^]
+			規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+			將 pop window 垂直置中
 
-				.modal-content
-					.panel
-						.panel-heading
-							h3.panel-title 會員登入
-							a.panel-close(href='') x
-						.panel-body
-							form(action='#', method='POST', role='form')
-								.form-group.formField
-									input.form-control(type='text', placeholder='請輸入會員編號')
-								.form-group.formField
-									input.form-control(type='password', placeholder='請輸入密碼')
-								.form-group.formField
-									input.btn.btn-block(type='submit', value='登入')
-								.form-group.formField
-									p.help-block
-										a(href='#forgetModal', data-toggle='modal') 忘記密碼 ?
-										//  href="#loginModal" data-toggle="modal" 
-										//       ====================================
-											——— FORGET PASSWORD MODAL
-											===================================== 
-										.modal.fade.customModal.lightbox-usual#forgetModal(tabindex='-1', role='dialog')
-											//         
-												[^ 註 ^]
-												規則：tag .customModal + class .lightbox-usual
-												為全站共用燈箱所用
+		.modal-content
+			.panel
+				.panel-heading
+					h3.panel-title 會員登入
+					a.panel-close(href='') x
+				.panel-body
+					form(action='#', method='POST', role='form')
+						.form-group.formField
+							input.form-control(type='text', placeholder='請輸入會員編號')
+						.form-group.formField
+							input.form-control(type='password', placeholder='請輸入密碼')
+						.form-group.formField
+							input.btn.btn-block(type='submit', value='登入')
+						.form-group.formField
+							p.help-block
+								a(href='#forgetModal', data-toggle='modal') 忘記密碼 ?
+								//  href="#loginModal" data-toggle="modal" 
+								//       ====================================
+									——— FORGET PASSWORD MODAL
+									===================================== 
+								.modal.fade.customModal.lightbox-usual#forgetModal(tabindex='-1', role='dialog')
+									//         
+										[^ 註 ^]
+										規則：tag .customModal + class .lightbox-usual
+										為全站共用燈箱所用
 
-											.modal-dialog.layout-lightbox-vertical-middle
-												//          
-													[^ 註 ^]
-													規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
-													將 pop window 垂直置中
+									.modal-dialog.layout-lightbox-vertical-middle
+										//          
+											[^ 註 ^]
+											規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+											將 pop window 垂直置中
 
-												.modal-content
-													.panel
-														.panel-heading
-															h3.panel-title 密碼查尋
-															a.panel-close(href='') x
-														.panel-body
-															form(action='#', method='POST', role='form')
-																.form-group.formField
-																	input.form-control(type='text', placeholder='請輸入會員編號或身份證')
-																.form-group.formField
-																	input.form-control(type='password', placeholder='請輸手機號碼')
-																.form-group.formField
-																	input.btn.btn-block(type='submit', value='確定')
+										.modal-content
+											.panel
+												.panel-heading
+													h3.panel-title 密碼查尋
+													a.panel-close(href='') x
+												.panel-body
+													form(action='#', method='POST', role='form')
+														.form-group.formField
+															input.form-control(type='text', placeholder='請輸入會員編號或身份證')
+														.form-group.formField
+															input.form-control(type='password', placeholder='請輸手機號碼')
+														.form-group.formField
+															input.btn.btn-block(type='submit', value='確定')

@@ -1,22 +1,19 @@
-html
-	head
-	body
-		.act-areabox
-			// open 
-			//        
-				[^ 註 ^]
-				規則: tag .act-areabox + class .open
-				用來控制 tag .act-areabox-tag 視覺箭頭 向上 / 向下
-				而 tag .act-areabox-tag 箭頭只在手機板顯示 , 桌機隱藏
+.act-areabox
+	// open 
+	//        
+		[^ 註 ^]
+		規則: tag .act-areabox + class .open
+		用來控制 tag .act-areabox-tag 視覺箭頭 向上 / 向下
+		而 tag .act-areabox-tag 箭頭只在手機板顯示 , 桌機隱藏
 
-			.act-areabox-switch
-				h3.act-areabox-name 台北
-				.act-areabox-tag
-			.act-areabox-box
-				.act-areabox-adsbox
-					.act-areabox-struc 台北_9樓大會議室台北_9樓大會議室
-					.act-areabox-address 台北市松山區八德路3 段32號9樓
-					a.act-areabox-map(href='https://goo.gl/maps/xXiKnqG8Gy22', target='_blank')
-				|<?php include "html_model/activity/act-datebox.html"?>
-				|<?php include "html_model/activity/act-datebox.html"?>
-				|<?php include "html_model/activity/act-datebox.html"?>
+	.act-areabox-switch
+		h3.act-areabox-name 台北
+		.act-areabox-tag
+	.act-areabox-box
+		.act-areabox-adsbox
+			.act-areabox-struc 台北_9樓大會議室台北_9樓大會議室
+			.act-areabox-address 台北市松山區八德路3 段32號9樓
+			a.act-areabox-map(href='https://goo.gl/maps/xXiKnqG8Gy22', target='_blank')
+		|<?php include "html_model/activity/act-datebox.html"?>
+		|<?php include "html_model/activity/act-datebox.html"?>
+		|<?php include "html_model/activity/act-datebox.html"?>

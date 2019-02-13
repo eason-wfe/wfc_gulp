@@ -1,0 +1,117 @@
+li.layout-card-item.is-lb
+  //
+    [^ 註 1 ^]
+    書本用色 , 在 .layout-card-item 上加 class
+    淺藍 .is-lb
+    藍   .is-b
+    綠   .is-g
+    淺綠 .is-lg
+    黃   .is-y
+    [^ 註 2 ^]
+    狀態為「審核中」時，在 tag .layout-cardlink 加 class .is-checking 使視覺正確
+    狀態為「失敗」時，在 tag .layout-cardlink 加 class .is-false 使視覺正確
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 합격
+      //
+        [^ 註 ^]
+        規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
+        請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
+  a.layout-card-link(data-toggle='modal', href='#cdModal')
+    span.cap-bookbox-icon-write
+    //
+      [^ 註 ^]
+      手寫作業為 .cap-bookbox-icon-write
+      錄音作業為 .cap-bookbox-icon-studio
+    span.is-ib Play Along ! 3-C :
+    span.is-ib.is-name What Can You Do With a Ball ?  
+    br
+    | 		Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-area |
+    |  Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+  .mypage-child
+    span 진호재
+    |  2018-10-24
+// v done v
+li.layout-card-item.is-b.is-checking
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 검토중
+  a.layout-card-link(data-toggle='modal', href='#cdModal')
+    span.cap-bookbox-icon-write
+    span.is-ib Play Along ! 3-C :
+    span.is-ib.is-name What Can You Do With a Ball ?  
+    br
+    | 		Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-area |
+    |  Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+  .mypage-child
+    span 호명성
+    |  2018-10-23
+li.layout-card-item.is-g.is-false
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 실패
+  a.layout-card-link(data-toggle='modal', href='#cdModal')
+    span.cap-bookbox-icon-write
+    span.is-ib Play Along ! 3-C :
+    span.is-ib.is-name What Can You Do With a Ball ?  
+    br
+    | 			Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-area |
+    |  Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-b 실패 이유 : 라디오가 명확하지 않다
+  .mypage-child
+    span 진호재
+    |  2018-10-15
+// audio
+li.layout-card-item.is-lg
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 합격
+  a.layout-card-link(data-toggle='modal', href='#cdModal')
+    span.cap-bookbox-icon-studio
+    span.is-ib Play Along ! 3-C :
+    span.is-ib.is-name What Can You Do With a Ball ?  
+    br
+    | 		Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-area |
+    |  Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+  .mypage-child
+    span 호명성
+    |  2018-10-10
+li.layout-card-item.is-y
+  .act-state.act-state-sm
+    .act-state-inside
+      .act-state-word(data-width='60') 합격
+  a.layout-card-link(data-toggle='modal', href='#cdModal')
+    span.cap-bookbox-icon-studio
+    span.is-ib Play Along ! 3-C :
+    span.is-ib.is-name What Can You Do With a Ball ?  
+    br
+    | 			Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+    span.is-area |
+    |  Jingle , Jingle , Jingle 
+    span.is-area |
+    |  Just Like Me
+  .mypage-child
+    span 호명성
+    |  2018-10-01

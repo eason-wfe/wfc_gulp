@@ -68,11 +68,7 @@
       <!--DIFFERENT--><?php include "html_model/footer.html";?>
       <?php include "html_model/tabmenu.html";?>
       <!--THE SAME--><?php include "html_model/floating-ui.html";?>
-      <?php include "html_model/js-for-all.html";?>
-      <html>
-        <head></head>
-        <body></body>
-      </html><?php include "html_model/cap/lightbox-cap.html";?>
+      <?php include "html_model/js-for-all.html";?><?php include "html_model/cap/lightbox-cap.html";?>
       <!-- JS FOR THIS PAGE ONLY-->
       <script src="js/capSignUp.js" type="text/javascript"></script>
     </div>

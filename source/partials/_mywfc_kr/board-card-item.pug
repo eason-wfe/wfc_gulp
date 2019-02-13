@@ -1,43 +1,40 @@
-html
-	head
-	body
-		li.layout-card-item.is-show.is-done
-			//        
+li.layout-card-item.is-show.is-done
+	//        
+		[^ 註 ^]
+		狀態為「取消」時，在 tag .layout-cardlink 加 class .is-done 使視覺正確
+
+	<?php include "html_model/activity/act-state_kr.html";?>
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='65') 답변완료
+			//            
 				[^ 註 ^]
-				狀態為「取消」時，在 tag .layout-cardlink 加 class .is-done 使視覺正確
+				規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
+				請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
 
-			<?php include "html_model/activity/act-state_kr.html";?>
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='65') 답변완료
-					//            
-						[^ 註 ^]
-						規則 : tag .act-state-word 需要一個最大寬來使介面顯示正確 ;
-						請依照實際可能狀態中 , 將字數最多時的寬填入 data-width 值中
-
-			a.layout-card-link(href='')
-				| 02
-				span 서비스
-				| 영유아와 동행하여 DWE를 "재생"하는 방법 ?
-			.mypage-date 작성일 : 2018-03-28 16:00
-			//is-color
-			.mypage-date-cancel
-				span 작성일
-				span.sign :
-				span 2018-11-25
-				span 16:00
-		// v demo v 
-		li.layout-card-item.is-show
-			.act-state.act-state-sm
-				.act-state-inside
-					.act-state-word(data-width='65') 대기중
-			a.layout-card-link(href='')
-				| 01
-				span 교재비/클럽회비 문의
-				| 전화를 사용하여 미국인에게 말하기 시작할 수있는 아이는 몇 살입니까? 전화 에세이와 재미있는 전화 에세이의 차이점은 무엇입니까?
-			.mypage-date 작성일 : 2018-03-28 16:00
-			.mypage-date-cancel
-				span 작성일
-				span.sign :
-				span 2018-11-25
-				span 16:00
+	a.layout-card-link(href='')
+		| 02
+		span 서비스
+		| 영유아와 동행하여 DWE를 "재생"하는 방법 ?
+	.mypage-date 작성일 : 2018-03-28 16:00
+	//is-color
+	.mypage-date-cancel
+		span 작성일
+		span.sign :
+		span 2018-11-25
+		span 16:00
+// v demo v 
+li.layout-card-item.is-show
+	.act-state.act-state-sm
+		.act-state-inside
+			.act-state-word(data-width='65') 대기중
+	a.layout-card-link(href='')
+		| 01
+		span 교재비/클럽회비 문의
+		| 전화를 사용하여 미국인에게 말하기 시작할 수있는 아이는 몇 살입니까? 전화 에세이와 재미있는 전화 에세이의 차이점은 무엇입니까?
+	.mypage-date 작성일 : 2018-03-28 16:00
+	.mypage-date-cancel
+		span 작성일
+		span.sign :
+		span 2018-11-25
+		span 16:00

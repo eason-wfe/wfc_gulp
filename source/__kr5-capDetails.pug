@@ -1,0 +1,98 @@
+doctype html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(href='css/capDetails_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										a(href='') My WFC
+									li.breadcrumb-item
+										a(href='') My Page
+									li.breadcrumb-item
+										| Cap application details
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-xs-12.col-md-3.sticky-top.aside-lb
+						.panel-heading.bg-color-5.border-color-5
+							h3.panel-title My Page
+							.aside-lb-close x
+						|<?php include "html_model/_mywfc_kr/mypage-aside.html";?>
+						script.
+							// 此 js 為 demo 用，請刪除
+							$(".art-list-f2").find(".art-list-f2-item").eq(3).find(".art-list-f2-link").addClass("now");
+					.col-xs-12.col-xs-12.col-md-9
+						.layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span Cap application details
+									span.shape.shape-right
+							.mypage-switchbox
+								.uikit-radio.is-1st
+									input.uikit-radio-input(name='type', type='radio', checked='')
+									label.uikit-radio-label All
+								.uikit-radio.is-2nd
+									input.uikit-radio-input(name='type', type='radio', checked='')
+									label.uikit-radio-label REPORT CAP
+								.uikit-radio.is-3rd
+									input.uikit-radio-input(name='type', type='radio')
+									label.uikit-radio-label AUDIO CAP
+								.dropGeneral.roundTwo.layout-drop-sm
+									select.select-drop
+										option(value='0') Family 
+										option(value='1') 진호재
+										option(value='2') 호명성
+								a.cd-history(data-toggle='modal', href='#cdModal') History
+							//
+								단내형 2018/10/24
+								검토중
+								Play Along ! 3-C :  What Can You Do With a Ball ?  | Jingle , Jingle , Jingle | Just Like Me
+								호명성 2018/10/24
+								합격
+								Sing Along ! Blue-C :  Mickey and His Friends
+							ul.layout-card
+								|<?php include "html_model/_mywfc_kr/cd-card-item.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+							.cd-btnbox
+								button.btn.layout-btn.layout-btn-sm.color-5(type='button')
+									| CAP 리포트 확인 »
+								.cd-btnbox-icon
+			
+			//
+				====================================
+				——— LIGHT BOX MODAL
+				=====================================
+			|<?php include "html_model/_mywfc_kr/lightbox-mypage-cap-details.html";?>
+			include partials/public_footer_kr.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/tmpAsideLb.js')
+			script(src='js/statePaddingShare.js')
+			script.
+				$('.select-drop').selectbox();

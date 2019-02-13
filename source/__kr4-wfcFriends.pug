@@ -1,0 +1,121 @@
+doctype html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='css/wfcFriends_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										| My Community
+									li.breadcrumb-item
+										| WFC 프랜즈
+									li.breadcrumb-itme
+										| WFC Friends
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-xs-12.col-md-3.aside-lb
+						.panel-heading.bg-color-4.border-color-4
+							h3.panel-title WFC Community
+							.aside-lb-close x
+						|<?php include "html_model/_comm_kr/comm-aside.html";?>
+					.col-xs-12.col-xs-12.col-md-9
+						.layout-main
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-4.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| All Friends
+									span.shape.shape-right
+							.friends-view(style='background-image: url(img/wfcfriends/all.jpg);')
+							ul.friends
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/1.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										img.friends-img(src='img/wfcfriends/2.jpg')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/3.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/4.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/5.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/6.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+								li.friends-item
+									a.friends-link(href='')
+										.friends-img(style='background-image: url(img/wfcfriends/7.jpg);')
+										p.friends-name Jimmy Jimmy Jimmy
+						hr
+						hr
+						hr
+						hr
+						hr
+						hr
+						h3 叔叔/阿姨介紹內頁
+						.layout-main.clearfix
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-4.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| Jimmy
+									span.shape.shape-right
+							.friends-view(style='background-image: url(img/wfcfriends/2.jpg);')
+							.friend-intro
+								.friend-from 來自美國
+								| 							來者不拒的Jimmy叔叔有一個關不起來的話閘子，他喜歡觀察、創意無限，透過穿著、表情，然後就會開始和小朋友天南地北地聊天喔！
+							button.btn.layout-btn(type='button')
+								| 목록보기
+			include partials/public_footer_kr.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/tmpAsideLb.js')
+			script.
+				$(function(){
+				// console.log(   );
+				$(".friends-view").css({"height": $(".friends-view").width() * 0.5046 })
+				$(".friends-img").css({"height": $(".friends-img").width() * 0.7467 })
+				});
+			script.
+				$(function(){
+				// 此 js 為演示用，請參考
+				var $target = $(".art-list-f2-item").eq(1);
+				$target.find(".art-list-f3").addClass("is-open");
+				$target.find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
+				$target.find(".art-list-f3-item").eq(6).find(".art-list-f3-link").addClass("now");
+				});

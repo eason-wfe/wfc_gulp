@@ -257,10 +257,6 @@
       <?php include "html_model/tabmenu.html";?>
       <!--THE SAME--><?php include "html_model/floating-ui.html";?>
       <?php include "html_model/js-for-all.html";?>
-      <html>
-        <head></head>
-        <body></body>
-      </html>
       <!-- JS FOR THIS PAGE ONLY-->
       <script src="assets/plugins/owl-carousel/owl.carousel.js" type="text/javascript"></script>
       <script src="js/actDesc.js" type="text/javascript"></script>

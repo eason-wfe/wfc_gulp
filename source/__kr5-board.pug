@@ -1,0 +1,169 @@
+doctype html
+html(lang='ko')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+		link(href='css/board_kr.css', rel='stylesheet')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2-kr.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') index
+									li.breadcrumb-item
+										a(href='') My WFC
+									li.breadcrumb-item
+										a(href='') My Page
+									li.breadcrumb-item
+										| 1:1 Board
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-xs-12.col-md-3.sticky-top.aside-lb
+						.panel-heading.bg-color-5.border-color-5
+							h3.panel-title My Page
+							.aside-lb-close x
+						|<?php include "html_model/_mywfc_kr/mypage-aside.html";?>
+						script.
+							// 此 js 為 demo 用，請刪除
+							$(".art-list-f2").find(".art-list-f2-item").eq(6).find(".art-list-f2-link").addClass("now");
+					.col-xs-12.col-xs-12.col-md-9
+						.layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| 1:1 Board
+									span.shape.shape-right
+							.mypage-switchbox
+								|<?php include "html_model/_mywfc_kr/mywfc-article-search.html";?>
+							ul.layout-card
+								|<?php include "html_model/_mywfc_kr/board-card-item.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+							.cd-btnbox
+								button.btn.layout-btn.layout-btn-sm.color-5(type='button')
+									| 글쓰기
+								.cd-btnbox-icon
+						hr
+						hr
+						hr
+						hr
+						hr
+						h3 發文 & 修改
+						.layout-main
+							//
+								[ ^ 注意 ^ ]
+								到 post 功能頁，用的是 .layout-main，不是 .layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| 1:1 Board
+									span.shape.shape-right
+							.post-titlebox
+								textarea 영유아와 동행하여 DWE를 "재생"하는 방법 ?
+							ul.post-contbox
+								textarea
+									| 클럽은 풍부한 학습 지원 서비스를 제공합니다.예를 들어, 미국 언어 활동, 전화 에세이 등은 아이들이 제품 컨텐츠를 쉽게 배울 수 있도록합니다.부모와 아빠는 자녀가 다시 재검토하는 것을 돕기 위해 "학습 지원 서비스"를 어떻게 사용합니까?
+							.post-btnbox
+								button.btn.layout-btn.layout-btn-sm.is-left(type='button')
+									| 목록
+								button.btn.layout-btn.layout-btn-sm.is-right(type='button')
+									| 저장하기
+						hr
+						hr
+						hr
+						hr
+						hr
+						h3 官方未回文前，可修改/刪除文章
+						.layout-main
+							//
+								[ ^ 注意 ^ ]
+								到 post 功能頁，用的是 .layout-main，不是 .layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| 1:1 Board
+									span.shape.shape-right
+							.post-titlebox
+								p.post-titlebox-p
+									| 영유아와 동행하여 DWE를 "재생"하는 방법 ?
+							ul.post-contbox
+								li.post-contbox-item
+									.post-contbox-name.is-color Member : 
+									.post-contbox-cont
+										| 클럽은 풍부한 학습 지원 서비스를 제공합니다.예를 들어, 미국 언어 활동, 전화 에세이 등은 아이들이 제품 컨텐츠를 쉽게 배울 수 있도록합니다.부모와 아빠는 자녀가 다시 재검토하는 것을 돕기 위해 "학습 지원 서비스"를 어떻게 사용합니까?
+									.post-contbox-time 2015-01-26 01:23
+							.post-btnbox
+								button.btn.layout-btn.layout-btn-sm.is-left(type='button')
+									| 목록
+								button.btn.layout-btn.layout-btn-sm.is-right(type='button')
+									| 삭제
+								button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
+									| 수정
+						hr
+						hr
+						hr
+						hr
+						hr
+						h3 官方回文後，不可修改/刪除文章
+						.layout-main
+							//
+								[ ^ 注意 ^ ]
+								到 post 功能頁，用的是 .layout-main，不是 .layout-main-card
+							|<?php include "html_model/uikit/aside-lb-open.html";?>
+							.sectionTitle.text-center.color-5.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span
+										| 1:1 Board
+									span.shape.shape-right
+							.post-titlebox
+								p.post-titlebox-p
+									| 영유아와 동행하여 DWE를 "재생"하는 방법 ?
+							ul.post-contbox
+								li.post-contbox-item
+									.post-contbox-name.is-color Member : 
+									.post-contbox-cont
+										| 클럽은 풍부한 학습 지원 서비스를 제공합니다.예를 들어, 미국 언어 활동, 전화 에세이 등은 아이들이 제품 컨텐츠를 쉽게 배울 수 있도록합니다.부모와 아빠는 자녀가 다시 재검토하는 것을 돕기 위해 "학습 지원 서비스"를 어떻게 사용합니까?
+									.post-contbox-time 2015-01-26 01:23
+								li.post-contbox-item
+									.post-contbox-name.is-color 관리자 : 
+									.post-contbox-cont
+										| 네 확인되었습니다
+									.post-contbox-time 2015-01-26 01:23
+							.post-btnbox
+								button.btn.layout-btn.layout-btn-sm.is-left(type='button')
+									| 목록
+			include partials/public_footer_kr.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/tmpAsideLb.js')
+			script(src='js/statePaddingShare.js')
+			script.
+				$('.select-drop').selectbox();

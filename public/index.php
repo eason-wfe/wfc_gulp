@@ -339,10 +339,6 @@ TW (x back-prefix -tw x)
       <?php include "html_model/tabmenu.html";?>
       <!--THE SAME--><?php include "html_model/floating-ui.html";?>
       <?php include "html_model/js-for-all.html";?>
-      <html>
-        <head></head>
-        <body></body>
-      </html>
       <!-- JS FOR INDEX ONLY-->
       <!-- slide show-->
       <script src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
