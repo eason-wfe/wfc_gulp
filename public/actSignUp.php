@@ -59,11 +59,13 @@
               </div>
               <h3 class="layout-title-level-3 color-1">活動費用</h3>
               <div class="layout-content mb-4">每位小孩NT$500元，父母免費，報名兩位小孩（含）以上者，第二位小孩一歲以下免費（仍須報名，以活動日期評定），活動適用CAP優惠專案。</div>
-              <div class="act-attention">
-                <h3 class="layout-title-level-3 color-1">注意事項</h3>
-                <div class="act-attention-arrow"> </div>
+              <div>
+                <div class="act-attention">
+                  <h3 class="layout-title-level-3 color-1">注意事項</h3>
+                  <div class="act-attention-arrow"> </div>
+                </div>
+                <div class="act-attention-content"><?php include "html_model/activity/act-attention.html";?></div>
               </div>
-              <div class="act-attention-content"><?php include "html_model/activity/act-attention.html";?></div>
             </div>
             <div class="layout-main layout-box-shadow">
               <h3 class="layout-title-level-3 color-1 mt-0">攜帶教具</h3>

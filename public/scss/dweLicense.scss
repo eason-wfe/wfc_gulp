@@ -1,0 +1,200 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit2";
+@import "uikit/tmp-pager";
+//
+.layout-title-level-3 {
+	display: block;
+}
+.dwel-title {
+	display: block;
+	width: 165px;
+	margin: 0 auto;
+	margin-bottom: 11px;
+	margin-top: 25px;
+	padding-top: 3px;
+	font-size: 20px;
+	img {
+		vertical-align: 1px;
+	}
+}
+.session-one {
+	overflow: visible!important;
+}
+/*
+========================
+========================
+========================
+========================
+========================
+========================
+*/
+// TABLE
+.dwel-table {
+	background-color: #fafafa;
+	th,
+	td {
+		border-right: 1px solid #ddd;
+	}
+	border: solid 1px #ddd;
+	border-right: none;
+}
+.dwel-thead {
+	background-color: #f1f1f1;
+}
+.dwel-table-middle {
+	vertical-align: middle !important;
+}
+.dwel-table-yellow {
+	background-color: #fcf8e3;
+}
+@media (max-width: 991px) {
+	.dwel-table-mobi-hidden {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.dwel-table {
+		width: 25%;
+		float: left;
+		font-size: 14px;
+	}
+
+	.dwel-table-pc-hidden {
+		display: none;
+	}
+}
+/*
+========================
+========================
+========================
+========================
+========================
+========================
+*/
+.dwel-list {
+	font-size: 0;
+}
+.dwel-item {
+	display: inline-block;
+	line-height: 1.3;
+}
+.dwel-number {
+	font-size: 13px;
+	color: #555;
+	text-align: right;
+	padding-bottom: 3px;
+}
+.dwel-license {
+	width: 100%;
+	background:{
+		size: cover;
+		position: center center;
+	}
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.dwel-info {
+	background-color: #d4f4ff;
+	color: #006e9e;
+	overflow: hidden;
+}
+@media (max-width: 991px) {
+	.dwel-list {
+		margin-top: 20px;
+	}
+	.dwel-item {
+		margin-bottom: 18px;
+	}
+	.dwel-info {
+		font-size: 13px;
+		padding: 8px;
+		height: 80px;
+		text-align: center;
+	}
+	.dwel-namebox {
+		display: table;
+		width: 100%;
+		height: 30px;
+		line-height: 1.2;
+	}
+	.dwel-name {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+@media (max-width: 359px) {
+	.dwel-info {
+		font-size: 12px;
+		padding: 5px;
+		height: 70px;
+	}
+} 
+@media (min-width: 992px) {
+	.dwel-list {
+		margin-top: 20px;
+	}
+	.dwel-item {
+		margin-bottom: 40px;
+	}
+	.dwel-info {
+		font-size: 15px;
+		padding: 12px;
+		height: 84px;
+	}
+	.dwel-name {
+		font-size: 14px;
+		letter-spacing: -.1px;
+	}
+}
+/*
+========================
+========================
+========================
+========================
+========================
+========================
+*/
+// LICENSE ONLY ( NOT LICENSE-PAGE )
+@media (max-width: 991px) {
+	.dwel-door {
+		.dwel-item {
+			&:nth-child(3),
+			&:nth-child(4) {
+				display: none;
+			}
+		}
+	}
+}
+/*
+========================
+========================
+========================
+========================
+========================
+========================
+*/
+// BUTTON
+.btn {
+	float: right;
+}
+.layout-main {
+	overflow: hidden;
+}
+@media (max-width: 991px) {
+	.btn {
+		margin-top: 4px;
+	}
+}
+/*
+========================
+========================
+========================
+========================
+========================
+========================
+*/
+.pagerArea {
+	& > .pager {
+		margin: 0 !important;
+	}
+}

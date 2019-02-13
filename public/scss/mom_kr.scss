@@ -1,0 +1,112 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/color-kr";
+@import "usual/unit3";
+@import "usual/title-deco3";
+// aside
+@import "uikit/tmp-aside";
+@import "uikit/tmp-aside-lb";
+@import "_parents_kr/parents-aside";
+// TITLE
+@import "_parents_kr/parents-title-icon";
+/* 
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+@media (max-width: 991px){
+	.layout-main{
+		padding:{
+			left: 15px;
+		}
+	}
+}
+@media (min-width: 992px){
+	.layout-main {
+		padding:{
+			right: 30px;
+			bottom: 40px;
+			left: 30px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+img{max-width: 100%;}
+@media (max-width: 767px){
+	.is-pc{
+		display: none;
+	}
+	.is-mobi{
+		display: block;
+		margin:{
+			left: auto;
+			right: auto;
+		}
+	}
+}
+@media (min-width: 768px){
+	.is-mobi{
+		display: none;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.hight-light{
+	padding: 5px;
+	border: solid 3px $color3;
+	border-radius: 17px;
+}
+.height-light-box{
+	border: solid 1px $color3;
+	text-align: center;
+	background-color: $color3-light;
+	border-radius: 12px;
+	line-height: 1.5;
+	font:{
+		size: 21px;
+		weight: bold;
+	}
+	padding: 10px;
+	span{
+		display: block;
+		font:{
+			size: 50px;
+		}
+		line-height: 38px;
+		&.first{
+			transform: translateY(7px);
+		}
+		&.second{
+			transform: translateY(15px);
+		}
+	}
+	b{
+		color: $color5-dark;
+	}
+	a{
+		color: #00a4ff;
+		text-decoration: underline!important;
+		word-wrap: break-word;
+		&:hover{
+			opacity: .8;
+		}
+	}
+}
+@media (max-width: 767px){
+	.height-light-box{
+		line-height: 1.3;
+	}
+}

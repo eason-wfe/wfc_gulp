@@ -1,0 +1,101 @@
+#calDet {
+	.modal-dialog {
+		// box width here
+		// width: 80%;
+		margin: 30px auto;
+	}
+	.modal-content,
+	.panel {
+		// for lightbox layout
+	}
+	.panel-heading {
+		// title bg color here
+		background-color: $color1;
+	}
+	.panel-title {
+		// title font size here
+		font-size: 22px;
+	}
+	.panel-close {
+		// closer collor here
+		color: $color1;
+	}
+	.panel-body {
+		overflow: hidden;
+	}
+}
+@media (max-width: 991px){
+	#calDet {
+		.modal-dialog{
+			width: 90%;
+		}	
+	}	
+}
+@media (min-width: 992px){
+	#calDet {
+		.modal-dialog{
+			width: 930px;
+		}
+		.panel-body{
+			padding: 30px 50px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// UI
+.apply-lb-event-sort{
+	padding-bottom: 10px;
+	border-bottom: solid 1px #eee;
+	margin-bottom: 25px;
+}
+.apply-lb-address{
+	background-color: #e1e4d9;
+	font:{
+		size: 18px;
+		line-height: 1;
+		weight: bold;
+	}
+	padding: 12px 50px 12px 12px;
+	position: relative;
+	margin: 5px 0;
+}
+.apply-lb-region{
+	margin-bottom: 20px;
+}
+.mypage-btn-google{
+	// position: absolute;
+	right: 12px;top: 12px;
+	background-color: #fff;
+	vertical-align: -3px;
+	margin-left: 5px;
+}
+.apply-lb-time{
+	overflow: hidden;
+}
+.apply-lb-tlink{
+	color: #ed1e79;
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	&:hover{
+		color: #fff;
+		background-color: #ed1e79;
+	}
+}
+@media (min-width: 992px){
+	.apply-lb-event-sort{
+		width: calc( 33.333% - 16px );
+		float: left;
+		margin-right: 24px;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+}

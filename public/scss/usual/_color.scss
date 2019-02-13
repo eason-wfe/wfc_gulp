@@ -1,0 +1,51 @@
+// eason
+$color-light-block: #333;
+// TEMPLATE
+$color1: #8fc118;
+$color2: #37aaea;
+$color3: #f0c24b;
+$color4: #7979c6;
+$color5: #ff9292;//#e85858
+$color6: #ff59a7;
+$color7: #ed1e79;
+$color8: #ff8dc4;
+// light
+$color1-light: #d7eca7;
+$color2-light: #9bdbff;
+$color3-light: #ffe49d;
+$color4-light: #c8bfef;
+$color5-light: #ffe4e4;//#f8bfbf
+$color6-light: #ffb1b1;
+// light-light
+$color1-light-light: #fbfff2;
+$color2-light-light: #f4fbff;
+$color3-light-light: #fffaf1;
+$color4-light-light: #eeeaff;
+$color5-light-light: #fff6f6;
+// dark
+$color1-dark: #5c8103;
+$color2-dark: #0b6494;
+$color3-dark: #fca903;
+$color4-dark: #494989;
+$color5-dark: #e85858;//#a10f0f
+$color6-dark: #99084b;
+$color7-dark: #c90f5f;
+$color8-dark: #ff7cbb;
+// dark deep
+$color3-dark-deep: #fc9003;
+//text
+$color3-text: #422e01;
+$color4-text: #2b2b70;
+// mixin 
+%color-unclick {
+	background-color: #ededed !important;
+	color: #999 !important;
+	cursor: default;
+}
+/*
+==============================
+==============================
+==============================
+==============================
+==============================
+*/

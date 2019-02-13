@@ -1,0 +1,50 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit5";
+// @import "usual/title-deco5-2";
+@import "uikit/tmp-pager";
+// ASIDE MENU
+@import "uikit/tmp-aside";
+@import "uikit/tmp-aside-lb";
+@import "mypage/mypage-aside";
+// TITLE
+@import "_mywfc_kr/mypage-title-icon";
+// UI
+@import "mypage/aside-file";
+// faq ui
+@import "uikit/uikit-faqbox";
+@import "_mywfc_kr/tefaq-radio";
+.faqbox-con{
+	padding:{
+		right: 15px;
+	}
+}
+.is-hl-1{
+	color: #3092ca;
+}
+.is-hl-2{
+	color: #f00;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.faqbox-idx{
+	background:{
+		image: none!important;
+	}
+	padding: 0;
+	text-align: center;
+	width: 45px;
+}
+.faqbox-con{
+	padding:{
+		left: 47px;
+	}
+	&:after{
+		left: 15px;
+	}
+}

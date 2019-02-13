@@ -1,0 +1,233 @@
+// NAVBAR LOGO
+.navbar-header
+	button.navbar-toggle.layout-navbar-arrow-mobi(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+		span.sr-only Toggle navigation
+		span.icon-bar
+		span.icon-bar
+		span.icon-bar
+	a.navbar-brand(href='index.html')
+		img(src='img/logo-wfc.png')
+// NAVBAR COLLAPSE
+.collapse.navbar-collapse.navbar-ex1-collapse
+	ul.nav.navbar-nav.navbar-right
+		// LOG BAR MOBI
+		li.logbar-m-visibility
+			.logbar-m
+				.logbar-m-row1
+					a.logbar-m-link(href='#loginModal', data-toggle='modal') 約定轉帳
+					.logbar-spacer
+					.logbar-m-out(style='display: ;')
+						a.logbar-m-link(href='#') 登入
+						a.logbar-m-link(href='https://q4u.worldfamily.com.tw/landing4/LandingP4r_0806.aspx?source=wf-wfc', target='_blank') 申請
+						a.logbar-m-link(href='#') 忘記密碼
+					.logbar-m-in(style='display: none;')
+						span.logbar-m-welcome 某某人 您好﹗
+						a.logbar-m-link(href='#') 登出
+				.logbar-m-row2
+					a.logbar-m-link(href='#') 美語叔叔阿姨
+					a.logbar-m-link(href='#') Zippy 家族
+					.logbar-spacer
+					.logbar-m-share
+						a.logbar-m-link.logbar-m-share-fb(href='#')
+							i.fa.fa-facebook(aria-hidden='true')
+						a.logbar-m-link.logbar-m-share-ig(href='#')
+							i.fa.fa-instagram(aria-hidden='true')
+		// 1
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-1
+			// open
+			a.dropdown-toggle.navbar-menu-1(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title 美語活動
+			ul.dropdown-menu.dropdown-menu-left
+				// 1.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 美語嘉年華
+				// 1.2
+				li.dropdown.dropdown-submenu
+					// open
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 週末活動
+						i.fa.fa-chevron-right(aria-hidden='true')
+					ul.dropdown-menu
+						// 1.2.1
+						li
+							a(href='') 跟著玩活動
+						// 1.2.2
+						li
+							a(href='') 布偶劇場
+						// 1.2.3
+						li
+							a(href='') 人偶秀
+						// 1.2.4
+						li
+							a(href='') CAP 童歡會
+				// 1.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 迷你活動
+						i.fa.fa-chevron-right(aria-hidden='true')
+					ul.dropdown-menu
+						// 1.3.1
+						li
+							a(href='#') 寶貝玩玩
+						// 1.3.2
+						li
+							a(href='#') 來趣玩活動
+						// 1.3.3
+						li
+							a(href='#') 翻轉小世界
+				// 1.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 營隊活動
+		// 2
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-2
+			// open
+			a.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-delay='300', data-close-others='true', aria-expanded='false')
+				span.navbar-title 美語學習
+			ul.dropdown-menu.dropdown-menu-left
+				// 2.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| Face Call
+				// 2.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 電話美語
+				// 2.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| TE for Mommy & Daddy
+				// 2.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| WF Club Library
+				// 2.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| ABC Club
+				// 2.6
+				li.dropdown.dropdown-submenu
+					// open
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| CAP 親子學習計畫
+						i.fa.fa-chevron-right(aria-hidden='true')
+						i.fa.fa-chevron-left(aria-hidden='true')
+					ul.dropdown-menu
+						// 2.6.1
+						li
+							a(href='#') 記錄作業
+						// 2.6.2
+						li
+							a(href='#') 錄音作業
+				// 2.7
+				li.dropdown.dropdown-submenu
+					// open
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| DWE 畢業
+						i.fa.fa-chevron-right(aria-hidden='true')
+					ul.dropdown-menu
+						// 2.7.1
+						li
+							a(href='#') 畢業榮譽榜
+							// 2.7.1.1 is 歷屆畢業生
+							// 2.7.2
+							li
+								a(href='#') 美語檢定
+		// 3
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-3
+			a.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-delay='300', data-close-others='true', aria-expanded='false')
+				span.navbar-title 多媒體學習
+			ul.dropdown-menu.dropdown-menu-left.dropdown-submenu-left-mg-lg
+				// 3.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| Super Fun
+				// 3.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 歡樂TV
+				// 3.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| ABC Channel
+				// 3.4
+				li.dropdown.dropdown-submenu.nav-mobi-hidden
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 美語遊戲
+				// 3.5
+				li.dropdown.dropdown-submenu.nav-mobi-hidden
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 美語故事
+		// 4
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-4
+			a.dropdown-toggle(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title 會員服務
+			ul.dropdown-menu.dropdown-menu-right.dropdown-submenu-left-mg-lg
+				// 4.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 會員交流園地
+				// 4.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 親子教育百科
+				// 4.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 會員經驗分享
+				// 4.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 世界育兒觀
+				// 4.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 寰宇家庭雜誌
+				// 4.6
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 家長工作坊
+		// 5
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-5
+			// open
+			a.dropdown-toggle(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title 我的專區
+			ul.dropdown-menu.dropdown-menu-right.dropdown-submenu-left-mg-lg
+				// 5.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 新手上路
+				// 5.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 活動紀錄
+				// 5.3
+				li.dropdown.dropdown-submenu
+					// open
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 學習點數
+						i.fa.fa-chevron-right(aria-hidden='true')
+						i.fa.fa-chevron-left(aria-hidden='true')
+					ul.dropdown-menu
+						// 5.3.1
+						li
+							a(href='#') 學習點數
+						li
+							a(href="#") 兌換專區
+				// 5.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 會員須知
+				// 5.6
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 常見問題
+				// 5.7
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 特別保證
+				// 5.9
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 電子發票

@@ -1,0 +1,35 @@
+// eason
+/* 每頁環境色設定 */
+/* v 麵包屑背景色 v */
+.layout-breadcrumb-box {
+	background-color: $color3;
+}
+/* navbar menu arrow */
+@media (max-width: 767px) {
+	.layout-navbar-arrow-mobi:after {
+		border-color: transparent transparent $color3;
+	}
+}
+@media (min-width: 768px) {
+	/* color-1 ~ 5 */
+	.color-3.layout-navbar-arrow-pc:after {
+		border-color: transparent transparent $color3;
+	}
+}
+/*note:
+@768 : hamber menu
+@991 : col 1 & col 2
+*/
+/*
+=======================
+=======================
+=======================
+=======================
+=======================
+=======================
+*/
+.breadcrumb li,
+.breadcrumb li a,
+.breadcrumb li + li:before{
+	color: $color3-text;
+}

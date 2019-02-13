@@ -41,20 +41,57 @@
                 <h2><span class="shape shape-left"></span><span>網站地圖</span><span class="shape shape-right"></span></h2>
               </div>
               <div class="layout-sharewidth item-234">
-                <div class="card layout-sharewidth-item">1
-                  <div class="mapicon mapicon-1"></div>
+                <div class="card layout-sharewidth-item">
+                  <div class="mapicon mapicon-1"></div>美語活動
+                  <ul>
+                    <li><a href="actDesc.php">美語嘉年華</a></li>
+                    <li><a href="actDesc.php">週末活動</a></li>
+                    <li><a href="actDesc.php">迷你活動</a></li>
+                    <li><a href="actDesc.php">營隊活動</a></li>
+                  </ul>
                 </div>
-                <div class="card layout-sharewidth-item">2
-                  <div class="mapicon mapicon-2"></div>
+                <div class="card layout-sharewidth-item">
+                  <div class="mapicon mapicon-2"></div>美語學習
+                  <ul>
+                    <li><a href="fc.php">Face Call</a></li>
+                    <li><a href="te.php">電話美語</a></li>
+                    <li><a href="wfcLibrary.php">WF Club Library</a></li>
+                    <li><a href="cap.php">CAP 親子學習計畫</a></li>
+                    <li><a href="dwe.php">DWE 畢業</a></li>
+                  </ul>
                 </div>
-                <div class="card layout-sharewidth-item">3
-                  <div class="mapicon mapicon-3"></div>
+                <div class="card layout-sharewidth-item">
+                  <div class="mapicon mapicon-3"></div>多媒體學習
+                  <ul>
+                    <li><a href="#">Super Fun</a></li>
+                    <li><a href="#">歡樂TV</a></li>
+                    <li><a href="#">ABC Channel</a></li>
+                    <li><a href="#">美語遊戲</a></li>
+                    <li><a href="#">美語故事</a></li>
+                  </ul>
                 </div>
-                <div class="card layout-sharewidth-item">4
-                  <div class="mapicon mapicon-4"></div>
+                <div class="card layout-sharewidth-item">
+                  <div class="mapicon mapicon-4"></div>會員服務
+                  <ul>
+                    <li><a href="#">會員交流園地</a></li>
+                    <li><a href="#">親子教育百科</a></li>
+                    <li><a href="#">會員經驗分享</a></li>
+                    <li><a href="#">世界育兒觀</a></li>
+                    <li><a href="#">寰宇家庭雜誌</a></li>
+                    <li><a href="#">家長工作坊</a></li>
+                  </ul>
                 </div>
-                <div class="card layout-sharewidth-item">5
-                  <div class="mapicon mapicon-5"></div>
+                <div class="card layout-sharewidth-item">
+                  <div class="mapicon mapicon-5"></div>我的專區
+                  <ul>
+                    <li><a href="#">新手上路</a></li>
+                    <li><a href="#">活動紀錄</a></li>
+                    <li><a href="#">學習點數</a></li>
+                    <li><a href="#">會員須知</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">特別保證</a></li>
+                    <li><a href="#">電子發票</a></li>
+                  </ul>
                 </div>
               </div>
             </div>

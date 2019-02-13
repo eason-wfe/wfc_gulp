@@ -1,0 +1,39 @@
+// COLOR BAR
+.container-fluid.color-bar.top-fixed.clearfix
+	.row
+		//- for( var i=1;i<7;i++)
+			//- .col-sm-1.col-xs-2.bg-color-#{i} fix bar
+		.col-sm-1.col-xs-2.bg-color-1 fix bar
+		.col-sm-1.col-xs-2.bg-color-2 fix bar
+		.col-sm-1.col-xs-2.bg-color-3 fix bar
+		.col-sm-1.col-xs-2.bg-color-4 fix bar
+		.col-sm-1.col-xs-2.bg-color-5 fix bar
+		.col-sm-1.col-xs-2.bg-color-6 fix bar
+		.col-sm-1.bg-color-1.hidden-xs fix bar
+		.col-sm-1.bg-color-2.hidden-xs fix bar
+		.col-sm-1.bg-color-3.hidden-xs fix bar
+		.col-sm-1.bg-color-4.hidden-xs fix bar
+		.col-sm-1.bg-color-5.hidden-xs fix bar
+		.col-sm-1.bg-color-6.hidden-xs fix bar
+// LOG BAR PC
+.top-info-bar.hidden-xs
+	.container
+		.logbar-pc
+			a.logbar-pc-link(href=header.header1[0].url , data-toggle='modal') #{header.header1[0].name}
+			.logbar-spacer
+			.logbar-pc-out
+				a.logbar-pc-link(href=header.header1[1].url) #{header.header1[1].name}
+				a.logbar-pc-link(href='https://q4u.worldfamily.com.tw/landing4/LandingP4r_0806.aspx?source=wf-wfc', target='_blank') 申請
+				a.logbar-pc-link(href=header.header1[2].url) #{header.header1[2].name}
+			.logbar-pc-in(style='display: none;')
+				span.logbar-pc-welcome 某某人 您好﹗
+				a.logbar-pc-link(href=header.header1[3].url) #{header.header1[3].name}
+			.logbar-spacer
+			a.logbar-pc-link(href=header.header1[4].url) #{header.header1[4].name}
+			a.logbar-pc-link(href=header.header1[5].url) #{header.header1[5].name}
+			.logbar-spacer
+			.logbar-pc-share
+				a.logbar-pc-link.logbar-pc-share-fb(href='#')
+					i.fa.fa-facebook(aria-hidden='true')
+				a.logbar-pc-link.logbar-pc-share-ig(href='#')
+					i.fa.fa-instagram(aria-hidden='true')

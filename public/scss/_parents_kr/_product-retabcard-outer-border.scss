@@ -1,0 +1,31 @@
+// RE TABLE CARD BORDER-COLOR
+$border-color: #c5e9ff;
+@mixin border-tl{
+	border-top-color: $border-color;
+	border-left-color: $border-color;
+}
+@mixin border-br{
+	border-right-color: $border-color;
+	border-bottom-color: $border-color;
+}
+@media (max-width: 991px){
+	.retabcard-cell-title{
+		border-right: $border-color;
+	}
+	.retabcard-row{
+		@include border-tl;
+		border-right-color: $border-color;
+		background-color: #f3f3f3;
+	}
+	.retabcard-cell {
+		border-bottom-color: $border-color;
+	}
+}
+@media (min-width: 992px){
+	.retabcard{
+		@include border-tl;
+	}
+	.retabcard-cell{
+		@include border-br;
+	}
+}

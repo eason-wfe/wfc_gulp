@@ -1,0 +1,217 @@
+// NAVBAR LOGO
+	style.
+		.dropdown-submenu a{
+		/* color: #000!important; */
+		}
+.navbar-header
+	button.navbar-toggle.layout-navbar-arrow-mobi(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+		span.sr-only Toggle navigation
+		span.icon-bar
+		span.icon-bar
+		span.icon-bar
+	a.navbar-brand(href='index.html')
+		img(src='img/logo-wfc.png')
+// NAVBAR COLLAPSE
+.collapse.navbar-collapse.navbar-ex1-collapse
+	ul.nav.navbar-nav.navbar-right
+		// LOG BAR MOBI
+		li.logbar-m-visibility
+			.logbar-m
+				.logbar-m-row1
+					a.logbar-m-link(href='#loginModal', data-toggle='modal') 約定轉帳
+					.logbar-spacer
+					.logbar-m-out(style='display: ;')
+						a.logbar-m-link(href='#') 登入
+						a.logbar-m-link(href='https://q4u.worldfamily.com.tw/landing4/LandingP4r_0806.aspx?source=wf-wfc', target='_blank') 申請
+						a.logbar-m-link(href='#') 忘記密碼
+					.logbar-m-in(style='display: none;')
+						span.logbar-m-welcome 某某人 您好﹗
+						a.logbar-m-link(href='#') 登出
+				.logbar-m-row2
+					a.logbar-m-link(href='#') 美語叔叔阿姨
+					a.logbar-m-link(href='#') Zippy 家族
+					.logbar-spacer
+					.logbar-m-share
+						a.logbar-m-link.logbar-m-share-fb(href='#')
+							i.fa.fa-facebook(aria-hidden='true')
+						a.logbar-m-link.logbar-m-share-ig(href='#')
+							i.fa.fa-instagram(aria-hidden='true')
+		// 1
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-1
+			// open
+			a.dropdown-toggle.navbar-menu-1(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title WFC EVENT
+			ul.dropdown-menu.dropdown-menu-left
+				// 1.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| Event 소개
+				// 1.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 쇼
+				// 1.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 액티비티
+				// 1.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 카니발
+				// 1.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 캠프
+				// 1.6
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 신청하기
+		// 2
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-2
+			// open
+			a.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-delay='300', data-close-others='true', aria-expanded='false')
+				span.navbar-title Fun with English
+			ul.dropdown-menu.dropdown-menu-left
+				// 2.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=850', data-toggle='dropdown')
+						| 전화영어
+				// 2.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=848', data-toggle='dropdown')
+						| WFC library
+				// 2.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=854', data-toggle='dropdown')
+						| CAP
+				// 2.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=940', data-toggle='dropdown')
+						| 비디오
+		// 3
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-3
+			a.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-delay='300', data-close-others='true', aria-expanded='false')
+				span.navbar-title PARENTS SUPPORT
+			ul.dropdown-menu.dropdown-menu-left.dropdown-submenu-left-mg-lg
+				// 3.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown', target='_blank')
+						| Club DFS
+				// 3.2
+				li.dropdown.dropdown-submenu
+					a(href='https://wfclub.co.kr/?page_id=936&tab=2', data-toggle='dropdown', target='_blank')
+						| Product Guide
+				// 3.3
+				li.dropdown.dropdown-submenu
+					a(href='https://wfclub.co.kr/?page_id=852', data-toggle='dropdown', target='_blank')
+						| Mom to Mom
+				// 3.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| Advice Card
+				// 3.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=842', data-toggle='dropdown')
+						| 회원보증제도
+		// 4
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-4
+			a.dropdown-toggle(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title WFC Community
+			ul.dropdown-menu.dropdown-menu-right.dropdown-submenu-left-mg-lg
+				// 4.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='https://wfclub.co.kr/?page_id=844', data-toggle='dropdown')
+						| 공지사항
+				// 4.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| WFC 프랜즈
+					ul.dropdown-menu
+						// 4.2.1
+						li
+							a(href='') WF Club Friends
+						// 4.2.2
+						li
+							a(href='') Zippy Family
+				// 4.3
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| 온라인샵
+				// 4.4
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| DWE 뽀개기
+				// 4.5
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| Club 회원규정
+		// 5
+		li.dropdown.singleDrop.layout-navbar-arrow-pc.color-5
+			// open
+			a.dropdown-toggle(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.navbar-title MY WFC
+			ul.dropdown-menu.dropdown-menu-right.dropdown-submenu-left-mg-lg
+				// 5.1
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| My Page
+					ul.dropdown-menu
+						// 5.1.1
+						li
+							a(href='https://wfclub.co.kr/?page_id=863&tab=1') My profile (pdf1102 p13)
+						// 5.1.2
+						li
+							a(href='#') Activity application details
+						// 5.1.3
+						li
+							a(href='#') Show application details
+						// 5.1.4
+						li
+							a(href='#') Carnival application details
+						// 5.1.5
+						li
+							a(href='#') TE details
+						// 5.1.6
+						li
+							a(href='#') Event Coupon detail
+						// 5.1.7
+						li
+							a(href='#') Cap application details
+						// 5.1.8
+						li
+							a(href='#') Shop application detail
+						// 5.1.9
+						li
+							a(href='#') After service application
+						// 5.1.10
+						li
+							a(href='https://wfclub.co.kr/?page_id=863&tab=7') 1:1 board
+						// 5.1.11
+						li
+							a(href='#') Birthday Card
+						// 5.1.12
+						li
+							a(href='#') Advice Card
+						// 5.1.13
+						li
+							a(href='#') Magazine
+						// 5.1.14
+						li
+							a(href='#') Children's day present
+				// 5.2
+				li.dropdown.dropdown-submenu
+					a.dropdown-toggle(href='', data-toggle='dropdown')
+						| FAQ
+					ul.dropdown-menu
+						// 5.2.1
+						li
+							a(href='https://wfclub.co.kr/?page_id=850&tab=3') TE
+						// 5.2.2
+						li
+							a(href='https://wfclub.co.kr/?page_id=861&tab=2') EVENT
+						// 5.2.3
+						li
+							a(href='https://wfclub.co.kr/?page_id=854&tab=3') CAP
+						// 5.2.4
+						li
+							a(href='https://wfclub.co.kr/?page_id=852&tab=2') MOM TO MOM

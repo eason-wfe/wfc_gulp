@@ -1,0 +1,166 @@
+@import "usual/im";
+@import "usual/color";
+@import "usual/color-kr";
+@import "usual/unit5";
+@import "usual/title-deco5";
+// aside
+@import "uikit/tmp-aside";
+@import "uikit/tmp-aside-lb";
+@import "_mywfc_kr/mywfc-aside";
+// pager
+@import "uikit/tmp-pager";
+// TITLE
+@import "_mywfc_kr/mypage-title-2";
+// DROP DOWN
+@import "uikit/tmp-dropdown";
+@import "_mywfc_kr/mywfc-drop";
+// FAQ BOX
+@import "uikit/uikit-faqbox";
+@import "_mywfc_kr/tefaq-radio";
+// RADIO UIKIT
+@import "uikit/uikit-checkbox-radio";
+@import "_mywfc_kr/mywfc-radio";
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+@media (max-width: 991px){
+	.layout-main{
+		padding-top: 0;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// TITLE
+@media (max-width: 359px){
+	.sectionTitle h2 span {
+		padding-top: 25px;
+  }
+}
+/*
+===============================
+===============================
+===============================
+===============================
+===============================
+*/
+// DROPDOWN
+.te-drop{
+	font-size: 0;
+	input{
+		line-height: 30px;
+		border: solid 1px $color5-light;
+		border-radius: 16px 0 0 16px;
+		font-size: 15px;
+		text-indent: 12px;
+		width: 142px;
+	}
+	button{
+		padding:{
+			top: 6px;
+			bottom: 5px;
+		}
+		border-radius: 0 16px 16px 0;
+		vertical-align: top;
+		width: 85px;
+	}
+	.dropGeneral{
+		width: 75px;
+	}
+}
+.ipt-btn{
+	button{
+		color: #333;
+		background-color: $color5-light;
+		&:hover{
+			background-color: $color5;
+		}			
+	}
+}
+@media (max-width: 991px){
+	.te-drop{
+		font-size: 0;
+		input{
+			width: calc( 100% - 85px );
+		}
+	}
+	.ipt-btn{
+		margin:{
+			top: 10px;
+		}
+	}
+}
+@media (min-width: 992px){
+	.dropGeneral{
+		vertical-align: top;
+	}
+	.te-drop{
+		text-align: right;
+		input{
+			margin:{
+				left: 10px;
+			}
+		}
+	}
+	.ipt-btn{
+		display: inline-block;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.uikit-radio{
+	display: inline-block;
+	padding:{
+		right: 16px;
+	}
+	&.is-sta{
+		border-radius: 16px 0 0 16px;
+	}
+	&.is-mid{
+		border-left: solid 2px #fff;
+		border-right: solid 2px #fff;
+		border-radius: 0;
+	}
+	&.is-end{
+		border-radius: 0 16px 16px 0;
+	}
+}
+////
+.te-unit{
+	font-size: 0;
+	text-align: right;
+	margin:{
+		top: 13px;
+		bottom: 15px;
+	}
+}
+@media (max-width: 991px){
+	.te-unit{
+		.uikit-radio{
+			display: none;
+		}
+		.dropGeneral{
+			min-width: 90px;
+		}
+	}
+}
+@media (min-width: 992px){
+	.te-unit{
+		.dropGeneral{
+			display: none;
+		}
+	}
+}

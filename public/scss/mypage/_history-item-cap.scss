@@ -1,0 +1,29 @@
+.cap-sort-icon{
+	display: inline-block;
+	color: #f19600;
+	span{
+		@include img-path-ratio("cap/sprite.png",2);
+		width: 21px;
+		height: 21px;
+		display: inline-block;
+		vertical-align: middle;
+		margin:{
+			right: 5px;
+			top: -5px;
+		}
+	}
+}
+.cap-sort-write{
+	span{
+		background:{
+			position: 0 0;
+		}		
+	}
+}
+.cap-sort-studio{
+	span{
+		background:{
+			position: 0 -25px;
+		}
+	}
+}
