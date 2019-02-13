@@ -1,50 +1,47 @@
 //   ====================================
-  ——— CAP MODAL
-  ===================================== 
+	——— CAP MODAL
+	===================================== 
 html
-  head
-  body
-    .modal.fade.customModal.lightbox-cap.cap-book-5#capModal(tabindex='-1', role='dialog')
-      //         
-        [^ 註 ^]
-        規則：在 tag .lightbox-cap 「另加」以下 class：
-        淺藍 cap-book-1
-        藍   cap-book-2
-        綠   cap-book-3
-        青綠 cap-book-4
-        黃   cap-book-5
-        
-      .modal-dialog
-        .modal-content
-          .panel
-            .panel-heading
-              h3.panel-title 綠色CAP (Green CAP)
-              a.panel-close(href='') x
-            .panel-body
-              .lightbox-cap-talk 審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過
-              .lightbox-cap-unit
-                .cap-bookbox-icon-studio
-                //                   
-                  						[^ 註 ^]
-                  						規則：以上 tag 加入以下 class，二擇一即可
-                  						筆記作業 class = cap-bookbox-icon-write
-                  						錄音作業 class = cap-bookbox-icon-studio
-                  						
-                .lightbox-cap-name Sing Along! Blue-C
-              h3.layout-title-level-3 請至少選擇1項錄音名稱：
-              .lightbox-cap-checkarea
-                |  
-                //?php include "html_model/cap/lightbox-cap-checkbox.html";?
-                |  
-                //?php include "html_model/cap/lightbox-cap-checkbox.html";?
-                |  
-              h3.layout-title-level-3 上傳音檔 :
-              .lightbox-cap-filebox
-                input.lightbox-cap-file(type='file')
-                |  
-                input.lightbox-cap-file(type='file')
-                |  
-                input.lightbox-cap-file(type='file')
-              button.btn.layout-btn.layout-btn-md(type='button') 送出
-              .lightbox-cap-close
-                a.lightbox-cap-close-link(href='') 關閉
+	head
+	body
+		.modal.fade.customModal.lightbox-cap.cap-book-5#capModal(tabindex='-1', role='dialog')
+			//         
+				[^ 註 ^]
+				規則：在 tag .lightbox-cap 「另加」以下 class：
+				淺藍 cap-book-1
+				藍   cap-book-2
+				綠   cap-book-3
+				青綠 cap-book-4
+				黃   cap-book-5
+
+			.modal-dialog
+				.modal-content
+					.panel
+						.panel-heading
+							h3.panel-title 綠色CAP (Green CAP)
+							a.panel-close(href='') x
+						.panel-body
+							.lightbox-cap-talk 審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過審核已通過
+							.lightbox-cap-unit
+								.cap-bookbox-icon-studio
+								//                   
+									[^ 註 ^]
+									規則：以上 tag 加入以下 class，二擇一即可
+									筆記作業 class = cap-bookbox-icon-write
+									錄音作業 class = cap-bookbox-icon-studio
+
+								.lightbox-cap-name Sing Along! Blue-C
+							h3.layout-title-level-3 請至少選擇1項錄音名稱：
+							.lightbox-cap-checkarea
+								|<?php include "html_model/cap/lightbox-cap-checkbox.html";?>
+								|<?php include "html_model/cap/lightbox-cap-checkbox.html";?>
+							h3.layout-title-level-3 上傳音檔 :
+							.lightbox-cap-filebox
+								input.lightbox-cap-file(type='file')
+								|  
+								input.lightbox-cap-file(type='file')
+								|  
+								input.lightbox-cap-file(type='file')
+							button.btn.layout-btn.layout-btn-md(type='button') 送出
+							.lightbox-cap-close
+								a.lightbox-cap-close-link(href='') 關閉

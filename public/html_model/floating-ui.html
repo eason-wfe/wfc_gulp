@@ -20,10 +20,10 @@
       -->
       <div class="modal-dialog layout-lightbox-vertical-middle">
         <!--          
-        	[^ 註 ^]
-        	規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
-        	將 pop window 垂直置中
-        	
+        [^ 註 ^]
+        規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+        將 pop window 垂直置中
+        
         -->
         <div class="modal-content">
           <div class="panel">
@@ -44,47 +44,47 @@
                 <div class="form-group formField">
                   <p class="help-block"><a href="#forgetModal" data-toggle="modal">忘記密碼 ?</a>
                     <!--  href="#loginModal" data-toggle="modal" -->
+                    <!--       ====================================
+                    ——— FORGET PASSWORD MODAL
+                    ===================================== 
+                    -->
+                    <div class="modal fade customModal lightbox-usual" id="forgetModal" tabindex="-1" role="dialog">
+                      <!--         
+                      [^ 註 ^]
+                      規則：tag .customModal + class .lightbox-usual
+                      為全站共用燈箱所用
+                      
+                      -->
+                      <div class="modal-dialog layout-lightbox-vertical-middle">
+                        <!--          
+                        [^ 註 ^]
+                        規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+                        將 pop window 垂直置中
+                        
+                        -->
+                        <div class="modal-content">
+                          <div class="panel">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">密碼查尋</h3><a class="panel-close" href="">x</a>
+                            </div>
+                            <div class="panel-body">
+                              <form action="#" method="POST" role="form">
+                                <div class="form-group formField">
+                                  <input class="form-control" type="text" placeholder="請輸入會員編號或身份證"/>
+                                </div>
+                                <div class="form-group formField">
+                                  <input class="form-control" type="password" placeholder="請輸手機號碼"/>
+                                </div>
+                                <div class="form-group formField">
+                                  <input class="btn btn-block" type="submit" value="確定"/>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--       ====================================
-    ——— FORGET PASSWORD MODAL
-    ===================================== 
-    -->
-    <div class="modal fade customModal lightbox-usual" id="forgetModal" tabindex="-1" role="dialog">
-      <!--         
-      [^ 註 ^]
-      規則：tag .customModal + class .lightbox-usual
-      為全站共用燈箱所用
-      
-      -->
-      <div class="modal-dialog layout-lightbox-vertical-middle">
-        <!--          
-        	[^ 註 ^]
-        	規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
-        	將 pop window 垂直置中
-        	
-        -->
-        <div class="modal-content">
-          <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title">密碼查尋</h3><a class="panel-close" href="">x</a>
-            </div>
-            <div class="panel-body">
-              <form action="#" method="POST" role="form">
-                <div class="form-group formField">
-                  <input class="form-control" type="text" placeholder="請輸入會員編號或身份證"/>
-                </div>
-                <div class="form-group formField">
-                  <input class="form-control" type="password" placeholder="請輸手機號碼"/>
-                </div>
-                <div class="form-group formField">
-                  <input class="btn btn-block" type="submit" value="確定"/>
                 </div>
               </form>
             </div>
