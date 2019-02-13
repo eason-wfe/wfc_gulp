@@ -1,7 +1,7 @@
 //- mixin navTitle( title )
-	.card.layout-sharewidth-item
+	.map.layout-sharewidth-item
 		| #{ title }
-		.mapicon.mapicon-1
+		.mapicon
 		ul
 			each list in nav.nav1
 				li: a(href=list.url) #{ list.name }
@@ -47,33 +47,33 @@ html(lang='zh-Hant-TW')
 									span 網站地圖
 									span.shape.shape-right
 							.layout-sharewidth.item-234
-								.card.layout-sharewidth-item
-									.mapicon.mapicon-1
-									| 美語活動
+								.map.layout-sharewidth-item.map-1
+									.mapicon
+									.maptitle 美語活動
 									ul
 										each nav1 in header.nav1
 											li: a(href=nav1.url) #{nav1.name}
-								.card.layout-sharewidth-item
-									.mapicon.mapicon-2
-									| 美語學習
+								.map.layout-sharewidth-item.map-2
+									.mapicon
+									.maptitle 美語學習
 									ul
 										each nav2 in header.nav2
 											li: a(href=nav2.url) #{nav2.name}
-								.card.layout-sharewidth-item
-									.mapicon.mapicon-3
-									| 多媒體學習
+								.map.layout-sharewidth-item.map-3
+									.mapicon
+									.maptitle 多媒體學習
 									ul
 										each nav3 in header.nav3
 											li: a(href=nav3.url) #{nav3.name}
-								.card.layout-sharewidth-item
-									.mapicon.mapicon-4
-									| 會員服務
+								.map.layout-sharewidth-item.map-4
+									.mapicon
+									.maptitle 會員服務
 									ul
 										each nav4 in header.nav4
 											li: a(href=nav4.url) #{nav4.name}
-								.card.layout-sharewidth-item
-									.mapicon.mapicon-5
-									| 我的專區
+								.map.layout-sharewidth-item.map-5
+									.mapicon
+									.maptitle 我的專區
 									ul
 										each nav5 in header.nav5
 											li: a(href=nav5.url) #{nav5.name}
