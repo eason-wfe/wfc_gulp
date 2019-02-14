@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,sBAAuB,CACtB,gBAAgB,CCDR,OAAO,CDIhB,yBAA0B,CACzB,+BAAgC,CAC/B,YAAY,CAAE,+BAA+B,EAG/C,yBAA0B,CAEzB,qCAAsC,CACrC,YAAY,CAAE,+BAA+B,EAe/C,wDAE0B,CACzB,KAAK,CAAE,IAAI,CExBZ,eAAe,CAEb,YAAI,CAAE,IAAI,CACV,cAAM,CAAE,IAAI,CAEb,WAAW,CAAE,GAAG,CAEjB,CAAC,CACA,WAAW,CAAE,GAAG,CAEf,SAAI,CAAE,IAAI,CAEX,MAAI,CACH,KAAK,CDnBE,OAAO",
+"sources": ["../scss/usual/_unit1.scss","../scss/usual/_color.scss","../scss/private.scss"],
+"names": [],
+"file": "private.css"
+}

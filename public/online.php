@@ -110,10 +110,10 @@
       <!-- JS FOR THIS PAGE ONLY-->
       <script>
         for( var a=0,max=$(".on-radio").length;a<max;a ++ ){
-        var $target = $(".on-radio-" + a + " label");
-        if( /「/i.test( $target.html() ) ){
-        $target.css({"textIndent":-5});
-        }
+        	var $target = $(".on-radio-" + a + " label");
+        	if( /「/i.test( $target.html() ) ){
+        		$target.css({"textIndent":-5});
+        	}
         }
       </script>
     </div>

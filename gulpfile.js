@@ -17,11 +17,13 @@ gulp.task('pug',function(){
 			nav = require('./source/data/nav.json'),
 			nav2 = require('./source/data/nav2.json'),
 			navFull = require('./source/data/navFull.json'),
+			wf = require('./source/data/wf.json'),
 			source = {
 				'header': header,
 				'nav': nav,
 				'nav': nav2,
-				'navFull': navFull
+				'navFull': navFull,
+				'wf': wf
 			}
 		return source;
 	}))

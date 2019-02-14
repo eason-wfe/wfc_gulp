@@ -1,0 +1,53 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head 
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		link(href='css/aboutWfc.css', rel='stylesheet', text='text/css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper 
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										| 關於寰宇家庭俱樂部
+			.container.container-main.container-col-1
+				.row
+					.layout-col-12
+						.layout-main
+							.sectionTitle.text-center.color-1.mt-0
+								h2
+									span.shape.shape-left
+									span 關於寰宇家庭俱樂部
+									span.shape.shape-right
+							.layout-content
+								|寰宇家庭俱樂部是提供將「迪士尼美語世界」以「寰宇家庭教育方式」提供各項學習支援的服務。藉由這樣的服務，為家長和孩子們架構出充滿樂趣的美語學習環境。
+								br
+								br
+								|學習美語，要掌握In put ( 播放、聆聽、閱讀、遊戲）和Out put（對話、互動、遊戲）是重要的，透過In-put和Out put的相乘效應，掌握自然而然學習美語。
+								br
+								br
+								|寰宇家庭俱樂部，提供「迪士尼的英語系統(DWE)」以In put的方式，讓孩子可以有Out put的機會，有效的教材，支持支撐孩子的英語學習的父母「會員制的俱樂部」。
+								br
+								br
+								|美語學習是沒有盡頭的，寰宇家庭俱樂部提供這些服務，會員的家族鼓勵互相，孩子把「自立的學習者」旁邊，全球的被活躍作為目標。
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
