@@ -78,6 +78,21 @@ gulp.task('js',function(){
 	.pipe(gulp.dest('./public/js/'))
 });
 
+// GIT
+gulp.task('gitToTmp',function(){
+	gulp.src('./public/.git/**/*')
+	.pipe(gulp.dest('./.tmp/.git/'))
+	gulp.src('./public/.gitIgnore')
+	.pipe(gulp.dest('./.tmp/'))
+});
+
+gulp.task('gitToPublic',function(){
+	gulp.src('./.tmp/.git/**/*')
+	.pipe(gulp.dest('./public/.git/'))
+	gulp.src('./.tmp/.gitIgnore')
+	.pipe(gulp.dest('./public/'))
+});
+
 // SYSTEM
 gulp.task('assets',function(){
 	gulp.src('./source/assets/**/*')
@@ -92,16 +107,20 @@ gulp.task('watch',function(){
 
 gulp.task('default',['pug','partials','compass','watch']);
 
-gulp.task('clean',function(){
+gulp.task('cleanPublic', ['gitToTmp'], function(){
 	// return gulp.src(['./public/*.php','./node_modules'])
 	// return gulp.src('./node_modules', {read: false})
-	return gulp.src('./public/', {read: false})
-		.pipe($.clean())
+	setTimeout(function(){
+		return gulp.src('./public/', {read: false})
+			.pipe($.clean())		
+	},3000);
+
 });
 
-gulp.task('clean-node',function(){
+gulp.task('cleanNode',function(){
 	return gulp.src('./node_modules', {read: false})
 	.pipe($.clean())
 });
 
-gulp.task('build-dev', ['clean','pug','partials','compass','image','js','assets']);
+
+gulp.task('buildDev', ['gitToPublic','pug','partials','compass','image','js','assets']);
