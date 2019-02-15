@@ -1,12 +1,10 @@
 var gulp = require('gulp'),
-	$ = require('gulp-load-plugins')(),
-	plumber = require('gulp-plumber'),
-	compass = require('gulp-compass');
+	$ = require('gulp-load-plugins')();
 
 // =======================
 // ---- PUG
 // =======================
-gulp.task('pug',function(){
+gulp.task('pug', ()=>
 	gulp.src('./source/*.pug')
 	.pipe($.plumber())
 	.pipe($.data(function(){
@@ -24,10 +22,10 @@ gulp.task('pug',function(){
 	.pipe($.rename(function(path){
 		path.extname = '.php'
 	}))
-	.pipe(gulp.dest('./public/'))
-})
+	.pipe(gulp.dest('./public'))
+)
 
-gulp.task('partials',function(){
+gulp.task('partials', ()=>
 	gulp.src('./source/partials/**/*.pug')
 	.pipe($.plumber())
 	.pipe($.data(function(){
@@ -40,37 +38,46 @@ gulp.task('partials',function(){
 	.pipe($.pug({
 		pretty: true
 	}))
-	.pipe(gulp.dest('./public/html_model/'))
-});
+	.pipe(gulp.dest('./public/html_model'))
+);
 
 // =======================
 // ---- CSS
 // =======================
 gulp.task('compass',function(){
 	return gulp.src('./source/scss/**/*.scss')
-	.pipe(plumber())
-	.pipe(compass({
+	.pipe($.plumber())
+	.pipe($.compass({
 		config_file: './source/scss/config.rb',
 		sourcemap: true,
 		time: true,
-		css: './public/css/',
-		sass: './source/scss/',
+		css: './public/css',
+		sass: './source/scss',
 		style: 'compressed',
 		image: './public/img'
 	}))
-	.pipe(plumber.stop())
-	.pipe(gulp.dest('./public/css/'))
+	.pipe(gulp.dest('./public/css'))
 });
 
 
 // =======================
 // ---- IMAGES
 // =======================
-gulp.task('image',function(){
+gulp.task('image', ()=>
 	gulp.src('./source/img/**/*')
-	.pipe(gulp.dest('./public/img/'))
-});
+	.pipe(gulp.dest('./public/img'))
+);
 
+gulp.task('imageMin', () =>
+	gulp.src('./source/img/**/*')
+		.pipe($.imagemin({
+			optimizationLevel: 5, //類型：Number 預設：3 取值範圍：0-7（優化等級）
+			progressive: true, //類型：Boolean 預設：false 無損壓縮jpg圖片
+			interlaced: true, //類型：Boolean 預設：false 隔行掃描gif進行渲染
+			multipass: true //類型：Boolean 預設：false 多次優化svg直到完全優化
+		}))
+		.pipe(gulp.dest('./public/img'))
+);
 
 // =======================
 // ---- SYSTEM
@@ -89,11 +96,11 @@ gulp.task('default',['pug','partials','compass','watch']);
 // =======================
 gulp.task('clean', function(){
 	gulp.src('./public/.git/**/*')
-	.pipe(gulp.dest('./.tmp/git/.git/'))
+	.pipe(gulp.dest('./.tmp/git/.git'))
 	gulp.src('./public/.gitIgnore')
-	.pipe(gulp.dest('./.tmp/git/'))
+	.pipe(gulp.dest('./.tmp/git'))
 	setTimeout(function(){
-		return gulp.src('./public/', {read: false})
+		return gulp.src('./public', {read: false})
 			.pipe($.clean())		
 	},1000);
 });
@@ -109,15 +116,15 @@ gulp.task('cleanNode',function(){
 // =======================
 gulp.task('env', function () {
 	gulp.src('./source/assets/**/*')
-		.pipe(gulp.dest('./public/assets/'))
+		.pipe(gulp.dest('./public/assets'))
 	gulp.src('./source/js/**/*.js')
-		.pipe(gulp.dest('./public/js/'))
+		.pipe(gulp.dest('./public/js'))
 	gulp.src('./.tmp/git/.git/**/*')
-		.pipe(gulp.dest('./public/.git/'))
+		.pipe(gulp.dest('./public/.git'))
 	gulp.src('./.tmp/git/.gitIgnore')
-		.pipe(gulp.dest('./public/'))
+		.pipe(gulp.dest('./public'))
 	setTimeout(function () {
-		return gulp.src('./.tmp/git/', {read: false})
+		return gulp.src('./.tmp/git', {read: false})
 			.pipe($.clean())
 	}, 5000);
 });

@@ -1,18 +1,19 @@
 {
-  "name": "wfc",
-  "version": "1.0.0",
-  "description": "",
+  "name": "eason-wfc-gulp",
+  "version": "2.0.0",
+  "description": "my first gulp env.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eason Shyu",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-compass": "^2.1.0",
     "gulp-data": "^1.3.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
