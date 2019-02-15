@@ -11,10 +11,6 @@
 	}
 }
 @media (max-width: 499px){
-	footer{
-		height: 83px;
-		bottom: -83px;
-	}
 	/*--------------*/
 	.footer-rise {
 		.backToTop {
@@ -23,16 +19,9 @@
 		.tabmenu {
 			bottom: 80px;
 		}
-		footer {
-			bottom: -3px;
-		}
 	}
 }
 @media (min-width: 500px) and (max-width: 767px){
-	footer{
-		height: 65px;
-		bottom: -65px;
-	}
 	/*--------------*/
 	.footer-rise {
 		.backToTop {
@@ -40,9 +29,6 @@
 		}
 		.tabmenu {
 			bottom: 61px;
-		}
-		footer {
-			bottom: -3px;
 		}
 	}
 } 

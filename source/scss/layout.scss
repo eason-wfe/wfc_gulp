@@ -20,20 +20,12 @@ body{
 	}
 }
 @media (max-width: 767px){
-	footer{
-		height: 50px;
-		bottom: -50px;
-	}
-	/*--------------*/
 	.footer-rise {
 		.backToTop {
-			bottom: 87px;
+			bottom: 107px;
 		}
 		.tabmenu {
-			bottom: 47px;
-		}
-		footer {
-			bottom: -3px;
+			bottom: 67px;
 		}
 	}
 }

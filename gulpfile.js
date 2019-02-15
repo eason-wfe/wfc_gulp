@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
-	$ = require('gulp-load-plugins')();
-
+	$ = require('gulp-load-plugins')(),
+	plumber = require('gulp-plumber'),
+	compass = require('gulp-compass');
 
 // PUG TO PHP / HTML
 gulp.task('pug',function(){
@@ -51,8 +52,8 @@ gulp.task('partials',function(){
 // STYLESHEET
 gulp.task('compass',function(){
 	return gulp.src('./source/scss/**/*.scss')
-	.pipe($.plumber())
-	.pipe($.compass({
+	.pipe(plumber())
+	.pipe(compass({
 		config_file: './source/scss/config.rb',
 		sourcemap: true,
 		time: true,
@@ -61,6 +62,7 @@ gulp.task('compass',function(){
 		style: 'compressed',
 		image: './public/img'
 	}))
+	.pipe(plumber.stop())
 	.pipe(gulp.dest('./public/css/'))
 });
 
@@ -85,14 +87,21 @@ gulp.task('assets',function(){
 gulp.task('watch',function(){
 	gulp.watch('./source/*.pug', ['pug']);
 	gulp.watch('./source/partials/**/*.pug', ['partials'])
+	gulp.watch('./source/scss/**/*.scss', ['compass'])
 })
 
-gulp.task('default',['pug','partials','watch']);
-
-gulp.task('clone', ['image','js','assets']);
+gulp.task('default',['pug','partials','compass','watch']);
 
 gulp.task('clean',function(){
 	// return gulp.src(['./public/*.php','./node_modules'])
-	return gulp.src('./node_modules', {read: false})
+	// return gulp.src('./node_modules', {read: false})
+	return gulp.src('./public/', {read: false})
 		.pipe($.clean())
 });
+
+gulp.task('clean-node',function(){
+	return gulp.src('./node_modules', {read: false})
+	.pipe($.clean())
+});
+
+gulp.task('build-dev', ['clean','pug','partials','compass','image','js','assets']);

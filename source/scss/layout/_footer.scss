@@ -7,22 +7,26 @@ footer {
 	position: fixed;
 	z-index: 1034;
 }
+.footer-rise{
+	footer{
+		transform: translateY(0);
+	}
+}
 .copyRight {
 	padding: 12px 0;
 	background-color: #222;
-	p {
-		//line-height: 23px;
-	}
 }
 
 // FOOTER RISE
-footer,
 .backToTop,
 .tabmenu,
-.footer-rise footer,
 .footer-rise .backToTop,
 .footer-rise .tabmenu {
 	transition: bottom 0.2s ease-in-out;
+}
+footer,
+.footer-rise footer{
+	transition: transform .2s;
 }
 
 // TAG from myself
@@ -62,7 +66,7 @@ footer,
 		}
 		a {
 			color: #fff;
-			font-size: 13px;
+			font-size: 12px;
 			line-height: 18px;
 			&:hover {
 				text-decoration: underline !important;
@@ -74,8 +78,7 @@ footer,
 	}
 	////
 	footer {
-		//height: 50px;
-		//bottom: -50px;
+		transform: translateY( 100% );
 	}
 	/////
 	.backToTop {
@@ -87,16 +90,15 @@ footer,
 }
 @media (min-width: 768px) {
 	footer {
-		height: 70px;
-		bottom: -67px;
-	}
-	.footer-rise footer {
-		bottom: 0;
+		transform: translateY( calc( 100% - 3px ) );
 	}
 	.footer-link {
 		ul {
 			padding-top: 14px;
 			text-align: right;
+		}
+		li{
+			margin-bottom: 5px;
 		}
 	}
 }
