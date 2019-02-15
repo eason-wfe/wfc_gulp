@@ -3,21 +3,17 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	compass = require('gulp-compass');
 
-// PUG TO PHP / HTML
+// =======================
+// ---- PUG
+// =======================
 gulp.task('pug',function(){
 	gulp.src('./source/*.pug')
 	.pipe($.plumber())
 	.pipe($.data(function(){
 		var header = require('./source/data/header.json'),
-			nav = require('./source/data/nav.json'),
-			nav2 = require('./source/data/nav2.json'),
-			navFull = require('./source/data/navFull.json'),
 			wf = require('./source/data/wf.json'),
 			source = {
 				'header': header,
-				'nav': nav,
-				'nav': nav2,
-				'navFull': navFull,
 				'wf': wf
 			}
 		return source;
@@ -36,10 +32,8 @@ gulp.task('partials',function(){
 	.pipe($.plumber())
 	.pipe($.data(function(){
 		var header = require('./source/data/header.json'),
-			nav = require('./source/data/nav.json'),
 			source = {
 				'header': header,
-				'nav': nav
 			}
 		return source;
 	}))
@@ -49,7 +43,9 @@ gulp.task('partials',function(){
 	.pipe(gulp.dest('./public/html_model/'))
 });
 
-// STYLESHEET
+// =======================
+// ---- CSS
+// =======================
 gulp.task('compass',function(){
 	return gulp.src('./source/scss/**/*.scss')
 	.pipe(plumber())
@@ -66,39 +62,19 @@ gulp.task('compass',function(){
 	.pipe(gulp.dest('./public/css/'))
 });
 
-// IMAGES
+
+// =======================
+// ---- IMAGES
+// =======================
 gulp.task('image',function(){
 	gulp.src('./source/img/**/*')
 	.pipe(gulp.dest('./public/img/'))
 });
 
-// JS
-gulp.task('js',function(){
-	gulp.src('./source/js/**/*.js')
-	.pipe(gulp.dest('./public/js/'))
-});
 
-// GIT
-gulp.task('gitToTmp',function(){
-	gulp.src('./public/.git/**/*')
-	.pipe(gulp.dest('./.tmp/.git/'))
-	gulp.src('./public/.gitIgnore')
-	.pipe(gulp.dest('./.tmp/'))
-});
-
-gulp.task('gitToPublic',function(){
-	gulp.src('./.tmp/.git/**/*')
-	.pipe(gulp.dest('./public/.git/'))
-	gulp.src('./.tmp/.gitIgnore')
-	.pipe(gulp.dest('./public/'))
-});
-
-// SYSTEM
-gulp.task('assets',function(){
-	gulp.src('./source/assets/**/*')
-	.pipe(gulp.dest('./public/assets/'))
-});
-
+// =======================
+// ---- SYSTEM
+// =======================
 gulp.task('watch',function(){
 	gulp.watch('./source/*.pug', ['pug']);
 	gulp.watch('./source/partials/**/*.pug', ['partials'])
@@ -107,14 +83,19 @@ gulp.task('watch',function(){
 
 gulp.task('default',['pug','partials','compass','watch']);
 
-gulp.task('cleanPublic', ['gitToTmp'], function(){
-	// return gulp.src(['./public/*.php','./node_modules'])
-	// return gulp.src('./node_modules', {read: false})
+
+// =======================
+// ---- CLEAN
+// =======================
+gulp.task('clean', function(){
+	gulp.src('./public/.git/**/*')
+	.pipe(gulp.dest('./.tmp/git/.git/'))
+	gulp.src('./public/.gitIgnore')
+	.pipe(gulp.dest('./.tmp/git/'))
 	setTimeout(function(){
 		return gulp.src('./public/', {read: false})
 			.pipe($.clean())		
-	},3000);
-
+	},1000);
 });
 
 gulp.task('cleanNode',function(){
@@ -123,4 +104,22 @@ gulp.task('cleanNode',function(){
 });
 
 
-gulp.task('buildDev', ['gitToPublic','pug','partials','compass','image','js','assets']);
+// =======================
+// ---- BUILD
+// =======================
+gulp.task('env', function () {
+	gulp.src('./source/assets/**/*')
+		.pipe(gulp.dest('./public/assets/'))
+	gulp.src('./source/js/**/*.js')
+		.pipe(gulp.dest('./public/js/'))
+	gulp.src('./.tmp/git/.git/**/*')
+		.pipe(gulp.dest('./public/.git/'))
+	gulp.src('./.tmp/git/.gitIgnore')
+		.pipe(gulp.dest('./public/'))
+	setTimeout(function () {
+		return gulp.src('./.tmp/git/', {read: false})
+			.pipe($.clean())
+	}, 5000);
+});
+
+gulp.task('build', ['env','pug','partials','compass','image']);
