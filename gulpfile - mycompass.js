@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-	$ = require('gulp-load-plugins')();
+	$ = require('gulp-load-plugins')(),
+	chokidar = require('chokidar');
 
 // =======================
 // ---- PUG
@@ -44,9 +45,48 @@ gulp.task('partials', ()=>
 // =======================
 // ---- CSS
 // =======================
-gulp.task('scssClone', function () {
-	gulp.src('./public/scss')
-	.pipe(gulp.dest('./source/scss'))
+gulp.task('sass', function () {
+	chokidar.watch('./source/scss', {
+		persistent: true,
+		ignored: /(^|[\/\\])\../,
+		cwd: '.',
+		depth: 99
+	}).on('all', (event, path) => {
+		console.log(event, path);
+		return gulp.src('./source/scss/**/*.scss')
+			.pipe($.sass().on('error', $.sass.logError))
+			.pipe(gulp.dest('./.tmp/scss/'))
+	});
+});
+// gulp.task('sass', function () {
+// 	return gulp.src('./source/scss/**/*.scss')
+// 		chokidar.watch('./source/scss', {
+// 			persistent: true,
+// 			ignored: /(^|[\/\\])\../,
+// 			cwd: '.',
+// 			depth: 99
+// 		}).on('all', (event, path) => {
+// 			console.log(event, path);
+// 			.pipe($.sass().on('error', $.sass.logError))
+// 		});
+// 		.pipe(gulp.dest('./.tmp/scss/'))
+// });
+
+
+
+
+gulp.task('compass', ['sass'],function(){
+	return gulp.src('./.tmp/scss/**/*.scss')
+	.pipe($.compass({
+		config_file: './source/scss/config.rb',
+		sourcemap: true,
+		time: true,
+		css: './public/css',
+		sass: './source/scss',
+		style: 'compressed',
+		image: './public/img'
+	}))
+	.pipe(gulp.dest('./public/css'))
 });
 
 
@@ -84,15 +124,15 @@ gulp.task('default',['pug','partials','sass','watch']);
 // =======================
 // ---- CLEAN
 // =======================
-gulp.task('clean', ['scssClone'],function(){
+gulp.task('clean', function(){
 	gulp.src('./public/.git/**/*')
-		.pipe(gulp.dest('./.tmp/git/.git'))
+	.pipe(gulp.dest('./.tmp/git/.git'))
 	gulp.src('./public/.gitIgnore')
-		.pipe(gulp.dest('./.tmp/git'))
+	.pipe(gulp.dest('./.tmp/git'))
 	setTimeout(function(){
 		return gulp.src('./public', {read: false})
 			.pipe($.clean())		
-	},20000);
+	},1000);
 });
 
 gulp.task('cleanNode',function(){
@@ -105,27 +145,18 @@ gulp.task('cleanNode',function(){
 // ---- BUILD
 // =======================
 gulp.task('env', function () {
-	// TO ASSETS
 	gulp.src('./source/assets/**/*')
 		.pipe(gulp.dest('./public/assets'))
-	// TO JS
 	gulp.src('./source/js/**/*.js')
 		.pipe(gulp.dest('./public/js'))
-	// TO SCSS
-	gulp.src('./source/scss/**/*.scss')
-		.pipe(gulp.dest('./public/scss'))
-	// TO .GIT
 	gulp.src('./.tmp/git/.git/**/*')
 		.pipe(gulp.dest('./public/.git'))
-	// TO PUBLIC ( git & compass )
-	gulp.src(['./.tmp/git/.gitignore',
-					'./.tmp/compass/*'
-				])
+	gulp.src('./.tmp/git/.gitIgnore')
 		.pipe(gulp.dest('./public'))
 	setTimeout(function () {
 		return gulp.src('./.tmp/git', {read: false})
 			.pipe($.clean())
-	}, 20000);
+	}, 5000);
 });
 
-gulp.task('build', ['env','pug','partials','image']);
+gulp.task('build', ['env','pug','partials','sass','image']);
