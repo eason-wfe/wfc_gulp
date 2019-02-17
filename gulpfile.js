@@ -42,7 +42,7 @@ gulp.task('partials', ()=>
 );
 
 // =======================
-// ---- CSS
+// ---- SCSS
 // =======================
 gulp.task('scssClone', function () {
 	gulp.src('./public/scss')
