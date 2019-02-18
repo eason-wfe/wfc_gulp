@@ -53,6 +53,11 @@ gulp.task('scssClone', function () {
 // =======================
 // ---- IMAGES
 // =======================
+gulp.task('imageClone', ()=>
+	gulp.src('./public/img/**/*')
+	.pipe(gulp.dest('./source/img'))
+);
+
 gulp.task('image', ()=>
 	gulp.src('./source/img/**/*')
 	.pipe(gulp.dest('./public/img'))
@@ -66,8 +71,18 @@ gulp.task('imageMin', () =>
 			interlaced: true, //類型：Boolean 預設：false 隔行掃描gif進行渲染
 			multipass: true //類型：Boolean 預設：false 多次優化svg直到完全優化
 		}))
-		.pipe(gulp.dest('./public/img'))
+		.pipe(gulp.dest('./.tmp/img-min'))
 );
+
+
+// =======================
+// ---- JAVA SCRIPT
+// =======================
+gulp.task('jsClone',function(){
+	gulp.src('./public/js/**/*.js')
+		.pipe(gulp.dest('./source/js'))
+})
+
 
 // =======================
 // ---- SYSTEM
@@ -75,16 +90,21 @@ gulp.task('imageMin', () =>
 gulp.task('watch',function(){
 	gulp.watch('./source/*.pug', ['pug']);
 	gulp.watch('./source/partials/**/*.pug', ['partials'])
-	gulp.watch('./source/scss/**/*.scss', ['sass'])
 })
 
-gulp.task('default',['pug','partials','sass','watch']);
+gulp.task('default', ['pug','partials','watch']);
+
+
+// =======================
+// ---- UPDATE	
+// =======================
+gulp.task('update', ['scssClone','imageClone','jsClone']);
 
 
 // =======================
 // ---- CLEAN
 // =======================
-gulp.task('clean', ['scssClone'],function(){
+gulp.task('clean', ['update'],function(){
 	gulp.src('./public/.git/**/*')
 		.pipe(gulp.dest('./.tmp/git/.git'))
 	gulp.src('./public/.gitIgnore')

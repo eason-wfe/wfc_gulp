@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
 	function slider(){
 		var 
 			SItem = $(".slider-item"),

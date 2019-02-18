@@ -1,5 +1,8 @@
 li.act-timebox-item
 	.act-timebox-time.act-width-time 11:00
+	.act-timebox-cap
+		img(src="img/activity/c02.png")
+		| 藍色
 	a.act-timebox-state.act-width-state.not-yet(href='') 尚未開放
 	//        
 		[^ 註 ^]
@@ -11,21 +14,32 @@ li.act-timebox-item
 		+ class .is-waiting  用在「己侯補」狀態
 		+ class .out-of-date 用在「截止報名」狀態
 
-	.act-timebox-note
+	.act-timebox-note.with-cap
 		//           
-			[^ 註 ^]
+			[^ 註 1 ^]
 			唯獨 .not-yet 狀態需要多此 tag  做說明
+			[^ 註 2 ^]
+			有 cpa 的單元 + class = with-cap
 
 		p.act-timebox-p 2018 / 11 / 31
 		p.act-timebox-p 中午 12:00 開放報名
 li.act-timebox-item
 	.act-timebox-time.act-width-time 13:30
+	.act-timebox-cap
+		img(src="img/activity/c03.png")
+		| 綠色
 	a.act-timebox-state.act-width-state.is-sign(href='') 我要報名
 li.act-timebox-item
 	.act-timebox-time.act-width-time 14:00
+	.act-timebox-cap
+		img(src="img/activity/c04.png")
+		| 淺綠
 	a.act-timebox-state.act-width-state.is-wait(href='') 我要候補
 li.act-timebox-item
 	.act-timebox-time.act-width-time 15:30
+	.act-timebox-cap
+		img(src="img/activity/c05.png")
+		| 黃色
 	a.act-timebox-state.act-width-state.is-signed(href='') 己報名
 li.act-timebox-item
 	.act-timebox-time.act-width-time 16:00

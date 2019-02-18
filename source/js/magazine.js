@@ -17,6 +17,6 @@ $(function(){
 		}
 	});
 	//
-	$('.art-list-f2-item:last-child').find('a').addClass('now');
+	$('.art-list-f2-item').eq(4).find('a').addClass('now');
 	var $wow = new WOW().init();	
 });

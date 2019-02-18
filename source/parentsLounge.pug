@@ -1,0 +1,54 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		// owl
+		link(href='assets/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+		link(href='assets/plugins/fancybox/jquery.fancybox.min.css', rel='stylesheet')
+		// wow
+		link(href='assets/plugins/animate/animate.css', rel='stylesheet')
+		// IT
+		link(rel='stylesheet', href='css/parentsLounge.css')
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') 會員服務
+									li.breadcrumb-item
+										| 家長工作坊
+			.container.container-main.container-col-2
+				.row
+					.hidden-xs.hidden-sm.col-md-4.col-lg-3.sticky-top
+						|<?php include "html_model/article/art-aside.html";?>
+					.col-xs-12.col-sm-12.col-md-8.col-lg-9
+						.layout-main
+							.sectionTitle.text-center.color-4.mt-0
+								h2
+									span.shape.shape-left
+									span 家長工作坊
+									span.shape.shape-right
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script.
+				$('.art-list-f2-item:last-child').find('a').addClass('now');
