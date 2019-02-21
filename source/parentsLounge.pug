@@ -42,13 +42,106 @@ html(lang='zh-Hant-TW')
 					.hidden-xs.hidden-sm.col-md-4.col-lg-3.sticky-top
 						|<?php include "html_model/article/art-aside.html";?>
 					.col-xs-12.col-sm-12.col-md-8.col-lg-9
+						//-	.layout-main.layout-main-vision
+								img.layout-main-vision-img(src="img/te/vision2.jpg")
 						.layout-main
 							.sectionTitle.text-center.color-4.mt-0
 								h2
 									span.shape.shape-left
 									span 家長工作坊
 									span.shape.shape-right
+							.layout-content
+								|大家一起來參加「家長工作坊」吧！
+								br
+								|對於購買產品後「不知道該如何開始使用教材」或「想更加活用DWE」的父母們，這是特別設計讓您安心的學習支援服務。
+								br
+								|在您開始參加「DWE First Step」（DFS）起，每隔一段時間，定期舉辦的工作坊。由經驗豐富的台灣講師進行淺顯易懂的說明。參加同時，您有機會認識同樣使用DWE美語系統的其他家長們，擴大朋友圈。
+							h3.layout-title-level-2.color-4 首部曲  成功的第一步 
+							.layout-content
+								|購買後～3個月內為最佳參加時期，介紹重點訣竅，教您快樂使用DWE，教您運用有趣的俱樂部服務，根據購買的教材內容並搭配孩子的年齡，講解說明可以如何開始使用DWE，讓您一聽就懂。講師還會正式介紹各套教材的特色優點等，透過示範，讓您深入了解寰宇家庭俱樂部所塑造的美語環境。
+								h3.layout-title-level-3.color-4  輕鬆有效的開心使用DWE
+								ul.ml-3
+									li ●	輕鬆了解使用DWE
+									li ●	活用六大學習支援服務（TE / FPE / CAP / Hot Line / WFM / WEB）
+									li ●	分享使用小撇步
+										|貼心小提醒：首部曲須攜帶「
+										span.is-hl 上手指南
+										|」來參加講座喔！(附圖)
+								img.plimg(src="img/parentsLounge/01.png")
+							br
+							h3.layout-title-level-2.color-4.mt-5 二部曲  DWE玩全攻略
+							.layout-content
+								|購買6個月後為最佳參加時期，介紹進階應用方式，符合您孩子程度的具體使用方法，引導您適合的寰宇家庭俱樂部服務。針對已購買產品6個月左右並玩過一輪教材的父母參加。講師將更具體介紹核心教材的功能與活用方式。並且也會引導建議這個時期孩子適合寰宇家庭俱樂部所提供的哪些學習支援服務與活動。
+							h3.layout-title-level-3.color-4 請你跟我這樣玩
+							.layout-content
+								ul.ml-3
+									li ●	進入主課程超Easy
+									li ●	打造孩子的超級課表
+									li ●	會員學習交流分享
+								.layout-content
+									|相信經過首部曲及二部曲階段的會員，已經能夠活用「寰宇家庭教育方式」，透過「DWE」的In-put及WFC的Out-put。會員與孩子們能夠快樂自在地應用「寰宇家庭俱樂部」所提供的各項服務，在自然的情況下說出從DWE所學的美語，且樂在其中，進而培養出美語興趣並持續DWE，開心無壓力的向畢業目標邁進。
+						// FULL
+						.layout-main.layout-main-full
+							.layout-main-full-bg.layout-main-full-right
+							.layout-main-full-inbox
+								.sectionTitle.text-center.color-4.mt-0
+									h2
+										span.shape.shape-left
+										span 「家長工作坊」的參加辦法：
+										span.shape.shape-right
+								ul.layout-content.plbox
+									li 購買DWE產品即可符合參加資格，您可以透過俱樂部網站或手機APP，或選擇來電客服中心報名。
+									li 請依「首部曲」→「二部曲」順序參加「家長工作坊」。
+									li 「家長工作坊」是以父母為主的工作坊，敬請預先瞭解這不是給孩子參加的美與表演活動。
+									li 舉辦「家長工作坊」的場地以寰宇家庭Fun House為主。
+									li 寰宇家庭俱樂部保有修改活動內容及場次的權利。
+						.layout-main
+							.sectionTitle.text-center.color-4.mt-0
+								h2
+									span.shape.shape-left
+									span 家長見證
+									span.shape.shape-right
+							.owl-carousel.owl-carousel-type-1.teamSlider
+								mixin item(name,msg,content1,content2)
+									.block
+										.thumbnail.thumbnailContent.wow.fadeInUp
+											.caption.border-color-4
+												h3.mb-1
+													.color-4 #{ name }
+													.layout-owlnav-box1.color-4 #{ msg }
+												p #{ content1 }
+													br
+													| #{ content2 }
+								each link in page.parentsLounge
+									+item( link.name, link.msg, link.content1 , link.content2 )
 			include partials/public_footer_tw.pug
 			// JS FOR THIS PAGE ONLY
+			script(src='js/fullScreen.js')
+			script(src="assets/plugins/owl-carousel/owl.carousel.js")
 			script.
-				$('.art-list-f2-item:last-child').find('a').addClass('now');
+				$(function () {
+					$('.art-list-f2-item:last-child').find('a').addClass('now');
+					// OWL-CAROUSEL
+					var owl = $(".owl-carousel.teamSlider");
+					owl.owlCarousel({
+						loop: true,
+						margin: 28,
+						autoplay: false,
+						autoplayTimeout: 2000,
+						autoplayHoverPause: true,
+						nav: true,
+						moveSlides: 4,
+						dots: false,
+						responsive: {
+							320: {
+								items: 1
+							},
+							768: {
+								items: 2
+							},
+							1200: {
+								items: 3
+							}
+						}
+					});
+				});
