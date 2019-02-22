@@ -1,11 +1,3 @@
-//- mixin navTitle( title )
-	.map.layout-sharewidth-item
-		| #{ title }
-		.mapicon
-		ul
-			each list in nav.nav1
-				li: a(href=list.url) #{ list.name }
-
 doctype html
 html(lang='zh-Hant-TW')
 	head
@@ -79,3 +71,15 @@ html(lang='zh-Hant-TW')
 											li: a(href=nav5.url) #{nav5.name}
 			include partials/public_footer_tw.pug
 			// JS FOR THIS PAGE ONLY
+			script.
+				$(function(){
+					function sitemap(){
+						var nua = navigator.userAgent,
+							$target = $('.map:nth-child(3)');
+						if( /Android|iPhone/i.test(nua) ){
+							$target.find('li').eq(-1).css({'display':'none'});
+							$target.find('li').eq(-2).css({'display':'none'});
+						}
+					}
+					sitemap();
+				});
