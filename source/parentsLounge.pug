@@ -42,8 +42,8 @@ html(lang='zh-Hant-TW')
 					.hidden-xs.hidden-sm.col-md-4.col-lg-3.sticky-top
 						|<?php include "html_model/article/art-aside.html";?>
 					.col-xs-12.col-sm-12.col-md-8.col-lg-9
-						//-	.layout-main.layout-main-vision
-								img.layout-main-vision-img(src="img/te/vision2.jpg")
+						.layout-main.layout-main-vision
+								img.layout-main-vision-img(src="img/parentsLounge/vision.jpg")
 						.layout-main
 							.sectionTitle.text-center.color-4.mt-0
 								h2
@@ -114,6 +114,8 @@ html(lang='zh-Hant-TW')
 													| #{ content2 }
 								each link in page.parentsLounge
 									+item( link.name, link.msg, link.content1 , link.content2 )
+						button.btn.layout-btn.btn-block.layout-btn-lg.color-4(type="button") 活動報名
+						
 			include partials/public_footer_tw.pug
 			// JS FOR THIS PAGE ONLY
 			script(src='js/fullScreen.js')
