@@ -1,0 +1,15 @@
+mixin link( name , url )
+	if ( path === url )
+		a.active(href= url ) #{ name }
+	else
+		a(href= url ) #{ name }
+
+ul
+	each item in menu.list
+		li
+			+link( item.name ,item.url )
+	//- li
+	//- 	a(href="#{menu.list[0].url}") #{menu.list[0].name}
+	//- 	span #{menu.list[0].url}
+		//- li
+		//- 	a(href="") title 3

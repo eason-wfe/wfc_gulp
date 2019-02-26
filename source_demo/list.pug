@@ -1,0 +1,10 @@
+extend partials/layout.pug
+
+block nav
+	-var path = 'list.html'
+	include partials/nav.pug
+
+block content
+	each item in news
+		.card
+			a(href=item.url) #{item.title}
