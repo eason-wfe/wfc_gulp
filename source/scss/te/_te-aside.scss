@@ -74,15 +74,31 @@
 		}
 	}
 }
-@media (max-width: 767px) {
-	.te-ctabox {
-		bottom: 27px;
+@media (max-width: 494px){
+	a.backToTop{
+		bottom: 176px;
 	}
+	.footer-rise {
+		.te-ctabox {
+			bottom: 92px;
+		}
+		a.backToTop{
+			bottom: 242px;
+		}
+	}	
+}
+@media (max-width: 767px) and (min-width: 495px){
 	.footer-rise {
 		.te-ctabox {
 			bottom: 74px;
 		}
+	}	
+}
+@media (max-width: 767px) {
+	.te-ctabox {
+		bottom: 27px;
 	}
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.te-ctabox {

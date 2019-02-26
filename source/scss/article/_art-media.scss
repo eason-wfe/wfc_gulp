@@ -6,7 +6,10 @@
 	background-color: #f2f2ff;
 	font-size: 0;
 	padding: 24px;
-	margin-bottom: 16px;
+	margin:{
+		bottom: 16px;
+		top: 6px;
+	}
 	&:hover{
 		.art-media-content{
 			color: #000;
@@ -32,8 +35,9 @@
 }
 .art-media-content{
 	font-size: 15px;
-	color: #333;
+	color: #454545;
 	@extend %timer;
+	line-height: 1.6;
 }
 .art-media-more{
 	font-size: 15px;

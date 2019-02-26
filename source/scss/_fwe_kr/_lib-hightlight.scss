@@ -29,6 +29,9 @@
 		&.second{
 			transform: translateY(15px);
 		}
+		&.first,&.second{
+			display: none;
+		}
 	}
 	b{
 		color: $color5-dark;

@@ -36,3 +36,28 @@
 		}
 	}
 }
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.form-group.ver-box{
+	margin-bottom: 15px;
+	display: block;
+}
+.ver-img{
+	display: inline-block;
+	height: 50px;width: 120px;
+	margin-right: 10px;
+}
+.ver-input{
+	display: inline-block;
+	line-height: 46px;
+	font-size: 15px;
+	text-indent: 10px;
+	width: calc( 100% - 135px );
+	border: solid 1px #e4e4e4;
+	border-radius: 6px;
+}

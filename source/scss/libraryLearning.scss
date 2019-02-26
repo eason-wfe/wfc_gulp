@@ -4,6 +4,7 @@
 //
 @import "library/lib-info";
 @import "library/lib-gbox";
+@import "no_sort/landscape";
 /*
 ==================================
 ==================================
@@ -36,6 +37,9 @@
 */
 .lib-gbox-item{
 	margin-bottom: 40px;
+	.lib-info-location{
+		color: #333;
+	}
 }
 /*
 ==================================

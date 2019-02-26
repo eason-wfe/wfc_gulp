@@ -17,7 +17,7 @@
 	}
 }
 .cap-list-item {
-	margin-bottom: 12px;
+	// margin-bottom: 12px;
 }
 /*
 =========================
@@ -123,4 +123,45 @@
 			width: 100%;
 		}
 	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.is-cap-icon{
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+	vertical-align: -3px;
+	margin-right: 5px;
+	@include img-path-ratio('cap/sprite.png',2.5);
+	border: solid 2px $color2-light;
+	border-radius: 50%;
+	background-color: #ffdf43;
+}
+.is-audio{
+	background: {
+		position: 0 -20px;
+		color: #dd4c92;
+	}
+}
+.is-te{
+	background: {
+		position: 0 -40px;
+		color: #00b053;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+h3.layout-title-level-2.color-2{
+	width: 212px;
+	text-align: center;
 }

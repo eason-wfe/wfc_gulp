@@ -30,51 +30,68 @@
 	padding: 3px 6px 3px 7px;
 	img{
 		width: 26px;
+		margin-right: 4px;
+		vertical-align: 0;
+	}
+	background-color: transparent;
+}
+%block-setting{
+	border-radius: 12px;
+	padding: 16px 12px;
+	margin-bottom: 8px;
+	h3{
+		padding: 0;
 	}
 }
 .is-song{
-	background-color: $te-section-color-1;
-	color: $te-section-btn-1!important;
+	background-color:  $te-section-color-1;
+	h3,.layout-content{color: #dd6e24!important;}
+	@extend %block-setting;
 }
 .is-book{
-	background-color: $te-section-color-2;
-	color: $te-section-btn-2!important;
+	background-color:  $te-section-color-2;
+	h3,.layout-content{color: #12acd6!important;}
+	@extend %block-setting;
 }
 .is-right{
-	background-color: $te-section-color-3;
-	color: $te-section-btn-3!important;
+	background-color:  $te-section-color-3;
+	h3,.layout-content{color: #557f24!important;}
+	@extend %block-setting;
 }
 .is-reading{
-	background-color: $te-section-color-4;
-	color: $te-section-btn-4!important;
+	background-color:  $te-section-color-4;
+	h3,.layout-content{color: $te-section-btn-4!important;}
+	@extend %block-setting;
 }
-.is-fc{
-	background-color: $te-section-color-5;
-	color: $te-section-btn-5!important;
+.is-fc-con{
+	background-color:  $te-section-color-5;
+	h3,.layout-content{color: $te-section-btn-5!important;}
+	@extend %block-setting;
 }
 .is-cap{
-	background-color: $te-section-color-6;
-	color: $te-section-btn-6!important;
+	background-color:  $te-section-color-6;
+	h3,.layout-content{color: #4a1b77!important;}
+	@extend %block-setting;
 }
 //
-.is-text-song{
-	color: $te-section-btn-hover-1;
-}
-.is-text-book{
-	color: $te-section-btn-hover-2;
-}
-.is-text-right{
-	color: $te-section-btn-hover-3;
-}
-.is-text-reading{
-	color: $te-section-btn-hover-4;
-}
-.is-text-fc{
-	color: $te-section-btn-hover-5;
-}
-.is-text-cap{
-	color: $te-section-btn-hover-6;
-}
+// .is-text-song{
+// 	color: $te-section-btn-hover-1;
+// }
+// .is-text-book{
+// 	color: $te-section-btn-hover-2;
+// }
+// .is-text-right{
+// 	color: $te-section-btn-hover-3;
+// }
+// .is-text-reading{
+// 	color: $te-section-btn-hover-4;
+// }
+// .is-text-fc{
+// 	color: $te-section-btn-hover-5;
+// }
+// .is-text-cap{
+// 	color: $te-section-btn-hover-6;
+// }
 /*
 ========================================
 ========================================
@@ -82,6 +99,22 @@
 ========================================
 ========================================
 */
-.layout-title-level-2{
-	font-size: 15px;
+.layout-main-full{
+	.layout-title-level-2{
+		font-size: 15px;
+		padding: 0;
+		text-align: center;
+		width: 132px;
+	}	
+}
+
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.container-main ol li{
+	margin-bottom: 0;
 }

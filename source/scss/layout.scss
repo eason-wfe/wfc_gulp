@@ -2,7 +2,7 @@
 // TW
 @import "layout/tabmenu";
 body{
-	font-family: arial,NotoSans,Microsoft JhengHei,"微軟正黑體"!important;
+	font-family: arial,"微軟正黑體",Microsoft JhengHei!important;
 }
 .for-update-only{
 	font-size: 12px;
@@ -19,13 +19,24 @@ body{
 		font-size: 14px;
 	}
 }
+@media (max-width: 499px){
+	.footer-rise{
+		.tabmenu{
+			bottom: 67px;
+		}
+	}
+}
+@media (min-width: 500px) and (max-width: 767px){
+	.footer-rise{
+		.tabmenu{
+			bottom: 52px;
+		}
+	}
+}
 @media (max-width: 767px){
 	.footer-rise {
 		.backToTop {
 			bottom: 107px;
-		}
-		.tabmenu {
-			bottom: 67px;
 		}
 	}
 }

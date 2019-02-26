@@ -221,6 +221,68 @@
 	}
 }
 /*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.act-cap{
+	overflow: hidden;
+	.uikit-radio{
+		float: left;
+		width: calc( 25% - 3px );
+		margin-left: 4px;
+		&:first-child{
+			margin: 0;
+		}
+		&.is-b{
+			.uikit-radio-label{
+				background-color: $cap-color-2;
+				color: #fff;
+			}
+			.uikit-radio-input:checked + .uikit-radio-label {
+				background-color: $cap-color-2;
+			}
+		}
+		&.is-g{
+			.uikit-radio-label{
+				background-color: $cap-color-3;
+				color: #fff;
+			}
+			.uikit-radio-input:checked + .uikit-radio-label {
+				background-color: $cap-color-3;
+			}
+		}
+		&.is-lg{
+			.uikit-radio-label{
+				background-color: $cap-color-4;
+				color: #fff;
+			}
+			.uikit-radio-input:checked + .uikit-radio-label {
+				background-color: $cap-color-4;
+			}
+		}
+		&.is-y{
+			.uikit-radio-label{
+				background-color: $cap-color-5;
+				color: #fff;
+			}
+			.uikit-radio-input:checked + .uikit-radio-label {
+				background-color: $cap-color-5;
+			}
+		}
+	}
+}
+@media (max-width: 413px){
+	.act-cap{
+		.uikit-radio-label{
+			padding-left: 26px;
+		}
+	}
+}
+
+/*
 ===============================
 ===============================
 ===============================
@@ -309,6 +371,25 @@ $color-2nd: #187bc1;
 	text-align: right;
 	padding:{
 		top: 15px;
+	}
+	input{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 1px;
+	}
+}
+@media (max-width: 439px){
+	.attention-check{
+		input{
+			margin:{
+				top: 5px;
+			}
+		}
+		label{
+			width: calc( 100% - 18px);
+			text-align: left;
+			line-height: 1.6;
+		}
 	}
 }
 @media (min-width: 992px){

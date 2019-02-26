@@ -175,6 +175,10 @@
 	.act-timebox-note {
 		font-size: 12px;
 		transform: translateY(6px);
+		&.with-cap{
+			width: calc( 100% - 37px - 65px - 80px - 15px );
+			vertical-align: top;
+		}
 	}
 	.act-timebox-p {
 		line-height: 1;
@@ -236,5 +240,19 @@
 		.act-width-time {
 			border-right: solid 1px $color-border;
 		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.act-timebox-cap{
+	display: inline-block;
+	img{
+		width: 30px;
+		margin-right: 5px;
 	}
 }

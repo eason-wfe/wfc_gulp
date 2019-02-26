@@ -22,14 +22,21 @@
 @media (max-width: 767px) {
 	.owl-carousel-type-1 {
 		.thumbnailContent .caption {
-			height: 295px; 
+			height: 360px; 
 		}
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 978px) {
 	.owl-carousel-type-1 {
 		.thumbnailContent .caption {
-			height: 355px;
+			height: 400px;
+		}
+	}
+}
+@media (min-width: 979px) {
+	.owl-carousel-type-1 {
+		.thumbnailContent .caption {
+			height: 450px;
 		}
 	}
 }
@@ -63,12 +70,10 @@
 .act-age{
 	font-size: 14px;
 	line-height: 1;
-	color: $color1;
+	color: #ff9000;
 	display: inline-block;
 }
 .layout-content{
-	font-size: 14px;
-	line-height: 1.6;
 	padding:{
 		top: 5px;
 		bottom: 8px;
@@ -76,4 +81,12 @@
 }
 .layout-title-level-3{
 	margin-bottom: 0;
+}
+.layout-title-level-2{
+	width: 210px;
+	text-align: center;
+	padding: 0;
+}
+.block h3{
+	margin-bottom: 3px;
 }

@@ -1,0 +1,13 @@
+@media screen and (orientation: landscape){
+	#menuBar,
+	.tabmenu,#backToTop,
+	footer{
+		display: none;
+	}
+	.container-main{
+		padding:{
+			top: 17px;
+			bottom: 10px;
+		}
+	}
+}
