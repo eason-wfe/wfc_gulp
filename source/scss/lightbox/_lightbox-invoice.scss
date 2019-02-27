@@ -1,0 +1,51 @@
+#invoiceModal {
+	.layout-title-level-3{
+		margin-left: -13px;
+	}
+	.modal-dialog {
+		// box width here
+		margin: 30px auto;
+		width: 530px;
+		max-width: 90%;
+	}
+	.modal-content,
+	.panel {
+		// for lightbox layout
+	}
+	.panel-heading {
+		// title bg color here
+		background-color: $color1;
+	}
+	.panel-title {
+		// title font size here
+		font-size: 22px;
+	}
+	.panel-close {
+		// closer collor here
+		color: $color1;
+	}
+	.panel-body {
+		padding: 20px;
+		img{
+			width: 100%;
+		}
+		ul,ol{
+			margin-right: 5px;
+		}
+		li{
+			position: relative;
+			&:before{
+				content: "•";
+				position: absolute;
+				left: -12px;top: 1px;
+			}
+		}
+		a{
+			color: #00f;
+			text-decoration: underline!important;
+			&:hover{
+				color: #3092ca;
+			}
+		}
+	}
+}

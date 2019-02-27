@@ -1,0 +1,112 @@
+#downloadModal {
+	.modal-dialog {
+		// box width here
+		width: 540px;
+		max-width: 90%;
+		margin: 25px auto;
+	}
+	.modal-content,
+	.panel {
+		// for lightbox layout
+	}
+	.panel-heading {
+		// title bg color here
+		background-color:$color1;
+	}
+	.panel-title {
+		// title font size here
+		font-size: 22px;
+	}
+	.panel-close {
+		// closer collor here
+		color: $color1;
+	}
+	.panel-body {
+		padding: 20px;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.dbox{
+
+	
+}
+.dbox-l{
+	button{
+		margin:{
+			top: 10px;
+			bottom: 10px;
+		}
+	}
+}
+.dbox-title{
+	font:{
+		size: 17px;
+		weight: bold;
+	}
+	color: $color1;
+	margin-bottom: 8px;
+	img{
+		vertical-align: -1px;
+		margin-right: 5px;
+	}
+}
+.dbox-img{
+	display: block;
+	padding: 5px;
+	border: solid 1px #ddd;
+}
+.dbox-item{
+	overflow: hidden;
+	padding: 8px 0;
+	border-bottom: solid 1px #ddd;
+	line-height: 26px;
+	&:last-child{
+		border: none;
+	}
+	button{
+		float: right;
+	}
+}
+@media (max-width: 767px){
+	#downloadModal{
+		.panel-body {
+			padding: 20px;
+		}
+	}
+	.dbox-title{
+		text-align: center;
+	}
+	.dbox-img{
+		margin:{
+			left: auto;
+			right: auto;
+		}
+	}
+}
+@media (min-width: 768px){
+	#downloadModal{
+		.panel-body {
+			padding: 35px;
+		}
+	}
+	.dbox{
+		overflow: hidden;
+		button{
+			padding: 2px 5px;
+		}
+	}
+	.dbox-l{
+		width: 144px;
+		float: left;
+	}
+	.dbox-r{
+		width: calc( 100% - 180px );
+		float: right;
+	}
+}

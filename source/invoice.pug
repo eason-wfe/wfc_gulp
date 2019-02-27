@@ -70,7 +70,7 @@ html(lang='zh-Hant-TW')
 									.retabcard-cell
 										.retabcard-cell-title 發票明細 : 
 										.retabcard-content
-											a(href='', target='_blank') 查看發票明細
+											a(href="#invoiceModal", data-toggle="modal") 查看發票明細
 									.retabcard-cell
 										.retabcard-cell-title 備註 : 
 										.retabcard-content -
@@ -87,7 +87,7 @@ html(lang='zh-Hant-TW')
 									.retabcard-cell
 										.retabcard-cell-title 發票明細 : 
 										.retabcard-content
-											a(href='', target='_blank') 查看發票明細
+											a(href="#invoiceModal", data-toggle="modal") 查看發票明細
 									.retabcard-cell
 										.retabcard-cell-title 備註 : 
 										.retabcard-content -
@@ -116,6 +116,7 @@ html(lang='zh-Hant-TW')
 										li 財稅中心24小時免費服務電話 0800-52-1988
 								li 核淮文號：財北國稅松山營業字第 0980201420 號。
 			include partials/public_footer_tw.pug
+			|<?php include "html_model/mypage/invoice-lightbox.html";?>
 			// JS FOR THIS PAGE ONLY
 			script(src='js/tmpAsideLb.js')
 			script.

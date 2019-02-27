@@ -1,6 +1,9 @@
 @import "usual/im";
 @import "usual/color";
 @import "usual/unit1";
+// lb
+@import "lightbox/lightbox";
+@import "lightbox/lightbox-download";
 .color-1.layout-navbar-arrow-pc:after{
 	display: none;
 }
@@ -187,7 +190,6 @@
 ========================================
 ========================================
 */
-
 @media (max-width: 479px) and (min-width: 414px){
 	.book-btn{
 		a{
@@ -200,4 +202,14 @@
 			width: 100%;
 		}
 	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.is-center{
+	text-align: center;
 }

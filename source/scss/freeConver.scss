@@ -1,0 +1,65 @@
+$te-color-1: #bbedff;
+$te-color-2: #ff8017;
+@import "usual/im";
+@import "usual/color";
+@import "usual/unit2";
+// aside
+@import "te/te-aside";
+// icon picture
+@import "te/te-title-icon";
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.layout-main-full-bg{
+	background:{
+		color: $color2-light;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.fcbox{
+	overflow: hidden;
+	margin:{
+		top: 5px;
+		bottom: 45px;
+	}
+}
+.fcitem{
+	text-align: center;
+	font-size: 15px;
+	line-height:1.4;
+	background:{
+		color: rgba(255,255,255,.5);
+	}
+	border: dotted 1px #fff;
+	float: left;
+	border-radius: 6px;
+	padding: 8px;
+}
+@media (max-width: 767px){
+	.fcitem{
+		width: calc( 50% - 20px );
+		margin-bottom: 20px;
+		&:nth-child(odd){
+			margin-right: 20px;
+		}
+	}
+}
+@media (min-width: 768px){
+	.fcitem{
+		width: calc( 25% - 15px );
+		margin-right: 20px;
+		&:nth-child(4n){
+			margin: 0;
+		}
+	}
+}

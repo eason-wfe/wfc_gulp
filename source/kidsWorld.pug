@@ -61,15 +61,33 @@ html(lang='zh-Hant-TW')
 										.book-title #{第158期}
 										img.book-img(src=url)
 										.book-btn
-											a(href='#').book-pen
+											a.book-pen(href='#')
 												span.book-icon
 												|#{pen}
-											a(href='#').book-cd
+											a.book-cd(href="#downloadModal", data-toggle="modal")
 												span.book-icon
 												|#{cd}
 								each item in page.kidsWorld
 									+group(item.num,item.url,'妙妙筆下載','CD下載')
-			include partials/public_footer_tw.pug					
+						hr
+						hr
+						hr
+						hr
+						hr
+						.layout-main
+							img.vision(src='img/download/zippy.gif')
+							.layout-content.is-center
+								|親愛的會員您好，
+								br
+								|此為Zippy 妙妙筆下載功能，歡迎您來電客服中心購買這個神奇的Zippy 妙妙筆ㄛ!!
+								br
+								|客服中心電話：0809-080-000
+								br
+								|寰宇家庭俱樂部
+								br
+								|祝您闔家平安
+			include partials/public_footer_tw.pug
+			|<?php include "html_model/download/download-lightbox.html";?>				
 			// JS FOR THIS PAGE ONLY
 			script.
 				$(document).ready(function(){
