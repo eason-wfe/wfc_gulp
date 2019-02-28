@@ -1,0 +1,32 @@
+//
+	====================================
+	——— HEADER
+	=====================================
+header#pageTop.header-wrapper 
+	|<?php include "html_model/header/header-1.html";?>
+	// NAVBAR
+	nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+		.container
+			if ( country === 'tw')
+				|<?php include "html_model/header/header-2.html";?>
+			else
+				|<?php include "html_model/header/header-2-kr.html";?>
+		//
+			====================================
+			——— BREAD CRUMB
+			=====================================
+		.layout-breadcrumb-box
+			.container
+				nav(aria-label='breadcrumb')
+					ol.breadcrumb.text-truncate
+						li.breadcrumb-item
+							a(href='#') #{floor1}
+						if ( !floor2 )
+						else
+							li.breadcrumb-item #{floor2}
+						if ( !floor3 )
+						else
+							li.breadcrumb-item #{floor3}
+						if ( !floor4 )
+						else
+							li.breadcrumb-item #{floor4}

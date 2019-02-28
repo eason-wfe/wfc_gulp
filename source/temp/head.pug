@@ -18,8 +18,10 @@ link(href='assets/plugins/font-awesome/css/font-awesome.min.css', rel='styleshee
 // template 
 link(href='css/app.css', rel='stylesheet')
 link#option_color(href='css/default.css', rel='stylesheet')
-// IT 
-link(href='css/layout.css', rel='stylesheet')
-//- link(href="css/layout_kr.css" rel="stylesheet")
+// IT
+if ( country === 'tw' )
+	link(href='css/layout.css', rel='stylesheet')
+else
+	link(href="css/layout_kr.css" rel="stylesheet")
 // jq 
 script(src='assets/plugins/jquery/jquery-min.js')

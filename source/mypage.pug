@@ -1,234 +1,213 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(rel='stylesheet', href='css/mypage.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										a(href='') 我的專區
-									li.breadcrumb-item
-										| 我的專區
-			// aside + main
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
-						.panel-heading.bg-color-5.border-color-5
-							h3.panel-title 我的專區
-							.aside-lb-close x
-						aside.layout-sub.px-4.py-4
-							ul.art-list-f2
-								|<?php include "html_model/mypage/aside.html";?>
-					.col-xs-12.col-sm-12.col-md-9
-						// v UNIT STARTING v
-						.layout-main.layout-deco-title.pb-4
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-5.mt-0
-								h2
-									span.shape.shape-left
-									span 我的專區
-									span.shape.shape-right
-							h3.layout-title-level-3.icon1 會員資料 
-							.profile
-								.profile-img(style='background-image: url(img/no_picture.png);')
-								ul.profile-box
-									li.profile-item
-										.profile-title 會員編號：
-										.profile-content S516888
-									li.profile-item
-										.profile-title 會員真實姓名：
-										.profile-content 史塔克
-									li.profile-item
-										.profile-title 會員匿稱：
-										.profile-content 鐵腕 老爸
-									li.profile-item
-										.profile-title 俱樂部會員到期日：
-										.profile-content 2100/12/31
-									li.profile-item
-										.profile-title CAP優惠到期日：
-										.profile-content 2019/05/01
-									li.profile-item
-										.profile-title 您的活動餘額：
-										.profile-content $ 0
-									li.profile-item
-										.profile-title 有效學習點數：
-										.profile-content 165 點
-									li.profile-item
-										.profile-title 即將到期學習點數：
-										.profile-content.is-point 6 點 ( 請於 2018/11/30 前兌換完畢 )
-								button.btn.layout-btn.profile-btn(type='button')
-									| 修改個人資料
-							ul.linkBox.share5.mt-5
-								li
-									a.link1(href='#target1') 最新消息
-								li
-									a.link2(href='#target2') 我的個人訊息
-								li
-									a.link3(href='#target3') 我的最新留言通知
-								li
-									a.link4(href='#target4') 我的文章
-								li
-									a.link5(href='#target5') 我追蹤的文章
-						// v UNIT v
-						#target1.layout-main.collapse-first
-							.layout-collapse.color-1
-								h3.layout-title-level-3.icon1.mt-0 最新消息
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								.innerbox.inner-1
-									ul.layout-card.mt-0.has-sign
-										//
-											[^ 註 ^]
-											此單元有 icon，用來提示是否看過
-										|<?php include "html_model/mypage/card-item-news.html";?>
-										|<?php include "html_model/mypage/card-item-news.html";?>
-									.pagerArea.text-center.color-1
-										|<?php include "html_model/uikit/pager-item.html";?>
-						// v UNIT v
-						#target2.layout-main
-							.layout-collapse.color-2
-								h3.layout-title-level-3.icon3.mt-0 我的個人訊息
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								.innerbox.inner-2
-									ul.layout-card.mt-0.has-sign
-										//
-											[^ 註 ^]此單元有 icon 提示是否看過
-										|<?php include "html_model/mypage/card-item-myevent.html";?>
-										|<?php include "html_model/mypage/card-item-myevent.html";?>
-									.pagerArea.text-center.color-2
-										|<?php include "html_model/uikit/pager-item.html";?>
-						// v UNIT v
-						#target3.layout-main
-							.layout-collapse.color-3
-								h3.layout-title-level-3.icon4.mt-0 我的最新留言通知
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								.innerbox.inner-3
-									ul.layout-card.mt-0.has-sign
-										//
-											[^ 註 ^]此單元有 icon 提示是否看過
-										|<?php include "html_model/mypage/card-item-mymsg.html";?>
-										|<?php include "html_model/mypage/card-item-mymsg.html";?>
-									.pagerArea.text-center.color-3
-										|<?php include "html_model/uikit/pager-item.html";?>
-						// v UNIT v
-						#target4.layout-main
-							.layout-collapse.color-4
-								h3.layout-title-level-3.icon2.mt-0 我的文章
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								.innerbox.inner-4
-									ul.layout-card.mt-0
-										|<?php include "html_model/mypage/card-item-myarticle.html";?>
-										|<?php include "html_model/mypage/card-item-myarticle.html";?>
-									.pagerArea.text-center.color-4
-										|<?php include "html_model/uikit/pager-item.html";?>
-						// v UNIT v
-						#target5.layout-main
-							.layout-collapse.color-5
-								h3.layout-title-level-3.icon6.mt-0 我追蹤的文章
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								.innerbox.inner-5
-									ul.layout-card.mt-0
-										|<?php include "html_model/mypage/card-item-myarticle.html";?>
-										|<?php include "html_model/mypage/card-item-myarticle.html";?>
-									.pagerArea.text-center.color-5
-										|<?php include "html_model/uikit/pager-item.html";?>
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						.layout-main.layout-deco-title
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							// LEVEL 1
-							.sectionTitle.text-center.color-5.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span 修改個人資料
-									span.shape.shape-right
-							.profile.is-setting
-								.profile-img(style='background-image: url(img/no_picture.png);')
-								ul.profile-box
-									li.profile-item
-										.profile-title 修改匿稱：
-										.profile-content
-											input(type='text', placeholder='請輸入新匿稱')
-									li.profile-item
-										.profile-title 修改密碼：
-										.profile-content
-											input(type='password', placeholder='輸入新密碼')
-									li.profile-item
-										.profile-title 再次確認：
-										.profile-content
-											input(type='password', placeholder='確認新密碼')
-								button.btn.layout-btn.profile-btn.is-giveup(type='button')
-									| 放棄修改
-								button.btn.layout-btn.profile-btn(type='button')
-									| 確定修改
-								button.btn.layout-btn.profile-btn.is-pic(type='button')
-									| 修改大頭照
-						hr
-						hr
-						hr
-						hr
-						hr
-						h3 最新消息內文頁
-						.layout-main.layout-deco-title
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-5.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span
-										| 最新消息
-									span.shape.shape-right
-							.post-titlebox
-								p.post-titlebox-p
-									| 【新活動開放報名】
-							.post-time 2019-01-26 01:23
-							.post-contbox
-								| 今日台南、高雄、嘉義 「看！我是馬戲團小明星」、「馬戲團出遊趣」
-								img(src='img/community/ad.jpg')
-							.post-btnbox
-								button.btn.layout-btn.layout-btn-sm.is-left(type='button')
-									| 返回例表
-								button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
-									| 上一篇
-								button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
-									| 下一篇
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/tmpAsideLb.js')
-			script(src='js/mypage.js')
-			script.
-				$(function(){
-				$(".art-list-f2-item").eq(0).find(".art-list-f2-link").addClass("now");
-				// ^ 演示用，請參考
-				});
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '我的專區'
+	-var floor2 = '我的專區'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(rel='stylesheet', href='css/mypage.css')
+
+block container
+	// aside + main
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
+				.panel-heading.bg-color-5.border-color-5
+					h3.panel-title 我的專區
+					.aside-lb-close x
+				aside.layout-sub.px-4.py-4
+					ul.art-list-f2
+						|<?php include "html_model/mypage/aside.html";?>
+			.col-xs-12.col-sm-12.col-md-9
+				// v UNIT STARTING v
+				.layout-main.layout-deco-title.pb-4
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-5.mt-0
+						h2
+							span.shape.shape-left
+							span 我的專區
+							span.shape.shape-right
+					h3.layout-title-level-3.icon1 會員資料 
+					.profile
+						.profile-img(style='background-image: url(img/no_picture.png);')
+						ul.profile-box
+							li.profile-item
+								.profile-title 會員編號：
+								.profile-content S516888
+							li.profile-item
+								.profile-title 會員真實姓名：
+								.profile-content 史塔克
+							li.profile-item
+								.profile-title 會員匿稱：
+								.profile-content 鐵腕 老爸
+							li.profile-item
+								.profile-title 俱樂部會員到期日：
+								.profile-content 2100/12/31
+							li.profile-item
+								.profile-title CAP優惠到期日：
+								.profile-content 2019/05/01
+							li.profile-item
+								.profile-title 您的活動餘額：
+								.profile-content $ 0
+							li.profile-item
+								.profile-title 有效學習點數：
+								.profile-content 165 點
+							li.profile-item
+								.profile-title 即將到期學習點數：
+								.profile-content.is-point 6 點 ( 請於 2018/11/30 前兌換完畢 )
+						button.btn.layout-btn.profile-btn(type='button')
+							| 修改個人資料
+					ul.linkBox.share5.mt-5
+						li
+							a.link1(href='#target1') 最新消息
+						li
+							a.link2(href='#target2') 我的個人訊息
+						li
+							a.link3(href='#target3') 我的最新留言通知
+						li
+							a.link4(href='#target4') 我的文章
+						li
+							a.link5(href='#target5') 我追蹤的文章
+				// v UNIT v
+				#target1.layout-main.collapse-first
+					.layout-collapse.color-1
+						h3.layout-title-level-3.icon1.mt-0 最新消息
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-1
+							ul.layout-card.mt-0.has-sign
+								//
+									[^ 註 ^]
+									此單元有 icon，用來提示是否看過
+								|<?php include "html_model/mypage/card-item-news.html";?>
+								|<?php include "html_model/mypage/card-item-news.html";?>
+							.pagerArea.text-center.color-1
+								|<?php include "html_model/uikit/pager-item.html";?>
+				// v UNIT v
+				#target2.layout-main
+					.layout-collapse.color-2
+						h3.layout-title-level-3.icon3.mt-0 我的個人訊息
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-2
+							ul.layout-card.mt-0.has-sign
+								//
+									[^ 註 ^]此單元有 icon 提示是否看過
+								|<?php include "html_model/mypage/card-item-myevent.html";?>
+								|<?php include "html_model/mypage/card-item-myevent.html";?>
+							.pagerArea.text-center.color-2
+								|<?php include "html_model/uikit/pager-item.html";?>
+				// v UNIT v
+				#target3.layout-main
+					.layout-collapse.color-3
+						h3.layout-title-level-3.icon4.mt-0 我的最新留言通知
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-3
+							ul.layout-card.mt-0.has-sign
+								//
+									[^ 註 ^]此單元有 icon 提示是否看過
+								|<?php include "html_model/mypage/card-item-mymsg.html";?>
+								|<?php include "html_model/mypage/card-item-mymsg.html";?>
+							.pagerArea.text-center.color-3
+								|<?php include "html_model/uikit/pager-item.html";?>
+				// v UNIT v
+				#target4.layout-main
+					.layout-collapse.color-4
+						h3.layout-title-level-3.icon2.mt-0 我的文章
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-4
+							ul.layout-card.mt-0
+								|<?php include "html_model/mypage/card-item-myarticle.html";?>
+								|<?php include "html_model/mypage/card-item-myarticle.html";?>
+							.pagerArea.text-center.color-4
+								|<?php include "html_model/uikit/pager-item.html";?>
+				// v UNIT v
+				#target5.layout-main
+					.layout-collapse.color-5
+						h3.layout-title-level-3.icon6.mt-0 我追蹤的文章
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-5
+							ul.layout-card.mt-0
+								|<?php include "html_model/mypage/card-item-myarticle.html";?>
+								|<?php include "html_model/mypage/card-item-myarticle.html";?>
+							.pagerArea.text-center.color-5
+								|<?php include "html_model/uikit/pager-item.html";?>
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				.layout-main.layout-deco-title
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					// LEVEL 1
+					.sectionTitle.text-center.color-5.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span 修改個人資料
+							span.shape.shape-right
+					.profile.is-setting
+						.profile-img(style='background-image: url(img/no_picture.png);')
+						ul.profile-box
+							li.profile-item
+								.profile-title 修改匿稱：
+								.profile-content
+									input(type='text', placeholder='請輸入新匿稱')
+							li.profile-item
+								.profile-title 修改密碼：
+								.profile-content
+									input(type='password', placeholder='輸入新密碼')
+							li.profile-item
+								.profile-title 再次確認：
+								.profile-content
+									input(type='password', placeholder='確認新密碼')
+						button.btn.layout-btn.profile-btn.is-giveup(type='button')
+							| 放棄修改
+						button.btn.layout-btn.profile-btn(type='button')
+							| 確定修改
+						button.btn.layout-btn.profile-btn.is-pic(type='button')
+							| 修改大頭照
+				hr
+				hr
+				hr
+				hr
+				hr
+				h3 最新消息內文頁
+				.layout-main.layout-deco-title
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-5.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| 最新消息
+							span.shape.shape-right
+					.post-titlebox
+						p.post-titlebox-p
+							| 【新活動開放報名】
+					.post-time 2019-01-26 01:23
+					.post-contbox
+						| 今日台南、高雄、嘉義 「看！我是馬戲團小明星」、「馬戲團出遊趣」
+						img(src='img/community/ad.jpg')
+					.post-btnbox
+						button.btn.layout-btn.layout-btn-sm.is-left(type='button')
+							| 返回例表
+						button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
+							| 上一篇
+						button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
+							| 下一篇
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/tmpAsideLb.js')
+	script(src='js/mypage.js')
+	script.
+		$(function(){
+		$(".art-list-f2-item").eq(0).find(".art-list-f2-link").addClass("now");
+		// ^ 演示用，請參考
+		});

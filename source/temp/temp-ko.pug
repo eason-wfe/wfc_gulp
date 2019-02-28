@@ -1,0 +1,12 @@
+block var
+doctype html
+html(lang='ko')
+	head 
+		include head.pug
+		block head-self
+	body.body-wrapper
+		.main-wrapper
+			include nav.pug
+			block container
+			include footer.pug
+			block js
