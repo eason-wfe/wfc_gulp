@@ -1,90 +1,52 @@
-doctype html
-//
-	KOREA
-	1. @import "te/te/aside-kr";
-	2. css link css/te_kr
-	== usual ==
-	1. css/layout_kr.css ( in head.html )
-	2. html_model/header-2-kr.html
-	3. html_model/tabmenu-kr.html
-	4. html_model/footer-kr.html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(href='assets/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
-		link(rel='stylesheet', href='css/freeConver.css')
-		// <link rel="stylesheet" href="css/freeConver.css">
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-						|<?php //include "html_model/header/header-2-kr.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										a(href='') 美語學習
-									li.breadcrumb-item
-										| Free Conversation
-			//
-				====================================
-				——— CONTAINER STR
-				=====================================
-			// main + aside
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-8.col-lg-9
-						.layout-main.layout-main-vision
-							img.layout-main-vision-img(src='img/conversation/vision.jpg')
-						.layout-main
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									span.shape.shape-left
-									span Free Conversation
-									span.shape.shape-right
-							.layout-content
-								|Free Conversation 是 Telephone English （電話美語）服務中，針對已經完成 Book 1 至 12 所有課程、並可理解美語叔叔、阿姨提問後用簡短完整句子正確解答的孩子所設計。
-								br
-								br
-								|孩子可以從每個月的四個主題中，選出其中一項主題與叔叔、阿姨做自由會話的練習。爸爸、媽媽們可以在孩子選擇好主題後，可以請孩子準備好一些想跟叔叔、阿姨說的話，加深對話的樂趣喔！下方為當月和下一個月的主題，讓孩子可以預先針對主題發想，例如：主題是「寵物」，孩子可以問美語叔、阿姨「你有寵物嗎？」、「你有什麼寵物？」、「為什麼你沒有寵物呢？」、「你的寵物幾歲呢？」等。
-						.layout-main.layout-main-full
-							.layout-main-full-bg.layout-main-full-left
-							.layout-main-full-inbox
-								h3.layout-title-level-3.color-2.icon1.mt-0 四月Free Conversation 主題
-								ul.fcbox
-									li.fcitem
-										.fccell
-											.fctext Greet and Meet
-									li.fcitem
-										.fccell
-											.fctext My Habbits
-									li.fcitem
-										.fccell
-											.fctext Go to School
-									li.fcitem
-										.fccell
-											.fctext My Family
-								h3.layout-title-level-3.color-2.icon2 五月Free Conversation 主題
-							
-					|<?php include "html_model/te/te-aside.html";?>
-			//- include partials/public_footer_kr.pug
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/fullScreen.js')
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '美語學習'
+	-var floor3 = '電話美語'
+	-var floor4 = 'Free Conversation'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(href='assets/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+	link(rel='stylesheet', href='css/freeConver.css')
+	// <link rel="stylesheet" href="css/freeConver.css">
+
+block container
+	// main + aside
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-8.col-lg-9
+				.layout-main.layout-main-vision
+					img.layout-main-vision-img(src='img/te/free_conver.jpg')
+				.layout-main
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							span.shape.shape-left
+							span Free Conversation
+							span.shape.shape-right
+					.layout-content
+						|Free Conversation 是 Telephone English （電話美語）服務中，針對已經完成 Book 1 至 12 所有課程、並可理解美語叔叔、阿姨提問後用簡短完整句子正確解答的孩子所設計。
+						br
+						br
+						|孩子可以從每個月的四個主題中，選出其中一項主題與叔叔、阿姨做自由會話的練習。爸爸、媽媽們可以在孩子選擇好主題後，可以請孩子準備好一些想跟叔叔、阿姨說的話，加深對話的樂趣喔！下方為當月和下一個月的主題，讓孩子可以預先針對主題發想，例如：主題是「寵物」，孩子可以問美語叔、阿姨「你有寵物嗎？」、「你有什麼寵物？」、「為什麼你沒有寵物呢？」、「你的寵物幾歲呢？」等。
+				.layout-main.layout-main-full
+					.layout-main-full-bg.layout-main-full-left
+					.layout-main-full-inbox
+						h3.layout-title-level-3.icon1.mt-0 四月Free Conversation 主題
+						mixin list(url,text)
+							li.fcitem
+								img(src=url)
+								|#{text}
+						ul.fcbox
+							each item1 in page.freeConverEven
+								+list(item1.url,item1.text)
+						h3.layout-title-level-3.icon2 五月Free Conversation 主題
+						ul.fcbox
+							each item2 in page.freeConverOdd
+								+list(item2.url,item2.text)
+			|<?php include "html_model/te/te-aside.html";?>
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/fullScreen.js')

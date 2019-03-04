@@ -171,10 +171,18 @@
 	margin-bottom: 0;
 }
 .act-donebox-strong {
+	font-size: 0;
 	.act-donebox-p,
 	.act-donebox-p-dark {
-		font-size: 17px;
+		font-size: 16px;
 		font-weight: bold;
+		display: inline-block;
+	}
+	.act-donebox-p{
+		width: 125px;
+	}
+	.act-donebox-p-dark{
+		width: calc( 100% - 125px);
 		text-align: right;
 	}
 }

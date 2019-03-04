@@ -138,5 +138,41 @@
 			"num": "第153期 / 2018 3~4",
 			"url": "img/download/kw153.jpg"
 		}
+	],
+	"freeConverEven": [
+		{
+			"url": "img/te/te_fc.png",
+			"text": "If you could design the perfect play space for yourself, what would it have in it?"
+		},
+		{
+			"url": "img/te/te_fc2.png",
+			"text": "If you were stuck on an island…."
+		},
+		{
+			"url": "img/te/te_fc3.png",
+			"text": "If you were an animal, what animal would you be?"
+		},
+		{
+			"url": "img/te/te_fc4.png",
+			"text": "What do you think would be the best thing about being a dog or cat?"
+		}
+	],
+	"freeConverOdd": [
+		{
+			"url": "img/te/te_fc.png",
+			"text": "Feelings"
+		},
+		{
+			"url": "img/te/te_fc2.png",
+			"text": "If you could spend your time doing only one activity, what would that activity be? Why?"
+		},
+		{
+			"url": "img/te/te_fc3.png",
+			"text": "Outer space"
+		},
+		{
+			"url": "img/te/te_fc4.png",
+			"text": "Dreams"
+		}
 	]
 }

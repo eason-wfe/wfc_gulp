@@ -122,4 +122,26 @@ $(function () {
 			});
 		});
 	});
+	/*========== IE aside (not Edge) ============*/
+	if(/net/i.test(navigator.userAgent)){
+		var $target = $('.sticky-top');
+		$(window).scroll(function(){
+			// console.log($(window).scrollTop());
+			$target.css({'top':0})
+			if( $(window).scrollTop() >= 226 ){
+				console.log('>=226')
+				$target.css({'position':'fixed','top':'500'})
+			}else{
+				$target.removeAttr('style');
+			}		
+		}).scroll();
+
+		
+		$('.row').find('.sticky-top').css({"background":"#f00;"});
+			
+		// if( !$('.row').has('.sticky-top') ){
+		// 	console.log('no aside');
+		// }
+		
+	}
 });
