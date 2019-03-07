@@ -155,17 +155,32 @@ block container
 						.profile-img(style='background-image: url(img/no_picture.png);')
 						ul.profile-box
 							li.profile-item
-								.profile-title 修改匿稱：
-								.profile-content
-									input(type='text', placeholder='請輸入新匿稱')
+								.profile-title 修改暱稱：
+								.profile-content 鐵腕老爸
+								.profile-fix
+									input(type='text', placeholder='請輸入新匿稱' value='')
 							li.profile-item
 								.profile-title 修改密碼：
-								.profile-content
+								.profile-content.is-pw
+									input(type='password', placeholder='輸入舊密碼')
+								.profile-fix
 									input(type='password', placeholder='輸入新密碼')
-							li.profile-item
-								.profile-title 再次確認：
-								.profile-content
 									input(type='password', placeholder='確認新密碼')
+							li.profile-item
+								.profile-title 修改 email：
+								.profile-content nowmail@gmail.com
+								.profile-fix
+									input(type='mail', placeholder='輸入新 email')
+									input(type='mail', placeholder='確認新 email')
+							li.profile-item
+								.profile-title 修改小孩英文名字：
+								.profile-content
+								.profile-fix.is-child
+									.fix-name 歐楊大明 / 
+									input.fix-input(type="text", placeholder='輸入英文名字' value='Bill')
+									.fix-name 歐楊曉英 / 
+									input.fix-input(type="text", placeholder='輸入英文名字' value='Merry')
+									
 						button.btn.layout-btn.profile-btn.is-giveup(type='button')
 							| 放棄修改
 						button.btn.layout-btn.profile-btn(type='button')
