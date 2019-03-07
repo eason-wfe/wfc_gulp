@@ -1,87 +1,87 @@
-.layout-card-item
-	.h-name 歐陽大明、歐陽曉英
-	.h-box.carnival-box
-		.act-state.act-state-sm.h-state.state-car-1
-			.act-state-inside
-				.act-state-word.h-state-word.carnival-state(data-width='60') 已報名
-		.h-item.share-box
-			a.h-msg.is-big.share-left.main-msg(href='')
-				.car-color-icon.car-color-e
-					span W
-					| 美語喜年華
-				//              
+mixin list(state,stateText,title,address,memo)
+	.layout-card-item
+		.h-name 歐陽大明、歐陽曉英
+		.h-box.carnival-box
+			.act-state.act-state-sm.h-state(class= state)
+				//            
 					[^ 註 ^]
-					ele .car-color-icon 加 class 分色，分別是
-					.car-color-e、
-					.car-color-p ....
-					原本十個分類-尾代號 e p a z d b f k w c 
-					預備新增用色-尾代號 11 12
-
-				|  【Outdoor Dance Party 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞】
-			.h-date.is-small.cancel-target.share-right
-				a.mypage-btn-cancel.h-cancel-btn(href='')
-					| 取消
-					span.mypage-btn-cancel-x x
-		.h-item
-			.h-msg.is-small
-				span.h-msg-item 活動費用 : $1,250 ( 應付 )
-				span.h-msg-vr
-				span.h-msg-item 參加人次：2大2小
-				span.h-msg-vr
-				span.h-msg-item 活動日期：2018/11/01 09:00
-			.h-date.is-small.fr 報名日期：2018/11/01 09:00
-// REPEAT DEMO 
-.layout-card-item
-	.h-name 歐陽大明、歐陽曉英
-	.h-box.carnival-box
-		.act-state.act-state-sm.h-state.state-car-2
-			//            
-				[^ 註 ^]
-				報名狀態 + class
-				己報名 + .state-car-1
-				己候補 + .state-card-2
-
-			.act-state-inside
-				.act-state-word.h-state-word.carnival-state 已候補
-		.h-item.share-box
-			a.h-msg.is-big.share-left.main-msg(href='')
-				.car-color-icon.car-color-k
-					span k
-					| 美語喜年華
-				| 【Outdoor Dance Party 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞】
-			.h-date.is-small.cancel-target.share-right
-				a.mypage-btn-cancel.h-cancel-btn(href='')
-					| 取消
-					span.mypage-btn-cancel-x x
-		.h-item
-			.h-msg.is-small
-				span.h-msg-item 活動費用 : $1,250 ( 應付 )
-				span.h-msg-vr
-				span.h-msg-item 參加人次：2大2小
-				span.h-msg-vr
-				span.h-msg-item 活動日期：2018/11/01 09:00
-			.h-date.is-small.fr 報名日期：2018/11/01 09:00
-.layout-card-item
-	.h-name 歐陽大明、歐陽曉英
-	.h-box.carnival-box
-		.act-state.act-state-sm.h-state
-			.act-state-inside
-				.act-state-word.h-state-word.carnival-state 己報名
-		.h-item.share-box
-			a.h-msg.is-big.share-left.main-msg(href='')
-				.car-color-icon.car-color-f
-					span f
-					| 美語喜年華
-				| 【Outdoor Dance Party 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞 與大自然共舞】
-			.h-date.is-small.cancel-target.share-right
-				a.mypage-btn-cancel.h-cancel-btn(href='')
-					| 取消
-					span.mypage-btn-cancel-x x
-		.h-item
-			.h-msg.is-small
-				span.h-msg-item 活動費用 : $1,250 ( 應付 )
-				span.h-msg-vr
-				span.h-msg-item 參加人次：2大2小
-				span.h-msg-vr
-				span.h-msg-item 活動日期：2018/11/01 09:00
-			.h-date.is-small.fr 報名日期：2018/11/01 09:00
+					報名狀態 + class
+					己報名 + .state-car-1
+					己候補 + .state-car-2
+					己參加 + .state-car-3
+				.act-state-inside
+					.act-state-word.h-state-word.carnival-state(data-width='60') #{stateText}
+			.h-item.share-box
+				a.h-msg.is-big.share-left.main-msg(href='')
+					.car-color-icon.car-color-e
+						span W
+						| 美語喜年華
+					//
+						[^ 註 ^]
+						ele .car-color-icon 加 class 分色，分別是
+						.car-color-e、
+						.car-color-p ....
+						原本十個分類-尾代號 e p a z d b f k w c 
+						預備新增用色-尾代號 11 12
+					|#{title}
+				.h-date.is-small.cancel-target.share-right
+					a.mypage-btn-cancel.h-cancel-btn(href='')
+						| 取消
+						span.mypage-btn-cancel-x x
+			.h-item
+				.h-msg.is-small
+					span.h-msg-item
+						span.h-col-title 活動日期：
+						span.h-col-cont 2018/11/01 14:00~15:10
+					span.h-msg-vr
+					span.h-msg-item 
+						span.h-col-title 活動地點：
+						span.h-col-cont #{address}
+			.h-item
+				.h-msg.is-small
+					span.h-msg-item 
+						span.h-col-title 注意事項：
+						span.h-col-cont #{memo}
+						.h-linkbox
+							a.h-col-link(href='#') 寄送活動預習單
+							a.h-col-link.coll-btn(href='#' data-text='^ 收合資訊') v 展開更多資訊
+		.h-collapse
+			.h-item
+				.h-msg.is-small
+					span.h-msg-item
+						span.h-col-title 參加人數：
+						span.h-col-cont 
+							|一位大人 / 
+							|歐陽大明 
+							span.h-hat.is-b
+								|(
+								img(src='img/activity/c02.png')
+								| 藍色 )
+							|、歐陽曉英
+							span.h-hat.is-g
+								|(
+								img(src='img/activity/c03.png')
+								| 綠色 )
+							|、歐陽淺綠
+							span.h-hat.is-gl
+								|(
+								img(src='img/activity/c04.png')
+								| 淺綠 )
+							|、歐陽黃
+							span.h-hat.is-y
+								|(
+								img(src='img/activity/c05.png')
+								| 黃色 )
+			.h-item
+				.h-msg.is-small
+					span.h-msg-item 
+						span.h-col-title 座位(區/排/號)：
+						span.h-col-cont 
+							span.h-sets 大廳區樓下C區25排21號 /
+							span.h-sets 大廳區樓下C區25排23號 /
+							span.h-sets 大廳區樓下C區25排25號 /
+							span.h-sets 大廳區樓下C區25排27號 /
+							span.h-sets 大廳區樓下C區25排29號
+				.h-price 活動費用：$2,475 (應付)
+each item in page.historyTwCarnival
+	+list(item.state,item.stateText,item.title,item.address,item.memo)

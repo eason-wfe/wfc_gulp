@@ -27,6 +27,14 @@ $color-cancel :#868686;
 		background-color: $color-car-2;
 	}
 }
+.state-car-3{
+	&.h-state{
+		border-color: #aaa;
+	}
+	.h-state-word{
+		background-color: #aaa;
+	}
+}
 /*
 ========================================
 ========================================

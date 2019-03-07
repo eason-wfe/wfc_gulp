@@ -19,8 +19,10 @@ header#pageTop.header-wrapper
 			.container
 				nav(aria-label='breadcrumb')
 					ol.breadcrumb.text-truncate
-						li.breadcrumb-item
-							a(href='#') #{floor1}
+						if ( !floor1 )
+						else
+							li.breadcrumb-item
+								a(href='#') #{floor1}
 						if ( !floor2 )
 						else
 							li.breadcrumb-item #{floor2}

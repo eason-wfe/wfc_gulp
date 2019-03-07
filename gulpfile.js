@@ -31,9 +31,11 @@ gulp.task('partials', ()=>
 	gulp.src('./source/partials/**/*.pug')
 	.pipe($.plumber())
 	.pipe($.data(function(){
-		var header = require('./source/data/header.json')
+		var header = require('./source/data/header.json'),
+			page = require('./source/data/page.json')
 			source = {
-				'header': header
+				'header': header,
+				'page': page
 			}
 		return source;
 	}))
