@@ -1,162 +1,142 @@
-doctype html
-html(lang='tw')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(rel='stylesheet', href='assets/plugins/slick/slick.css')
-		link(rel='stylesheet', href='assets/plugins/slick/slick-theme.css')
-		link(rel='stylesheet', href='css/zippyFriends.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										| Zippy 家族
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
-						// !!! here !!!
-						.panel-heading.bg-color-1.border-color-1
-							h3.panel-title Zippy 家族
-							.aside-lb-close x
-							// !!! here !!!
-						aside.layout-sub.px-4.py-4
-							ul.art-list-f2
-								li.art-list-f2-item
-									a.art-list-f2-link.now(href='') Zippy 家族
-								li.art-list-f2-item
-									a.art-list-f2-link(href='') Zippy
-								li.art-list-f2-item
-									a.art-list-f2-link(href='') Froggy & Bunny
-								li.art-list-f2-item
-									a.art-list-f2-link(href='') Pompom
-								li.art-list-f2-item
-									a.art-list-f2-link(href='', violet='') Elvis
-								li.art-list-f2-item
-									a.art-list-f2-link(href='') Clem
-					.col-xs-12.col-sm-12.col-md-9
-						.layout-main
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-1.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span
-										| Zippy 家族
-									span.shape.shape-right
-							.friends-view-list(style='background-image: url(img/zippyfriends/all.jpg);')
-							ul.friends
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/1.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										img.friends-img(src='img/wfcfriends/2.jpg')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/3.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/4.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/5.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/6.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-								li.friends-item
-									a.friends-link(href='')
-										.friends-img(style='background-image: url(img/wfcfriends/7.jpg);')
-										p.friends-name Jimmy Jimmy Jimmy
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						.layout-main
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-1.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span
-										| Zippy 家族
-									span.shape.shape-right
-							.friends-view(style='background-image: url(img/zippyfriends/all.jpg);')
-							h3.layout-title-level-3.icon4 角色影片：
-							.layout-video-fluid
-								iframe(src='https://www.youtube.com/embed/-CO6hOKn8Yg', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
-							h3.layout-title-level-3.icon5 角色介紹：
-							.layout-content
-								.friend-name Zippy家族
-								.friend-local
-									| 寰宇家庭有很多獨特、可愛，而且具吸引力的卡通人物。
-									br
-									| 								他們不但深受小朋友的喜愛，也在學習過程裡扮演重要角色。
-									br
-									| 								這些卡通人物的出現，可以加強孩子的想像力，加深他們的美語學習興趣，更可以使他們可以簡單輕鬆地學習重要的文法。
-								.friend-eng
-									| There are a lot of unique, cute and attractive characters from World Family.
-									br
-									| 								(World Family has a lot of unique, cute and attractive characters.)
-									br
-									| 								These characters are not only deeply loved by children but also play an important role in their learning process.
-									br
-									| 								These characters help reinforce children’s imagination and deepen their interests in English learning. Most importantly, they help children acquire grammar rules easily.
-							h3.layout-title-level-3.icon2.mb-3 人物寫真：
-							.slick.slick-darkarrow
-								div(style='background-image: url(img/zippyfriends/1.jpg)')
-								div(style='background-image: url(img/zippyfriends/2.jpg)')
-								div(style='background-image: url(img/zippyfriends/3.jpg)')
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='assets/plugins/slick/slick.min.js', type='text/javascript')
-			script(src='js/tmpAsideLb.js')
-			script.
-				$(function(){
-				// PLUGIN
-				$('.slick').slick({
-				dots: true,
-				autoplay: false,
-				autoplaySpeed: 1000,
-				arrows : true
-				});
-				// IMG RATIO
-				$(".friends-view-list").css({"height": $(".friends-view-list").width() * 0.5046 })
-				$(".friends-view").css({"height": $(".friends-view").width() * 0.707 });
-				$(".friends-img").css({"height": $(".friends-img").width() * 0.7467 });
-				$(".slick").css({"height": $(".slick").width() * 0.7516 });
-				$(".slick-track").css({"height": $(".slick").width() * 0.7516 });
-				// v 此 js 為演示用，請參考 v
-				var $target = $(".art-list-f2-item").eq(2);
-				$target.find(".art-list-f3").addClass("is-open");
-				$target.find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
-				});
+extend temp/temp-tw.pug
+block var 
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = 'Zippy 家族'
+	-var floor3 = ''
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(rel='stylesheet', href='assets/plugins/slick/slick.css')
+	link(rel='stylesheet', href='assets/plugins/slick/slick-theme.css')
+	link(rel='stylesheet', href='css/zippyFriends.css')
+
+block container
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
+				.panel-heading.bg-color-1.border-color-1
+					h3.panel-title Zippy 家族
+					.aside-lb-close x
+				aside.layout-sub.px-4.py-4
+					ul.art-list-f2
+						li.art-list-f2-item
+							a.art-list-f2-link.now(href='') Zippy 家族
+						li.art-list-f2-item
+							a.art-list-f2-link(href='') Zippy
+						li.art-list-f2-item
+							a.art-list-f2-link(href='') Froggy & Bunny
+						li.art-list-f2-item
+							a.art-list-f2-link(href='') Pompom
+						li.art-list-f2-item
+							a.art-list-f2-link(href='', violet='') Elvis
+						li.art-list-f2-item
+							a.art-list-f2-link(href='') Clem
+			.col-xs-12.col-sm-12.col-md-9
+				.layout-main
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					img.friends-view-list(src='img/zippyfriends/all.jpg')
+					.sectionTitle.text-center.color-1.mt-3
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| Zippy 家族
+							span.shape.shape-right
+					ul.friends
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/1.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								img.friends-img(src='img/wfcfriends/2.jpg')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/3.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/4.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/5.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/6.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/7.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				.layout-main
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					img.friends-view(src='img/zippyfriends/all.jpg')
+					.sectionTitle.text-center.color-1.mt-3
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| Zippy 家族
+							span.shape.shape-right
+					h3.layout-title-level-3.icon4 角色影片：
+					.layout-video-fluid
+						iframe(src='https://www.youtube.com/embed/-CO6hOKn8Yg', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+					h3.layout-title-level-3.icon5 角色介紹：
+					.layout-content
+						.friend-name Zippy家族
+						.friend-local
+							|寰宇家庭有很多獨特、可愛，而且具吸引力的卡通人物。
+							br
+							|他們不但深受小朋友的喜愛，也在學習過程裡扮演重要角色。
+							br
+							|這些卡通人物的出現，可以加強孩子的想像力，加深他們的美語學習興趣，更可以使他們可以簡單輕鬆地學習重要的文法。
+						.friend-eng
+							| There are a lot of unique, cute and attractive characters from World Family.
+							br
+							|(World Family has a lot of unique, cute and attractive characters.)
+							br
+							|These characters are not only deeply loved by children but also play an important role in their learning process.
+							br
+							|These characters help reinforce children’s imagination and deepen their interests in English learning. Most importantly, they help children acquire grammar rules easily.
+					h3.layout-title-level-3.icon2.mb-3 人物寫真：
+					.slick.slick-darkarrow
+						div(style='background-image: url(img/zippyfriends/1.jpg)')
+						div(style='background-image: url(img/zippyfriends/2.jpg)')
+						div(style='background-image: url(img/zippyfriends/3.jpg)')
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='assets/plugins/slick/slick.min.js', type='text/javascript')
+	script(src='js/tmpAsideLb.js')
+	script.
+		$(function(){
+		// PLUGIN
+		$('.slick').slick({
+		dots: true,
+		autoplay: false,
+		autoplaySpeed: 1000,
+		arrows : true
+		});
+		// IMG RATIO
+		//- $(".friends-view-list").css({"height": $(".friends-view-list").width() * 0.5046 })
+		//- $(".friends-view").css({"height": $(".friends-view").width() * 0.707 });
+		$(".friends-img").css({"height": $(".friends-img").width() * 0.7467 });
+		$(".slick").css({"height": $(".slick").width() * 0.7516 });
+		$(".slick-track").css({"height": $(".slick").width() * 0.7516 });
+		// v 此 js 為演示用，請參考 v
+		var $target = $(".art-list-f2-item").eq(2);
+		$target.find(".art-list-f3").addClass("is-open");
+		$target.find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
+		});

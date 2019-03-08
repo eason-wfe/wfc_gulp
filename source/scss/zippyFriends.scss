@@ -3,7 +3,7 @@
 @import "usual/unit1";
 // @import "usual/title-deco5";
 // TITLE
-@import "_mywfc_kr/mypage-title-2";
+// @import "_mywfc_kr/mypage-title-2";
 @import "_comm_kr/comm-title-icon";
 // SLICK
 @import "uikit/uikit-slick";
@@ -24,23 +24,6 @@
 @media (max-width: 991px){
 	.sectionTitle h2 span{
 		padding-top: 0;
-	}
-}
-/*
-========================================
-========================================
-========================================
-========================================
-========================================
-*/
-.friends-view-list,
-.friends-view{
-	width: 100%;
-	border-radius: 8px;
-	overflow: hidden;
-	background:{
-		size: cover;
-		position: center top;
 	}
 }
 /*
@@ -103,10 +86,6 @@
 }
 @media (min-width: 768px){
 	$point-width: 30px;
-	.friends-view-list,
-	.friends-view{
-		margin-bottom: $point-width;
-	}
 	.friends-item{
 		width: calc( 100% / 3 - 20px );
 		margin-right: $point-width;
@@ -162,4 +141,31 @@
 }
 .friend-eng{
 	line-height: 1.5;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// FULL FIX
+@media (max-width: 767px){
+	.friends-view-list,
+	.friends-view{
+		width: calc( 100% + 46px);
+		margin: -23px 0 0 -23px;
+	}
+	.aside-lb-open{
+		position: absolute;
+		top: 13px;
+		left: 13px;
+	}
+}
+@media (min-width: 768px){
+	.friends-view-list,
+	.friends-view{
+		width: calc( 100% + 100px);
+		margin: -50px 0 0 -50px;
+	}
 }

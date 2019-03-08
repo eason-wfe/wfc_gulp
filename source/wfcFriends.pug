@@ -37,9 +37,9 @@ block container
 							// h2 only
 							span.shape.shape-left
 							span
-								| 美語叔叔阿姨
+								|美語叔叔阿姨
 							span.shape.shape-right
-					.friends-view(style='background-image: url(img/wfcfriends/all.jpg);')
+					img.friends-view(src='img/wfcfriends/all.jpg')
 					ul.friends
 						li.friends-item
 							a.friends-link(href='')
@@ -78,27 +78,38 @@ block container
 				h3 叔叔/阿姨介紹內頁
 				.layout-main.clearfix
 					|<?php include "html_model/uikit/aside-lb-open.html";?>
-					.sectionTitle.text-center.color-1.mt-0
+					.sectionTitle.text-center.color-1.mt-0.is-pc
 						h2
 							// h2 only
 							span.shape.shape-left
 							span
-								| Jimmy
+								| Anna
 							span.shape.shape-right
-					.friends-view(style='background-image: url(img/wfcfriends/2.jpg);')
+					img.friends-view-in(src='img/wfcfriends/anna/1.jpg')
+					.sectionTitle.text-center.color-1.mt-2.is-mobi
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| Anna
 					.friend-intro
-						.friend-from 來自美國
-						| 							來者不拒的Jimmy叔叔有一個關不起來的話閘子，他喜歡觀察、創意無限，透過穿著、表情，然後就會開始和小朋友天南地北地聊天喔！
-					button.btn.layout-btn(type='button')
-						| 返回列表
+						h3.layout-title-level-2.color-1 來自義大利
+						|樂觀的Anna阿姨很有小孩子緣，連第一次見面的孩子都會被她開心的笑容深深吸引，大家都搶著要跟她抱抱呢！
+					h3.layout-title-level-2.color-1.mb-1 劇照圖庫
+					.layout-content
+						.picbox
+							img(src='img/wfcfriends/anna/2.jpg')
+						.picbox
+							img(src='img/wfcfriends/anna/3.jpg')
+						.picbox
+							img(src='img/wfcfriends/anna/4.jpg') 
+					
 	
 block js
 	// JS FOR THIS PAGE ONLY
 	script(src='js/tmpAsideLb.js')
 	script.
 		$(function(){
-			// console.log(   );
-			$(".friends-view").css({"height": $(".friends-view").width() * 0.5046 })
 			$(".friends-img").css({"height": $(".friends-img").width() * 0.7467 })
 		});
 	script.

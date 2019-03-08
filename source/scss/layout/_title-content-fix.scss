@@ -1,0 +1,254 @@
+// eason 1070824
+// LEVEL 1
+$def-col: #aaa;
+.sectionTitle {
+	overflow: hidden;
+	margin: {
+		bottom: 15px;
+	}
+	h2 {
+		font-size: 24px;
+		color: $def-col;
+		margin: 0 !important;
+		span.shape {
+			background-color: $def-col;
+			&:before,
+			&:after {
+				background-color: $def-col;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.sectionTitle{
+		.shape{
+			display: none!important;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.sectionTitle {
+		margin: {
+			top: 38px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.sectionTitle {
+		margin: {
+			top: 50px;
+		}
+	}
+}
+//
+.sectionTitle {
+	&.color-1 {
+		h2 {
+			color: $color1;
+			span.shape {
+				background-color: $color1;
+				&:before,
+				&:after {
+					background-color: $color1;
+				}
+			}
+		}
+	}
+}
+.sectionTitle {
+	&.color-2 {
+		h2 {
+			color: $color2;
+			span.shape {
+				background-color: $color2;
+				&:before,
+				&:after {
+					background-color: $color2;
+				}
+			}
+		}
+	}
+}
+.sectionTitle {
+	&.color-3 {
+		h2 {
+			color: $color3;
+			span.shape {
+				background-color: $color3;
+				&:before,
+				&:after {
+					background-color: $color3;
+				}
+			}
+		}
+	}
+}
+.sectionTitle {
+	&.color-4 {
+		h2 {
+			color: $color4;
+			span.shape {
+				background-color: $color4;
+				&:before,
+				&:after {
+					background-color: $color4;
+				}
+			}
+		}
+	}
+}
+.sectionTitle {
+	&.color-5 {
+		h2 {
+			color: $color5;
+			span.shape {
+				background-color: $color5;
+				&:before,
+				&:after {
+					background-color: $color5;
+				}
+			}
+		}
+	}
+}
+.sectionTitle {
+	&.color-6 {
+		h2 {
+			color: $color6;
+			span.shape {
+				background-color: $color6;
+				&:before,
+				&:after {
+					background-color: $color6;
+				}
+			}
+		}
+	}
+}
+/*
+================================
+================================
+================================
+================================
+================================
+*/
+// LEVEL 2
+.layout-title-level-2 {
+	font:{
+		size: 20px;
+		weight: bold;
+	}
+	padding: 0 10px;
+	color:  $def-col;
+	display: block;
+	border-left: solid 3px $def-col;
+	.is-eng{
+		font:{
+			size: 15px;
+			weight: normal;
+		}
+	}
+	.is-age{
+		font-size: 15px;
+		display: block;
+		color: $color1-dark;
+		margin-top: 5px;
+	}
+}
+//
+.layout-title-level-2 {
+	&.color-1 {
+		color: $color1;
+		border-left-color: $color1;
+	}
+}
+.layout-title-level-2 {
+	&.color-2 {
+		color: $color2;
+		border-left-color: $color2;
+	}
+}
+.layout-title-level-2 {
+	&.color-3 {
+		color: $color3;
+		border-left-color: $color3;
+	}
+}
+.layout-title-level-2 {
+	&.color-4 {
+		color: $color4;
+		border-left-color: $color4;
+	}
+}
+.layout-title-level-2 {
+	&.color-5 {
+		color: $color5;
+		border-left-color: $color5;
+	}
+}
+//
+.layout-title-level-2-str {
+	width: 15px;
+	vertical-align: -1px;
+}
+/*
+================================
+================================
+================================
+================================
+================================
+*/
+// LEVEL 3
+.layout-title-level-3 {
+	font:{
+		size: 17px;
+		weight: normal;
+	}
+	line-height: 1;
+	text-transform: capitalize;
+	display: block;
+	&:before{
+		content: "•";
+		font-size: 12px;
+		display: inline-block;
+		margin-right: 9px;
+		vertical-align: 2px;
+	}
+}
+/*
+================================
+================================
+================================
+================================
+================================
+*/
+.layout-title-level-2,
+.layout-title-level-3 {
+	margin: {
+		top: 25px;
+		bottom: 3px;
+	}
+}
+/*
+================================
+================================
+================================
+================================
+================================
+*/
+// SUB BAR TITLE
+.panel-title {
+	color: #fff;
+	font-size: 22px;
+}
+/*
+================================
+================================
+================================
+================================
+================================
+*/
+// LAYOUT CONTENT
+.layout-content {
+	line-height: 1.6;
+}

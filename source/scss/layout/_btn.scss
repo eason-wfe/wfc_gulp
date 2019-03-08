@@ -89,10 +89,10 @@
 .layout-btn {
 	&.color-3 {
 		background-color: $color3 !important;
-		color: $color3-text !important;
+		color: #fff!important;
 		&:hover {
 			background-color: $color3-dark !important;
-			color: $color3-text;
+			color: #fff;
 		}
 	}
 }

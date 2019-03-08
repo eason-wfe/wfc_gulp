@@ -15,7 +15,7 @@ $pc-ui-padding-main: 50px;
 $pc-ui-padding-sub: 30px;
 $pc-bottom-gutter : $mobi-ui-padding;
 //
-$max-width: 960px;
+// $max-width: 960px;
 aside{
 	margin-bottom: 0;
 }
@@ -37,9 +37,9 @@ aside{
 }
 .layout-col-12{
 	width: 100%;
-	max-width: $max-width;
+	// max-width: $max-width;
 	padding: 0 15px;
-	margin: 0 auto
+	margin: 0 auto;
 }
 @media (max-width: 479px){
 	.container-main{
@@ -119,7 +119,7 @@ aside{
 @media (min-width: 992px){
     .layout-main-vision{
         margin-bottom: 0;
-        padding-bottom: 0;
+		  padding: 0;
     }
 }
 /*
@@ -143,7 +143,7 @@ aside{
 	.container{
 		&.container-main{
 			& > .row{
-				width: $max-width;
+				// width: $max-width;
 			}
 		}
 	}
