@@ -1,0 +1,88 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		|<?php include "html_model/head.html";?>
+		// CSS FRO THIS PAGE ONLY
+		style.
+			.layout-main {
+				height: 500px;
+			}
+			.layout-breadcrumb-box {
+				background-color: #8fc118;
+			}
+			@media (min-width: 991px) {
+				.layout-main {
+					height: 900px !important;
+				}
+				.layout-sub{
+					height: 338px;
+				}
+			}
+			@media (max-width: 767px) {
+				.layout-navbar-arrow-mobi:after {
+					border-color: transparent transparent #8fc118;
+				}
+			}
+			@media (min-width: 768px) {
+				.color-1.layout-navbar-arrow-pc:after {
+					border-color: transparent transparent #8fc118;
+				}
+				.container-main{
+					/*padding-top: 0;
+					/*margin-top: 80px;*/
+				}
+			}
+			*/
+	body.body-wrapper
+		// loaded
+		.main-wrapper
+			//
+				====================================
+				——— HEADER
+				=====================================
+			header#pageTop.header-wrapper
+				|<?php include "html_model/header/header-1.html";?>
+				// NAVBAR
+				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
+					.container
+						|<?php include "html_model/header/header-2.html";?>
+					//
+						====================================
+						——— BREAD CRUMB
+						=====================================
+					.layout-breadcrumb-box
+						.container
+							nav(aria-label='breadcrumb')
+								ol.breadcrumb.text-truncate
+									li.breadcrumb-item
+										a(href='#') 首頁
+									li.breadcrumb-item
+										a(href='') 青蛙與 Pompom 公主青蛙與 Pompom 公主
+									li.breadcrumb-item
+										| 報名
+			// main + aside
+			.container.container-main.container-col-2
+				.row
+					.col-xs-12.col-sm-12.col-md-9.scroll-main
+						.layout-main.layout-main-pageback.layout-main-pageback-color-1
+							|<?php include "html_model/uikit/page-back.html";?>
+							// LEVEL 1
+							.sectionTitle.text-center.color-2.mt-0
+								h2
+									// h2 only
+									span.shape.shape-left
+									span Level 1
+									span.shape.shape-right
+							| main 2 (m + as)
+							br
+					.hidden-xs.hidden-sm.col-md-3.sticky-top
+						.panel-heading.bg-color-1.border-color-1
+							h3.panel-title aside title
+						aside.layout-sub 
+							| aside 
+							br
+
+
+			include partials/public_footer_tw.pug
+			// JS FOR THIS PAGE ONLY
+			script(src='js/fullScreen.js')
