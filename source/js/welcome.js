@@ -1,5 +1,3 @@
-// $(function () {
-// $(function(){
 $(function(){
 	$(".art-list-f2-item").eq(1).find(".art-list-f2-link").addClass("now");
 	// ^ 演示用，請參考
@@ -34,48 +32,37 @@ $(function(){
 	}
 
 
-	// NEX
+	// NEX + PRE
 	function pn(target){
-
 		var listWidth = target.find('.vbox-list').width(),
 			maxMove = listWidth - vWidth,
-			position = 0,
-			allPosi;
-
+			allPosi = 0;
+			console.log(maxMove)
 		// NEX
 		target.find('.vbox-nex').click(function(e){
 			target.find('.vbox-pre').removeClass('is-end');
-			position = position + move;
-			if(position>=maxMove){
-				position=maxMove;
+			var position = allPosi - move;
+			// console.log('%c'+position,'color: red')
+			if(position <= -maxMove){
+				position= -maxMove;
 				$(this).addClass('is-end');
 			}
-			target.find('.vbox-list').animate({'left': -position},500,function(){
-				console.log('left is '+target.find('.vbox-list').position().left);
-			});
+			target.find('.vbox-list').animate({'left': position},500);
 			allPosi = position;
 			e.preventDefault();
 		});
 
 		// PRE
 		target.find('.vbox-pre').click(function(e){
-			console.log('===========================');
-			console.log('all position is'+allPosi);
-			var start = target.find('.vbox-list').position().left;
-			var position = parseInt(start + move);
-			console.log('move is '+move);
-			console.log('start is '+start);
-			console.log('position is '+position);
-			console.log('===========================');
+			var position = allPosi + move;
+			// console.log('%c'+position,'color: green');
 			target.find('.vbox-nex').removeClass('is-end');
-			if(position<=0){
-				console.log('position <= 0');
+			if(position >= 0){
 				position=0;
 				$(this).addClass('is-end');
-			}else{
-				console.log('position >= 0');
 			}
 			target.find('.vbox-list').animate({'left': position},500);
+			allPosi = position;
 			e.preventDefault();
 		})
 	};
@@ -83,5 +70,3 @@ $(function(){
 	pn($('.target2'));
 	pn($('.target3'));
 })
-// })
-// });
