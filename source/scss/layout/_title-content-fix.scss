@@ -1,4 +1,3 @@
-// eason 1070824
 // LEVEL 1
 $def-col: #aaa;
 .sectionTitle {
@@ -143,6 +142,7 @@ $def-col: #aaa;
 	display: block;
 	border-left: solid 3px $def-col;
 	.is-eng{
+		display: inline-block;
 		font:{
 			size: 15px;
 			weight: normal;

@@ -187,6 +187,9 @@ $def-col: #aaa;
 	text-transform: capitalize;
 	display: inline-block;
 }
+.layout-title-level-3 + .layout-content{
+	padding-left: 15px;
+}
 /*
 ================================
 ================================
