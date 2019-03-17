@@ -68,7 +68,6 @@ $vtt: color .5s;
 	position: absolute;
 	top: 120px;
 	margin-top: -40px;
-	transition: none;
 	transition: box-shadow .6s;
 	display: block;
 	&:hover{
@@ -91,6 +90,7 @@ $vtt: color .5s;
 	.vbox-pre{
 		@extend %pre-nex;
 		left: -48px;
+		display: none;
 	}
 	.vbox-nex{
 		@extend %pre-nex;

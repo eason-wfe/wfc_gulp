@@ -28,6 +28,7 @@
 */
 // CALL TO ACTOPN BOX
 .te-ctabox {
+	z-index: 9999;
 	background-color: $te-color-1;
 	.layout-btn {
 		background-color: $te-color-2;
@@ -117,7 +118,7 @@
 	}
 	.te-ctabox {
 		position: fixed;
-		z-index: 1;
+		z-index: 501;
 		left: 0;
 		right: 0;
 		font-size: 0;
@@ -173,6 +174,12 @@
 			line-height: 1.6;
 		}
 	}
+	.is-fc{
+		display: none!important;
+	}
+	.layout-sub{
+		margin-bottom: 12px;
+	}
 }
 /*
 ===============================
@@ -190,6 +197,40 @@
 	.footer-rise {
 		.backToTop {
 			bottom: 214px;
+		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.cta-btn{
+	display: block;
+	margin-bottom: 12px;
+	img{width: 100%;}
+	&.is-end{
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 991px){
+	.cta-btn{
+		display: none;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.te-qrbox{
+	h3.layout-title-level-3{
+		&:before{
+			display: none;
 		}
 	}
 }

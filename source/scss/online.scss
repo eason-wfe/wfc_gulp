@@ -19,6 +19,7 @@
 	input{
 		line-height: 23px;
 		padding-left: 10px;
+		border: solid 1px #aaa;
 	}
 }
 @media (max-width: 767px){
@@ -38,10 +39,6 @@
 		}
 		&:last-child{
 			margin-bottom: 0;
-		}
-		h3{
-			width: 83px;
-			line-height: 23px;
 		}
 		input{
 			width: calc( 100% - 90px );

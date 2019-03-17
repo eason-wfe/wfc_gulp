@@ -53,9 +53,9 @@ $te-color-2: #ff8017;
 	padding: 18px 18px 18px 45px;
 	position: relative;
 	img{
-		width: 20px;
+		width: 26px;
 		position: absolute;
-		top: 21px;left: 18px;
+		top: 19px;left: 17px;
 	}
 	margin-bottom: 12px;
 	&:last-child{
@@ -95,9 +95,6 @@ $te-color-2: #ff8017;
 ========================================
 ========================================
 */
-.layout-sub{
-	margin-bottom: 120px;
-}
 .layout-main-full-inbox{
 	margin-bottom: 100px;
 }
@@ -111,4 +108,12 @@ $te-color-2: #ff8017;
 	.layout-sub{
 		margin-bottom: 0;
 	}
+}
+.layout-main-full .layout-title-level-3{
+	&:before{
+		display: none;
+	}
+}
+.cta-btn.is-end{
+	margin-bottom: 120px;
 }

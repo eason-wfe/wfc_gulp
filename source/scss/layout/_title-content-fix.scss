@@ -186,6 +186,12 @@ $def-col: #aaa;
 		border-left-color: $color5;
 	}
 }
+.layout-title-level-2 {
+	&.color-6 {
+		color: $color6;
+		border-left-color: $color6;
+	}
+}
 //
 .layout-title-level-2-str {
 	width: 15px;

@@ -38,9 +38,8 @@
 		font:{
 			size: 28px;
 		}
-		color: #fff;
+		color: $color1;
 		display: inline-block;
-		background-color: $color1;
 		width: 30px;line-height: 30px;
 		text-align: center;
 		border-radius: 50%;
@@ -50,7 +49,7 @@
 		color: #ff4e00;
 		&:before{
 			@extend %ts;
-			background-color: #ff4e00;
+			color: #ff4e00;
 		}
 	}
 	img{

@@ -20,9 +20,6 @@ aside{
 	margin-bottom: 0;
 }
 .container-main{
-	padding:{
-		bottom: $container-bottom;
-	}
 	ol{
 		margin-left: 20px;
 		li{
@@ -60,6 +57,7 @@ aside{
 	.container-main{
 		padding:{
 			top: 80px;
+			bottom: 100px;
 		}
 	}
 }

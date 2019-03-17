@@ -369,5 +369,9 @@ $this-color3: #006363;
 	padding:{
 		bottom: 0;
 	}
-	border-bottom: solid 100px $f-color3;
+}
+@media (min-width: 768px){
+	.container-main{
+		border-bottom: solid 100px $f-color3;
+	}
 }

@@ -9,7 +9,7 @@ th,td{
 	border-bottom: solid 1px $cb;
 }
 th{
-	padding: 10px;
+	padding: 9px;
 	color: $color-hl; 
 }
 td{
@@ -21,13 +21,13 @@ td{
 	background-color: #fffedd;
 }
 .tb1{
-	th,td{
-		&:nth-last-child(1),
-		&:nth-last-child(2),
-		&:nth-last-child(3){
-			text-align: center;
-		}
-	}
+	// th,td{
+	// 	&:nth-last-child(1),
+	// 	&:nth-last-child(2),
+	// 	&:nth-last-child(3){
+	// 		text-align: center;
+	// 	}
+	// }
 	tr{
 		.align-left{
 			text-align: left;

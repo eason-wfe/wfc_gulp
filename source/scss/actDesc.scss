@@ -5,6 +5,11 @@
 @import "usual/color-activity";
 //
 @import "uikit/tmp-owl-nav";
+@media (max-width: 767px){
+	.container-main{
+		margin-bottom: 20px;
+	}
+}
 /*
 ======================
 ======================

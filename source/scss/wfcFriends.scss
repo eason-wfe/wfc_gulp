@@ -81,7 +81,7 @@
 		}
 	}
 	.friends-item{
-		width: calc( 100% / 2 - 12px );
+		width: calc( 100% / 2 - 14px );
 		&:nth-child(odd){
 			margin-right: $point-width;
 		}
@@ -94,7 +94,7 @@
 		margin-bottom: $point-width;
 	}
 	.friends-item{
-		width: calc( 100% / 3 - 20px );
+		width: calc( 100% / 3 - 22px );
 		margin-right: $point-width;
 		margin-bottom: $point-width;
 		&:nth-child(3n){
@@ -184,5 +184,36 @@
 		.is-mobi{
 			display: none;
 		}
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// FULL FIX
+.friends-view-list,
+.friends-view{
+	border-radius: 0px;
+}
+@media (max-width: 767px){
+	.friends-view-list,
+	.friends-view{
+		width: calc( 100% + 46px);
+		margin: -23px 0 0 -23px;
+	}
+	.aside-lb-open{
+		position: absolute;
+		top: 13px;
+		left: 13px;
+	}
+}
+@media (min-width: 768px){
+	.friends-view-list,
+	.friends-view{
+		width: calc( 100% + 100px);
+		margin: -50px 0 0 -50px;
 	}
 }

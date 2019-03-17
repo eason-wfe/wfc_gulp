@@ -26,7 +26,7 @@
 @import "uikit/tmp-dropdown";
 @import "uikit/uikit-collapse";
 //
-@import "mypage/history-innerbox";
+@import "mypage/mypage-innerbox";
 .layout-collapse{
 	border-top: none;
 }
@@ -99,4 +99,39 @@
 */
 .mypage-btn-cancel{
 	background-color: #fff;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+@media (max-width: 359px){
+	.h-linkbox{
+		overflow: hidden;
+	}
+	.h-col-link{
+		float: right;
+		margin: 10px 0 0
+	}
+}
+@media (max-width: 991px){
+	.innerbox{
+		padding: 15px 15px;
+	}
+}
+@media (min-width: 768px){
+	.linkBox.share5 li {
+		width: calc( 25% - 6px );
+		margin-right: 8px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+@media (min-width: 992px){
+	.innerbox{
+		padding: 15px 30px;
+	}	
 }

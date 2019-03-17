@@ -31,3 +31,47 @@
 		@include img-path-ratio("wfclibrary/icon4.png",2);
 	}
 }
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+@media (max-width: 767px){
+	.main-vision{
+		width: calc( 100% + 46px)!important;
+		margin: -23px 0 0 -23px;
+	}
+}
+@media (min-width: 768px){
+	.main-vision{
+		width: calc( 100% + 100px)!important;
+		margin: -50px 0 0 -50px;
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.is-blue{
+	color: #3092ca;
+	overflow: hidden;
+	li{
+		float:left;
+		position: relative;
+		padding-left: 13px;
+		&:before{
+			content: "*";
+			position: absolute;
+			top: 3px;
+			left: 0;
+		}
+	}
+}
+.layout-title-level-3{
+	&:before{display: none;}
+}

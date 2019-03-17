@@ -34,16 +34,19 @@ $(function () {
 	});
 
 	// FOOTER RISE
-	var preScrollY = 0;
-	$(window).scroll(function () {
-		var newScrollY = $(window).scrollTop()
-		if (newScrollY < preScrollY) {
-			$('.main-wrapper').addClass('footer-rise');
-		} else {
-			$('.main-wrapper').removeClass('footer-rise');
-		};
-		preScrollY = newScrollY;
-	});
+	if($(window).width() >= 768){
+		var preScrollY = 0;
+		$(window).scroll(function () {
+			var newScrollY = $(window).scrollTop()
+			if (newScrollY < preScrollY) {
+				$('.main-wrapper').addClass('footer-rise');
+			} else {
+				$('.main-wrapper').removeClass('footer-rise');
+			};
+			preScrollY = newScrollY;
+		});
+	}
+
 
 	// TEMP PLUGIN USE (from app.js)
 	/*======== 2. MENU SCROLL ========*/
@@ -124,28 +127,29 @@ $(function () {
 	});
 	/*========== IE aside (not Edge) ============*/
 	if(/net/i.test(navigator.userAgent)){
-		console.log('is ie')
-		var $target = $('.sticky-top');
-		$target.css({'transition': '0'});
-		var end = $(document).height()-$(window).height() - $target.height();
-		
 		$(window).scroll(function(){
-			var wst = $(window).scrollTop();
-			console.log('wst is '+wst);
-			console.log('end is '+end);
-			if(wst >= 165 && wst < end){
-				console.log('wst >=165')
-				$target.css({'top': wst - 70});
-			}else if(wst < 165){
-				console.log('wst <165')
+			var $target = $('.sticky-top'),
+				pt = 80,
+				wst = $(window).scrollTop()-pt,
+				bp = $('.scroll-main').height() - $target.height();
+			$target.css({'position':'relative'});
+			if(wst < pt){
 				$target.css({'top': 0});
-			}else if(wst >= end){
-				console.log('wst >= end')
-				var tt = wst - $(window).height();
-				console.log('tgh is '+$target.height());
-				console.log('tt is '+tt);
-				$target.css({'top':tt});
+			}else if(wst < bp){
+				$target.css({'top': wst});
+			}else if(wst >= pt && wst >= bp){
+				$target.css({'top': bp});
 			}
-		})
+		}),scroll();
+	}
+	/*============= NAVBAR SCROLL ===========*/
+	if($(window).width() <= 767){
+		$('.navbar-nav li.color-5 a').click(function(){
+			console.log('got');
+			setTimeout(function(){
+				$('.navbar-nav').animate({scrollTop:9999},1500);
+			},400);
+			
+		});
 	}
 });

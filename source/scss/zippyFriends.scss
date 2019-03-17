@@ -77,7 +77,7 @@
 		}
 	}
 	.friends-item{
-		width: calc( 100% / 2 - 12px );
+		width: calc( 100% / 2 - 14px );
 		&:nth-child(odd){
 			margin-right: $point-width;
 		}
@@ -87,7 +87,7 @@
 @media (min-width: 768px){
 	$point-width: 30px;
 	.friends-item{
-		width: calc( 100% / 3 - 20px );
+		width: calc( 100% / 3 - 22px );
 		margin-right: $point-width;
 		margin-bottom: $point-width;
 		&:nth-child(3n){

@@ -1,12 +1,8 @@
+@import 'usual/color';
 @import "fc/fc";
-/*
-========================================
-========================================
-========================================
-========================================
-========================================
-*/
-.layout-title-level-2{
-	width: 71px;
-	text-align: center;
+.layout-collapse{
+	.layout-title-level-2{
+		color: $color2;
+		border-left-color: $color2;
+	}
 }

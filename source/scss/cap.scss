@@ -132,26 +132,30 @@
 ========================================
 */
 .is-cap-icon{
-	width: 21px;
-	height: 21px;
+	width: 25px;
+	height: 25px;
 	display: inline-block;
-	vertical-align: -3px;
+	vertical-align: -4px;
 	margin-right: 5px;
-	@include img-path-ratio('cap/sprite.png',2.5);
-	border: solid 2px $color2-light;
+	@include img-path-ratio('cap/sprite.png',2);
+
 	border-radius: 50%;
 	background-color: #ffdf43;
+	background:{
+		position: 2px 2px;
+	}
 }
 .is-audio{
 	background: {
-		position: 0 -20px;
+		position: 2px -23px;
 		color: #dd4c92;
 	}
 }
 .is-te{
+	@include img-path-ratio('te/te_cap.png',3);
 	background: {
-		position: 0 -40px;
-		color: #00b053;
+		position: 2px 3px;
+		color: #4a1c77;
 	}
 }
 /*
@@ -162,6 +166,20 @@
 ========================================
 */
 h3.layout-title-level-2.color-2{
-	width: 212px;
-	text-align: center;
+	border-left: none;
+	padding-left: 0;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+aside{
+	.layout-title-level-3{
+		&:before{
+			display: none;
+		}
+	}
 }

@@ -15,6 +15,11 @@
 // step2
 @import "uikit/uikit-checkbox-radio";
 @import "uikit/tmp-dropdown";
+@media (max-width: 767px){
+	.container-main{
+		margin-bottom: 20px;
+	}
+}
 /*
 step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
 step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
