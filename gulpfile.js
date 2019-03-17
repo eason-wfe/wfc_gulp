@@ -9,11 +9,9 @@ gulp.task('pug', ()=>
 	.pipe($.plumber())
 	.pipe($.data(function(){
 		var header = require('./source/data/header.json'),
-			wf = require('./source/data/wf.json'),
 			page = require('./source/data/page.json'),
 			source = {
 				'header': header,
-				'wf': wf,
 				'page': page
 			}
 		return source;

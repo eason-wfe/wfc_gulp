@@ -4,17 +4,17 @@
 .scrolling
 	a.backToTop#backToTop(href='#pageTop')
 		i.fa.fa-arrow-up(aria-hidden='true')
-//       ====================================
+//====================================
 	——— LOGIN MODAL
 	===================================== 
 .modal.fade.customModal.lightbox-usual#loginModal(tabindex='-1', role='dialog')
-	//         
+	//  
 		[^ 註 ^]
 		規則：tag .customModal + class .lightbox-usual
 		為全站共用燈箱所用
 
 	.modal-dialog.layout-lightbox-vertical-middle
-		//          
+		//   
 			[^ 註 ^]
 			規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
 			將 pop window 垂直置中
@@ -32,6 +32,7 @@
 							input.form-control(type='password', placeholder='請輸入密碼')
 						.form-group.ver-box
 							img.ver-img(src='img/verify.png')
+							input.ver-reset(type='button')
 							input.ver-input(type='text' placeholder='輸入驗證碼')
 						.form-group.formField
 							input.btn.btn-block(type='submit', value='登入')
@@ -39,17 +40,17 @@
 							p.help-block
 								a(href='#forgetModal', data-toggle='modal') 忘記密碼 ?
 								//  href="#loginModal" data-toggle="modal" 
-								//       ====================================
+								//====================================
 									——— FORGET PASSWORD MODAL
 									===================================== 
 								.modal.fade.customModal.lightbox-usual#forgetModal(tabindex='-1', role='dialog')
-									//         
+									//  
 										[^ 註 ^]
 										規則：tag .customModal + class .lightbox-usual
 										為全站共用燈箱所用
 
 									.modal-dialog.layout-lightbox-vertical-middle
-										//          
+										//   
 											[^ 註 ^]
 											規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
 											將 pop window 垂直置中

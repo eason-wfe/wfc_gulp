@@ -198,3 +198,8 @@
 		margin: 0 !important;
 	}
 }
+.layout-title-level-3.color-2.mt-0.text-center.mb-2{
+	&:before{
+		display: none;
+	}
+}

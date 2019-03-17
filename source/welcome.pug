@@ -21,58 +21,66 @@ block container
 				aside.layout-sub.px-4.py-4
 					ul.art-list-f2
 						|<?php include "html_model/mypage/aside.html";?>
-			.col-xs-12.col-sm-12.col-md-9
+			.col-xs-12.col-sm-12.col-md-9.scroll-main
 				.layout-main.layout-deco-title
 					|<?php include "html_model/uikit/aside-lb-open.html";?>
 					// LEVEL 1
 					.sectionTitle.text-center.color-5.mt-0
 						h2
-							// h2 only
 							span.shape.shape-left
 							span 新手上路
 							span.shape.shape-right
 					.layout-video-fluid
 						iframe(src='https://player.vimeo.com/video/243244233', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+					mixin link(url,chi)
+						li.vbox-item
+							.layout-video-fluid
+								iframe(src=url frameborder="0" allow="autoplay; encrypted-media", allowfullscreen)
+							.vbox-table
+								.vbox-cell
+									.vbox-msg #{chi}
+					//- 1
 					.vbox-outer.target1
 						h3.layout-title-level-2.color-5 新手會員加油站
 						a.vbox-pre(href='#')
 							i.fa.fa-arrow-left
 						.vbox.mb-5
 							ul.vbox-list
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
+								each item4 in page.welcomeWfc
+									+link(item4.url,item4.chi)
 						a.vbox-nex(href='#')
 							i.fa.fa-arrow-right
+					//- 2
 					.vbox-outer.target2
-						h3.layout-title-level-2.color-5 迪士尼美語世界
+						h3.layout-title-level-2.color-5 成功的第一步
+						a.vbox-pre(href='#')
+							i.fa.fa-arrow-left 
+						.vbox.mb-5
+							ul.vbox-list
+								each item2 in page.welcomeFirst
+									+link(item2.url,item2.chi)
+						a.vbox-nex(href='#')
+							i.fa.fa-arrow-right 			
+					//- 3
+					.vbox-outer.target3
+						h3.layout-title-level-2.color-5 產品使用小撇步
 						a.vbox-pre(href='#')
 							i.fa.fa-arrow-left
 						.vbox.mb-5
 							ul.vbox-list
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
+								each item3 in page.welcomeHow
+									+link(item3.url,item3.chi)
 						a.vbox-nex(href='#')
 							i.fa.fa-arrow-right
-					.vbox-outer.target3
-						h3.layout-title-level-2.color-5 家庭寰宇俱樂部 World Family Club
+					//- 4
+					.vbox-outer.target4
+						h3.layout-title-level-2.color-5 寰宇家庭俱樂部
 						a.vbox-pre(href='#')
 							i.fa.fa-arrow-left
 						.vbox.mb-5
 							ul.vbox-list
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
-								|<?php include "html_model/welcome/item.html";?>
+								each item4 in page.welcomeWfc
+									+link(item4.url,item4.chi)
 						a.vbox-nex(href='#')
 							i.fa.fa-arrow-right
 	|<?php include "html_model/welcome/lightbox.html";?>

@@ -22,7 +22,7 @@ block container
 				aside.layout-sub.px-4.py-4
 					ul.art-list-f2
 						|<?php include "html_model/mypage/aside.html";?>
-			.col-xs-12.col-sm-12.col-md-9
+			.col-xs-12.col-sm-12.col-md-9.scroll-main
 				.layout-main.layout-deco-title
 					|<?php include "html_model/uikit/aside-lb-open.html";?>
 					// LEVEL 1
@@ -32,46 +32,71 @@ block container
 							span.shape.shape-left
 							span 活動學習紀錄
 							span.shape.shape-right
-					h3.layout-title-level-3.color-5 請選擇小朋友名字切換記錄
+					h3.layout-title-level-2.color-5 請選擇小朋友名字切換記錄
 					.dropGeneral.roundTwo.layout-drop-sm
 						select.select-drop
 							option(value='0') Family
 							option(value='1') child 1
 							option(value='2') child 2
+					ul.linkBox.share5.mt-5
+						li
+							a.link1(href='#target1') 美語活動
+						li
+							a.link2(href='#target2') 電話美語
+						li
+							a.link3(href='#target3') CAP 親子學習計畫
+						li
+							a.link4(href='#target4') Face Call 觀看記錄
 				// CARNIVAL HISTORY
-				.layout-main-card
-					h3.layout-title-level-3.color-5 美語活動
-					.layout-card.has-cancel
-						//
-							[^ 註 ^]
-							has-cancel 只在「能 cancel 活動」的單元才用
-						|<?php include "html_model/history/item-carnival.html";?>
-						|<?php include "html_model/history/item-carnival.html";?>
-					.pagerArea.text-center.color-5
-						|<?php include "html_model/uikit/pager-item.html";?>
+				#target1.layout-main.collapse-first
+					.layout-collapse.color-1
+						h3.layout-title-level-2.color-1.mt-0 美語活動
+						.layout-collapse-arrow 
+					.layout-collapse-content
+						.innerbox.inner-1
+							.layout-card.has-cancel
+								//
+									[^ 註 ^]
+									has-cancel 只在「能 cancel 活動」的單元才用
+								|<?php include "html_model/history/item-carnival.html";?>
+								|<?php include "html_model/history/item-carnival.html";?>
+							.pagerArea.text-center.color-1
+								|<?php include "html_model/uikit/pager-item.html";?>
 				// TE HISTORY
-				.layout-main-card
-					h3.layout-title-level-3.color-5 電話美語
-					.layout-card.has-cancel
-						|<?php include "html_model/history/item-te.html";?>
-					.pagerArea.text-center.color-5
-						|<?php include "html_model/uikit/pager-item.html";?>
+				#target2.layout-main
+					.layout-collapse.color-2
+						h3.layout-title-level-2.color-2.mt-0 電話美語
+						.layout-collapse-arrow 
+					.layout-collapse-content
+						.innerbox.inner-2
+							.layout-card.has-cancel
+								|<?php include "html_model/history/item-te.html";?>
+							.pagerArea.text-center.color-2
+								|<?php include "html_model/uikit/pager-item.html";?>
 				// CAP HISTORY
-				.layout-main-card
-					h3.layout-title-level-3.color-5 CAP 親子學習計畫
-					.layout-card
-						|<?php include "html_model/history/item-cap.html";?>
-						|<?php include "html_model/history/item-cap.html";?>
-					.pagerArea.text-center.color-5
-						|<?php include "html_model/uikit/pager-item.html";?>
+				#target3.layout-main
+					.layout-collapse.color-3
+						h3.layout-title-level-2.color-3.mt-0 CAP 親子學習計畫
+						.layout-collapse-arrow
+					.layout-collapse-content
+						.innerbox.inner-3
+							.layout-card
+								|<?php include "html_model/history/item-cap.html";?>
+								|<?php include "html_model/history/item-cap.html";?>
+							.pagerArea.text-center.color-3
+								|<?php include "html_model/uikit/pager-item.html";?>
 				// FACE CALL HISTORY
-				.layout-main
-					h3.layout-title-level-3.color-5.ml-0.mt-0.mb-3 Face Call 觀看記錄
-					ul.fc-box.mb-2
-						|<?php include "html_model/history/item-facecall.html";?>
-						|<?php include "html_model/history/item-facecall.html";?>
-					.pagerArea.text-center.color-5
-						|<?php include "html_model/uikit/pager-item.html";?>
+				#target4.layout-main
+					.layout-collapse.color-4
+						h3.layout-title-level-2.color-4.mt-0 Face Call 觀看記錄
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						.innerbox.inner-4
+							ul.fc-box.mb-2
+								|<?php include "html_model/history/item-facecall.html";?>
+								|<?php include "html_model/history/item-facecall.html";?>
+							.pagerArea.text-center.color-4
+								|<?php include "html_model/uikit/pager-item.html";?>
 
 block js
 	// JS FOR THIS PAGE ONLY

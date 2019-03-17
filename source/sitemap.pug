@@ -1,85 +1,84 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(href='css/sitemap.css', rel='stylesheet', text='text/css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										| 網站地圖
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main
-							.sectionTitle.text-center.color-1.mt-0
-								h2
-									span.shape.shape-left
-									span 網站地圖
-									span.shape.shape-right
-							.layout-sharewidth.item-234
-								.map.layout-sharewidth-item.map-1
-									.mapicon
-									.maptitle 美語活動
-									ul
-										each nav1 in header.nav1
-											li: a(href=nav1.url) #{nav1.name}
-								.map.layout-sharewidth-item.map-2
-									.mapicon
-									.maptitle 美語學習
-									ul
-										each nav2 in header.nav2
-											li: a(href=nav2.url) #{nav2.name}
-								.map.layout-sharewidth-item.map-3
-									.mapicon
-									.maptitle 多媒體學習
-									ul
-										each nav3 in header.nav3
-											li: a(href=nav3.url) #{nav3.name}
-								.map.layout-sharewidth-item.map-4
-									.mapicon
-									.maptitle 會員服務
-									ul
-										each nav4 in header.nav4
-											li: a(href=nav4.url) #{nav4.name}
-								.map.layout-sharewidth-item.map-5
-									.mapicon
-									.maptitle 我的專區
-									ul
-										each nav5 in header.nav5
-											li: a(href=nav5.url) #{nav5.name}
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script.
-				$(function(){
-					function sitemap(){
-						var nua = navigator.userAgent,
-							$target = $('.map:nth-child(3)');
-						if( /Android|iPhone/i.test(nua) ){
-							$target.find('li').eq(-1).css({'display':'none'});
-							$target.find('li').eq(-2).css({'display':'none'});
-						}
-					}
-					sitemap();
-				});
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var flolr1 = '首頁'
+	-var flolr2 = '網站地圖'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(href='css/sitemap.css', rel='stylesheet', text='text/css')
+
+block container 
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					.sectionTitle.text-center.color-1.mt-0
+						h2
+							span.shape.shape-left
+							span 網站地圖
+							span.shape.shape-right
+					.layout-sharewidth.item-234
+						.map.layout-sharewidth-item.map-1
+							.mapicon
+							.maptitle 美語活動
+							ul
+								each nav1 in header.nav1
+									li: a(href=nav1.url) #{nav1.name}
+						.map.layout-sharewidth-item.map-2
+							.mapicon
+							.maptitle 美語學習
+							ul
+								each nav2 in header.nav2
+									li: a(href=nav2.url) #{nav2.name}
+						.map.layout-sharewidth-item.map-3
+							.mapicon
+							.maptitle 多媒體學習
+							ul
+								each nav3 in header.nav3
+									li: a(href=nav3.url) #{nav3.name}
+						.map.layout-sharewidth-item.map-4
+							.mapicon
+							.maptitle 會員服務
+							ul
+								each nav4 in header.nav4
+									li: a(href=nav4.url) #{nav4.name}
+						.map.layout-sharewidth-item.map-5
+							.mapicon
+							.maptitle 我的專區
+							ul
+								each nav5 in header.nav5
+									li: a(href=nav5.url) #{nav5.name}
+						.map.layout-sharewidth-item.map-6
+							.mapicon
+							.maptitle 快速連結
+							ul
+								each nav6 in header.nav6
+									li: a(href=nav6.url) #{nav6.name}
+						.map.layout-sharewidth-item.map-7
+							.mapicon
+							.maptitle 關於
+							ul
+								each nav7 in header.nav7
+									li: a(href=nav7.url) #{nav7.name}
+						.map.layout-sharewidth-item.map-8
+							.mapicon
+							.maptitle 其它
+							ul
+								each nav8 in header.nav8
+									li: a(href=nav8.url) #{nav8.name}
+	
+block js
+	// JS FOR THIS PAGE ONLY
+	script.
+		$(function(){
+			function sitemap(){
+				var nua = navigator.userAgent,
+					$target = $('.map:nth-child(3)');
+				if( /Android|iPhone/i.test(nua) ){
+					$target.find('li').eq(-1).css({'display':'none'});
+					$target.find('li').eq(-2).css({'display':'none'});
+				}
+			}
+			sitemap();
+		});
