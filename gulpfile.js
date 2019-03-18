@@ -122,6 +122,11 @@ gulp.task('cleanNode',function(){
 	.pipe($.clean())
 });
 
+gulp.task('cleanPublic',function(){
+	return gulp.src('./public', { read: false })
+	.pipe($.clean())
+})
+
 
 // =======================
 // ---- BUILD
