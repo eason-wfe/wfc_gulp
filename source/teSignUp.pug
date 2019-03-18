@@ -1,278 +1,257 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(rel='stylesheet', href='css/teSignUp.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										a(href='#') 美語學習
-									li.breadcrumb-item
-										a(href='') 電話美語
-									li.breadcrumb-item
-										| 電話美語報名
-			// main only
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main
-							// LEVEL 1
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span 電話美語報名
-									span.shape.shape-right
-							.uikit-checkbox.half-width-pc
-								input.uikit-checkbox-input(type='checkbox')
-								label.uikit-checkbox-label 我已詳讀並同意遵守以上注意事項及規則。(請勾選)
-							// QA
-							.layout-collapse.color-2
-								h3.layout-title-level-3 電話美語報名注意事項及規則
-								.layout-collapse-arrow  
-							.layout-collapse-content
-								|<?php include "html_model/te/te-attention.html";?>
-						.layout-main
-							h3.layout-title-level-3.color-te.mt-0 現在進行報名的是...
-							.layout-content
-								.uikit-radio.signed
-									input.uikit-radio-input(type='radio', name='child')
-									label.uikit-radio-label 歐陽O明 English 歐陽O明 English 歐陽O明 English 歐陽O明 English 歐陽O明 English
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='child')
-									label.uikit-radio-label 歐陽O新 Oyan
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='child')
-									label.uikit-radio-label 王O明 DarMin
-							// 
-							h3.layout-title-level-3.color-te 請選擇時段
-							.layout-content
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 6:00~6:30
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 6:30~7:00
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 7:00~7:30
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 7:30~8:00
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 8:00~8:30 (額滿)
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='time')
-									label.uikit-radio-label 預約下午 8:30~9:00 (額滿)
-							// 
-							h3.layout-title-level-3.color-te 請選擇回電電話
-							.layout-content
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='tel')
-									label.uikit-radio-label 聯絡電話:02-26921073
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='tel')
-									label.uikit-radio-label 住家電話:02-26921073
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='tel')
-									label.uikit-radio-label 手機號碼:0922580086
-								.uikit-radio
-									input.uikit-radio-input(type='radio', name='tel')
-									label.uikit-radio-label
-										| 其他電話
-										// <input type="phone" class="radio-input">
-							h3.layout-title-level-3.color-2.mt-1.te-tel-other-p 若勾選「其它電話」，請於輸入框內填入您的聯絡資訊：
-							input.te-tel-other-num(type='text', placeholder='其它電話')
-						button.btn.layout-btn.btn-block.layout-btn-lg.color-2.half-width-pc(type='button')
-							| 下一步
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						hr
-						.layout-main
-							// LEVEL 1
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span 電話美語報名
-									span.shape.shape-right
-							// LEVEL 2
-							h3.layout-title-level-3.color-2.mt-0 現在進行報名的是...
-							.layout-content
-								span.te-name-ch 歐O小明
-								span.te-name-en EnglishName
-							// LEVEL 2
-							h3.layout-title-level-3.color-2 您選擇的課程
-							table.table.te-selected
-								tbody
-									tr.te-selected-song
-										td
-											.te-selected-icon
-										td 【歌曲練習】
-										td Baby's in the Bathtub
-										td PA1 #05
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-									tr.te-selected-book
-										td
-											.te-selected-icon
-										td 【課程練習】
-										td Baby's in the Bathtub
-										td PA1 #05
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-									tr.te-selected-right
-										td
-											.te-selected-icon
-										td 【對錯練習】
-										td Baby's in the Bathtub
-										td PA1 #05
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-									tr.te-selected-reading
-										td
-											.te-selected-icon
-										td 【朗讀練習】
-										td Wiggly Worm 
-										td PA2 #02
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-									tr.te-selected-fc
-										td
-											.te-selected-icon
-										td 【自由對話】
-										td I Like to Take a Bath
-										td PA2 #05
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-									tr.te-selected-cap
-										//
-											[^ 註 ^]
-											規則：在 tr tag 加 不同 class 來改變不同 te 選項的視覺
-											.te-selected-song
-											.te-selected-book
-											.te-selected-right
-											.te-selected-reading
-											.te-selected-fc
-											.te-selected-cap
-										td
-											.te-selected-icon
-										td 【CAP 練習】
-										td I Like to Take a Bath
-										td PA2 #05
-										td
-											button.btn.btn-sm.layout-btn(type='button') 取消
-							button.btn.layout-btn.btn-block.layout-btn-lg.color-2(type='button')
-								| 確定
-						.layout-main
-							h3.layout-title-level-3.color-2.mt-0.mb-2 選擇您的練習課程
-							.tstab
-								.uikit-radio.is-song
-									input.uikit-radio-input(type='radio', name='tab', checked='')
-									label.uikit-radio-label
-										img(src='img/te/te_song.png')
-										| Song Lessons 歌曲練習
-								.uikit-radio.is-book
-									input.uikit-radio-input(type='radio', name='tab')
-									label.uikit-radio-label
-										img(src='img/te/te_book.png')
-										| Book Lessons 課程練習
-								.uikit-radio.is-right
-									input.uikit-radio-input(type='radio', name='tab')
-									label.uikit-radio-label
-										img(src='img/te/te_right.png')
-										| Right Light Lessons 對錯練習
-								.uikit-radio.is-reading
-									input.uikit-radio-input(type='radio', name='tab')
-									label.uikit-radio-label
-										img(src='img/te/te_reading.png')
-										| Reading Lessons 朗讀練習
-								.uikit-radio.is-fc
-									input.uikit-radio-input(type='radio', name='tab')
-									label.uikit-radio-label
-										img(src='img/te/te_fc.png')
-										| Free Conversation 自由對話
-								.uikit-radio.is-cap
-									input.uikit-radio-input(type='radio', name='tab')
-									label.uikit-radio-label
-										img(src='img/te/te_cap.png')
-										| CAP Lessons CAP 練習
-							.te-section-box.te-section-box-song
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '美語學習'
+	-var floor3 = '電話美語'
+	-var floor4 = '電話美語報名'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(rel='stylesheet', href='css/teSignUp.css')
+
+block container
+	// main only
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					// LEVEL 1
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span 電話美語報名
+							span.shape.shape-right
+					.uikit-checkbox.half-width-pc
+						input.uikit-checkbox-input(type='checkbox')
+						label.uikit-checkbox-label 我已詳讀並同意遵守以上注意事項及規則。(請勾選)
+					// QA
+					.layout-collapse.color-2
+						h3.layout-title-level-2.color-2 電話美語報名注意事項及規則
+						.layout-collapse-arrow  
+					.layout-collapse-content
+						|<?php include "html_model/te/te-attention.html";?>
+				.layout-main
+					h3.layout-title-level-2.color-2.color-te.mt-0 現在進行報名的是...
+					.layout-content
+						.uikit-radio.signed
+							input.uikit-radio-input(type='radio', name='child')
+							label.uikit-radio-label 歐陽O明 English 歐陽O明 English 歐陽O明 English 歐陽O明 English 歐陽O明 English
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='child')
+							label.uikit-radio-label 歐陽O新 Oyan
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='child')
+							label.uikit-radio-label 王O明 DarMin
+					// 
+					h3.layout-title-level-2.color-2.color-te 請選擇時段
+					.layout-content
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 6:00~6:30
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 6:30~7:00
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 7:00~7:30
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 7:30~8:00
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 8:00~8:30 (額滿)
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='time')
+							label.uikit-radio-label 預約下午 8:30~9:00 (額滿)
+					// 
+					h3.layout-title-level-2.color-2.color-te 請選擇回電電話
+					.layout-content
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='tel')
+							label.uikit-radio-label 聯絡電話:02-26921073
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='tel')
+							label.uikit-radio-label 住家電話:02-26921073
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='tel')
+							label.uikit-radio-label 手機號碼:0922580086
+						.uikit-radio
+							input.uikit-radio-input(type='radio', name='tel')
+							label.uikit-radio-label
+								| 其他電話
+								// <input type="phone" class="radio-input">
+					h3.layout-title-level-3.mt-1.te-tel-other-p 若勾選「其它電話」，請於輸入框內填入您的聯絡資訊：
+					input.te-tel-other-num(type='text', placeholder='其它電話')
+				button.btn.layout-btn.btn-block.layout-btn-lg.color-2.half-width-pc(type='button')
+					| 下一步
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				hr
+				.layout-main
+					// LEVEL 1
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span 電話美語報名
+							span.shape.shape-right
+					// LEVEL 2
+					h3.layout-title-level-2.color-2.mt-0 現在進行報名的是...
+					.layout-content
+						span.te-name-ch 歐O小明
+						span.te-name-en EnglishName
+					// LEVEL 2
+					h3.layout-title-level-2.color-2 您選擇的課程
+					table.table.te-selected
+						tbody
+							tr.te-selected-song
+								td
+									.te-selected-icon
+								td 【歌曲練習】
+								td Baby's in the Bathtub
+								td PA1 #05
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+							tr.te-selected-book
+								td
+									.te-selected-icon
+								td 【課程練習】
+								td Baby's in the Bathtub
+								td PA1 #05
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+							tr.te-selected-right
+								td
+									.te-selected-icon
+								td 【對錯練習】
+								td Baby's in the Bathtub
+								td PA1 #05
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+							tr.te-selected-reading
+								td
+									.te-selected-icon
+								td 【朗讀練習】
+								td Wiggly Worm 
+								td PA2 #02
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+							tr.te-selected-fc
+								td
+									.te-selected-icon
+								td 【自由對話】
+								td I Like to Take a Bath
+								td PA2 #05
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+							tr.te-selected-cap
 								//
 									[^ 註 ^]
-									依上方 tab 的點擊，換成以下 class
-									.te-section-box-song
-									.te-section-box-book
-									.te-section-box-right
-									.te-section-box-reading
-									.te-section-box-fc
-									.te-section-box-cap
-								.te-search
-									input.te-search-input(type='text', placeholder='關鍵字搜尋')
-								table.table.te-section
-									thead
-										tr
-											th 選取
-											th(colspan='2') 課程及內容
-									tbody
-										tr.is-cap-1
-											//
-												[^ 註 ^]
-												用顏色分類該列所屬不同 CAP 書本
-												is-cap-1 ~ 5
-											td
-												button.btn.btn-sm.layout-btn(type='button') 選取
-											td 【歌曲練習】Scrub, Scrub, Scrub 
-											td SA2 #27
-										tr.is-cap-2
-											td
-												button.btn.btn-sm.layout-btn(type='button') 選取
-											td 【歌曲練習】Baby's in the Bathtub
-											td PA1 #05
-										tr.is-cap-3
-											td
-												button.btn.btn-sm.layout-btn(type='button') 選取
-											td 【歌曲練習】Wiggly Worm 
-											td PA2 #02
-										tr.is-cap-4
-											td
-												button.btn.btn-sm.layout-btn(type='button') 選取
-											td 【歌曲練習】I Like to Take a Bath
-											td PA2 #05
-										tr.is-cap-5
-											td
-												button.btn.btn-sm.layout-btn(type='button') 選取
-											td 【歌曲練習】Spread Your Arms 
-											td PA2 #10 
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/teSignUp1.js')
+									規則：在 tr tag 加 不同 class 來改變不同 te 選項的視覺
+									.te-selected-song
+									.te-selected-book
+									.te-selected-right
+									.te-selected-reading
+									.te-selected-fc
+									.te-selected-cap
+								td
+									.te-selected-icon
+								td 【CAP 練習】
+								td I Like to Take a Bath
+								td PA2 #05
+								td
+									button.btn.btn-sm.layout-btn(type='button') 取消
+					button.btn.layout-btn.btn-block.layout-btn-lg.color-2(type='button')
+						| 確定
+				.layout-main
+					h3.layout-title-level-2.color-2.mt-0.mb-2 選擇您的練習課程
+					.tstab
+						.uikit-radio.is-song
+							input.uikit-radio-input(type='radio', name='tab', checked='')
+							label.uikit-radio-label
+								img(src='img/te/te_song.png')
+								| Song Lessons 歌曲練習
+						.uikit-radio.is-book
+							input.uikit-radio-input(type='radio', name='tab')
+							label.uikit-radio-label
+								img(src='img/te/te_book.png')
+								| Book Lessons 課程練習
+						.uikit-radio.is-right
+							input.uikit-radio-input(type='radio', name='tab')
+							label.uikit-radio-label
+								img(src='img/te/te_right.png')
+								| Right Light Lessons 對錯練習
+						.uikit-radio.is-reading
+							input.uikit-radio-input(type='radio', name='tab')
+							label.uikit-radio-label
+								img(src='img/te/te_reading.png')
+								| Reading Lessons 朗讀練習
+						.uikit-radio.is-fc
+							input.uikit-radio-input(type='radio', name='tab')
+							label.uikit-radio-label
+								img(src='img/te/te_fc.png')
+								| Free Conversation 自由對話
+						.uikit-radio.is-cap
+							input.uikit-radio-input(type='radio', name='tab')
+							label.uikit-radio-label
+								img(src='img/te/te_cap.png')
+								| CAP Lessons CAP 練習
+					.te-section-box.te-section-box-song
+						//
+							[^ 註 ^]
+							依上方 tab 的點擊，換成以下 class
+							.te-section-box-song
+							.te-section-box-book
+							.te-section-box-right
+							.te-section-box-reading
+							.te-section-box-fc
+							.te-section-box-cap
+						.te-search
+							input.te-search-input(type='text', placeholder='關鍵字搜尋')
+						table.table.te-section
+							thead
+								tr
+									th 選取
+									th(colspan='2') 課程及內容
+							tbody
+								tr.is-cap-1
+									//
+										[^ 註 ^]
+										用顏色分類該列所屬不同 CAP 書本
+										is-cap-1 ~ 5
+									td
+										button.btn.btn-sm.layout-btn(type='button') 選取
+									td 【歌曲練習】Scrub, Scrub, Scrub 
+									td SA2 #27
+								tr.is-cap-2
+									td
+										button.btn.btn-sm.layout-btn(type='button') 選取
+									td 【歌曲練習】Baby's in the Bathtub
+									td PA1 #05
+								tr.is-cap-3
+									td
+										button.btn.btn-sm.layout-btn(type='button') 選取
+									td 【歌曲練習】Wiggly Worm 
+									td PA2 #02
+								tr.is-cap-4
+									td
+										button.btn.btn-sm.layout-btn(type='button') 選取
+									td 【歌曲練習】I Like to Take a Bath
+									td PA2 #05
+								tr.is-cap-5
+									td
+										button.btn.btn-sm.layout-btn(type='button') 選取
+									td 【歌曲練習】Spread Your Arms 
+									td PA2 #10 
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/teSignUp1.js')

@@ -20,30 +20,32 @@ li.act-listbox-item.act-color-k
 		img.act-listbox-img.act-listbox-img-pc(src='img/activity/act_vision.jpg')
 		.act-listbox-info
 			h2.act-listbox-title
-				// 洗澎澎囉 ! 
+				//- 洗澎澎囉 ! 
 				|  Zippy 的奧林匹克運動會運動會
 			p.act-listbox-title-english Bunny’s Big Bath
 			p.act-listbox-age 適合親子同遊
-		.act-state.act-state-sm
-			//        
-				[^ 註 ^]
-				規則 1 : tag .act-state + class .act-state-sm
-				使用在 活動報名 頁 , 讓會員報名狀態 icon 在有限空間呈現小尺寸的顯示狀態
-				反之不加 class 呈現大尺寸 , 及更清楚的時間資訊
 
-				規則 2 : tag .act-state + act-state-muted
-				在報名狀態為「己取消」時加，以控制視覺成為灰色
+		//- vvv       
+			[^ 註 ^]
+			規則 1 : tag .act-state + class .act-state-sm
+			使用在 活動報名 頁 , 讓會員報名狀態 icon 在有限空間呈現小尺寸的顯示狀態
+			反之不加 class 呈現大尺寸 , 及更清楚的時間資訊
 
-				規則 3 : 第二顆 + .is-2nd
+			規則 2 : tag .act-state + act-state-muted
+			在報名狀態為「己取消」時加，以控制視覺成為灰色
 
-				規則 4 : 候補+ .is-blue
+			規則 3 : 第二顆 + .is-2nd << 刪
 
-			.act-state-inside
-				.act-state-word 己報名
-				.act-state-data 2018 / 09 / 15 下午 13:30
-		
-		// 第二顆為候補
-		.act-state.act-state-sm.is-2nd.is-blue
-			.act-state-inside
-				.act-state-word 己候補
-				.act-state-data 2018 / 09 / 15 下午 13:30
+			規則 4 : 候補+ .is-blue	
+		//- vvv	
+		.actstatebox
+			// 1
+			.act-state.act-state-sm
+				.act-state-inside
+					.act-state-word 己報名
+					.act-state-data 2018 / 09 / 15 下午 13:30
+			// 2
+			.act-state.act-state-sm.is-blue
+				.act-state-inside
+					.act-state-word 己候補
+					.act-state-data 2018 / 09 / 15 下午 13:30

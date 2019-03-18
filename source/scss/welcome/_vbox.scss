@@ -6,8 +6,12 @@
 	overflow: hidden;
 }
 .vbox-item{
+	
 	float: left;
 	&:last-child{margin-right: 0!important;}
+}
+.layout-video-fluid{
+	background-color: #333;
 }
 .vbox-link{
 	display: block;
@@ -20,7 +24,7 @@
 	display: table;
 	width: 100%;
 	height: 36px;
-	background-color: #fafafa;
+	background-color: #ececec;
 	padding: 5px 10px 7px;
 }
 .vbox-cell{

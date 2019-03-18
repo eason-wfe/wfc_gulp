@@ -1,157 +1,137 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '會員服務'
+	-var floor3 = '會員交流園地'
+
+block head-self
 		// CSS FRO THIS PAGE ONLY
 		link(rel='stylesheet', href='css/forum.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										a(href='') 會員服務
-									li.breadcrumb-item
-										| 會員交流園地
-			.container.container-main.container-col-2
-				.row
-					.col-md-4.col-lg-3.sticky-top.forum-filsort-ui
-						|<?php include "html_model/forum/forum-aside.html";?>
-					.col-xs-12.col-sm-12.col-md-8.col-lg-9.scroll-main
-						.layout-main.layout-main-intro
-							.sectionTitle.text-center.color-4.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span 會員交流園地
-									span.shape.shape-right
-							.layout-content
-								| 「會員交流園地」是寰宇家庭俱樂部會員專屬的社群網站。
-								br
-								| 爸爸、媽媽可以透過發表或分享美語學習相關的各種訊息，如何使用寰宇家庭俱樂部的各種服務，使用DWE教材的經驗、煩惱、艱辛、快樂及美好的回憶，讓我們的美語學習的生活變得豐富有趣。
-								br
-								.mt-1 ※ 未經許可，「會員交流園地」禁止發佈及轉發未經授權的複製、文字、圖像、影音等。
-							.forum-fil-day-hot
-								.forum-fil-day-hot-radio
-									.uikit-radio
-										input.uikit-radio-input(type='radio', name='filter', checked='')
-										label.uikit-radio-label 日期排序
-									.uikit-radio
-										input.uikit-radio-input(type='radio', name='filter')
-										label.uikit-radio-label 人氣排序
-								.forum-fil-day-hot-info
-									.forum-fil-day-hot-state
-										| * 以下文章依
-										span.forum-fil-day-hot-text 「親子學習計畫」
-										| 主題作分類，並依
-										span.forum-fil-day-hot-text 「日期」
-										| 排序
-									a.forum-filsort-open(href='')
-										| 重新設定文章分類條件 »
-						// FULL
-						.layout-main.layout-main-full.layout-main-card
-							.layout-main-full-bg.layout-main-full-right
-							.layout-main-full-inbox
-								.forum-cardbox.layout-sharewidth.item-234
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-									|<?php include "html_model/forum/forum-cardbox-item.html";?>
-								.pagerArea.text-center.color-4
-									|<?php include "html_model/uikit/pager-item.html";?>
-						// FULL
-						#articleReport.layout-main.layout-main-full.layout-main-post.mb-0
-							.layout-main-full-bg.layout-main-full-right
-							.layout-main-full-inbox
-								.sectionTitle.text-center.color-4.mt-0
-									h2
-										// h2 only
-										span.shape.shape-left
-										span 發表新文章
-										span.shape.shape-right
-								.forum-portrait
-									.forum-portrait-pic(style='background-image: url(img/no_picture.png);')
-									//
-										[^ 註 ^]
-										會員沒大頭照，預設圖為 " no_picture "
-									label.forum-label 宜靜媽媽
-									select.forum-control
-										option 選擇文章分類
-										option(disabled='') -- 依「討論主題」--
-										option(value='') 如何使用DWE
-										option(value='') 電話美語
-										option(value='') 親子學習計畫
-										option(value='') 美語活動
-										option(value='') 新手上路
-										option(value='') 多媒體學習
-										option(value='') 其他
-										option(disabled='') -- 依「地區」 --
-										option(value='') 台北
-										option(value='') 桃園
-										option(value='') 新竹
-										option(value='') 台中
-										option(value='') 彰化
-										option(value='') 嘉義
-										option(value='') 台南
-										option(value='') 高雄
-										option(disabled='') -- 依「年齡」 --
-										option(value='') 0 ~ 1歲
-										option(value='') 1 ~ 2歲
-										option(value='') 2 ~ 4歲
-										option(value='') 4 ~ 6歲
-										option(value='') 小學生
-										option(value='') DWE Kids
-								.forum-group
-									label.forum-label(for='') 文章標題
-									input.forum-control(type='text', placeholder='新文章標題')
-								.forum-group
-									label.forum-label(for='') 文章內容
-									textarea.forum-control(placeholder='新文章內容')
-								.forum-group.forum-filebox
-									div
-										p.forum-alert-text 發表文章，須最少上傳一張圖片
-										input.forum-file(type='file')
-										input.forum-file(type='file')
-										input.forum-file(type='file')
-								.forum-submit
-									a.forum-submit-lightbox(href='#forum-modal', data-toggle='modal') ※ 請務必閱讀發表文章/留言之注意事項
-									button.btn.layout-btn.layout-btn-md.btn-block.color-4(type='submit')
-										| 發表新文章
-			
-			//
-				====================================
-				——— CTA & LIGHTBOX
-				=====================================
-			.scrolling
-				a.forum-cta(href='#articleReport')
-			|<?php include "html_model/forum/lightbox-forum.html";?>
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/fullScreen.js')
-			script(src='js/forum.js')
+	
+block container
+	.container.container-main.container-col-2
+		.row
+			.col-md-4.col-lg-3.sticky-top.forum-filsort-ui
+				|<?php include "html_model/forum/forum-aside.html";?>
+			.col-xs-12.col-sm-12.col-md-8.col-lg-9.scroll-main
+				.layout-main.layout-main-intro
+					.sectionTitle.text-center.color-4.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span 會員交流園地
+							span.shape.shape-right
+					.layout-content
+						| 「會員交流園地」是寰宇家庭俱樂部會員專屬的社群網站。
+						br
+						| 爸爸、媽媽可以透過發表或分享美語學習相關的各種訊息，如何使用寰宇家庭俱樂部的各種服務，使用DWE教材的經驗、煩惱、艱辛、快樂及美好的回憶，讓我們的美語學習的生活變得豐富有趣。
+						br
+						.mt-1 ※ 未經許可，「會員交流園地」禁止發佈及轉發未經授權的複製、文字、圖像、影音等。
+					.forum-fil-day-hot
+						.forum-fil-day-hot-radio
+							.uikit-radio
+								input.uikit-radio-input(type='radio', name='filter', checked='')
+								label.uikit-radio-label 日期排序
+							.uikit-radio
+								input.uikit-radio-input(type='radio', name='filter')
+								label.uikit-radio-label 人氣排序
+						.forum-fil-day-hot-info
+							.forum-fil-day-hot-state
+								| * 以下文章依
+								span.forum-fil-day-hot-text 「親子學習計畫」
+								| 主題作分類，並依
+								span.forum-fil-day-hot-text 「日期」
+								| 排序
+							a.forum-filsort-open(href='')
+								| 重新設定文章分類條件 »
+				// FULL
+				.layout-main.layout-main-full.layout-main-card
+					.layout-main-full-bg.layout-main-full-right
+					.layout-main-full-inbox
+						.forum-cardbox.layout-sharewidth.item-234
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+							|<?php include "html_model/forum/forum-cardbox-item.html";?>
+						.pagerArea.text-center.color-4
+							|<?php include "html_model/uikit/pager-item.html";?>
+				// FULL
+				#articleReport.layout-main.layout-main-full.layout-main-post.mb-0
+					.layout-main-full-bg.layout-main-full-right
+					.layout-main-full-inbox
+						.sectionTitle.text-center.color-4.mt-0
+							h2
+								// h2 only
+								span.shape.shape-left
+								span 發表新文章
+								span.shape.shape-right
+						.forum-portrait
+							.forum-portrait-pic(style='background-image: url(img/no_picture.png);')
+							//
+								[^ 註 ^]
+								會員沒大頭照，預設圖為 " no_picture "
+							label.forum-label 宜靜媽媽
+							select.forum-control
+								option 選擇文章分類
+								option(disabled='') -- 依「討論主題」--
+								option(value='') 如何使用DWE
+								option(value='') 電話美語
+								option(value='') 親子學習計畫
+								option(value='') 美語活動
+								option(value='') 新手上路
+								option(value='') 多媒體學習
+								option(value='') 其他
+								option(disabled='') -- 依「地區」 --
+								option(value='') 台北
+								option(value='') 桃園
+								option(value='') 新竹
+								option(value='') 台中
+								option(value='') 彰化
+								option(value='') 嘉義
+								option(value='') 台南
+								option(value='') 高雄
+								option(disabled='') -- 依「年齡」 --
+								option(value='') 0 ~ 1歲
+								option(value='') 1 ~ 2歲
+								option(value='') 2 ~ 4歲
+								option(value='') 4 ~ 6歲
+								option(value='') 小學生
+								option(value='') DWE Kids
+						.forum-group
+							label.forum-label(for='') 文章標題
+							input.forum-control(type='text', placeholder='新文章標題')
+						.forum-group
+							label.forum-label(for='') 文章內容
+							textarea.forum-control(placeholder='新文章內容')
+						.forum-group.forum-filebox
+							div
+								p.forum-alert-text 發表文章，須最少上傳一張圖片
+								input.forum-file(type='file')
+								input.forum-file(type='file')
+								input.forum-file(type='file')
+						.forum-submit
+							a.forum-submit-lightbox(href='#forum-modal', data-toggle='modal') ※ 請務必閱讀發表文章/留言之注意事項
+							button.btn.layout-btn.layout-btn-md.btn-block.color-4(type='submit')
+								| 發表新文章
+	
+	//
+		====================================
+		——— CTA & LIGHTBOX
+		=====================================
+	.scrolling
+		a.forum-cta(href='#articleReport')
+	|<?php include "html_model/forum/lightbox-forum.html";?>
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/fullScreen.js')
+	script(src='js/forum.js')

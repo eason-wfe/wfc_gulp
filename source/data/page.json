@@ -287,32 +287,36 @@
 	],
 	"aboutWF": [
 		{
-			"url": "https://www.worldfamily.com.tw/dwe/company.aspx",
+			"url": "https://www.worldfamily.com.tw/",
 			"img": "img/wf/tw.jpg",
 			"title": "寰宇家庭(台灣)",
 			"flag": "img/wf/icon_tw.jpg",
-			"sub": "World Family (Taiwan) Ltd."
+			"sub": "World Family (Taiwan) Ltd.",
+			"diff": "url2"
 		},
 		{
 			"url": "http://world-family.co.jp/",
 			"img": "img/wf/jp.jpg",
 			"title": "寰宇家庭(日本)",
 			"flag": "img/wf/icon_jp.jpg",
-			"sub": "World Family K K (Japan)"
+			"sub": "World Family K K (Japan)",
+			"diff": "url3"
 		},
 		{
 			"url": "http://www.worldfamily.com.hk/zh/",
 			"img": "img/wf/hk.jpg",
 			"title": "寰宇家庭(香港)",
 			"flag": "img/wf/icon_hk.jpg",
-			"sub": "World Family (Hong Kong)"
+			"sub": "World Family (Hong Kong)",
+			"diff": "url4"
 		},
 		{
 			"url": "https://worldfamilyenglish.co.kr/",
 			"img": "img/wf/ko.jpg",
 			"title": "寰宇家庭(韓國)",
 			"flag": "img/wf/icon_ko.jpg",
-			"sub": "World Family (Korea) Ltd."
+			"sub": "World Family (Korea) Ltd.",
+			"diff": "url5"
 		}
 	],
 	"aboutWFUsa": [
@@ -321,7 +325,8 @@
 			"img": "img/wf/usa.jpg",
 			"title": "寰宇家庭總公司",
 			"flag": "img/wf/icon_usa.jpg",
-			"sub": "World Family English, Ltd."
+			"sub": "World Family English, Ltd.",
+			"diff": "url1"
 		}
 	]
 

@@ -50,19 +50,19 @@
 	background-color: #fff;
 }
 @media (min-width: 992px) {
+	.layout-main{
+		padding-right: 43px;
+	}
 	.layout-content {
 		font-size: 0;
 		.uikit-radio {
 			vertical-align: top;
-			width: calc(100% / 3 - 4px);
+			width: calc(100% / 3 - 6px);
 			margin: {
 				right: 6px;
 				bottom: 10px;
 			}
 			display: inline-block;
-			&:nth-child(3n) {
-				margin-right: 0;
-			}
 		}
 		.uikit-radio-label {
 			font-size: 15px;

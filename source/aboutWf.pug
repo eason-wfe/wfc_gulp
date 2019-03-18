@@ -21,7 +21,7 @@ block container
 					.layout-content.pl-0 寰宇家庭自1978年起，在日本行銷Disney’s World of English《迪士尼美語世界》產品，在1992年開啟了台灣的《迪士尼美語世界》，1997年更成功進軍香港，2014年進駐韓國，迄今已有百萬亞洲孩童，透過寰宇家庭的美語產品，以及寰宇家庭會員俱樂部的各項服務與活動，培養出優秀的美語能力！ 未來，寰宇家庭將持續以最適合亞洲孩子使用的美語學習系統《迪士尼美語世界》為更多的家庭服務！
 					h3.layout-title-level-2.color-1 寰宇家庭總公司
 						span.is-eng Offices
-					mixin wf( url , img , title , flag , sub )
+					mixin wf( url , img , title , flag , sub , diff )
 						li.carditem
 							a.cardlink(href=url, target='_blank')
 								img(src=img)
@@ -31,17 +31,16 @@ block container
 										img(src=flag)
 									.cardsub #{sub}
 								.cardright
-									button.btn.layout-btn.color-1(type="button") ▸ 前往
+									button.btn.layout-btn.color-1(type="button",class=diff) ▸ 前往
 					ul.card.is-main
 						each item in page.aboutWFUsa
-								+wf( item.url , item.img , item.title , item.flag , item.sub )
-					
+								+wf( item.url , item.img , item.title , item.flag , item.sub , item.diff)
 					h3.layout-title-level-2.color-1 全球分公司 
 						span.is-eng Offices
-					.layout-content 服務版圖遍及東亞各主要國家，包括日本、台灣、香港及韓國。
+					.layout-content 服務版圖遍及東亞各主要國家，包括日本、台灣、香港及韓國。 
 						ul.card
 							each item2 in page.aboutWF
-								+wf( item2.url , item2.img , item2.title , item2.flag , item2.sub )
+								+wf( item2.url , item2.img , item2.title , item2.flag , item2.sub , item2.diff)
 
 					h3.layout-title-level-2.color-1 我們的願景 
 						span.is-eng Our Vision
@@ -74,3 +73,21 @@ block container
 			
 block js
 	// JS FOR THIS PAGE ONLY
+	script.
+		$(function(){
+			$('.url1').click(function(){
+				window.open('https://www.worldfamilyenglish.com/','_blank');
+			});
+			$('.url2').click(function(){
+				window.open('https://www.worldfamily.com.tw/','_blank');
+			});
+			$('.url3').click(function(){
+				window.open('http://world-family.co.jp/','_blank');
+			});
+			$('.url4').click(function(){
+				window.open('http://www.worldfamily.com.hk/zh/','_blank');
+			});
+			$('.url5').click(function(){
+				window.open('https://worldfamilyenglish.co.kr/','_blank');
+			});
+		});

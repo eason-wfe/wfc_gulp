@@ -1,13 +1,12 @@
 $(function(){
-	$(".art-list-f2-item").eq(1).find(".art-list-f2-link").addClass("now");
+	// $(".art-list-f2-item").eq(1).find(".art-list-f2-link").addClass("now");
 	// ^ 演示用，請參考
 
 
 	//// VBOX-LIST WIDTH
 	var perWidth = 265,
 			perGutter = 8,
-			move = ( perWidth + perGutter ) * 2,
-			vWidth = $('.vbox').width();
+			move = ( perWidth + perGutter ) * 2;
 			
 	function vboxListWidth(target) {
 		target.find(".vbox-item").css({ "width": perWidth, "marginRight": perGutter });
@@ -31,6 +30,8 @@ $(function(){
 		var $target = $('.vbox-outer');
 		$target.addClass('is-pc');
 
+
+		var vWidth = $('.vbox').width();
 		// NEX & PRE
 		function vboxPreNex(target){
 			var listWidth = target.find('.vbox-list').width(),

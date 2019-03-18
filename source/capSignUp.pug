@@ -1,65 +1,40 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '美語學習'
+	-var floor3 = 'CAP親子學習計畫 '
+	-var floor4 = '繳交作業'
+
+block head-self
 		// CSS FRO THIS PAGE ONLY
 		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
 		link(rel='stylesheet', href='css/capSignUp.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										a(href='#') 美語學習
-									li.breadcrumb-item
-										a(href='') CAP親子學習計畫 
-									li.breadcrumb-item
-										| 繳交作業
-			//
-				====================================
-				——— CONTAINER STR
-				=====================================
-			// article only
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main.cap-section-title
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span CAP 繳交作業
-									span.shape.shape-right
-							.dropGeneral.roundTwo.layout-drop-sm.bg-color-2
-								select.select-drop
-									option(value='0', style='display: none;') 請選擇小朋友
-									option(value='1') 歐O大明
-									option(value='2') 歐O小明
-									option(value='3') 王O斵
-							.cap-layout-main.pt-0
-							|<?php include "html_model/cap/cap-bookbox.html";?>
-							.cap-layout-main
-							|<?php include "html_model/cap/cap-bookbox.html";?>
-			include partials/public_footer_tw.pug
-			|<?php include "html_model/cap/lightbox-cap.html";?>
-			// JS FOR THIS PAGE ONLY
-			script(src='js/capSignUp.js', type='text/javascript')
+
+block container
+	// article only
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main.cap-section-title
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span CAP 繳交作業
+							span.shape.shape-right
+					.dropGeneral.roundTwo.layout-drop-sm.bg-color-2
+						select.select-drop
+							option(value='0', style='display: none;') 請選擇小朋友
+							option(value='1') 歐O大明
+							option(value='2') 歐O小明
+							option(value='3') 王O斵
+					.cap-layout-main.pt-0
+					|<?php include "html_model/cap/cap-bookbox.html";?>
+					.cap-layout-main
+					|<?php include "html_model/cap/cap-bookbox.html";?>
+	|<?php include "html_model/cap/lightbox-cap.html";?>
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/capSignUp.js', type='text/javascript')

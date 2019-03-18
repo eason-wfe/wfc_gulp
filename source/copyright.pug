@@ -1,56 +1,37 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head 
-		|<?php include "html_model/head.html";?>
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '版權聲明'
+
+block head-self
 		// CSS FRO THIS PAGE ONLY
 		link(href='css/copyright.css', rel='stylesheet', text='text/css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper 
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										| 版權聲明
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main
-							.sectionTitle.text-center.color-1.mt-0
-								h2
-									span.shape.shape-left
-									span 版權聲明
-									span.shape.shape-right
-							.layout-content
-								| World Family 寰宇家庭雜誌及寰宇家庭俱樂部之活動（美語嘉年華、周末活動含跟著玩活動、布偶劇場、Zippy人偶秀、Froggy和Bunny點點名、CAP 童樂會、迷你活動含來趣玩活動、寶貝玩玩、翻轉小世界、全美語夏令營等），其內容版權皆為寰宇家庭股份有限公司所有，為維護智慧財產權，如有翻印、侵犯著作權之行為，並會採取法律訴訟。
-							.layout-content
-								|寰宇家庭美語嘉年華之演出，為維護智慧財產權，全場全程禁止錄影，如有錄影之不當行為，屢勸不聽將會採取法律訴訟。
-							.layout-content
-								|美國華特迪士尼公司（迪士尼)，一直以來透過本公司、附屬公司及授權商在世界各地為大眾提供高品質、多元化的娛樂產品及服務。 迪士尼是舉世聞名的傳奇卡通人物王國，創作了許多家喻戶曉的卡通人物，其中包括：米奇（Mickey Mouse）、美妮（Minnie Mouse）、唐老鴨（Donald Duck）、高飛（Goofy）、布魯托（Pluto）等。就這些卡通人物之智慧財產權，當中包括著作權或商標註冊等，本公司是合法權利人。迪士尼同時擁有多種為人熟悉的迪士尼電卡通人物之智慧財產權，分別有：阿拉丁（Aladdin）、獅子王（The Lion King）、小美人魚（The Little Mermaid）、貓兒歷險記（The Aristocats）、木偶奇遇記（Pinocchio）、白雪公主（Snow White and the Seven Dwarfs）、愛麗絲夢遊仙境（Alice in Wonderland）、石中劍（Sword in the Stone）、小泰山（Jungle Book）、羅賓漢（Robin Hood）、小飛俠（Peter Pan）、小飛象（Dumbo）、小鹿斑比（Bambi）、救難小英雄（The Rescuers）及仙履奇緣（Cinderella）等等。因此，唯有迪士尼才可以授權或准許他人使用這些卡通人物之造型或商標。 
-							.layout-content
-								|《迪士尼美語世界》 （Disney’s World of English）這套極富教育及娛樂性之書籍、DVD及音樂光碟等，寰宇家庭股份有限公司（World Family Taiwan Limited）是迪士尼唯一合法授權之廠商，獲准製造、銷售及發行於台灣、澎湖、金門及馬祖等地區。
-							.layout-content
-								|本公司謹此聲明，唯有合法授權之寰宇家庭股份有限公司，方能提供一切品質保證、保養及售後服務。為避免混淆，特以本啟事籲請社會大眾認明，凡本公司合法授權的寰宇家庭股份有限公司所生產之商品均註明下列標示：
-								br
-								|迪士尼將致力打擊一切非法盜版和侵犯著作權之行為，並會採取法律訴訟。如對上述授權商品內容及業務有任何問題，請與本公司相關業務人員聯絡。
-								br 
-								|台灣華特迪士尼股份有限公司
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
+
+block container
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					.sectionTitle.text-center.color-1.mt-0
+						h2
+							span.shape.shape-left
+							span 版權聲明
+							span.shape.shape-right
+					.layout-content
+						| World Family 寰宇家庭雜誌及寰宇家庭俱樂部之活動（美語嘉年華、周末活動含跟著玩活動、布偶劇場、Zippy人偶秀、Froggy和Bunny點點名、CAP 童樂會、迷你活動含來趣玩活動、寶貝玩玩、翻轉小世界、全美語夏令營等），其內容版權皆為寰宇家庭股份有限公司所有，為維護智慧財產權，如有翻印、侵犯著作權之行為，並會採取法律訴訟。
+					.layout-content
+						|寰宇家庭美語嘉年華之演出，為維護智慧財產權，全場全程禁止錄影，如有錄影之不當行為，屢勸不聽將會採取法律訴訟。
+					.layout-content
+						|美國華特迪士尼公司（迪士尼)，一直以來透過本公司、附屬公司及授權商在世界各地為大眾提供高品質、多元化的娛樂產品及服務。 迪士尼是舉世聞名的傳奇卡通人物王國，創作了許多家喻戶曉的卡通人物，其中包括：米奇（Mickey Mouse）、美妮（Minnie Mouse）、唐老鴨（Donald Duck）、高飛（Goofy）、布魯托（Pluto）等。就這些卡通人物之智慧財產權，當中包括著作權或商標註冊等，本公司是合法權利人。迪士尼同時擁有多種為人熟悉的迪士尼電卡通人物之智慧財產權，分別有：阿拉丁（Aladdin）、獅子王（The Lion King）、小美人魚（The Little Mermaid）、貓兒歷險記（The Aristocats）、木偶奇遇記（Pinocchio）、白雪公主（Snow White and the Seven Dwarfs）、愛麗絲夢遊仙境（Alice in Wonderland）、石中劍（Sword in the Stone）、小泰山（Jungle Book）、羅賓漢（Robin Hood）、小飛俠（Peter Pan）、小飛象（Dumbo）、小鹿斑比（Bambi）、救難小英雄（The Rescuers）及仙履奇緣（Cinderella）等等。因此，唯有迪士尼才可以授權或准許他人使用這些卡通人物之造型或商標。 
+					.layout-content
+						|《迪士尼美語世界》 （Disney’s World of English）這套極富教育及娛樂性之書籍、DVD及音樂光碟等，寰宇家庭股份有限公司（World Family Taiwan Limited）是迪士尼唯一合法授權之廠商，獲准製造、銷售及發行於台灣、澎湖、金門及馬祖等地區。
+					.layout-content
+						|本公司謹此聲明，唯有合法授權之寰宇家庭股份有限公司，方能提供一切品質保證、保養及售後服務。為避免混淆，特以本啟事籲請社會大眾認明，凡本公司合法授權的寰宇家庭股份有限公司所生產之商品均註明下列標示：
+						br
+						|迪士尼將致力打擊一切非法盜版和侵犯著作權之行為，並會採取法律訴訟。如對上述授權商品內容及業務有任何問題，請與本公司相關業務人員聯絡。
+						br 
+						|台灣華特迪士尼股份有限公司
+
+block js
+	// JS FOR THIS PAGE ONLY

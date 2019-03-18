@@ -1,97 +1,77 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head 
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(href='css/kidsWorld.css', rel='stylesheet', text='text/css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper 
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									li.breadcrumb-item
-										| 下載專區
-									li.breadcrumb-item
-										| 兒童世界專刊下載
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main
-							img.vision(src='img/download/kw.png')
-							.sectionTitle.text-center.color-1.mt-0
-								h2
-									span.shape.shape-left
-									span 兒童世界專刊下載
-									span.shape.shape-right
-							.layout-content 親愛的會員您好，此專區是專為「Kids World 兒童世界」而設的「Zippy妙妙筆檔案」與「CD音檔」下載區，相信您已瞭解Zippy妙妙筆與CD音檔是與寰宇家庭俱樂部出版的「Kids World 兒童世界」搭配使用的！希望您的寶貝可以透過這些輔助悠遊在美語世界中，讓我們一起為孩子們加油！
-							ul.card
-								li.card-item
-									.card-title 
-										span.card-icon
-										|【Zippy妙妙筆】下載步驟：
-									.card-con 請利用所附之傳輸線，將Zippy妙妙筆連結至電腦，選擇要下載之期數，再選擇儲存至「妙妙筆」內的資料夾「下載」中，並等待「儲存完成」畫面出現，才算成功。
-								li.card-item 
-									.card-title 
-										span.card-icon.is-play
-										|【CD音檔】下載步驟：
-									.card-con 選擇要下載之期數，點選CD音檔下載符號，點選「下載」，將檔案儲存至家用電子裝置播放。
-							.layout-content ※此下載服務，僅限提供給自寰宇家庭俱樂部購得Zippy妙妙筆及擁有寰宇家庭雜誌之有效會員；未經寰宇家庭同意，任意傳播資訊者將依法追訴民事及刑事等相關法律責任。
-						.layout-main
-							.book
-								mixin group(num,url,pen,cd)
-									.book-item
-										.book-title #{第158期}
-										img.book-img(src=url)
-										.book-btn
-											a.book-pen(href='#')
-												span.book-icon
-												|#{pen}
-											a.book-cd(href="#downloadModal", data-toggle="modal")
-												span.book-icon
-												|#{cd}
-								each item in page.kidsWorld
-									+group(item.num,item.url,'妙妙筆下載','CD下載')
-						hr
-						hr
-						hr
-						hr
-						hr
-						.layout-main
-							img.vision(src='img/download/zippy.gif')
-							.layout-content.is-center
-								|親愛的會員您好，
-								br
-								|此為Zippy 妙妙筆下載功能，歡迎您來電客服中心購買這個神奇的Zippy 妙妙筆ㄛ!!
-								br
-								|客服中心電話：0809-080-000
-								br
-								|寰宇家庭俱樂部
-								br
-								|祝您闔家平安
-			include partials/public_footer_tw.pug
-			|<?php include "html_model/download/download-lightbox.html";?>				
-			// JS FOR THIS PAGE ONLY
-			script.
-				$(document).ready(function(){
-					$(window).on('load resize',function(){
-						$('.book-img').css({'height':$('.book-img').width()*1.3636})
-					});
-				});
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = '下載專區'
+	-var floor3 = '兒童世界專刊下載'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(href='css/kidsWorld.css', rel='stylesheet', text='text/css')
+
+block container
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					img.vision(src='img/download/kw.png')
+					.sectionTitle.text-center.color-1.mt-0
+						h2
+							span.shape.shape-left
+							span 兒童世界專刊下載
+							span.shape.shape-right
+					.layout-content 親愛的會員您好，此專區是專為「Kids World 兒童世界」而設的「Zippy妙妙筆檔案」與「CD音檔」下載區，相信您已瞭解Zippy妙妙筆與CD音檔是與寰宇家庭俱樂部出版的「Kids World 兒童世界」搭配使用的！希望您的寶貝可以透過這些輔助悠遊在美語世界中，讓我們一起為孩子們加油！
+					ul.card
+						li.card-item
+							.card-title 
+								span.card-icon
+								|【Zippy妙妙筆】下載步驟：
+							.card-con 請利用所附之傳輸線，將Zippy妙妙筆連結至電腦，選擇要下載之期數，再選擇儲存至「妙妙筆」內的資料夾「下載」中，並等待「儲存完成」畫面出現，才算成功。
+						li.card-item 
+							.card-title 
+								span.card-icon.is-play
+								|【CD音檔】下載步驟：
+							.card-con 選擇要下載之期數，點選CD音檔下載符號，點選「下載」，將檔案儲存至家用電子裝置播放。
+					.layout-content ※此下載服務，僅限提供給自寰宇家庭俱樂部購得Zippy妙妙筆及擁有寰宇家庭雜誌之有效會員；未經寰宇家庭同意，任意傳播資訊者將依法追訴民事及刑事等相關法律責任。
+				.layout-main
+					.book
+						mixin group(num,url,pen,cd)
+							.book-item
+								.book-title #{第158期}
+								img.book-img(src=url)
+								.book-btn
+									a.book-pen(href='#')
+										span.book-icon
+										|#{pen}
+									a.book-cd(href="#downloadModal", data-toggle="modal")
+										span.book-icon
+										|#{cd}
+						each item in page.kidsWorld
+							+group(item.num,item.url,'妙妙筆下載','CD下載')
+				hr
+				hr
+				hr
+				hr
+				hr
+				.layout-main
+					img.vision(src='img/download/zippy.gif')
+					.layout-content.is-center
+						|親愛的會員您好，
+						br
+						|此為Zippy 妙妙筆下載功能，歡迎您來電客服中心購買這個神奇的Zippy 妙妙筆ㄛ!!
+						br
+						|客服中心電話：0809-080-000
+						br
+						|寰宇家庭俱樂部
+						br
+						|祝您闔家平安
+	|<?php include "html_model/download/download-lightbox.html";?>	
+
+block js				
+	// JS FOR THIS PAGE ONLY
+	script.
+		$(document).ready(function(){
+			$(window).on('load resize',function(){
+				$('.book-img').css({'height':$('.book-img').width()*1.3636})
+			});
+		});

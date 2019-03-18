@@ -4,34 +4,34 @@
 // 3.TABBAR
 $(function () {
 	// FOR DEMO ONLY MOBILE
-	var logInM = $('.logbar-m-in');
-	var logOutM = $('.logbar-m-out');
-	$('.logbar-m-link').click(function (e) {
-		e.preventdefault();
-	});
-	logInM.click(function () {
-		$(this).css({ display: "none" });
-		logOutM.css({ display: "inline-block" });
-	});
-	logOutM.click(function () {
-		$(this).css({ display: "none" });
-		logInM.css({ display: "inline-block" });
-	});
+	// var logInM = $('.logbar-m-in');
+	// var logOutM = $('.logbar-m-out');
+	// $('.logbar-m-link').click(function (e) {
+	// 	e.preventdefault();
+	// });
+	// logInM.click(function () {
+	// 	$(this).css({ display: "none" });
+	// 	logOutM.css({ display: "inline-block" });
+	// });
+	// logOutM.click(function () {
+	// 	$(this).css({ display: "none" });
+	// 	logInM.css({ display: "inline-block" });
+	// });
 
-	// FOR DEMO ONLY PC
-	var logInPC = $('.logbar-pc-in');
-	var logOutPC = $('.logbar-pc-out');
-	$('.logbar-pc-link').click(function (e) {
-		e.preventdefault();
-	});
-	logInPC.click(function () {
-		$(this).css({ display: "none" });
-		logOutPC.css({ display: "inline-block" });
-	});
-	logOutPC.click(function () {
-		$(this).css({ display: "none" });
-		logInPC.css({ display: "inline-block" });
-	});
+	// // FOR DEMO ONLY PC
+	// var logInPC = $('.logbar-pc-in');
+	// var logOutPC = $('.logbar-pc-out');
+	// $('.logbar-pc-link').click(function (e) {
+	// 	e.preventdefault();
+	// });
+	// logInPC.click(function () {
+	// 	$(this).css({ display: "none" });
+	// 	logOutPC.css({ display: "inline-block" });
+	// });
+	// logOutPC.click(function () {
+	// 	$(this).css({ display: "none" });
+	// 	logInPC.css({ display: "inline-block" });
+	// });
 
 	// FOOTER RISE
 	if($(window).width() >= 768){

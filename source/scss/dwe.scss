@@ -43,14 +43,14 @@ $dec-color-dark: #028bc8;
 		}
 	}
 	.layout-title-level-2 {
-		background-color: $dec-color !important;
-		padding:{
-			left: 0;
-			right: 0;
-		}
-		width: 156px;
-		display: block;
-		text-align: center;
+		// background-color: $dec-color !important;
+		// padding:{
+		// 	left: 0;
+		// 	right: 0;
+		// }
+		// width: 156px;
+		// display: block;
+		// text-align: center;
 	}
 	.layout-title-level-3 {
 		color: #0089c6 !important;
@@ -347,7 +347,9 @@ $dec-color-light-2: #268072;
 =========================
 =========================
 */
-
+.container-main {
+	padding-bottom: 0;
+}
 /*
 =========================
 =========================
@@ -355,6 +357,15 @@ $dec-color-light-2: #268072;
 =========================
 =========================
 */
-.container-main {
-	padding-bottom: 0;
+.layout-title-level-3{
+	padding-left: 12px;
+	line-height: 1.6;
+	&:before{
+		display: none;
+	}
+}
+.layout-content{
+	.layout-title-level-3{
+		padding-left: 0;
+	}
 }
