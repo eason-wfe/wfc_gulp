@@ -1,113 +1,93 @@
-doctype html
-html(lang='ko')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
-		link(href='css/notic_kr.css', rel='stylesheet')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2-kr.html";?>
+extend temp/temp-ko.pug
+block var
+	-var country = 'ko'
+	-var floor1 = 'index'
+	-var floor2 = 'My Community'
+	-var floor3 = '공지사항'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(href='assets/plugins/selectbox/select_option1.css', rel='stylesheet')
+	link(href='css/notic_kr.css', rel='stylesheet')
+
+block container
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-xs-12.col-md-3.aside-lb
+				.panel-heading.bg-color-4.border-color-4
+					h3.panel-title WFC Community
+					.aside-lb-close x
+				|<?php include "html_model/_comm_kr/comm-aside.html";?>
+				script.
+					// 此 js 為 demo 用，請刪除
+					$(".art-list-f2").find(".art-list-f2-item").eq(0).find(".art-list-f2-link").addClass("now");
+					// $(".art-list-f2").find(".art-list-f2-item").eq(1).find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
+			.col-xs-12.col-xs-12.col-md-9
+				.layout-main-card
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-4.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| 공지사항
+							span.shape.shape-right
+					.mypage-switchbox
+						|<?php include "html_model/_comm_kr/comm-article-search.html";?>
+					ul.layout-card
+						|<?php include "html_model/_comm_kr/notic-card-item.html";?>
+					.pagerArea.text-center.color-4
+						|<?php include "html_model/uikit/pager-item.html";?>
+					.cd-btnbox
+						button.btn.layout-btn.layout-btn-sm.color-4(type='button')
+							| 글쓰기
+						.cd-btnbox-icon
+				hr
+				hr
+				hr
+				hr
+				hr
+				h3 公告內文
+				.layout-main
 					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') index
-									li.breadcrumb-item
-										| My Community
-									li.breadcrumb-item
-										| 공지사항
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-xs-12.col-md-3.aside-lb
-						.panel-heading.bg-color-4.border-color-4
-							h3.panel-title WFC Community
-							.aside-lb-close x
-						|<?php include "html_model/_comm_kr/comm-aside.html";?>
-						script.
-							// 此 js 為 demo 用，請刪除
-							$(".art-list-f2").find(".art-list-f2-item").eq(0).find(".art-list-f2-link").addClass("now");
-							// $(".art-list-f2").find(".art-list-f2-item").eq(1).find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
-					.col-xs-12.col-xs-12.col-md-9
-						.layout-main-card
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-4.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span
-										| 공지사항
-									span.shape.shape-right
-							.mypage-switchbox
-								|<?php include "html_model/_comm_kr/comm-article-search.html";?>
-							ul.layout-card
-								|<?php include "html_model/_comm_kr/notic-card-item.html";?>
-							.pagerArea.text-center.color-4
-								|<?php include "html_model/uikit/pager-item.html";?>
-							.cd-btnbox
-								button.btn.layout-btn.layout-btn-sm.color-4(type='button')
-									| 글쓰기
-								.cd-btnbox-icon
-						hr
-						hr
-						hr
-						hr
-						hr
-						h3 公告內文
-						.layout-main
-							//
-								[ ^ 注意 ^ ]
-								到 post 功能頁，用的是 .layout-main，不是 .layout-main-card
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-4.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span
-										| 공지사항
-									span.shape.shape-right
-							.post-titlebox
-								p.post-titlebox-p
-									| 2018년 12월 일산 크리스마스쇼 출연진 관련 공지
-							.post-time 2019-01-26 01:23
-							.post-contbox
-								| 클럽은 풍부한 학습 지원 서비스를 제공합니다.예를 들어, 미국 언어 활동, 전화 에세이 등은 아이들이 제품 컨텐츠를 쉽게 배울 수 있도록합니다.부모와 아빠는 자녀가 다시 재검토하는 것을 돕기 위해 "학습 지원 서비스"를 어떻게 사용합니까?
-								img(src='img/community/ad.jpg')
-							.post-btnbox
-								button.btn.layout-btn.layout-btn-sm.is-left(type='button')
-									| 목록보기
-								button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
-									| 이전글
-								button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
-									| 다음글
-			include partials/public_footer_kr.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/tmpAsideLb.js')
-			script(src='js/statePaddingShare.js')
-			script.
-				$(function(){
-				// Mobi pic
-				$(".post-contbox img").click(function(){
-				var nua = navigator.userAgent;
-				if( /iphone/i.test(nua) || /android/i.test(nua) ){
-				window.open('img/community/ad.jpg', 'img');
-				};
-				});
-				// Drop down
-				$('.select-drop').selectbox();
-				});
+						[ ^ 注意 ^ ]
+						到 post 功能頁，用的是 .layout-main，不是 .layout-main-card
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-4.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| 공지사항
+							span.shape.shape-right
+					.post-titlebox
+						p.post-titlebox-p
+							| 2018년 12월 일산 크리스마스쇼 출연진 관련 공지
+					.post-time 2019-01-26 01:23
+					.post-contbox
+						| 클럽은 풍부한 학습 지원 서비스를 제공합니다.예를 들어, 미국 언어 활동, 전화 에세이 등은 아이들이 제품 컨텐츠를 쉽게 배울 수 있도록합니다.부모와 아빠는 자녀가 다시 재검토하는 것을 돕기 위해 "학습 지원 서비스"를 어떻게 사용합니까?
+						img(src='img/community/ad.jpg')
+					.post-btnbox
+						button.btn.layout-btn.layout-btn-sm.is-left(type='button')
+							| 목록보기
+						button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
+							| 이전글
+						button.btn.layout-btn.layout-btn-sm.is-border.is-right(type='button')
+							| 다음글
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/tmpAsideLb.js')
+	script(src='js/statePaddingShare.js')
+	script.
+		$(function(){
+		// Mobi pic
+		$(".post-contbox img").click(function(){
+		var nua = navigator.userAgent;
+		if( /iphone/i.test(nua) || /android/i.test(nua) ){
+		window.open('img/community/ad.jpg', 'img');
+		};
+		});
+		// Drop down
+		$('.select-drop').selectbox();
+		});

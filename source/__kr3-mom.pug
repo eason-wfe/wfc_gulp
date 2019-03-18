@@ -1,92 +1,60 @@
-doctype html
-//
-	KOREA
-	1. css/layout_kr.css ( in head.html )
-	2. html_model/header-2-kr.html
-	3. html_model/tabmenu-kr.html
-	4. html_model/footer-kr.html
-	//
-	TW (x back-prefix -tw x)
-	1. css/layout.css ( in head.html )
-	2. html_model/header-2.html
-	3. html_model/tabmenu.html
-	4. html_model/footer.html
-html(lang='ko')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(type='text/css', href='css/mom_kr.css', rel='stylesheet')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2-kr.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') index
-									li.breadcrumb-item
-										| Parents Support
-									li.breadcrumb-item
-										| Mom to Mom
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
-						.panel-heading.bg-color-3.border-color-3.aside-close
-							h3.panel-title Parents Support
-							.aside-lb-close x
-						|<?php include "html_model/_parents_kr/parents-aside.html";?>
-					.col-xs-12.col-sm-12.col-md-9
-						.layout-main
-							|<?php include "html_model/uikit/aside-lb-open.html";?>
-							.sectionTitle.text-center.color-3.mt-0
-								h2
-									span.shape.shape-left
-									span Mom to Mom
-									span.shape.shape-right
-							img.is-pc(src='img/parents/mom_pc.jpg')
-							img.is-mobi(src='img/parents/mom_mobi.png')
-							h3.layout-title-level-3.icon2.mt-0 Mom to Mom 서비스 란?
-							.layout-content.pl-3
-								| 부모님들을 위한 교재 및 WF클럽 서비스 이용에 관한 상담 서비스 입니다.
-								br
-								| 							아이의 연령에 따른 DWE 프로그램의 진행 방법과 월드패밀리클럽의 이용방법 등 부모님께서 궁금해 하는
-								br
-								| 							모든 질문에 실제 교재와 서비스를 이용하고 계시는 어머니 상담원이 친절하게 상담해 드리는 서비스입니다.
-							h3.layout-title-level-3.icon3
-								| DWE 어떻게 활용하는 건가요?
-								br
-								| 							클럽서비스 어떻게 잘 활용하죠?
-							.hight-light
-								.height-light-box
-									span.first “
-									| 									월드패밀리의 교재와 서비스에 대해 누구보다 잘 알고 계시는
-									br
-									| 									상담원이 친철하게 유선 또는 온라인으로 상담해 드립니다.
-									br
-									br
-									| 									온라인 : 
-									a(href='mailto:mom2mom@worldfamilyenglish.com') mom2mom@worldfamilyenglish.com
-									span.second ”
-			include partials/public_footer_kr.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/tmpAsideLb.js')
-			script.
-				$(function(){
-				$(".art-list-f2-item").eq(2).find(".art-list-f2-link").addClass("now");
-				// ^ 此 jq 為演示用，請參考 ^
-				});
+extend temp/temp-ko.pug
+block var
+	-var country = 'ko'
+	-var floor1 = 'index'
+	-var floor2 = 'Parents Support'
+	-var floor3 = 'Mom to Mom'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(type='text/css', href='css/mom_kr.css', rel='stylesheet')
+
+block container
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-3.sticky-top.aside-lb
+				.panel-heading.bg-color-3.border-color-3.aside-close
+					h3.panel-title Parents Support
+					.aside-lb-close x
+				|<?php include "html_model/_parents_kr/parents-aside.html";?>
+			.col-xs-12.col-sm-12.col-md-9
+				.layout-main
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-3.mt-0
+						h2
+							span.shape.shape-left
+							span Mom to Mom
+							span.shape.shape-right
+					img.is-pc(src='img/parents/mom_pc.jpg')
+					img.is-mobi(src='img/parents/mom_mobi.png')
+					h3.layout-title-level-3.icon2.mt-0 Mom to Mom 서비스 란?
+					.layout-content.pl-3
+						| 부모님들을 위한 교재 및 WF클럽 서비스 이용에 관한 상담 서비스 입니다.
+						br
+						| 							아이의 연령에 따른 DWE 프로그램의 진행 방법과 월드패밀리클럽의 이용방법 등 부모님께서 궁금해 하는
+						br
+						| 							모든 질문에 실제 교재와 서비스를 이용하고 계시는 어머니 상담원이 친절하게 상담해 드리는 서비스입니다.
+					h3.layout-title-level-3.icon3
+						| DWE 어떻게 활용하는 건가요?
+						br
+						| 							클럽서비스 어떻게 잘 활용하죠?
+					.hight-light
+						.height-light-box
+							span.first “
+							| 									월드패밀리의 교재와 서비스에 대해 누구보다 잘 알고 계시는
+							br
+							| 									상담원이 친철하게 유선 또는 온라인으로 상담해 드립니다.
+							br
+							br
+							| 									온라인 : 
+							a(href='mailto:mom2mom@worldfamilyenglish.com') mom2mom@worldfamilyenglish.com
+							span.second ”
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/tmpAsideLb.js')
+	script.
+		$(function(){
+		$(".art-list-f2-item").eq(2).find(".art-list-f2-link").addClass("now");
+		// ^ 此 jq 為演示用，請參考 ^
+		});

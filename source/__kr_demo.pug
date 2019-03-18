@@ -1,208 +1,171 @@
-doctype html
-//
-	KOREA
-	1. css/layout_kr.css ( in head.html )
-	2. html_model/header-2-kr.html
-	3. html_model/tabmenu-kr.html
-	4. html_model/footer-kr.html
+extend temp/temp-ko.pug
+block var
+	-var country = 'ko'
+	-var floor1 = 'index'
+	-var floor2 = 'f1'
+	-var floor3 = 'f2'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	style.
+		.layout-main {
+		height: 500px;
+		}
+		/* 每頁環境色設定 */
+		/* v 麵包屑背景色 v */
+		.layout-breadcrumb-box {
+		background-color: #8fc118;
+		}
+		@media (min-width: 991px) {
+		.layout-main {
+		height: 900px !important;
+		}
+		}
+		/* navbar menu arrow */
+		@media (max-width: 767px) {
+		.layout-navbar-arrow-mobi:after {
+		border-color: transparent transparent #8fc118;
+		}
+		}
+		@media (min-width: 768px) {
+		/* color-1 ~ 5 */
+		.color-1.layout-navbar-arrow-pc:after {
+		border-color: transparent transparent #8fc118;
+		}
+		}
+		/*note:
+		@768 : hamber menu
+		@991 : col 1 & col 2
+		*/
+
+block container
 	//
-	TW (x back-prefix -tw x)
-	1. css/layout.css ( in head.html )
-	2. html_model/header-2.html
-	3. html_model/tabmenu.html
-	4. html_model/footer.html
-html(lang='ko')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		style.
-			.layout-main {
-			height: 500px;
-			}
-			/* 每頁環境色設定 */
-			/* v 麵包屑背景色 v */
-			.layout-breadcrumb-box {
-			background-color: #8fc118;
-			}
-			@media (min-width: 991px) {
-			.layout-main {
-			height: 900px !important;
-			}
-			}
-			/* navbar menu arrow */
-			@media (max-width: 767px) {
-			.layout-navbar-arrow-mobi:after {
-			border-color: transparent transparent #8fc118;
-			}
-			}
-			@media (min-width: 768px) {
-			/* color-1 ~ 5 */
-			.color-1.layout-navbar-arrow-pc:after {
-			border-color: transparent transparent #8fc118;
-			}
-			}
-			/*note:
-			@768 : hamber menu
-			@991 : col 1 & col 2
-			*/
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2-kr.html";?>
+		====================================
+		——— CONTAINER STR
+		——— 滿版的用法：
+		——— 1. 在.layout-main + class = .layout-main-full
+		——— 2. 往內加 tag .layout-main-full-bg 用以上滿版背景色
+		——— 3. 同層再加 tag .layout-main-full-inbox ，內容就加在這
+		=====================================
+	// main + aside
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-9
+				.layout-main.layout-main-pageback.layout-main-pageback-color-1
+					|<?php include "html_model/uikit/page-back.html";?>
 					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									//
-										<li class="breadcrumb-item">
-										<a href="#">活動報名</a>
-										</li>
-									li.breadcrumb-item
-										// <li class="breadcrumb-item text-truncate" style="width: 150px;">
-										a(href='') 青蛙與 Pompom 公主青蛙與 Pompom 公主
-									li.breadcrumb-item
-										| 報名
-			//
-				====================================
-				——— CONTAINER STR
-				——— 滿版的用法：
-				——— 1. 在.layout-main + class = .layout-main-full
-				——— 2. 往內加 tag .layout-main-full-bg 用以上滿版背景色
-				——— 3. 同層再加 tag .layout-main-full-inbox ，內容就加在這
-				=====================================
-			// main + aside
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-9
-						.layout-main.layout-main-pageback.layout-main-pageback-color-1
-							|<?php include "html_model/uikit/page-back.html";?>
-							//
-								[^ 註 ^]
-								規則：
-								1.tag .layout-main 加 class .layout-main-pageback
-								2.向 tag .layout-main 內層「頂端」加三個 tag .layout-main-pageback-item & -shadow & -deco
-								3.上色，再在 tag .layout-main-pageback 加 ckass .layout-main-pageback-color-1 ~ 5
-								** 以上通用於 二欄 & 一欄
-								** 必須在 三個內層 tag 比鄰下方加上 level 1 title tag，畫面才不會壞
-								// LEVEL 1
-								.sectionTitle.text-center.color-2.mt-0
-									h2
-										// h2 only
-										span.shape.shape-left
-										span Level 1
-										span.shape.shape-right
-								| 						main 2 (m + as)
-								br
-						// FULL
-						.layout-main.layout-main-full
-							.layout-main-full-bg.layout-main-full-left
-							//
-								[^ 註 ^]
-								.layout-main-full-left 給 main 在左 aside 在右的結構
-								加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
-								js code 在 layout.js
-							.layout-main-full-inbox
-								| main 2 (m + as) 
-								br
-								|  FULL
-					.hidden-xs.hidden-sm.col-md-3.sticky-top
-						.panel-heading.bg-color-1.border-color-1
-							h3.panel-title aside title
-						aside.layout-sub
-							| aside 
-							br
-			hr
-			hr
-			hr
-			hr
-			hr
-			hr
-			// aside + main
-			.container.container-main.container-col-2
-				.row
-					.col-xs-12.col-sm-12.col-md-3.sticky-top
-						.panel-heading.bg-color-1.border-color-1
-							h3.panel-title aside title
-						aside.layout-sub
-							| aside 
-							br
-					.col-xs-12.col-sm-12.col-md-9
-						.layout-main.layout-main-pageback.layout-main-pageback-color-1
-							|<?php include "html_model/uikit/page-back.html";?>
-							// LEVEL 1
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span Level 1
-									span.shape.shape-right
-						// FULL
-						.layout-main.layout-main-full
-							.layout-main-full-bg.layout-main-full-right
-							//
-								[^ 註 ^]
-								.layout-main-full-right 給 main 在右 aside 在左的結構
-								加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
-								js code 在 layout.js
-							.layout-main-full-inbox
-								| main 2 (as + m) 
-								br
-								|  FULL
-			hr
-			hr
-			hr
-			hr
-			hr
-			hr
-			// main only
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main.layout-main-pageback.layout-main-pageback-color-1
-							|<?php include "html_model/uikit/page-back.html";?>
-							// LEVEL 1
-							.sectionTitle.text-center.color-2.mt-0
-								h2
-									// h2 only
-									span.shape.shape-left
-									span Level 1
-									span.shape.shape-right
-							| 						main only 
-							br
-							|  設定padding w 991- 為 15px / padding w 992+ 為 50px
-						// FULL
-						.layout-main.layout-main-full
-							.layout-main-full-bg.layout-main-full-center
-							//
-								[^ 註 ^]
-								.layout-main-full-center 給只有 main 在中的結構
-								加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
-								js code 在 layout.js
-							.layout-main-full-inbox
-								| main only
-								br
-								|  FULL
-			hr
-			hr
-			hr
-			hr
-			hr
-			hr
-			include partials/public_footer_kr.pug
-			// JS FOR THIS PAGE ONLY
-			script(src='js/fullScreen.js')
+						[^ 註 ^]
+						規則：
+						1.tag .layout-main 加 class .layout-main-pageback
+						2.向 tag .layout-main 內層「頂端」加三個 tag .layout-main-pageback-item & -shadow & -deco
+						3.上色，再在 tag .layout-main-pageback 加 ckass .layout-main-pageback-color-1 ~ 5
+						** 以上通用於 二欄 & 一欄
+						** 必須在 三個內層 tag 比鄰下方加上 level 1 title tag，畫面才不會壞
+						// LEVEL 1
+						.sectionTitle.text-center.color-2.mt-0
+							h2
+								// h2 only
+								span.shape.shape-left
+								span Level 1
+								span.shape.shape-right
+						| 						main 2 (m + as)
+						br
+				// FULL
+				.layout-main.layout-main-full
+					.layout-main-full-bg.layout-main-full-left
+					//
+						[^ 註 ^]
+						.layout-main-full-left 給 main 在左 aside 在右的結構
+						加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
+						js code 在 layout.js
+					.layout-main-full-inbox
+						| main 2 (m + as) 
+						br
+						|  FULL
+			.hidden-xs.hidden-sm.col-md-3.sticky-top
+				.panel-heading.bg-color-1.border-color-1
+					h3.panel-title aside title
+				aside.layout-sub
+					| aside 
+					br
+	hr
+	hr
+	hr
+	hr
+	hr
+	hr
+	// aside + main
+	.container.container-main.container-col-2
+		.row
+			.col-xs-12.col-sm-12.col-md-3.sticky-top
+				.panel-heading.bg-color-1.border-color-1
+					h3.panel-title aside title
+				aside.layout-sub
+					| aside 
+					br
+			.col-xs-12.col-sm-12.col-md-9
+				.layout-main.layout-main-pageback.layout-main-pageback-color-1
+					|<?php include "html_model/uikit/page-back.html";?>
+					// LEVEL 1
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span Level 1
+							span.shape.shape-right
+				// FULL
+				.layout-main.layout-main-full
+					.layout-main-full-bg.layout-main-full-right
+					//
+						[^ 註 ^]
+						.layout-main-full-right 給 main 在右 aside 在左的結構
+						加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
+						js code 在 layout.js
+					.layout-main-full-inbox
+						| main 2 (as + m) 
+						br
+						|  FULL
+	hr
+	hr
+	hr
+	hr
+	hr
+	hr
+	// main only
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main.layout-main-pageback.layout-main-pageback-color-1
+					|<?php include "html_model/uikit/page-back.html";?>
+					// LEVEL 1
+					.sectionTitle.text-center.color-2.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span Level 1
+							span.shape.shape-right
+					| 						main only 
+					br
+					|  設定padding w 991- 為 15px / padding w 992+ 為 50px
+				// FULL
+				.layout-main.layout-main-full
+					.layout-main-full-bg.layout-main-full-center
+					//
+						[^ 註 ^]
+						.layout-main-full-center 給只有 main 在中的結構
+						加 js 控制此 tag 在 pc 版 ( width >= 975 ) 時的定位
+						js code 在 layout.js
+					.layout-main-full-inbox
+						| main only
+						br
+						|  FULL
+	hr
+	hr
+	hr
+	hr
+	hr
+	hr
+
+block js
+	// JS FOR THIS PAGE ONLY
+	script(src='js/fullScreen.js')
