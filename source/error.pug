@@ -1,0 +1,31 @@
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = '首頁'
+	-var floor2 = 'error'
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(rel='stylesheet', href='css/error.css')
+
+block container
+	// main only
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					.err
+						img.is-pc(src="img/error.gif")
+						img.is-mobi(src="img/error_m.jpg")
+					.err-txt
+						|您正在瀏覽「寰宇家庭」網站，有不明之連結，無法找到相關網頁，請再試一次。
+						br
+						|「寰宇家庭俱樂部」網址是：
+						a(href="www.worldfamilyclub.com.tw",target="_blank") www.worldfamilyclub.com.tw
+						|，造成不便，敬請原諒!!
+						br
+						br
+						span 若有任何不明錯誤發生，網站將自動回報給系統維護人員。
+
+block js
+	// JS FOR THIS PAGE ONLY

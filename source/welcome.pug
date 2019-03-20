@@ -31,7 +31,7 @@ block container
 							span 新手上路
 							span.shape.shape-right
 					.layout-video-fluid
-						iframe(src='https://player.vimeo.com/video/243244233', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+						iframe(src='//player.vimeo.com/video/243244233', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
 					mixin link(url,chi)
 						li.vbox-item
 							.layout-video-fluid
@@ -46,8 +46,8 @@ block container
 							i.fa.fa-arrow-left
 						.vbox.mb-5
 							ul.vbox-list
-								each item4 in page.welcomeWfc
-									+link(item4.url,item4.chi)
+								each item1 in page.welcome95
+									+link(item1.url,item1.chi)
 						a.vbox-nex(href='#')
 							i.fa.fa-arrow-right
 					//- 2

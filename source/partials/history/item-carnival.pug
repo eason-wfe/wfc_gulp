@@ -1,4 +1,4 @@
-mixin list(state,stateText,title,address,memo)
+mixin list(state,stateText,title,landmark,address,memo)
 	.layout-card-item
 		.h-name 歐陽大明、歐陽曉英
 		.h-box.carnival-box
@@ -33,9 +33,14 @@ mixin list(state,stateText,title,address,memo)
 					span.h-msg-item
 						span.h-col-title 活動日期：
 						span.h-col-cont 2018/11/01 14:00~15:10
+			.h-item
+				.h-msg.is-small
+					span.h-msg-item
+						span.h-col-title 活動地點：
+						span.h-col-cont #{landmark}
 					span.h-msg-vr
 					span.h-msg-item 
-						span.h-col-title 活動地點：
+						span.h-col-title 活動地址：
 						span.h-col-cont #{address}
 			.h-item
 				.h-msg.is-small
@@ -84,4 +89,4 @@ mixin list(state,stateText,title,address,memo)
 							span.h-sets 大廳區樓下C區25排29號
 				.h-price 活動費用：$2,475 (應付)
 each item in page.historyTwCarnival
-	+list(item.state,item.stateText,item.title,item.address,item.memo)
+	+list(item.state,item.stateText,item.title,item.landmark,item.address,item.memo)

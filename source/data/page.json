@@ -142,37 +142,37 @@
 	"freeConverEven": [
 		{
 			"url": "img/te/te_fc.png",
-			"text": "If you could design the perfect play space for yourself, what would it have in it?"
+			"text": "Transportation"
 		},
 		{
 			"url": "img/te/te_fc2.png",
-			"text": "If you were stuck on an island…."
+			"text": "What animals are you scared of?"
 		},
 		{
 			"url": "img/te/te_fc3.png",
-			"text": "If you were an animal, what animal would you be?"
+			"text": "(Game) The Alphabet guessing game"
 		},
 		{
 			"url": "img/te/te_fc4.png",
-			"text": "What do you think would be the best thing about being a dog or cat?"
+			"text": "Music"
 		}
 	],
 	"freeConverOdd": [
 		{
 			"url": "img/te/te_fc.png",
-			"text": "Feelings"
+			"text": "Meet and Greet"
 		},
 		{
 			"url": "img/te/te_fc2.png",
-			"text": "If you could spend your time doing only one activity, what would that activity be? Why?"
+			"text": "(Game) Animal Sounds"
 		},
 		{
 			"url": "img/te/te_fc3.png",
-			"text": "Outer space"
+			"text": "Superheroes"
 		},
 		{
 			"url": "img/te/te_fc4.png",
-			"text": "Dreams"
+			"text": "If you had one wish"
 		}
 	],
 	"historyTwCarnival": [
@@ -180,108 +180,148 @@
 			"state": "state-car-1",
 			"stateText": "已報名",
 			"title": "The Warm Winter Tree /冬天裡的魔法樹",
-			"address": "台北市中山北路四段16號",
+			"landmark": "台北捷運復興崗站北投會館 B1綜合會議廳",
+			"address": "台北市北投區大業路527巷88號",
 			"memo": "黃色帽子※停車位不多，請多搭乘大眾運輸工具。"
 		},
 		{
 			"state": "state-car-2",
 			"stateText": "己候補",
 			"title": "Happy Town/ 快樂城鎮",
-			"address": "國立陽明大學「大禮堂」台北市北投區立農街二段155號",
+			"landmark": "國立陽明大學「大禮堂」",
+			"address": "台北市北投區立農街二段155號",
 			"memo": "校區內停車格分布較廣，自行開車請提早前往，若未停於停車格內恐將被取締，請多留意喔！"
 		},
 		{
 			"state": "state-car-3",
 			"stateText": "己參加",
 			"title": "The Very Hungry Snow White /白雪公主肚子餓了",
-			"address": "台北市市政大樓2樓「親子劇場」台北市信義區市府路1號2樓",
+			"landmark": "台北市市政大樓2樓「親子劇場」",
+			"address": "台北市信義區市府路1號2樓",
 			"memo": "此為錄影場次；請由市府路西大門進入"
 		}
 	],
-	"welcome95": [],
+	"welcome95": [
+		{
+			"url": "//player.vimeo.com/video/298949520",
+			"chi": "書櫃組合"
+		},
+		{
+			"url": "//player.vimeo.com/video/298964443",
+			"chi": "書本CD/ DVD上架"
+		},
+		{
+			"url": "//player.vimeo.com/video/299147508",
+			"chi": "迪士尼美語世界使用說明「入門篇」"
+		},
+		{
+			"url": "//player.vimeo.com/video/299159221",
+			"chi": "迪士尼美語世界使用說明「進階篇」"
+		},
+		{
+			"url": "//player.vimeo.com/video/299151745",
+			"chi": "寰宇家庭會員服務使用說明"
+		}
+	],
 	"welcomeFirst": [
 		{
-			"url": "https://vimeo.com/324146604",
+			"url": "//player.vimeo.com/video/324146604",
 			"chi": "七大竅門"
 		},
 		{
-			"url": "https://vimeo.com/324146717",
+			"url": "//player.vimeo.com/video/324146717",
 			"chi": "支援服務一"
 		},
 		{
-			"url": "https://vimeo.com/324146772",
+			"url": "//player.vimeo.com/video/324146772",
 			"chi": "支援服務二"
 		},
 		{
-			"url": "https://vimeo.com/324146823",
+			"url": "//player.vimeo.com/video/324146823",
 			"chi": "多元學習"
 		},
 		{
-			"url": "https://vimeo.com/324146863",
+			"url": "//player.vimeo.com/video/324146863",
 			"chi": "延伸教材"
 		}
 	],
 	"welcomeHow": [
 		{
-			"url": "https://vimeo.com/324147980",
+			"url": "//player.vimeo.com/video/324147980",
 			"chi": "米奇魔法師使用方式"
 		},
 		{
-			"url": "https://vimeo.com/312501155",
-			"chi": "翻轉小世界(暫放)"
+			"url": "//player.vimeo.com/video/299152172",
+			"chi": "使用說明延伸篇「米奇趣味互動學習」"
 		},
 		{
-			"url": "https://vimeo.com/312631756",
-			"chi": "全美語夏令營(暫放)"
+			"url": "//player.vimeo.com/video/299176822",
+			"chi": "使用說明延伸篇「探索互動學習」"
 		},
 		{
-			"url": "https://vimeo.com/312632272",
-			"chi": "畢業典禮(暫放)"
+			"url": "//player.vimeo.com/video/299343552",
+			"chi": "延伸系統說明「魔幻遊戲百變卡」"
+		},
+		{
+			"url": "//player.vimeo.com/video/325155920",
+			"chi": "親子互動小技巧_Fill Up the Cup"
 		}
 	],
 	"welcomeWfc": [
 		{
-			"url": "https://vimeo.com/312498775",
+			"url": "//player.vimeo.com/video/325158556",
+			"chi": "World Family Club Library 介紹"
+		},
+		{
+			"url": "//player.vimeo.com/video/325158470",
+			"chi": "Face Call 使用方式"
+		},
+		{
+			"url": "//player.vimeo.com/video/325158408",
+			"chi": "CAP親子學習計畫 錄音方式"
+		},
+		{
+			"url": "//player.vimeo.com/video/312498775",
 			"chi": "美語嘉年華"
 		},
 		{
-			"url": "https://vimeo.com/312505762",
+			"url": "//player.vimeo.com/video/312505762",
 			"chi": "跟著玩活動"
 		},
 		{
-			"url": "https://vimeo.com/312506822",
+			"url": "//player.vimeo.com/video/312506822",
 			"chi": "布偶劇場"
 		},
 		{
-			"url": "https://vimeo.com/312500522",
-			"chi": "Froggy和Bunny點點名"
+			"url": "//player.vimeo.com/video/312506822",
+			"chi": "Froggy和Bunny點點名(影片暫放)"
 		},
 		{
-			"url": "https://vimeo.com/312500522",
+			"url": "//player.vimeo.com/video/312500522",
 			"chi": "Zippy人偶秀"
 		},
 		{
-			"url": "https://vimeo.com/312495574",
+			"url": "//player.vimeo.com/video/312495574",
 			"chi": "CAP童樂會"
 		},
 		{
-			"url": "https://vimeo.com/312490915",
+			"url": "//player.vimeo.com/video/312490915",
 			"chi": "寶貝玩玩"
 		},
 		{
-			"url": "https://vimeo.com/312500026",
+			"url": "//player.vimeo.com/video/312500026",
 			"chi": "來趣玩活動"
 		},
 		{
-			"url": "https://vimeo.com/312501155",
+			"url": "//player.vimeo.com/video/312501155",
 			"chi": "翻轉小世界"
 		},
 		{
-			"url": "https://vimeo.com/312631756",
+			"url": "//player.vimeo.com/video/312631756",
 			"chi": "全美語夏令營"
 		},
 		{
-			"url": "https://vimeo.com/312632272",
+			"url": "//player.vimeo.com/video/312632272",
 			"chi": "畢業典禮"
 		}
 	],

@@ -1,41 +1,14 @@
 extend temp/temp-tw.pug
 block var
 	-var country = 'tw'
-	-var floor1 = '首頁'
-	-var floor2 = '活動報名'
+	-var floor1 = ''
+	-var floor2 = ''
+	-var floor3 = ''
+	-var floor4 = ''
 
 block head-self
 	// CSS FRO THIS PAGE ONLY
-	style.
-		.layout-main {
-			height: 500px;
-		}
-		/* 每頁環境色設定 */
-		/* v 麵包屑背景色 v */
-		.layout-breadcrumb-box {
-			background-color: #8fc118;
-		}
-		@media (min-width: 991px) {
-			.layout-main {
-				height: 900px !important;
-			}
-		}
-		/* navbar menu arrow */
-		@media (max-width: 767px) {
-			.layout-navbar-arrow-mobi:after {
-				border-color: transparent transparent #8fc118;
-			}
-		}
-		@media (min-width: 768px) {
-			/* color-1 ~ 5 */
-			.color-1.layout-navbar-arrow-pc:after {
-				border-color: transparent transparent #8fc118;
-			}
-		}
-		/*note:
-		@768 : hamber menu
-		@991 : col 1 & col 2
-		*/
+	include temp/default-style.pug
 
 block container
 	//

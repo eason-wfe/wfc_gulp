@@ -13,7 +13,7 @@ $(function(){
 	$('.sbOptions a').on('click',function(){
 		var value = $(this).attr('rel'),
 			now = '.is-' + value;
-		if( mgOldValue != value && value != 0 ){
+		if( mgOldValue != value){
 			console.log('got old != value');
 			$('.unit').fadeOut(500)
 			setTimeout(function(){

@@ -1,46 +1,22 @@
-doctype html
-html(lang='zh-Hant-TW')
-	head
-		|<?php include "html_model/head.html";?>
-		// CSS FRO THIS PAGE ONLY
-		link(rel='stylesheet', href='css/usual.css')
-	body.body-wrapper
-		// loaded
-		.main-wrapper
-			//
-				====================================
-				——— HEADER
-				=====================================
-			header#pageTop.header-wrapper
-				|<?php include "html_model/header/header-1.html";?>
-				// NAVBAR
-				nav#menuBar.navbar.navbar-default.lightHeader(role='navigation')
-					.container
-						|<?php include "html_model/header/header-2.html";?>
-					//
-						====================================
-						——— BREAD CRUMB
-						=====================================
-					.layout-breadcrumb-box
-						.container
-							nav(aria-label='breadcrumb')
-								ol.breadcrumb.text-truncate
-									li.breadcrumb-item
-										a(href='#') 首頁
-									//
-										<li class="breadcrumb-item">
-										<a href="#">活動報名</a>
-										</li>
-									li.breadcrumb-item
-										// <li class="breadcrumb-item text-truncate" style="width: 150px;">
-										a(href='') 青蛙與 Pompom 公主青蛙與 Pompom 公主
-									li.breadcrumb-item
-										| 報名
-			// main only
-			.container.container-main.container-col-1
-				.row
-					.layout-col-12
-						.layout-main
-							| hellow word
-			include partials/public_footer_tw.pug
-			// JS FOR THIS PAGE ONLY
+extend temp/temp-tw.pug
+block var
+	-var country = 'tw'
+	-var floor1 = ''
+	-var floor2 = ''
+	-var floor3 = ''
+	-var floor4 = ''
+
+block head-self
+	// CSS FRO THIS PAGE ONLY
+	link(rel='stylesheet', href='css/usual.css')
+
+block container
+	// main only
+	.container.container-main.container-col-1
+		.row
+			.layout-col-12
+				.layout-main
+					| hellow word
+
+block js
+	// JS FOR THIS PAGE ONLY
