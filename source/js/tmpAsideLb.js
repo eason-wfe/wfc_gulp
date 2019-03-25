@@ -6,11 +6,11 @@ function filsortSwitch() {
 		windowWidth = $(window).innerWidth();
 	if (windowWidth <= 974) {// 991 - 17
 		$box.css({ "display": "none" });
-		$('.aside-lb').click(function (e) {
-			$box.fadeOut();
-			$("body").removeAttr("style");
-			e.preventDefault();
-		});
+		// $('.aside-lb').click(function (e) {
+		// 	$box.fadeOut();
+		// 	$("body").removeAttr("style");
+		// 	e.preventDefault();
+		// });
 	} else {
 		$box.removeAttr("style");
 	}

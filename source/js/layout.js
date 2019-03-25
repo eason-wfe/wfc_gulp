@@ -127,7 +127,7 @@ $(function () {
 	});
 	/*========== IE aside (not Edge) ============*/
 	if(/net/i.test(navigator.userAgent)){
-		$(window).scroll(function(){
+		$(window).on('load scroll',function(){
 			var $target = $('.sticky-top'),
 				pt = 80,
 				wst = $(window).scrollTop()-pt,
@@ -140,7 +140,7 @@ $(function () {
 			}else if(wst >= pt && wst >= bp){
 				$target.css({'top': bp});
 			}
-		}),scroll();
+		});
 	}
 	/*============= NAVBAR SCROLL ===========*/
 	if($(window).width() <= 767){

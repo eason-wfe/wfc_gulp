@@ -20,7 +20,51 @@ block container
 					h3.panel-title WFC Community
 					.aside-lb-close x
 				|<?php include "html_model/_comm_kr/comm-aside.html";?>
-			.col-xs-12.col-xs-12.col-md-9
+			.col-xs-12.col-xs-12.col-md-9.scroll-main
+				.layout-main
+					|<?php include "html_model/uikit/aside-lb-open.html";?>
+					.sectionTitle.text-center.color-4.mt-0
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| All Friends
+							span.shape.shape-right
+					img.friends-view(src='img/wfcfriends/all.jpg')
+					ul.friends
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/1.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								img.friends-img(src='img/wfcfriends/2.jpg')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/3.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/4.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/5.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/6.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+						li.friends-item
+							a.friends-link(href='')
+								.friends-img(style='background-image: url(img/wfcfriends/7.jpg);')
+								p.friends-name Jimmy Jimmy Jimmy
+				hr
+				hr
+				hr
+				hr
+				hr
 				.layout-main
 					|<?php include "html_model/uikit/aside-lb-open.html";?>
 					.sectionTitle.text-center.color-4.mt-0
@@ -40,17 +84,17 @@ block container
 						.friend-local
 							| 寰宇家庭有很多獨特、可愛，而且具吸引力的卡通人物。
 							br
-							| 								他們不但深受小朋友的喜愛，也在學習過程裡扮演重要角色。
+							|他們不但深受小朋友的喜愛，也在學習過程裡扮演重要角色。
 							br
-							| 								這些卡通人物的出現，可以加強孩子的想像力，加深他們的美語學習興趣，更可以使他們可以簡單輕鬆地學習重要的文法。
+							|這些卡通人物的出現，可以加強孩子的想像力，加深他們的美語學習興趣，更可以使他們可以簡單輕鬆地學習重要的文法。
 						.friend-eng
 							| There are a lot of unique, cute and attractive characters from World Family.
 							br
-							| 								(World Family has a lot of unique, cute and attractive characters.)
+							|(World Family has a lot of unique, cute and attractive characters.)
 							br
-							| 								These characters are not only deeply loved by children but also play an important role in their learning process.
+							|These characters are not only deeply loved by children but also play an important role in their learning process.
 							br
-							| 								These characters help reinforce children’s imagination and deepen their interests in English learning. Most importantly, they help children acquire grammar rules easily.
+							|These characters help reinforce children’s imagination and deepen their interests in English learning. Most importantly, they help children acquire grammar rules easily.
 					h3.layout-title-level-3.icon2.mb-3 캐릭터 사진：
 					.slick.slick-darkarrow
 						div(style='background-image: url(img/zippyfriends/1.jpg)')
@@ -63,19 +107,19 @@ block js
 	script(src='assets/plugins/slick/slick.min.js', type='text/javascript')
 	script.
 		$(function(){
-		// PLUGIN
-		$('.slick').slick({
-		dots: true,
-		autoplay: false,
-		autoplaySpeed: 1000,
-		arrows : true
-		});
-		// IMG RATIO
-		$(".friends-view").css({"height": $(".friends-view").width() * 0.707 });
-		$(".slick").css({"height": $(".slick").width() * 0.7516 });
-		$(".slick-track").css({"height": $(".slick").width() * 0.7516 });
-		// v 此 js 為演示用，請參考 v
-		var $target = $(".art-list-f2-item").eq(2);
-		$target.find(".art-list-f3").addClass("is-open");
-		$target.find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
-		});
+			// PLUGIN
+			$('.slick').slick({
+			dots: true,
+			autoplay: false,
+			autoplaySpeed: 1000,
+			arrows : true
+			});
+			// IMG RATIO
+			$(".slick").css({"height": $(".slick").width() * 0.7516 });
+			$(".slick-track").css({"height": $(".slick").width() * 0.7516 });
+			$(".friends-img").css({"height": $(".friends-img").width() * 0.7467 })
+			// v 此 js 為演示用，請參考 v
+			var $target = $(".art-list-f2-item").eq(2);
+			$target.find(".art-list-f3").addClass("is-open");
+			$target.find(".art-list-f3-item").eq(0).find(".art-list-f3-link").addClass("now");
+		});		

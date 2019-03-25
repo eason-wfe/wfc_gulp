@@ -136,7 +136,7 @@
 		height: 130px;
 		float: left;
 		width: calc( 100% / 7 - 6px );
-		padding: 27px 8px 0;
+		padding: 27px 8px;
 		margin:{
 			right: 7px;
 			bottom: 7px;
@@ -169,5 +169,21 @@
 		.cal-day,.cal-week{
 			opacity: .3;		
 		}		
+	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px){
+	.cal-item{
+		height: 150px;
+		width: calc( 100% / 7 - 7px );
+	}
+	.cal-seven {
+		width: calc( 100% / 7 - 1px); 
 	}
 }
