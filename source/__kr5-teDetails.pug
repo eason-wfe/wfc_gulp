@@ -55,14 +55,14 @@ block js
 	script.
 		$('.select-drop').selectbox();
 		function share(){
-		var $window = $(window),
-		$ww = $window.width(),
-		$item = $(".per-unit"),
-		$state = $(".act-state-word");
-		$sw = $state.data("width");
-		$state.css({"width":$sw});
-		if ($ww > 991 + 17){
-		$item.css({"paddingLeft":$sw + 15});
-		}
+			var $window = $(window),
+				$ww = $window.width(),
+				$item = $(".per-unit"),
+				$state = $(".act-state-word");
+				$sw = $state.data("width");
+				$state.css({"width":$sw});
+			if ($ww > 991 + 17){
+				$item.css({"paddingLeft":$sw + 15});
+			}
 		}
 		share();

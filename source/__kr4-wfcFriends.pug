@@ -67,19 +67,36 @@ block container
 				h3 叔叔/阿姨介紹內頁
 				.layout-main.clearfix
 					|<?php include "html_model/uikit/aside-lb-open.html";?>
-					.sectionTitle.text-center.color-4.mt-0
+					.sectionTitle.text-center.color-4.mt-0.is-pc
 						h2
 							// h2 only
 							span.shape.shape-left
 							span
-								| Jimmy
+								| Anna
 							span.shape.shape-right
-					.friends-view(style='background-image: url(img/wfcfriends/2.jpg);')
-					.friend-intro
-						.friend-from 來自美國
-						| 							來者不拒的Jimmy叔叔有一個關不起來的話閘子，他喜歡觀察、創意無限，透過穿著、表情，然後就會開始和小朋友天南地北地聊天喔！
-					button.btn.layout-btn(type='button')
-						| 목록보기
+					img.friends-view-in(src='img/wfcfriends/anna/1.jpg')
+					.sectionTitle.text-center.color-4.mt-2.is-mobi
+						h2
+							// h2 only
+							span.shape.shape-left
+							span
+								| Anna
+					.friend-intro 
+						|안녕 안녕! CiCi예요! 모두를 만나게 돼서 정말 즐거워요~! 저는 미국 조지아 주의 애틀랜타에서 왔고, 전 세계에서 알아주는 엔터테이너가 되는 것이 꿈이에요! 당신도 꿈이 있나요? 아! 그리고 저는 관심사도 많답니다: 한국 드라마 보기, 음악 듣기, 비디오 게임하기, 언어 공부하기, 글쓰기, 공연하기, 그리고 더더더 있어요! 제가 가장 좋아하는 T.E 노래들은: ‘Flour Sugar Milk and Butter,’ 와 ‘Clap your hands!’예요. 여러분 모두와 행복하고 멋진 새로운 추억들을 만들 것이 정말로 기대돼요! 바바, 바바, 바바, 바바, 베이비, 바이 바이~ 
+						br
+						|WFC 담당 : TE/Event
+						br
+						|Hi Hi! CiCi here! It is lovely to meet you all~! I am from Atlanta, Georgia, U.S.A and my dream is to become an Entertainer known all over the world! Do you have a dream too? Oh! I also have many interests: watching Korean dramas, listening to music, playing video games, studying languages, writing, performing, and more! My favorite T.E songs are: ‘Flour Sugar Milk and Butter,’ and ‘Clap your hands!’ I am so looking forward to making new happy and lovely memories with you all~! Baba, baba, baba, baba, baby, bye-bye~ 
+						br
+						|WFC Role : TE Performer/Event Performer
+					h3.layout-title-level-2.color-4.mb-1 劇照圖庫
+					.layout-content
+						.picbox
+							img(src='img/wfcfriends/anna/2.jpg')
+						.picbox
+							img(src='img/wfcfriends/anna/3.jpg')
+						.picbox
+							img(src='img/wfcfriends/anna/4.jpg') 
 
 block js
 	// JS FOR THIS PAGE ONLY

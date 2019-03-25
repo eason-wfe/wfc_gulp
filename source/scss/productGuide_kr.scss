@@ -2,7 +2,7 @@
 @import "usual/color";
 @import "usual/color-kr";
 @import "usual/unit3";
-@import "usual/title-deco3";
+// @import "usual/title-deco3";
 // aside
 @import "uikit/tmp-aside";
 @import "uikit/tmp-aside-lb";
@@ -200,4 +200,14 @@
 		}
 		vertical-align: middle;
 	}
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+.sectionTitle.color-3{
+	margin-bottom: 26px;
 }

@@ -145,9 +145,10 @@ $(function () {
 	/*============= NAVBAR SCROLL ===========*/
 	if($(window).width() <= 767){
 		$('.navbar-nav li.color-5 a').click(function(){
-			console.log('got');
+			var st = $('.nav .logbar-m').outerHeight(true) + $('.nav .singleDrop').height()*4;
+			console.log(st)
 			setTimeout(function(){
-				$('.navbar-nav').animate({scrollTop:9999},1500);
+				$('.navbar-nav').animate({scrollTop: st},500);
 			},400);
 			
 		});

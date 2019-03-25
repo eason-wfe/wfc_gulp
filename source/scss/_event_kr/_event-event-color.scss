@@ -4,28 +4,70 @@
 	.eventbtn > button{
 		background-color: $color1-kr;
 	}
+	.sectionTitle h2{
+		color: $color1-kr;
+		span.shape {
+			background-color: $color1-kr;
+			&:before,
+			&:after {
+				background-color: $color1-kr;
+			}
+		}
+	}	
 }
 .is-activity{
 	.slick-dots .slick-active,
 	.eventbtn > button{
 		background-color: $color2-kr;
 	}
+	.sectionTitle h2{
+		color: $color2-kr;
+		span.shape {
+			background-color: $color2-kr;
+			&:before,
+			&:after {
+				background-color: $color2-kr;
+			}
+		}
+	}	
 }
 .is-carnival{
 	.slick-dots .slick-active,
 	.eventbtn > button{
 		background-color: $color3-kr;
 	}
+	.sectionTitle h2{
+		color: $color3-kr;
+		span.shape {
+			background-color: $color3-kr;
+			&:before,
+			&:after {
+				background-color: $color3-kr;
+			}
+		}
+	}	
 }
 .is-camp{
 	.slick-dots .slick-active,
 	.eventbtn > button{
 		background-color: $color4-kr;
 	}
+	.sectionTitle h2{
+		color: $color4-kr;
+		span.shape {
+			background-color: $color4-kr;
+			&:before,
+			&:after {
+				background-color: $color4-kr;
+			}
+		}
+	}	
 }
 .ititle{
 	margin-bottom: 10px;
 }
+
+
 @media (max-width: 991px){
 	.ititle-w{
 		background-color: #fff;
@@ -57,61 +99,21 @@
 }
 @media (min-width: 992px){
 	.is-show{
-		.sectionTitle h2{
-			color: $color1-kr;
-			span.shape {
-				background-color: $color1-kr;
-				&:before,
-				&:after {
-					background-color: $color1-kr;
-				}
-			}
-		}
 		.ititle-w{
 			background-color: $color1-kr;
 		}
 	}
 	.is-activity{
-		.sectionTitle h2{
-			color: $color2-kr;
-			span.shape {
-				background-color: $color2-kr;
-				&:before,
-				&:after {
-					background-color: $color2-kr;
-				}
-			}
-		}
 		.ititle-w{
 			background-color: $color2-kr;
 		}
 	}
 	.is-carnival{
-		.sectionTitle h2{
-			color: $color3-kr;
-			span.shape {
-				background-color: $color3-kr;
-				&:before,
-				&:after {
-					background-color: $color3-kr;
-				}
-			}
-		}
 		.ititle-w{
 			background-color: $color3-kr;
 		}
 	}
 	.is-camp{
-		.sectionTitle h2{
-			color: $color4-kr;
-			span.shape {
-				background-color: $color4-kr;
-				&:before,
-				&:after {
-					background-color: $color4-kr;
-				}
-			}
-		}
 		.ititle-w{
 			background-color: $color4-kr;
 		}

@@ -7,6 +7,21 @@
 @import "uikit/tmp-aside-lb";
 @import "_fwe_kr/fwe-aside";
 //title
-@import "usual/title-deco5";
+// @import "usual/title-deco5";
 // share
 @import "no_sort/wfc-library-share"; 
+.is-blue{
+	color: #3092ca;
+	overflow: hidden;
+	li{
+		float:left;
+		position: relative;
+		padding-left: 13px;
+		&:before{
+			content: "*";
+			position: absolute;
+			top: 3px;
+			left: 0;
+		}
+	}
+}

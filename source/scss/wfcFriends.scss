@@ -8,6 +8,7 @@
 @import "uikit/tmp-aside";
 @import "uikit/tmp-aside-lb";
 @import "no_sort/tw-top-aside";
+@import "no_sort/wfc-friend-intro";
 // SITE MAP PLACE
 .color-1.layout-navbar-arrow-pc:after{display: none;}
 /*
@@ -110,82 +111,7 @@
 ========================================
 */
 // INTRODUCE
-.friend-from{
-	color: #ff9000;
-	
-}
-.friend-intro{
-	line-height: 1.5;
-	& + .btn{
-		background: {
-			color: $color1-light;
-		}
-		color: #699209;
-		border-radius: 16px;
-		float: right;
-		&:hover{
-			background: {
-				color: $color1;
-			}
-			color: #fff;
-		}
-	}
-}
-@media (max-width: 767px){
-	.picbox{
-		margin-bottom: 15px;
-		img{width: 100%;}
-		&:last-child{
-			margin: 0;
-		}
-	}
-	.friends-view-in{
-		width: calc( 100% + 46px);
-		margin: -23px 0 0 -23px;
-	}
-	//
-	.aside-lb-open{
-		position: absolute;
-		top: 13px;
-		left: 13px;
-	}
-	//
-	.clearfix{
-		position: relative;
-		.is-pc{
-			display: none;
-		}
-	}
-}
-@media (min-width: 768px){
-	.friend-intro{
-		float:right;
-		width: calc( 100% - 390px );
-		.layout-title-level-2{
-			margin-bottom: 24px;
-		}
-	}
-	.friends-view-in{
-		width: 350px;
-	}
-	//
-	.picbox{
-		width: calc( 33.33% - 10px);
-		float: left;
-		img{
-			width: 100%;
-		}
-		margin-right: 15px;
-		&:nth-child(3){
-			margin-right: 0;
-		}
-	}
-	.clearfix{
-		.is-mobi{
-			display: none;
-		}
-	}
-}
+
 /*
 ========================================
 ========================================

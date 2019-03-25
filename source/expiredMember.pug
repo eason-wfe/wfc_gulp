@@ -14,52 +14,59 @@ block container
 			.layout-col-12
 				.layout-main
 					.layout-content
-						img(src='img/expired_member.jpg')
-						.sectionTitle.text-center.color-1.mt-5
+						.sectionTitle.text-center.color-1.mt-0.is-pc
 							h2
 								span.shape.shape-left
 								span 申請重新加入會籍
 								span.shape.shape-right
-						b * 我是【迪士尼美語世界】使用者，我要重新加入會員，請與我連絡。
-						.retable(data-width="103")
-							.retable-item-double
-								.retable-row
-									.retable-title 姓名 
-									.retable-content 
-										input(type='text')
-								.retable-row
-									.retable-title 電話(白天)
-									.retable-content
-										input(type='text')
-							.retable-item-double
-								.retable-row
-									.retable-title 手機
-									.retable-content
-										input(type='text')
-								.retable-row
-									.retable-title 方便連絡時段
-									.retable-content
-										.emradio
-											input#emTime1(type='radio' name='time')
-											label(for='emTime1') 早上
-										.emradio
-											input#emTime2(type='radio' name='time')
-											label(for='emTime2') 下午
-							.retable-item
-								.retable-row
-									.retable-title 
-										.emtext 原會員編號或身份證字號 
-									.retable-content
-										input(type='text')
-							.retable-item
-								.retable-row
-									.retable-title 備註
-									.retable-content 
-										textarea
-						.exbtn
-							|如有疑問，歡迎來電寰宇家庭俱樂部客服中心 0809-080-000
-							br
-							button.btn.layout-btn.layout-btn-lg.color-1(type="button") 確定
+						b.is-pc * 我是【迪士尼美語世界】使用者，我要重新加入會員，請與我連絡。
+						img(src='img/expired_member.jpg')
+						.sectionTitle.text-center.color-1.mt-5.is-mobi
+							h2
+								span.shape.shape-left
+								span 申請重新加入會籍
+								span.shape.shape-right
+						.extable
+							b.is-mobi * 我是【迪士尼美語世界】使用者，我要重新加入會員，請與我連絡。
+							.retable(data-width="103")
+								.retable-item-double
+									.retable-row
+										.retable-title 姓名 
+										.retable-content 
+											input(type='text')
+									.retable-row
+										.retable-title 電話(白天)
+										.retable-content
+											input(type='text')
+								.retable-item-double
+									.retable-row
+										.retable-title 手機
+										.retable-content
+											input(type='text')
+									.retable-row
+										.retable-title 方便連絡時段
+										.retable-content
+											.emradio
+												input#emTime1(type='radio' name='time')
+												label(for='emTime1') 早上
+											.emradio
+												input#emTime2(type='radio' name='time')
+												label(for='emTime2') 下午
+								.retable-item
+									.retable-row
+										.retable-title 
+											.emtext 原會員編號或身份證字號 
+										.retable-content
+											input(type='text')
+								.retable-item
+									.retable-row
+										.retable-title 備註
+										.retable-content 
+											textarea
+							.exbtn
+								|如有疑問，歡迎來電寰宇家庭俱樂部客服中心 0809-080-000
+								br
+								button.btn.layout-btn.layout-btn-lg.color-1(type="button") 確定
 
 block js		
 	// JS FOR THIS PAGE ONLY

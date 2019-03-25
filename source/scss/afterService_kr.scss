@@ -2,7 +2,7 @@
 @import "usual/color";
 @import "usual/color-kr";
 @import "usual/unit3";
-@import "usual/title-deco3";
+// @import "usual/title-deco3";
 // aside
 @import "uikit/tmp-aside";
 @import "uikit/tmp-aside-lb";
@@ -215,7 +215,15 @@
 	line-height: 1;
 	padding: 5px 15px;
 	border-radius: 20px;
-	max-width: 250px;
+	max-width: 255px;
+}
+@media (max-width: 413px){
+	.cbox-bar{
+		padding:{
+			left: 33px;
+			right: 33px;
+		}
+	}
 }
 /*
 ========================================

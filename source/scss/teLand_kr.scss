@@ -2,7 +2,7 @@
 @import "usual/color";
 @import "usual/color-kr";
 @import "usual/unit2";
-@import "usual/title-deco5";
+// @import "usual/title-deco5";
 // aside
 @import "uikit/tmp-aside";
 @import "uikit/tmp-aside-lb";
@@ -42,7 +42,8 @@
 	line-height: 1.5;
 	font:{
 		size: 21px;
-		weight: bold;
+		// weight: bold;
+		family: arial
 	}
 	padding: 10px;
 	span{

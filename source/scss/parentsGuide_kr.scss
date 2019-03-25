@@ -2,7 +2,7 @@
 @import "usual/color";
 @import "usual/color-cal";
 @import "usual/unit1";
-@import "usual/title-deco5";
+// @import "usual/title-deco5";
 // TITLE
 @import "_event_kr/event-title-icon";
 // LEFT & RIGHT
@@ -85,6 +85,7 @@
 		display: block;
 		font:{
 			size: 50px;
+			family: arial;
 		}
 		line-height: 38px;
 		&.first{

@@ -2,7 +2,7 @@
 @import "usual/color";
 @import "usual/color-kr";
 @import "usual/unit3";
-@import "usual/title-deco3";
+// @import "usual/title-deco3";
 // aside
 @import "uikit/tmp-aside";
 @import "uikit/tmp-aside-lb";
@@ -48,6 +48,7 @@
 	}
 	padding: 10px;
 	span{
+		font-family: arial;
 		display: block;
 		font:{
 			size: 50px;
@@ -57,7 +58,7 @@
 			transform: translateY(7px);
 		}
 		&.second{
-			transform: translateY(15px);
+			transform: translateY(20px);
 		}
 	}
 	b{

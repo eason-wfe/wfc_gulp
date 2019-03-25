@@ -33,10 +33,10 @@
 		line-height: 0.9 !important;
 	}
 
-	$width-1: 85px;
-	$width-2: 115px;
-	$width-3: 135px;
-	$width-4: 114px;
+	$width-1: 93px;
+	$width-2: 126px;
+	$width-3: 144px;
+	$width-4: 125px;
 	$width-5: 70px;
 	// $width-1: 135px;
 	// $width-2: $width-1;
@@ -90,7 +90,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
 	#menuBar.bb-fixed-header .navbar-brand,
 	.navbar-header .navbar-brand {
-		width: 195px;
+		width: 160px;
+		padding-top: 48px;
 	}
 	#menuBar.bb-fixed-header .navbar-brand {
 		padding-top: 35px !important;
