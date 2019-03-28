@@ -33,3 +33,36 @@ $(".attention-check label").click(function(){
 
 /*======== 3. SELECT BOX ========*/
 $('.select-drop').selectbox();
+
+
+// delete time
+// var $str = $('.act-timebox-item'),
+//     $nex = $str.next(),
+//     valStr = $str.find('.act-timebox-time').html(),
+//     valNex = $nex.find('.act-timebox-time').html();
+
+// console.log($str.length);
+// var $str = $('.act-timebox-cap img');
+// if( /c05.png/i.test( $str.attr('src') ) ){}
+
+// 3
+var $target = $('.act-timebox .act-timebox-item'),
+    $nex = $target.next(),
+    repeat = $target.length;
+
+var i = 1;
+
+while ( i <= 10 ){
+    console.log( i );
+    i++;
+}
+
+for(var i=0;i<repeat;i++){
+    console.log(i)
+    // console.log($target.eq[i].find('.act-timebox-cap img').attr('src'))
+}
+// console.log( $target );
+// console.log( $nex.find('.act-timebox-cap img').attr('src') );
+// if( /c05/.test( $target.find('.act-timebox-cap img').attr('src') ) ){
+//     console.log('got');
+// }

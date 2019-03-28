@@ -37,7 +37,7 @@ block container
 					.book
 						mixin group(num,url,pen,cd)
 							.book-item
-								.book-title #{第158期}
+								.book-title #{num}
 								img.book-img(src=url)
 								.book-btn
 									a.book-pen(href='#')
@@ -47,7 +47,7 @@ block container
 										span.book-icon
 										|#{cd}
 						each item in page.kidsWorld
-							+group(item.num,item.url,'妙妙筆下載','CD下載')
+							+group(item.num,item.url,'妙妙筆下載','MP3下載')
 				hr
 				hr
 				hr

@@ -125,29 +125,40 @@
 		background-color: #888;
 		color: #fff !important;
 		border-color: #888;
+		cursor: default;
 	}
 	&.is-sign {
 		background-color: #ed1e79;
 		color: #fff;
+		&:hover{
+			background-color: #9c0949;
+		}
 	}
 	&.is-wait {
 		background-color: #187bc1;
 		color: #fff;
+		&:hover{
+			background-color: #095a94;
+		}
 	}
 	&.is-signed {
 		background-color: #ffc4de;
 		color: #ed1e79;
 		border: solid 1px #ed1e79;
+		opacity: 1!important;
+		cursor: default;
 	}
 	&.is-waiting {
 		border: solid 1px #187bc1;
 		background-color: #b2dfff;
 		color: #187bc1 !important;
+		cursor: default;
 	}
 	&.out-of-date {
 		background-color: #ededed;
 		color: #999;
 		border: solid 1px #888;
+		cursor: default;
 	}
 }
 .act-timebox-note {
@@ -192,9 +203,6 @@
 			position: 42px -72px;
 		}
 		margin: 0 10px;
-		&:hover {
-			background-color: $color7-dark;
-		}
 		&.waiting {
 			background: {
 				position: 42px -101px;

@@ -7,3 +7,10 @@
 		.act-datebox-state.act-width-state 狀態
 	ul.act-timebox
 		|<?php include "html_model/activity/act-timebox.html";?>
+		|<?php include "html_model/activity/act-timebox2.html";?>
+		li.act-timebox-item
+			.act-timebox-time.act-width-time 16:00
+			a.act-timebox-state.act-width-state.is-waiting(href='') 己候補
+		li.act-timebox-item
+			.act-timebox-time.act-width-time 17:30
+			a.act-timebox-state.act-width-state.out-of-date(href='') 截止報名
