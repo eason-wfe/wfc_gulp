@@ -35,34 +35,46 @@ $(".attention-check label").click(function(){
 $('.select-drop').selectbox();
 
 
-// delete time
-// var $str = $('.act-timebox-item'),
-//     $nex = $str.next(),
-//     valStr = $str.find('.act-timebox-time').html(),
-//     valNex = $nex.find('.act-timebox-time').html();
+// HIDDEN TIME
 
-// console.log($str.length);
-// var $str = $('.act-timebox-cap img');
-// if( /c05.png/i.test( $str.attr('src') ) ){}
 
-// 3
-var $target = $('.act-timebox .act-timebox-item'),
-    $nex = $target.next(),
-    repeat = $target.length;
 
-var i = 1;
+$('.is-capstr').click(function(){
+    var $eq2 = $(this).next(),
+        $eq3 = $(this).next().next(),
+        $eq4 = $(this).next().next().next(),
+        $strVal = $(this).find('.act-timebox-time').html(),
+        $eq2Val = $eq2.find('.act-timebox-time').html(),
+        $eq3Val = $eq3.find('.act-timebox-time').html(),
+        $eq4Val = $eq4.find('.act-timebox-time').html();
+    // console.log($(this));
+    console.log($strVal);
+    console.log($eq2Val);
+    console.log($eq3Val);
+    console.log($eq4Val);
 
-while ( i <= 10 ){
-    console.log( i );
-    i++;
-}
+    switch(true){
+        case $eq2Val == $strVal && $eq3Val == $strVal && $eq4Val == $strVal:
+            console.log('4')
+            $eq4.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq3.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            break;
+        case $eq2Val == $strVal && $eq3Val == $strVal:
+            console.log('3');
+            $eq3.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            break;    
+        case $eq2Val == $strVal:
+            console.log('2');
+            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            break;
+        default:
+            console.log('false');
+    }
 
-for(var i=0;i<repeat;i++){
-    console.log(i)
-    // console.log($target.eq[i].find('.act-timebox-cap img').attr('src'))
-}
-// console.log( $target );
-// console.log( $nex.find('.act-timebox-cap img').attr('src') );
-// if( /c05/.test( $target.find('.act-timebox-cap img').attr('src') ) ){
-//     console.log('got');
-// }
+}).click();
+
+// console.log($('.is-capstr') );
+
+
