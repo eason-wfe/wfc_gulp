@@ -45,29 +45,16 @@ $(function(){
 	});
 
 	// link box
-	$('.link1').click(function(){
-		if( !$('#target1').find('.layout-collapse').hasClass('open') ){
-			$("#target1").find(".layout-collapse").click();
-		}
-	});
-	$('.link2').click(function(){
-		if( !$('#target2').find('.layout-collapse').hasClass('open') ){
-			$("#target2").find(".layout-collapse").click();
-		}
-	});
-	$('.link3').click(function(){
-		if( !$('#target3').find('.layout-collapse').hasClass('open') ){
-			$("#target3").find(".layout-collapse").click();
-		}
-	});
-	$('.link4').click(function(){
-		if( !$('#target4').find('.layout-collapse').hasClass('open') ){
-			$("#target4").find(".layout-collapse").click();
-		}
-	});
-	$('.link5').click(function(){
-		if( !$('#target5').find('.layout-collapse').hasClass('open') ){
-			$("#target5").find(".layout-collapse").click();
-		}
-	});
+	function myPageCollapse(btn,target){
+		btn.click(function(){
+			if( !target.find('.layout-collapse').hasClass('open') ){
+				target.find(".layout-collapse").click();
+			}
+		});		
+	}
+	for(var i=1;i<=5;i++){
+		myPageCollapse(
+			$('.link'+i),$('#target'+i)
+		);		
+	}
 });

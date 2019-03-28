@@ -41,13 +41,14 @@ mixin list(state,stateText,title,landmark,address,memo)
 					span.h-msg-vr
 					span.h-msg-item 
 						span.h-col-title 活動地址：
-						span.h-col-cont #{address}
+						span.h-col-cont.is-address #{address}
 			.h-item
 				.h-msg.is-small
 					span.h-msg-item 
 						span.h-col-title 注意事項：
 						span.h-col-cont #{memo}
 						.h-linkbox
+							a.h-col-link.is-maps(href='#',target='_blank') 地圖
 							a.h-col-link(href='#') 寄送活動預習單
 							a.h-col-link.coll-btn(href='#' data-text='^ 收合資訊') v 展開更多資訊
 		.h-collapse

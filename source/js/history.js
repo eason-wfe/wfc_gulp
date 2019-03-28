@@ -1,4 +1,7 @@
 $(function(){
+	// $(".art-list-f2-item").eq(2).find(".art-list-f2-link").addClass("now");
+	// ^ 演示用，請參考
+	
 	// unit status & content , inline width share width
 	if( $(window).width() > 991 + 17 ){
 		function historyShare(){
@@ -63,25 +66,31 @@ $(function(){
 	});
 
 	// link box
-	$('.link1').click(function(){
-		if( !$('#target1').find('.layout-collapse').hasClass('open') ){
-			$("#target1").find(".layout-collapse").click();
-		}
-	});
-	$('.link2').click(function(){
-		if( !$('#target2').find('.layout-collapse').hasClass('open') ){
-			$("#target2").find(".layout-collapse").click();
-		}
-	});
-	$('.link3').click(function(){
-		if( !$('#target3').find('.layout-collapse').hasClass('open') ){
-			$("#target3").find(".layout-collapse").click();
-		}
-	});
-	$('.link4').click(function(){
-		if( !$('#target4').find('.layout-collapse').hasClass('open') ){
-			$("#target4").find(".layout-collapse").click();
-		}
+	function hisCollapse(btn,target){
+		console.log('active');
+		btn.click(function(){
+			if( !target.find('.layout-collapse').hasClass('open') ){
+				target.find(".layout-collapse").click();
+			}
+		});		
+	}
+	for(var i=1;i<=4;i++){
+		hisCollapse($('.link'+i),$('#target'+i));
+	}
+
+	// IS-MAPS ADDRESS
+	$('.is-maps').click(function(){
+		var address = 'https://www.google.com/maps/place/'+$(this).parent().parent().parent().parent().siblings().find('.is-address').html();
+		$(this).attr('href',address);
 	});
 
+	// H-COLLAPSE SLIDE-TOGGLE
+	$('.coll-btn').click(function(e){
+		var temp = $(this).text();
+		$(this).text($(this).data('text'));
+		$(this).data('text',temp);
+		var target= $(this).parent().parent().parent().parent().parent().siblings().eq(1);
+		target.slideToggle(300);
+		e.preventDefault();
+	});
 });

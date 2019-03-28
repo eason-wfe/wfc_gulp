@@ -102,16 +102,3 @@ block js
 	// JS FOR THIS PAGE ONLY
 	script(src='js/tmpAsideLb.js')
 	script(src='js/history.js')
-	script.
-		$(function(){
-			$(".art-list-f2-item").eq(2).find(".art-list-f2-link").addClass("now");
-			// ^ 演示用，請參考
-			$('.coll-btn').click(function(e){
-				var temp = $(this).text();
-				$(this).text($(this).data('text'));
-				$(this).data('text',temp);
-				var target= $(this).parent().parent().parent().parent().parent().siblings().eq(1);
-				target.slideToggle(300);
-				e.preventDefault();
-			});
-		});

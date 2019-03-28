@@ -106,7 +106,7 @@ block container
 					| 繳交作業
 			.col-xs-12.col-sm-12.col-md-2.sticky-top
 				.panel-heading.bg-color-2
-					h3.panel-title 下載 APP
+					h3.panel-title 俱樂部下載 APP
 				aside.demo.layout-sub
 					.cap-aside-pc
 						// LEVEL 3
@@ -120,14 +120,23 @@ block container
 							h2
 								// h2 only
 								span.shape.shape-left
-								span 下載 APP
+								span 俱樂部下載 APP
 								span.shape.shape-right
-						button.btn.btn-block.layout-btn.unclick(type='button')
+						button.btn.btn-block.layout-btn.color-2.is-android(type='button')
 							| Android 系統
 							// link : https://play.google.com/store/apps/details?id=com.app.appwebview
-						button.btn.btn-block.layout-btn.color-2(type='button')
+						button.btn.btn-block.layout-btn.color-2.is-ios(type='button')
 							| IOS 系統
 							// link : https://itunes.apple.com/us/app/huan-yu-jia-ting-quan-mei/id948490555?l=zh&ls=1&mt=8
 
 block js
 	// JS FOR THIS PAGE ONLY
+	script.
+		$(function(){
+			$('.is-android').click(function(){
+				window.open('https://play.google.com/store/apps/details?id=com.app.appwebview','_blank');
+			});
+			$('.is-ios').click(function(){
+				window.open('https://itunes.apple.com/us/app/huan-yu-jia-ting-quan-mei/id948490555?l=zh&ls=1&mt=8','_blank');
+			});
+		});
