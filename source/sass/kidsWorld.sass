@@ -1,0 +1,214 @@
+@import "usual/im"
+@import "usual/color"
+@import "usual/unit1"
+// lb
+@import "lightbox/lightbox"
+@import "lightbox/lightbox-download"
+.color-1.layout-navbar-arrow-pc:after
+	display: none
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.vision
+	display: block
+	max-width: 100%
+	margin: 0 auto 25px
+
+.card
+	margin-top: 12px
+	margin-bottom: 12px
+
+.card-item
+	padding: 17px
+	border-radius: 12px
+	background-color: $color1-light-light
+	border: solid 1px $color1-light
+
+.card-title
+	font:
+		weight: bold
+		size: 17px
+	
+
+.card-icon
+	display: inline-block
+	border-radius: 50%
+	width: 30pxheight: 30px
+	@include img-path-ratio("download/icon.png",2)
+	vertical-align: middle
+	margin-right: -3px
+	background:
+		color: #ffe890
+	
+
+.is-play
+	background:
+		position: 0 -30px
+	
+
+.card-con
+	line-height: 1.6
+
+@media (max-width: 767px)
+	.card-item
+		margin-bottom: 12px
+	
+
+@media (min-width: 768px)
+	.card
+		overflow: hidden
+	
+	.card-item
+		width: calc( 50% - 8px )
+		&:first-child
+			margin-right: 16px
+		
+		float: left
+		height: 158px
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.book
+	overflow: hidden
+
+.book-item
+	float: left
+	text-align: center
+	background:
+		color: $color1-light
+	
+	padding: 5px
+	border-radius: 10px
+
+.book-title
+	line-height: 30px
+	font:
+		size: 16px
+		weight: bold
+	
+	color: $color1-dark
+
+.book-img
+	width: 100%
+	display: block
+
+.book-btn
+	font-size: 0
+	margin-top: 5px
+	a
+		display: inline-block
+		width: calc( 50% - 3px )
+		font-size: 13px
+		line-height: 30px
+		border-radius: 6px
+		background-color: $color1
+		color: #fff
+		&:hover
+			background-color: $color1-dark
+			color: #fff
+		
+	
+	span
+		display: inline-block
+		width: 18pxheight: 20px
+		@include img-path-ratio('download/icon.png',2.5)
+		background:
+			repeat: no-repeat
+		
+		vertical-align: middle
+	
+
+.book-pen
+	margin-right: 6px
+	span
+		background:
+			position: -3px -2px
+		
+	
+
+.book-cd
+	span
+		background:
+			position: -4px -27px
+		
+	
+
+@media (max-width: 413px)
+	.book-item
+		width: 100%
+		margin-bottom: 20px
+	
+
+@media (min-width: 414px) and (max-width: 767px)
+	.book-item
+		width: calc( 50% - 12px )
+		margin-bottom: 24px
+		&:nth-child(odd)
+			margin-right: 24px
+		
+	
+
+@media (min-width: 768px) and (max-width: 991px)
+	.book-item
+		width: calc( 33.333% - 14px )
+		margin:
+			right: 21px
+			bottom: 21px
+		
+		&:nth-child(3n)
+			margin-right: 0
+		
+	
+
+@media (min-width: 992px)
+	.book-item
+		width: calc( 25% - 9px )
+		margin:
+			right: 12px
+			bottom: 15px
+		
+		&:nth-child(4n)
+			margin-right: 0
+		
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+@media (max-width: 479px) and (min-width: 414px)
+	.book-btn
+		a
+			&:nth-child(odd)
+				margin:
+					right: 0
+					bottom: 5px
+								
+			
+			width: 100%
+		
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.is-center
+	text-align: center

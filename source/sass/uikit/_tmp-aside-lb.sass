@@ -1,0 +1,61 @@
+@media (max-width: 991px) 
+	.aside-lb 
+		-webkit-overflow-scrolling: touch
+		display: none
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		overflow-x: hidden
+		overflow-y: auto
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: 2001
+		.panel-heading,
+		.layout-sub
+			width: 280px
+			margin:
+				right: auto
+				left: auto
+			
+		
+		.panel-heading
+			margin:
+				top: 30px
+			
+			position: relative
+		
+		.layout-sub
+			margin:
+				bottom: 30px
+			
+		
+	
+	.aside-lb-close
+		position: absolute
+		right: 11pxtop: 11px
+		line-height: 23px
+		width: 23px
+		text-align: center
+		font-size: 18px
+		background-color: #fff
+		border-radius: 50%
+	
+	.aside-lb-open
+		width: 38pxheight: 38px
+		border-radius: 50%
+		padding: 12px 9px 0
+		background-color: #fff
+		box-shadow: 0 0 8px rgba(0,0,0,.3)
+	
+	.aside-lb-hamber
+		background-color: #aaa
+		height: 2px
+		margin-bottom: 4px
+	
+
+@media (min-width: 992px)
+	.aside-lb-open,
+	.aside-lb-close
+		display: none
+	

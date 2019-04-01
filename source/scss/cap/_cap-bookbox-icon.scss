@@ -13,9 +13,16 @@
 		position: 0px -25px;
 	}
 }
+.cap-bookbox-icon-te {
+	@extend %cap-icon;
+	background: {
+		position: 0px -75px;
+	}
+}
 @media (max-width: 991px){
 	.cap-bookbox-icon-write,
-	.cap-bookbox-icon-studio {
+	.cap-bookbox-icon-studio,
+	.cap-bookbox-icon-te {
 		margin: 0 auto;
 		display: block;
 	}

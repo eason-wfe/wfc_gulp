@@ -36,45 +36,37 @@ $('.select-drop').selectbox();
 
 
 // HIDDEN TIME
-
-
-
-$('.is-capstr').click(function(){
-    var $eq2 = $(this).next(),
-        $eq3 = $(this).next().next(),
-        $eq4 = $(this).next().next().next(),
-        $strVal = $(this).find('.act-timebox-time').html(),
+function hideReTime(target){
+    var $eq2 = target.next(),
+        $eq3 = target.next().next(),
+        $eq4 = target.next().next().next(),
+        $strVal = target.find('.act-timebox-time').html(),
         $eq2Val = $eq2.find('.act-timebox-time').html(),
         $eq3Val = $eq3.find('.act-timebox-time').html(),
         $eq4Val = $eq4.find('.act-timebox-time').html();
-    // console.log($(this));
-    console.log($strVal);
-    console.log($eq2Val);
-    console.log($eq3Val);
-    console.log($eq4Val);
-
     switch(true){
         case $eq2Val == $strVal && $eq3Val == $strVal && $eq4Val == $strVal:
-            console.log('4')
-            $eq4.find('.act-timebox-time').css({ 'color': '#fff' });
-            $eq3.find('.act-timebox-time').css({ 'color': '#fff' });
-            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq4.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq3.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq2.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
             break;
         case $eq2Val == $strVal && $eq3Val == $strVal:
-            console.log('3');
-            $eq3.find('.act-timebox-time').css({ 'color': '#fff' });
-            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq3.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq2.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
             break;    
         case $eq2Val == $strVal:
-            console.log('2');
-            $eq2.find('.act-timebox-time').css({ 'color': '#fff' });
+            $eq2.addClass('is-repeat').find('.act-timebox-time').css({ 'color': '#fff' });
             break;
         default:
-            console.log('false');
     }
+};
 
+$('.act-timebox-cap img').click(function(){
+    if( $(this).attr('src').indexOf('c05') >= 0 ){
+        $(this).parent().parent().addClass('is-capstr');
+    }
 }).click();
 
-// console.log($('.is-capstr') );
-
-
+setTimeout(function(){
+    hideReTime( $('.is-capstr') );
+},500);

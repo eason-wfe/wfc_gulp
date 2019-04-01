@@ -1,0 +1,98 @@
+// demo 1 : menu 文字「有」換行 : NAV MENU
+
+@media (min-width: 768px)
+    .navbar-default.lightHeader 
+        height: 120px
+    
+    #menuBar.bb-fixed-header 
+        height: 110px
+    
+    //
+    .navbar-title
+        height: 32px
+        line-height: 0.9!important
+    
+    .color-1 .navbar-title,
+    .color-5 .navbar-title
+        padding-top: 10px!important
+    
+ 
+
+-----------------------------------------
+// demo 2 : menu 文字「不」換行 : NAV MENU 2
+@media (min-width: 768px) 
+	.navbar-default.lightHeader 
+		height: 120px
+	
+	#menuBar.bb-fixed-header 
+		height: 110px
+	
+	
+	.navbar-title 
+		height: 32px
+		line-height: 0.9 !important
+	
+
+	$width-1: 93px
+	$width-2: 126px
+	$width-3: 144px
+	$width-4: 125px
+	$width-5: 70px
+	// $width-1: 135px
+	// $width-2: $width-1
+	// $width-3: $width-1
+	// $width-4: $width-1
+	// $width-5: $width-1
+	.navbar-nav .dropdown 
+		a 
+			& > span 
+				font-size: 12px
+				padding-top: 11px !important
+			
+		
+		&.color-1 > a 
+			width: $width-1
+			background-position: 17px -13px !important
+			span 
+				width: $width-1 !important
+			
+		
+		&.color-2 > a 
+			width: $width-2
+			background-position: 31px -121px !important
+			span 
+				width: $width-2 !important
+			
+		
+		&.color-3 > a 
+			width: $width-3
+			background-position: 41px -231px !important
+			span 
+				width: $width-3 !important
+			
+		
+		&.color-4 > a 
+			width: $width-4
+			background-position: 31px -341px !important
+			span 
+				width: $width-4 !important
+			
+		
+		&.color-5 > a 
+			width: $width-5
+			background-position: 12px -449px !important
+			span 
+				width: $width-5 !important
+			
+		
+	
+
+@media (min-width: 768px) and (max-width: 991px) 
+	#menuBar.bb-fixed-header .navbar-brand,
+	.navbar-header .navbar-brand 
+		width: 160px
+		padding-top: 48px
+	
+	#menuBar.bb-fixed-header .navbar-brand 
+		padding-top: 35px !important
+	

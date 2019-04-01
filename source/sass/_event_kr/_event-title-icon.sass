@@ -1,0 +1,96 @@
+// TITLE LEVEL 3 DESC
+%event-title
+	background:
+		repeat: no-repeat
+		position: 0 0
+	
+	height: 42px
+
+
+.layout-title-level-3
+	@extend %event-title
+	padding-top: 20px
+	padding-left: 50px	
+	&.icon1
+		@include img-path-ratio("event/icon01.png",2)
+	
+	&.icon2
+		@include img-path-ratio("event/icon02.png",2)
+	
+	&.icon3
+		@include img-path-ratio("event/icon03.png",2)
+	
+	&.icon4
+		@include img-path-ratio("event/icon04.png",2)
+	
+	&.icon5
+		@include img-path-ratio("event/icon05.png",2)
+	
+	&.icon6
+		@include img-path-ratio("event/icon06.png",2)
+	
+	&.icon7
+		@include img-path-ratio("event/icon07.png",2)
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+// ICON TITLE
+.ititle
+	position: relative
+	height: 42px
+
+.ititle-icon
+	@extend %event-title
+	width: 42px
+	position: absolute
+	bottom: 0
+
+.ititle-w
+	color: #fff
+	padding: 3px 12px 3px 30px
+	position: absolute
+	left: 20px
+	bottom: 0
+	background-color: $color1
+	border-radius: 3px
+
+.icon1
+	.ititle-icon
+		@include img-path-ratio("event/icon01.png",2)
+		
+
+.icon2
+	.ititle-icon
+		@include img-path-ratio("event/icon02.png",2)
+		
+
+.icon3
+	.ititle-icon
+		@include img-path-ratio("event/icon03.png",2)
+		
+
+.icon4
+	.ititle-icon
+		@include img-path-ratio("event/icon04.png",2)
+		
+
+.icon5
+	.ititle-icon
+		@include img-path-ratio("event/icon05.png",2)
+		
+
+.icon6
+	.ititle-icon
+		@include img-path-ratio("event/icon06.png",2)
+		
+
+.icon7
+	.ititle-icon
+		@include img-path-ratio("event/icon07.png",2)
+		

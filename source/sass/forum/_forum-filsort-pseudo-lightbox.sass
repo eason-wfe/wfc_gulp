@@ -1,0 +1,194 @@
+$f-br: 10px
+.forum-filsort-ui
+	.panel-heading
+		overflow: hidden
+	
+	.panel-title
+		float: left
+	
+
+.forum-filsort-group
+	float: right
+	font-size: 0
+	
+	overflow: hidden
+	border-radius: $f-br
+	& > *
+		display: inline-block
+		padding: 0 10px
+		background-color: #fff
+		color: $color4-text
+		transition: .5s
+		&:hover
+			background-color: $color4-text
+			color: #fff
+			transition: .5s
+		
+	
+
+//
+.forum-filsort
+	border-radius: 6px
+	background-color: $f-color2
+	.layout-title-level-3
+		color: $color4-text!important
+	
+	&:last-child
+		margin-bottom: 0
+	
+
+.forum-filsort-btnbox
+	overflow: hidden
+	&.row-1
+		.forum-filsort-item
+			width: 100%
+			&:last-child
+				margin-bottom: 0
+			
+		
+	
+	&.row-2
+		.forum-filsort-item
+			width: calc( 50% - 3px )
+			&:nth-child(odd)
+				margin-right: 6px
+			
+			&:nth-last-child(1),
+			&:nth-last-child(2)
+				margin-bottom: 0
+				
+		
+	
+
+.forum-filsort-item
+	float: left
+	
+
+.forum-filsort-link
+	border-radius: $f-br
+	display: block
+	text-align: center
+	background-color: $f-color1
+	color: $color4-text
+	&:hover,
+	&.now
+		background-color: $color4
+		color: #fff
+	
+	&.now
+		cursor: default
+	
+
+@media (max-width: 991px)
+	.layout-sub
+		padding: 15px!important
+	
+	.panel-title
+		font-size: 21px
+	
+	.forum-filsort-group
+		& > *
+			font-size: 15px
+			line-height: 23px
+		
+	
+	.forum-filsort-reset
+		margin-right: 1px
+	
+	//
+	.forum-filsort
+		padding: 20px
+		margin-bottom: 9px
+		.layout-title-level-3
+			font-size: 19px
+			margin-bottom: 8px
+		
+	
+	.forum-filsort-item
+		margin-bottom: 9px
+	
+	.forum-filsort-link
+		font-size: 15px
+		line-height: 30px
+	
+
+@media (min-width: 992px)
+	.layout-sub
+		padding: 8px!important
+	
+	.panel-title
+		font-size: 19px
+	
+	.forum-filsort-reset
+		font-size: 13px
+		line-height: 21px
+	
+	//
+	.forum-filsort
+		padding: 10px
+		margin-bottom: 6px
+		.layout-title-level-3
+			font-size: 17px
+			margin-bottom: 5px
+		
+	
+	.forum-filsort-item
+		margin-bottom: 6px
+	
+	.forum-filsort-link
+		font-size: 14px
+		line-height: 22px
+	
+
+
+//================================================
+//================================================
+//================================================
+//================================================
+//================================================
+//================================================
+
+// DISPLAY
+@media (max-width: 991px)
+	%mobi-width
+		width: 280px
+		margin:
+			left: auto
+			right: auto
+		
+	
+	//
+	.forum-filsort-ui
+		-webkit-overflow-scrolling: touch
+		display: none
+		position: fixed
+		top: 0right: 0bottom: 0left: 0
+		overflow-x: hidden
+		overflow-y: auto
+		background-color: rgba(0,0,0,.5)
+		z-index: 2001
+		.panel-heading
+			@extend %mobi-width
+			margin-top: 30px
+		
+		.layout-sub
+			@extend %mobi-width
+			margin-bottom: 30px
+				
+	
+	.forum-ad
+		@extend %mobi-width
+	
+
+@media (min-width: 992px)
+	.forum-filsort-close,
+	.forum-filsort-open
+		display: none
+	
+
+.forum-filsort-open
+	float: right
+	text-align: right
+	color: #e03912
+	text-decoration: underline!important
+	padding-top: 10px

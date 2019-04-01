@@ -1,0 +1,108 @@
+.vbox
+	overflow-x: auto
+	overflow-y: hidden
+
+.vbox-list
+	overflow: hidden
+
+.vbox-item
+	
+	float: left
+	&:last-childmargin-right: 0!important
+
+.layout-video-fluid
+	background-color: #333
+
+.vbox-link
+	display: block
+	
+
+.vbox-img
+	width: 100%
+
+.vbox-table
+	display: table
+	width: 100%
+	height: 36px
+	background-color: #ececec
+	padding: 5px 10px 7px
+
+.vbox-cell
+	display: table-cell
+	vertical-align: middle
+
+$vtt: color .5s
+.vbox-msg
+	text-align: center
+	@extend %row2
+	color: #555
+	transition: $vtt
+	max-height: 36px
+	line-height: 1.4
+	font-size: 14px
+
+@media (min-width: 992px)
+	.vbox-link:hover
+		.vbox-msg
+			color: #000
+			transition: $vtt
+		
+	
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.vbox-pre,.vbox-nex
+	display: none
+
+%pre-nex
+	width: 40px
+	text-align: center
+	line-height: 40px
+	background-color: $color5
+	color: #fff
+	font-size: 15px
+	vertical-align: top
+	border-radius: 50%
+	position: absolute
+	top: 120px
+	margin-top: -40px
+	transition: box-shadow .6s
+	display: block
+	&:hover
+		box-shadow: 0 0 12px rgb(111,0,0)
+	
+
+.is-pc
+	position: relative
+	font-size: 0
+	width: calc( 100% - 30px)
+	margin: 0 auto
+	.vbox
+		position: relative
+		overflow-x: hidden
+	
+	.vbox-list
+		position: absolute
+		transition: .5s
+	
+	.vbox-pre
+		@extend %pre-nex
+		left: -48px
+		display: none
+	
+	.vbox-nex
+		@extend %pre-nex
+		right: -48px
+	
+	.is-end
+		opacity: 0.5
+		cursor: default
+		box-shadow: none!important
+	
+

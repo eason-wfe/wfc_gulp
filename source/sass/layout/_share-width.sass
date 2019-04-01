@@ -1,0 +1,107 @@
+@mixin set-to-item-2
+	width: calc( 50% - 12px)
+	&:nth-child(odd)
+		margin-right: 24px
+	
+
+@mixin set-to-item-3
+	width: calc( 33% - 16px)
+	margin-right: 24px
+	&:nth-child(3n)
+		margin-right: 0px
+	
+
+@mixin set-to-item-4
+	width: calc(25% - 30px)
+	margin-right: 40px
+	&:nth-child(4n) 
+		margin: 0
+	
+
+
+//===============================================
+//===============================================
+//===============================================
+//===============================================
+//===============================================
+
+.layout-sharewidth
+	font-size: 0
+
+.layout-sharewidth-item
+	display: inline-block
+	vertical-align: top
+
+@media (max-width: 991px)
+	
+	.layout-sharewidth-item
+		margin-bottom: 23px
+	
+	.item-2,
+	.item-3
+		.layout-sharewidth-item
+			display: block
+		
+	
+	.item-4
+		.layout-sharewidth-item
+			@include set-to-item-2
+		
+	
+	//
+	.item-re-lg-2
+		.layout-sharewidth-item
+			@include set-to-item-2
+		
+	
+
+@media (min-width: 992px)
+	.item-1
+		.layout-sharewidth-item
+			width: 100%
+		
+	
+	.item-2
+		.layout-sharewidth-item
+			@include set-to-item-2
+		
+   
+   .item-3
+		.layout-sharewidth-item
+			@include set-to-item-3
+		
+	
+	.item-4
+		.layout-sharewidth-item
+			@include set-to-item-4
+		
+	
+
+
+//===============================================
+//===============================================
+//===============================================
+//===============================================
+//===============================================
+
+// 2 (767) > (768) 3 (1199) > (1200) 4
+@media (max-width: 767px)
+	.item-234
+		.layout-sharewidth-item
+			@include set-to-item-2
+		
+	
+
+@media (min-width: 768px) and (max-width: 1199px)
+	.item-234
+		.layout-sharewidth-item
+			@include set-to-item-3
+		
+	
+
+@media (min-width: 1200px)
+	.item-234
+		.layout-sharewidth-item
+			@include set-to-item-4
+		
+	

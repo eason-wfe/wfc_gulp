@@ -1,0 +1,163 @@
+@import "usual/im"
+@import "usual/color"
+@import "usual/unit1"
+.color-1.layout-navbar-arrow-pc:after
+	display: none
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.map
+	margin-bottom: 15px
+	font-size: 17px
+	border-radius: 12px
+	padding: 12px
+	li
+		border-bottom: dotted 1px #fff
+		padding: 5px
+		&:last-child
+			border-bottom: none
+		
+	
+	a
+		font-size: 15px
+		color: #333
+		&:hover
+			color: #000
+		
+	
+
+@media (max-width: 413px)
+	.map
+		width: 100%
+	
+	.item-234
+		.layout-sharewidth-item
+			width: 100%
+			margin:
+				right: 0
+			
+		
+	
+
+@media (min-width: 414px)
+	.map
+		height: 280px
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.mapicon
+	@include img-path-ratio("nav-menu-icon.png",2)
+	background-repeat: no-repeat
+	width: 52px
+	height: 54px
+	display: inline-block
+
+.map-1
+	background:
+		color: $color1-light
+	
+	.mapicon
+		background-position: 0px -26px
+	
+	.maptitle
+		color: $color1-dark
+	
+
+.map-2
+	background:
+		color: $color2-light
+	
+	.mapicon
+		background-position:  0 -135px
+	
+	.maptitle
+		color: $color2-dark
+	
+
+.map-3
+	background:
+		color: $color3-light
+	
+	.mapicon
+		background-position: 0 -245px
+	
+	.maptitle
+		color: $color3-dark
+	
+
+.map-4
+	background:
+		color: $color4-light
+	
+	.mapicon
+		background-position:  0 -358px
+	
+	.maptitle
+		color: $color4-dark
+	
+
+.map-5
+	background:
+		color: $color5-light
+	
+	.mapicon
+		background-position:  0 -465px
+	
+	.maptitle
+		color: $color5-dark
+	
+
+.map-6
+	background:
+		color: #b2e9e3
+	
+	.mapicon
+		background-position:  0 -685px
+	
+	.maptitle
+		color: #244945
+	
+
+.map-7
+	background:
+		color: #f7c1ff
+	
+	.mapicon
+		background-position:  0 -795px
+	
+	.maptitle
+		color: $color6-dark
+	
+
+.map-8
+	background:
+		color: #ffd9c1
+	
+	.mapicon
+		background-position:  0 -905px
+	
+	.maptitle
+		color: #ca4e00
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.maptitle
+	display: inline-block
+	vertical-align: 21px

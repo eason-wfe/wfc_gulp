@@ -1,0 +1,103 @@
+// eason
+// FOOTER //=====================================================
+footer 
+	width: 100%
+	bottom: 0
+	left: 0
+	z-index: 1034
+
+.footer-rise
+	footer
+		transform: translateY(0)
+	
+
+.copyRight 
+	padding: 12px 0
+	background-color: #222
+
+
+// FOOTER RISE
+.backToTop,
+.tabmenu,
+.footer-rise .backToTop,
+.footer-rise .tabmenu 
+	transition: bottom 0.2s ease-in-out
+
+footer,
+.footer-rise footer
+	transition: transform .2s
+
+
+// TAG from myself
+.footer-link 
+	font-size: 0
+	li 
+		display: inline-block
+		margin-left: 10px
+		&:first-child 
+			margin-left: 0
+		
+	
+	a 
+		color: #fff
+		&:hover 
+			text-decoration: underline !important
+		
+	
+
+@media (max-width: 767px)
+	footer
+		.color-bar .row 
+			display: none
+		
+	
+	.copyRight 
+		padding: 7px 0 34px
+		p 
+			line-height: 18px
+		
+	
+	.footer-link 
+		ul 
+			text-align: center
+		
+		li 
+			display: inline-block
+			margin-left: 10px
+		
+		a 
+			color: #fff
+			font-size: 12px
+			line-height: 18px
+			&:hover 
+				text-decoration: underline !important
+			
+		
+		.copyRightTextEng 
+			display: none
+		
+		.backToTop 
+			bottom: 40px
+		
+		.tabmenu 
+			bottom: 0
+		
+	
+	.tabmenu 
+		bottom: 0
+	
+
+@media (min-width: 768px) 
+	footer 
+		transform: translateY( calc( 100% - 3px ) )
+		position: fixed
+	
+	.footer-link 
+		ul 
+			padding-top: 14px
+			text-align: right
+		
+		li
+			margin-bottom: 5px
+		
+	

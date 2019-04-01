@@ -1,0 +1,113 @@
+%before-after
+	position: relative
+	&:before,&:after
+		content: ""
+		position: absolute
+		//top: 0
+	
+	&:beforeleft: 0
+	&:after
+		right: 0
+		transform: rotateY(180deg)
+	
+
+%t-b
+	height: 25px
+	@include img-path-ratio("warranty/re_x.jpg",2)
+	&:before,&:after
+		@include img-path-ratio("warranty/corn.jpg",2)
+		width: 34pxheight: 25px
+	
+
+.wbox
+	padding: 30px
+	background-color: #fff
+	b
+		display: block
+		font: 
+			size: 17Px
+			weight: bold
+		
+	
+
+.wbox-t
+	@extend %before-after
+	@extend %t-b
+
+.wbox-m
+	@extend %before-after
+	&:before,&:after
+		@include img-path-ratio("warranty/re_y.jpg",2)
+		width: 34px
+		top: 0bottom: 0
+	
+
+.wbox-b
+	@extend %before-after
+	@extend %t-b
+	transform: rotateX(180deg)
+
+@media (max-width: 767px)
+	.wbox
+		padding: 18px
+	
+	.wbox-m
+		padding: 15px 35px
+	
+
+@media (min-width: 768px)
+	.wbox
+		padding: 30px
+	
+	.wbox-m
+		padding: 15px 50px
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+// TITLE
+.wbox-title
+	color: #8c7947
+	font:
+		weight: bold
+		size: 21px
+	
+	display: inline-block
+
+.wbox-tpc
+	display: inline-block
+
+.wbox-wfc
+	margin: 0 auto
+	display: block
+
+@media (max-width: 767px)
+	.wbpx-tbox
+		width: 80%
+		max-width: 184px
+	
+	.wbox-title
+		display: none
+	
+	.wbox-tpcdisplay: none
+	.wbox-tmobi
+		width: 100%
+	
+
+@media (min-width: 768px)
+	.wbox-tbox
+		width: 395px
+		margin: 0 auto
+	
+	.wbox-tmobidisplay: none
+	.wbox-tpc
+		height: 40px
+		&.is-t-right
+			transform: rotateY(180deg)
+				
+	

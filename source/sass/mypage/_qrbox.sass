@@ -1,0 +1,37 @@
+.qrbox
+
+
+.qr-pc
+	overflow: hidden
+	font-size: 15px
+	font-weight: bold
+	width: 220px
+	imgwidth: 100%
+	&>*
+		width: 105px
+		text-align: center
+	
+
+.qr-l
+	float: left
+	margin-right: 10px
+
+.qr-r
+	float: left
+
+.qr-mobi
+
+
+@media (min-width: 460px)
+	.qr-mobi
+		overflow: hidden
+		width: 100%
+		button
+			float: left
+			width: calc( 50% - 10px)
+			margin-top: 0!important
+			&:first-child
+				margin-right: 10px
+			
+		
+	

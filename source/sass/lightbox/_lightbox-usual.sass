@@ -1,0 +1,84 @@
+// eason
+// LIGHT BOX USUAL
+// 全站共用 ex: login / forget pw
+.lightbox-usual
+	.panel-heading
+		background-color: $color1
+	
+	.panel-close
+		color: #79a511
+	
+	////
+	.btn
+		background-color: $color1
+		border: none!important
+		box-shadow: none!important
+		&:hover
+			background-color: $color1-dark
+			color: #fff
+		
+	
+	.help-block
+		margin-top: 10px
+		a
+			color: #000
+			&:hover
+				color: #000
+				text-decoration: underline!important
+			
+		
+		
+
+@media (max-width: 767px)
+	.lightbox-usual
+		.modal-dialog
+			width: 280px
+		
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.form-group.ver-box
+	margin-bottom: 15px
+	display: block
+	font-size: 0
+
+.ver-img
+	display: inline-block
+	height: 40pxwidth: 100px
+	margin-top: 5px
+
+.ver-reset
+	border-radius: 0 6px 6px 0
+	display: inline-block
+	vertical-align: middle
+	line-height: 36px
+	width: 36px
+	border: solid 1px #888
+	background:
+		color: #fff
+		repeat: no-repeat
+		position: 0px 2px
+	
+	@include img-path-ratio('reset.png',4)
+	margin:
+		right: 8px
+		left: -1px
+		top: 5px
+	
+
+.ver-input
+	display: inline-block
+	vertical-align: top
+	line-height: 46px
+	height: 48px
+	font-size: 15px
+	text-indent: 10px
+	width: calc( 100% - 144px )
+	border: solid 1px #e4e4e4
+	border-radius: 6px

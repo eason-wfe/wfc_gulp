@@ -1,0 +1,43 @@
+//  INFO
+%name
+	font-size: 16px
+	margin-bottom: 9px
+	max-height: 30px
+
+//
+.lib-info
+	padding: 10px 0 24px
+
+.lib-info-en
+	@extend %name
+	color: #faa52f
+	text-transform: capitalize
+
+.lib-info-location
+	@extend %name
+	color: #e8ac13
+
+.lib-info-content
+	font-size: 15px
+	color: #222
+	line-height: 1.6
+
+@media (min-width: 992px)
+	.lib-info
+		overflow: hidden
+	
+	.lib-sort-super
+		.lib-info
+			height: 145px
+		
+	
+	.lib-sort-funny
+		.lib-info
+			height: 195px
+		
+	
+	.lib-sort-abc
+		.lib-info
+			height: 78px
+		
+	

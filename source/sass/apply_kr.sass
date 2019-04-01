@@ -1,0 +1,121 @@
+@import "usual/im"
+@import "usual/color"
+@import "usual/color-cal"
+@import "usual/unit1"
+// @import "usual/title-deco5"
+// CALENDAR
+@import "uikit/tmp-calendar"
+@import "_event_kr/calendar-skin"
+// LIGHT BOX
+@import "lightbox/lightbox"
+@import "lightbox/lightbox-event-apply-kr"
+// TABLE-CARD
+@import "uikit/tmp-retable-card"
+// TITLE
+@import "_event_kr/event-title-icon"
+// DROPGRNAL
+@import "uikit/tmp-dropdown"
+@import "_event_kr/event-drop"
+// BUTTON
+@import "usual/mypage-btn-google"
+//========================================
+//========================================
+//========================================
+//========================================
+//========================================
+// TABLE-CARD
+.is-price
+	text-align: right
+
+.retabcard-row-title
+	background-color: $color1-light
+
+@media (max-width: 991px)
+	.retabcard-cell-index
+		background-color: $color1-light
+		& + .retabcard-content
+			background-color: $color1-light
+//========================================
+//========================================
+//========================================
+//========================================
+//========================================
+
+// DROP BOX
+.dropbox
+	padding:
+		bottom: 5px
+		top: 15px
+	
+
+// .dropGeneral
+	
+
+@media (max-width: 459px)
+	.dropbox
+		.layout-title-level-3
+			display: block
+		
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+//  RETABLE DECORATION
+@media (min-width: 992px)
+	.retable-above
+		height: 8px
+		border-radius: 15px 15px 0 0
+		background-color: #e8f8c4
+	
+	.retable-under
+		height: 8px
+		border-radius: 0 0 15px 15px
+		background-color: #eaf0dd
+		
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+.apply-intro
+	background-color: #fff
+	font-size: 13px
+	line-height: 1.5
+	margin-bottom: 15px
+	border-radius: 36px
+	img
+		width: 15px
+		margin-right: 3px
+	
+	p
+		color: #000
+		font-weight: bold
+		margin: 0 
+	
+	span
+		width: 15px
+		height: 15px
+		display: inline-block
+		border-radius: 6px
+		vertical-align: text-top
+		margin: 0 3px 0 0
+	
+
+@media (max-width: 991px)
+	.apply-intro
+		width: 100%
+		padding: 10px 5%
+	
+
+@media (min-width: 992px)
+	.apply-intro
+		padding: 8px 18px 10px
+	

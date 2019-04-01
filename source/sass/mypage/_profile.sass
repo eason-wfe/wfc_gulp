@@ -1,0 +1,193 @@
+.profile-img
+	width: 100pxheight: 100px
+	background:
+		size: cover
+		position: center center
+	
+	border-radius: 50%
+
+.profile-item
+	font-size: 0
+	border-bottom: solid 1px #f1f1f1
+	&:last-child
+		border-bottom: none
+	
+	& > *
+		font-size: 15px
+		display: inline-block
+		line-height: 27px
+		vertical-align: top
+	
+
+.profile-title
+	color: #000
+	text-align: right
+
+.profile-content
+	color: #000
+	text-align: left
+	inputcolor: #000
+
+.profile-btn
+	color: $color5
+	background-color: transparent
+	border-radius: 6px
+	border: solid 1px $color5!important
+	padding: 8px 0
+	width: 120px
+	&:hover
+		background-color: $color5
+		color: #fff
+	
+
+@media (max-width: 767px)
+	.profile
+		padding-top: 10px
+	
+	.profile-img
+		margin: 0 auto
+	
+	.profile-box
+		margin: 12px 0 25px
+	
+	.profile-title
+		width: calc( 50% + 15px)
+	
+	.profile-content
+		width: calc( 50% - 15px )
+		&.is-point
+			width: 100%
+			text-align: center
+			line-height: 1
+		
+	
+	.profile-btn
+		display: inline-block
+		vertical-align: top
+		&.is-giveup
+			margin:
+				right: 8px
+				left: calc( (100% - 120px - 120px - 13px)/2 )
+			
+		
+	
+	
+
+@media (min-width: 768px)
+	.profile
+		font-size: 0
+		padding:
+			right: 160px
+			top: 20px
+		
+		position: relative
+		& > *
+			display: inline-block
+			vertical-align: top
+		
+	
+	.profile-img
+		margin-right: 35px
+	
+	.profile-box
+		width: calc( 100% - 100px - 35px )
+	
+	//
+	.profile-title
+		width: 140px
+	
+	.profile-content
+		width: calc( 100% - 140px )
+	
+	//
+	.profile-btn
+		position: absolute
+		right: 0bottom: 0
+	
+
+
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+//=====================================//=========================================
+
+// SETTING
+.is-setting
+	position: relative
+	.profile-item
+		padding: 15px 0	
+	
+	.profile-title,
+	.profile-content
+		text-align: left
+		line-height: 23px
+	
+	.profile-title
+		width: auto
+		font:
+			weight: bold
+		
+	
+	input
+		line-height: 20px
+		padding: 0 7px
+		width: 130px
+		border: solid 1px #a9a9a9
+	
+	.is-pic
+		font-size: 13px
+		width: 100px
+		padding: 5px 0
+		background-color: $color5
+		color: #fff
+	
+	////
+	.profile-fix
+		width: 100%
+		padding-left: 75px
+		&.is-child
+			padding-left: 0
+		
+	
+	.fix-name
+		display: inline-block
+		width: 72px
+	
+	.fix-input
+		display: inline-block
+		width: calc( 100% - 77px )
+		margin-top: 5px
+	
+
+@media (max-width: 767px)
+	.is-giveup
+		margin-bottom: 12px
+	
+	.is-pic
+		position: absolute
+		top: 83px
+		right: 50%
+		transform: translateX(50%)
+	
+	.is-setting
+		input
+			width: 100%
+		
+		.is-pw
+			width: calc( 100% - 75px )
+		
+	
+
+
+@media (min-width: 768px)
+	.is-giveup
+		bottom:  52px
+	
+	.is-setting
+		.is-pic
+			left: 0right: auto
+			bottom: autotop: 97px
+		
+	
+
