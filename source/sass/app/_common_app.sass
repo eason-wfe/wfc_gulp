@@ -1,76 +1,76 @@
- //=====================================//=================================================
---> 1.COMMON
-//=====================================//=================================================== 
+//=================================================
+// --> 1.COMMON
+//=================================================== 
 * 
-    outline: 0
-    margin: 0
-    padding: 0
+	outline: 0
+	margin: 0
+	padding: 0
 
 body 
-    // font-family: 'Open Sans', sans-serif
-    font-size: 15px
-    line-height: 21px
-    color: $text-color
-    font-weight: 400
+	// font-family: 'Open Sans', sans-serif
+	font-size: 15px
+	line-height: 21px
+	color: $text-color
+	font-weight: 400
 
 ul
-	margin:0
-	padding:0
+	margin: 0
+	padding: 0
 	li
-		list-style-type:none
+		list-style-type: none
 	
 
 p
-    font-size: 14px
-    color: $text-color
-    font-weight: 400
-    line-height: 21px
+	font-size: 14px
+	color: $text-color
+	font-weight: 400
+	line-height: 21px
 
 h1, h2, h3, h4, h5
-    // font-family: 'Open Sans', sans-serif
-   //  text-transform: uppercase
-    color: $secondary-color
-    margin-top: 0
+	// font-family: 'Open Sans', sans-serif
+	//	text-transform: uppercase
+	color: $secondary-color
+	margin-top: 0
 	font-weight: 700
 
 h4
-   font-size: 18px
-   margin-bottom: 25px
-   font-weight: 400
+	font-size: 18px
+	margin-bottom: 25px
+	font-weight: 400
 
 h5
-    font-weight: 400
-    font-size: 16px
-    text-transform: capitalize
+	font-weight: 400
+	font-size: 16px
+	text-transform: capitalize
 
 .form-control
-    box-shadow: none
+	box-shadow: none
 
 
 // .container
-// 	width: 100%
-// 	@include mobile 
-// 		width: 450px
-// 	
-// 	@include mobile-all 
-// 		width: 100%
-// 	
-// 	@include tablet 
-// 		width: 750px
-// 	
-// 	@include desktops 
-// 		width: 970px
-// 	
-// 	@include large-desktops 
-// 		width: 1170px
-// 	
+//	width: 100%
+//	@include mobile 
+//		width: 450px
+//	
+//	@include mobile-all 
+//		width: 100%
+//	
+//	@include tablet 
+//		width: 750px
+//	
+//	@include desktops 
+//		width: 970px
+//	
+//	@include large-desktops 
+//		width: 1170px
+//	
 // 
 .main-wrapper
-	background-color:#ffffff
+	background-color: #ffffff
 
 body.bodyColor.wrapper 
-    margin:0 auto
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
+	margin: 0 auto
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
 	@include mobile 
 		max-width: 450px
 	
@@ -113,8 +113,8 @@ body.bodyColor .color-bar
 	
 
 body.bodyColor #menuBar.bb-fixed-header 
-	right:auto
-	left:auto
+	right: auto
+	left: auto
 	@include mobile 
 		max-width: 450px
 		width: 100%
@@ -130,33 +130,33 @@ body.bodyColor #menuBar.bb-fixed-header
 	
 
 body.static #menuBar.bb-fixed-header 
-	display:none
+	display: none
 
 .btn
 	display: inline-block
-  padding: 11px 20px
-  margin-bottom: 0
-  font-size: 16px
-  font-weight: 600
-  text-align: center
-  white-space: nowrap
-  vertical-align: middle
-  -ms-touch-action: manipulation
-  touch-action: manipulation
-  cursor: pointer
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-  background-image: none
-  border: 1px solid transparent
+	padding: 11px 20px
+	margin-bottom: 0
+	font-size: 16px
+	font-weight: 600
+	text-align: center
+	white-space: nowrap
+	vertical-align: middle
+	-ms-touch-action: manipulation
+	touch-action: manipulation
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	background-image: none
+	border: 1px solid transparent
 	color: $white-color
-  @include border-radius(6px)
+	@include border-radius(6px)
 	// text-transform: uppercase
 	@include box-shadow(0, 4px, 0, rgba($black-color, .1) )
 	@include transition(all 0.3s ease-in-out)
 	&:hover
-		 border: 1px solid transparent
+		border: 1px solid transparent
 		@include box-shadow(0, 4px, 0, rgba($black-color, .3) !important) 
 	
 	&:focus, &.active, &:active
@@ -173,10 +173,10 @@ a
 	text-decoration: none !important
 	@include transition(all 0.3s ease-in-out)
 	&:hover
-	outline: 0
+		outline: 0
 	
 	&:focus
-    outline: 0
+		outline: 0
 	
 
 .main-wrapper
@@ -266,15 +266,15 @@ a
 	padding-top: 0 !important
 
 .table-curved 
-   border-collapse: separate
-   border: solid #ccc 1px
-   border-radius: 6px
-   border-left: 0px
-   border-top: 0px
+	border-collapse: separate
+	border: solid #ccc 1px
+	border-radius: 6px
+	border-left: 0px
+	border-top: 0px
 
 .table-curved > thead:first-child > tr:first-child > th 
-    border-bottom: 0px
-    border-top: 0
+	border-bottom: 0px
+	border-top: 0
 
 .table-curved > thead:first-child > tr > th:first-child
 	border-left: 1px solid $color1
@@ -283,43 +283,42 @@ a
 	border-right: 1px solid $color6
 
 .table-curved td, .table-curved th 
-    border-left: 1px solid #ccc
-    border-top: 1px solid #ccc
+	border-left: 1px solid #ccc
+	border-top: 1px solid #ccc
 
 .table-curved > :first-child > :first-child > :first-child 
-    border-radius: 6px 0 0 0
+	border-radius: 6px 0 0 0
 
 .table-curved > :first-child > :first-child > :last-child 
-    border-radius: 0 6px 0 0
+	border-radius: 0 6px 0 0
 
 .table-curved > :last-child > :last-child > :first-child 
-    border-radius: 0 0 0 6px
+	border-radius: 0 0 0 6px
 
 .table-curved > :last-child > :last-child > :last-child 
-    border-radius: 0 0 6px 0
+	border-radius: 0 0 6px 0
 
 
 .bodyColor.wrapper 
-
-  .main-wrapper 
-    position: relative
-    background-color: #fff
-    margin: 0 auto
-    overflow-x: hidden
-    @include mobile 
-      max-width: 520px
-    
-    @include tablet 
-      padding: 0px 0 0
-      max-width: 728px
-    
-    @include desktops 
-      padding: 0px 0 0
-      max-width: 970px
-    
-    @include large-desktops 
-      padding: 0px 0 0
-      max-width: 1260px
-    
-  
+	.main-wrapper 
+		position: relative
+		background-color: #fff
+		margin: 0 auto
+		overflow-x: hidden
+		@include mobile 
+			max-width: 520px
+		
+		@include tablet 
+			padding: 0px 0 0
+			max-width: 728px
+		
+		@include desktops 
+			padding: 0px 0 0
+			max-width: 970px
+		
+		@include large-desktops 
+			padding: 0px 0 0
+			max-width: 1260px
+	
+	
 

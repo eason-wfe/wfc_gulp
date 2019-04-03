@@ -1,18 +1,18 @@
- //=====================================//=================================================
---> 5. HOME
-//=====================================//=================================================== 
+//=================================================
+// --> 5. HOME
+//=================================================== 
 @import 'footer'
 
-======== 5.1 BANNER ========
+// ======== 5.1 BANNER ========
 .bannercontainer
 	.tp-rightarrow.default 
-	    z-index: 98
+		z-index: 98
 	
 
 .bannercontainer .fullscreenbanner-container 
-	width:100%
-	position:relative
-	padding:0
+	width: 100%
+	position: relative
+	padding: 0
 	.tp-bullets.preview4
 		opacity: 1
 		height: auto
@@ -33,17 +33,17 @@
 @include tablet 
 	.tparrows.preview4:hover:after
 		-webkit-transform: rotateY(0)
-	 	transform:rotateY(0)
-	 
+		transform: rotateY(0)
+	
 	.tp-leftarrow.preview4:hover:after
 		-webkit-transform: rotateY(0)
-		transform:rotateY(0)
+		transform: rotateY(0)
 	
 
 .fullscreenbanner
 	color: $white-color
-	width:100%
-	position:relative
+	width: 100%
+	position: relative
 
 .tp-caption.rs-caption-1,
 .tp-caption.rs-caption-2,
@@ -65,11 +65,11 @@
 		width: 55%
 	
 	a.btn-primary, a.btn-primary:hover, a.btn-primary:focus 
-	    color: $white-color
-	    height: 35px
-	    line-height: 35px
+		color: $white-color
+		height: 35px
+		line-height: 35px
 		padding: 0 10px
-	    @include tablet
+	@include tablet
 		padding: 0 10px
 		margin-top: -20px
 		
@@ -124,18 +124,18 @@
 	padding: 0 10px !important
 
 .fullscreenbanner .tp-dottedoverlay.twoxtwo 
-  background: transparent
-  background-image: none!important
-  z-index: 1
+	background: transparent
+	background-image: none!important
+	z-index: 1
 
 .tparrows.preview4 
-	width:47px
-	height:47px
+	width: 47px
+	height: 47px
 
 .tparrows.preview4:after
 	line-height: 47px
-	width:47px
-	height:47px
+	width: 47px
+	height: 47px
 	background-color: $white-color
 	color: $text-color
 	@include border-radius(13px)
@@ -145,31 +145,31 @@
 	right: 3% !important
 
 .tp-rightarrow.preview4:after 
-  content: '\e81e'
+	content: '\e81e'
 
 .tp-leftarrow.preview4
 	left: 3% !important
 
 .tp-leftarrow.preview4:after 
-  content: '\e81f'
+	content: '\e81f'
 
 
-======== 5.2 FEATURES SECTION ========
+// ======== 5.2 FEATURES SECTION ========
 .featureSection
 	position: relative
 	@include mobile-all
 		padding: 50px 0
 	
 	@include tablet
-		padding:60px 0
+		padding: 60px 0
 	
 
 .linkIcon, .locateArrow
 	display: block
 	position: absolute
 	left: 50%
-    margin-left: -50px
-    @include transition(all 0.3s ease-in-out)
+		margin-left: -50px
+		@include transition(all 0.3s ease-in-out)
 
 .linkSection
 	width: 100%
@@ -258,17 +258,17 @@
 	margin-bottom: 40px
 	.media-left
 		width: 76px
-	    height: 76px
-	    padding: 6px
+		height: 76px
+		padding: 6px
 		margin-right: 20px
 		display: inline-block
 		float: left
 		@include box-shadow(4px, 4px, 0, rgba($black-color, .1) )
 		@include border-radius(100%)
 		i
-			width:62px
-			height:62px
-			line-height:62px
+			width: 62px
+			height: 62px
+			line-height: 62px
 			@include border-radius(100%)
 			@include add-border(2px, $white-color, all)
 			text-align: center
@@ -288,7 +288,7 @@
 	
 
 
-======== 5.3 PROMOTION ========
+// ======== 5.3 PROMOTION ========
 .promotionWrapper
 	width: 100%
 	-webkit-background-size: cover
@@ -298,7 +298,7 @@
 	background-position: center
 	background-attachment: fixed
 	color: #ffffff
-	padding:75px 0
+	padding: 75px 0
 	.promotionInfo
 		text-align: center
 		h2
@@ -329,7 +329,7 @@
 		
 	
 
-======== 5.4 ABOUT SCHOOL ========
+// ======== 5.4 ABOUT SCHOOL ========
 .schoolInfo
 	h2
 		// font-family: 'Dosis', sans-serif
@@ -366,7 +366,7 @@
 	
 
 
-======== 5.5 SERVICES SECTION ========
+// ======== 5.5 SERVICES SECTION ========
 .servicesSection
 	// background-image: url("img/home/pattern-light.png")
 	width: 100%
@@ -433,7 +433,7 @@
 		
 	
 
-======== 5.6 COURSES SECTION ========
+// ======== 5.6 COURSES SECTION ========
 .block
 	h3
 		// font-family: 'Dosis', sans-serif
@@ -587,8 +587,8 @@
 							font-size: 14px
 							font-weight: 700
 							padding: 0
-							height:44px
-							line-height:44px
+							height: 44px
+							line-height: 44px
 							&:first-child
 								// font-family: 'Dosis', sans-serif
 								font-size: 20px
@@ -604,7 +604,7 @@
 						td
 							padding: 0
 							text-align: center
-							height:109px
+							height: 109px
 							vertical-align: middle
 							font-size: 14px
 							color: $text-color
@@ -645,9 +645,9 @@
 	padding: 15px
 
 
-======== 5.7 TEAM SECTION ========
+// ======== 5.7 TEAM SECTION ========
 .owl-carousel.teamSlider .owl-nav
-	height:0px
+	height: 0px
 	@include mobile-all
 		@include opacity(1)
 	
@@ -953,7 +953,7 @@
 	text-transform: capitalize
 
 
-======== 5.8 EVENT SECTION ========
+// ======== 5.8 EVENT SECTION ========
 .eventSection
 	padding-bottom: 70px
 
@@ -965,7 +965,7 @@
 		position: relative
 		width: 100%
 		display: block
-		padding-right:0
+		padding-right: 0px
 		@include desktops
 			float: left
 			width: 50%
@@ -1018,9 +1018,6 @@
 	
 
 .eventContent .list-inline
-	&:hover
-
-	
 	a
 		font-size: 14px
 	
@@ -1074,7 +1071,7 @@
 	font-weight: 600
 	color: $white-color
 
-======== 5.9 COUNT UP SECTION ========
+// ======== 5.9 COUNT UP SECTION ========
 .countUpSection
 	background-image: url("img/home/countup.jpg")
 	width: 100%
@@ -1087,9 +1084,9 @@
 	color: #ffffff
 	padding: 80px 0
 	.counter
-		width:145px
-		height:145px
-		line-height:145px
+		width: 145px
+		height: 145px
+		line-height: 145px
 		display: inline-block
 		@include border-radius(100%)
 		@include add-border(4px,$white-color, all)
@@ -1134,7 +1131,7 @@
 		
 	
 
-======== 5.10 HOME GALLERY SECTION ========
+// ======== 5.10 HOME GALLERY SECTION ========
 .filter-container
 	padding: 0 20px 30px 20px
 
@@ -1149,7 +1146,7 @@
 			
 			a
 				padding: 0 25px
-				height:  40px
+				height:	40px
 				font-size: 14px
 				line-height: 40px
 				color: #222222
@@ -1254,7 +1251,7 @@
 		display: inline-block
 	
 
-======== 5.11 COMMENT SECTION ========
+// ======== 5.11 COMMENT SECTION ========
 .commentSection
 	// background-image: url("img/home/pattern-light.png")
 	width: 100%
@@ -1294,7 +1291,7 @@
 		margin-bottom: 0
 	
 
-======== 5.12 MAP AREA SECTION ========
+// ======== 5.12 MAP AREA SECTION ========
 .mapArea
 	width: 100%
 	display: block
@@ -1302,11 +1299,10 @@
 		width: 100%
 		height: 420px
 	
-
-======== 5.13 HOME CONTACT SECTION ========
+// ======== 5.13 HOME CONTACT SECTION ========
 .newsSection .block .list-unstyled li,
 .newsSection .block .list-inline li 
-    display: inline-block
+	display: inline-block
 
 .homeContactContent
 	h2
@@ -1352,8 +1348,8 @@
 			line-height: 50px
 			text-align: center
 			color: #888888
-			border:none
-			background-color:transparent
+			border: none
+			background-color: transparent
 		
 		i
 			z-index: 100
@@ -1396,7 +1392,7 @@
 	
 
 .eventSidebar .homeContactContent .form-group
-	display:block
+	display: block
 	i
 		left: -5px
 	
@@ -1464,31 +1460,31 @@
 	
 
 .sectionTitle h2 span.shape
-	width:18px
-	height:18px
-	border-radius:50%
-	background:#ffffff
-	display:inline-block
-	padding:0
-	position:relative
-	float:none
+	width: 18px
+	height: 18px
+	border-radius: 50%
+	background: #ffffff
+	display: inline-block
+	padding: 0
+	position: relative
+	float: none
 	&:after, &:before
 		content: ""
 		height: 2px
-		background:#ffffff
-		display:inline-block
+		background: #ffffff
+		display: inline-block
 		position: absolute
-	    border-radius:2px
+	border-radius: 2px
 	
 	&:after
 		content: ""
 		width: 70px
-	    top: 6px
+	top: 6px
 	
 	&:before
 		content: ""
 		width: 55px
-	    top: 11px
+	top: 11px
 	
 
 .sectionTitle h2 span.shape-left:before,
@@ -1511,7 +1507,7 @@
 
 
 
-============ PRELOADER =============
+// ============ PRELOADER =============
 $animationLength: 1.5s
 $animationRadius: 30px
 $dotSize: 20px
@@ -1532,43 +1528,43 @@ $dotSize: 20px
 		line-height: 0
 		transform: translate(-50%, 50%)
 		.loader 
-	    position: relative
-	    width: $animationRadius * 3 + $dotSize
+			position: relative
+			width: $animationRadius * 3 + $dotSize
 		
 
 		.dot 
-		    display: inline-block
-		    width: $dotSize
-		    height: $dotSize
-		    border-radius: $dotSize * .5
-		    background: #ccc
-		    position: absolute
+			display: inline-block
+			width: $dotSize
+			height: $dotSize
+			border-radius: $dotSize * .5
+			background: #ccc
+			position: absolute
 		
 
 		.dot-1 
-		    animation: animateDot1 $animationLength linear infinite
-		    left: $animationRadius
-		    background: $color1
+			animation: animateDot1 $animationLength linear infinite
+			left: $animationRadius
+			background: $color1
 		
 
 		.dot-2 
-		    animation: animateDot2 $animationLength linear infinite
-		    animation-delay: $animationLength / 3
-		    left: $animationRadius * 2
-				background: $color2
+			animation: animateDot2 $animationLength linear infinite
+			animation-delay: $animationLength / 3
+			left: $animationRadius * 2
+			background: $color2
 		
 
 		.dot-3 
-		    animation: animateDot3 $animationLength linear infinite
-		    left: $animationRadius
-				background: $color3
+			animation: animateDot3 $animationLength linear infinite
+			left: $animationRadius
+			background: $color3
 		
 
 		.dot-4 
-		    animation: animateDot4 $animationLength linear infinite
-		    animation-delay: $animationLength / 3
-		    left: $animationRadius * 2
-				background: $color4
+			animation: animateDot4 $animationLength linear infinite
+			animation-delay: $animationLength / 3
+			left: $animationRadius * 2
+			background: $color4
 		
 	
 
@@ -1581,31 +1577,46 @@ $dotSize: 20px
 	
 
 
- Keyframe animation 
+// Keyframe animation 
 @keyframes animateDot1 
-    0% transform: rotate(0deg) translateX(-$animationRadius) 
-    25%  transform: rotate(180deg) translateX(-$animationRadius) 
-    75%  transform: rotate(180deg) translateX(-$animationRadius) 
-    100%  transform: rotate(360deg) translateX(-$animationRadius) 
+	0% 
+		transform: rotate(0deg) translateX(-$animationRadius) 
+	25% 
+		transform: rotate(180deg) translateX(-$animationRadius) 
+	75% 
+		transform: rotate(180deg) translateX(-$animationRadius) 
+	100% 
+		transform: rotate(360deg) translateX(-$animationRadius) 
 
 
 @keyframes animateDot2 
-    0% transform: rotate(-0deg) translateX(-$animationRadius) 
-    25%  transform: rotate(-180deg) translateX(-$animationRadius) 
-    75%  transform: rotate(-180deg) translateX(-$animationRadius) 
-    100%  transform: rotate(-360deg) translateX(-$animationRadius) 
+	0% 
+		transform: rotate(-0deg) translateX(-$animationRadius) 
+	25% 
+		transform: rotate(-180deg) translateX(-$animationRadius) 
+	75% 
+		transform: rotate(-180deg) translateX(-$animationRadius) 
+	100% 
+		transform: rotate(-360deg) translateX(-$animationRadius) 
 
 
 @keyframes animateDot3 
-    0% transform: rotate(0deg) translateX($animationRadius) 
-    25%  transform: rotate(180deg) translateX($animationRadius) 
-    75%  transform: rotate(180deg) translateX($animationRadius) 
-    100%  transform: rotate(360deg) translateX($animationRadius) 
+	0% 
+		transform: rotate(0deg) translateX($animationRadius) 
+	25% 
+		transform: rotate(180deg) translateX($animationRadius) 
+	75% 
+		transform: rotate(180deg) translateX($animationRadius) 
+	100% 
+		transform: rotate(360deg) translateX($animationRadius) 
 
 
 @keyframes animateDot4 
-    0% transform: rotate(-0deg) translateX($animationRadius) 
-    25%  transform: rotate(-180deg) translateX($animationRadius) 
-    75%  transform: rotate(-180deg) translateX($animationRadius) 
-    100%  transform: rotate(-360deg) translateX($animationRadius) 
-
+	0% 
+		transform: rotate(-0deg) translateX($animationRadius) 
+	25%
+		transform: rotate(-180deg) translateX($animationRadius) 
+	75%
+		transform: rotate(-180deg) translateX($animationRadius) 
+	100%
+		transform: rotate(-360deg) translateX($animationRadius)

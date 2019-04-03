@@ -1,17 +1,17 @@
- //=====================================//=================================================
---> 3. HEADER
-//=====================================//=================================================== 
+//=================================================
+// --> 3. HEADER
+//=================================================== 
 .navbar .container
-	position:relative
+	position: relative
 
 .bb-fixed-header 
-    position: fixed
-    top: 0px
-    left: 0px
-    right: 0px
-    z-index: 999
+	position: fixed
+	top: 0px
+	left: 0px
+	right: 0px
+	z-index: 999
 
-======== 3.1 TOP COLOR BAR ========
+// ======== 3.1 TOP COLOR BAR ========
 .color-bar
 	width: 100%
 	.col-sm-1
@@ -24,7 +24,7 @@
 	z-index: 2000
 
 
-======== 3.2 TOP INFO BAR ========
+// ======== 3.2 TOP INFO BAR ========
 .top-info-bar
 	padding: 15px 0 12px 0
 	display: block
@@ -33,10 +33,10 @@
 	position: relative
 	top: 3px
 	@include transition(height 0.15s ease)
-	height:53px
+	height: 53px
 
 
-======== 3.3 HEADER TRANSPARENT ========
+// ======== 3.3 HEADER TRANSPARENT ========
 .navbar-default 
 	background-color: transparent
 	border: none
@@ -45,29 +45,29 @@
 	z-index: 1032
 
 .navbar-header .navbar-brand 
-  float: left
-  > img
-  	width: 100%
-  
-  @include mobile-all
-  	height: auto
-    padding: 15px
-    width: 160px
-  
-  @include tablet
-  	height: 110px
-  	padding: 30px 15px
-  	width: 196px
-  
+	float: left
+	> img
+	width: 100%
+	
+	@include mobile-all
+	height: auto
+	padding: 15px
+	width: 160px
+	
+	@include tablet
+	height: 110px
+	padding: 30px 15px
+	width: 196px
+	
 
 .navbar-default .navbar-nav
 	background-color: $white-color
-	margin-bottom:0
+	margin-bottom: 0
 	@include mobile-all
 		margin-top: 0
 	
 	@include tablet
-		height:auto
+		height: auto
 		background-color: transparent
 	
 	&.navbar-right
@@ -168,31 +168,31 @@
 	
 	@include tablet
 		border-left: 9px solid transparent
-    border-right: 9px solid transparent
-    margin-left: -10px
-    content: ""
-    display: inline-block
-    left: 50%
-    position: absolute
-    top: 102px
+	border-right: 9px solid transparent
+	margin-left: -10px
+	content: ""
+	display: inline-block
+	left: 50%
+	position: absolute
+	top: 102px
 	
 
-.navbar-nav > li.color-1.dropdown  a:after
+.navbar-nav > li.color-1.dropdown	a:after
 	border-bottom: 7px solid $color1
 
 .navbar-nav > li.color-2.dropdown.megaDropMenu > a:after
 	border-bottom: 7px solid $color2
 
-.navbar-nav > li.color-3.dropdown  a:after
+.navbar-nav > li.color-3.dropdown	a:after
 	border-bottom: 7px solid $color3
 
-.navbar-nav > li.color-4.dropdown  a:after
+.navbar-nav > li.color-4.dropdown	a:after
 	border-bottom: 7px solid $color4
 
-.navbar-nav > li.color-5.dropdown  a:after
+.navbar-nav > li.color-5.dropdown	a:after
 	border-bottom: 7px solid $color5
 
-.navbar-nav > li.color-6.dropdown  a:after
+.navbar-nav > li.color-6.dropdown	a:after
 	border-bottom: 7px solid $color6
 
 .navbar-nav > li.dropdown.singleDrop .dropdown-menu .dropdown-menu:after 
@@ -222,10 +222,10 @@
 	border-right: 7px solid $color6
 
 .navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active a
-	background-color:transparent
+	background-color: transparent
 
 .navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active a:hover
-	background-color:$color1
+	background-color: $color1
 
 .navbar-nav > li.dropdown.megaDropMenu
 	position: static
@@ -258,12 +258,12 @@
 				position: relative
 				&:before
 					position: absolute
-			    width: 3px
-			    left: 10px
-			    height: 60%
-			    content: ''
-			    background-color: #D3D3D3
-			    top: 34%
+				width: 3px
+				left: 10px
+				height: 60%
+				content: ''
+				background-color: #D3D3D3
+				top: 34%
 				
 			
 			@include tablet
@@ -271,7 +271,7 @@
 				position: relative
 				&:before
 					position: absolute
-			    content: none
+				content: none
 				
 			
 			li
@@ -370,38 +370,38 @@
 		display: block
 		position: relative
 		&:after 
-		    display: inline-block
-		    width: auto
-		    height: auto
-		    font-family: "FontAwesome"
-		    margin-left: 5px
-		    vertical-align: middle
-		    content: "\f107"
-		    border: 0px
-		    color: inherit
-		    position: absolute
-		    top: 50%
-		    right: 30px
-		    transform: translateY(-50%)
-		    font-size: 15px
-		    @include tablet 
-		    	content: ''
-		    
+			display: inline-block
+			width: auto
+			height: auto
+			font-family: "FontAwesome"
+			margin-left: 5px
+			vertical-align: middle
+			content: "\f107"
+			border: 0px
+			color: inherit
+			position: absolute
+			top: 50%
+			right: 30px
+			transform: translateY(-50%)
+			font-size: 15px
+			@include tablet 
+				content: ''
+			
 		
 	
 	&.open 
 		> a 
 			&:after 
-			    content: "\f106"
-			    @include tablet 
-			    	content: ''
-			    
+				content: "\f106"
+				@include tablet 
+					content: ''
+				
 			
 		
 	
 
 .dropdown-submenu
-	position:relative
+	position: relative
 	a
 		position: relative
 		i
@@ -416,12 +416,12 @@
 		
 	
 	>.dropdown-menu
-		top:0
+		top: 0
 		margin-top: 0 !important
-		margin-left:-1px
-		-webkit-border-radius:0 6px 6px 6px
-		-moz-border-radius:0 6px 6px 6px
-		border-radius:0 6px 6px 6px
+		margin-left: -1px
+		-webkit-border-radius: 0 6px 6px 6px
+		-moz-border-radius: 0 6px 6px 6px
+		border-radius: 0 6px 6px 6px
 		@include mobile
 			left: 0
 		
@@ -430,13 +430,13 @@
 		
 	
 	&.pull-left
-		float:none
+		float: none
 		>.dropdown-menu
-			left:-100%
-			margin-left:10px
-			-webkit-border-radius:6px 0 6px 6px
-			-moz-border-radius:6px 0 6px 6px
-			border-radius:6px 0 6px 6px
+			left: -100%
+			margin-left: 10px
+			-webkit-border-radius: 6px 0 6px 6px
+			-moz-border-radius: 6px 0 6px 6px
+			border-radius: 6px 0 6px 6px
 		
 	
 
@@ -447,17 +447,17 @@
 	background-color: $white-color
 
 .navbar-default .navbar-nav
-    height: 340px
-    overflow-x:hidden
-    @include transition(height 0.3s ease)
-    @include tablet
-    	height: auto
-    	 overflow-x:visible
-    	  overflow-y:visible
+	height: 340px
+	overflow-x: hidden
+	@include transition(height 0.3s ease)
+	@include tablet
+		height: auto
+		overflow-x: visible
+		overflow-y: visible
 	
 
 .navbar-collapse.in 
-    overflow-y: visible
+	overflow-y: visible
 
 .navbar-collapse
 	@include mobile-all
@@ -465,12 +465,12 @@
 	
 	@include tablet
 		border-color: $white-color
-		box-shadow:none
+		box-shadow: none
 	
 	li
 		&.dropdown
 			.dropdown-menu
-				box-shadow:none
+				box-shadow: none
 				@include mobile-all
 					position: relative
 					width: 100%
@@ -484,7 +484,7 @@
 					float: left
 					display: none
 					-webkit-box-shadow: 0 4px 6px rgba(0,0,0,.175)
-    				box-shadow: 0 4px 6px rgba(0,0,0,.175)
+					box-shadow: 0 4px 6px rgba(0,0,0,.175)
 				
 			
 			&.open
@@ -534,7 +534,7 @@
 	
 
 
-======== 3.4 LIGHT HEADER ========
+// ======== 3.4 LIGHT HEADER ========
 .navbar-default.lightHeader
 	@include transition(all 0.3s ease-in-out)
 	@include box-shadow(0, 4px, 0, rgba($black-color, .1) )
@@ -572,7 +572,7 @@
 		
 	
 
- menu item color 
+// menu item color 
 
 .navbar-nav > li.color-1
 	> a > span
@@ -657,31 +657,31 @@
 		display: block
 		position: relative
 		&:after 
-		    display: inline-block
-		    width: auto
-		    height: auto
-		    font-family: "FontAwesome"
-		    margin-left: 5px
-		    vertical-align: middle
-		    content: "\f107"
-		    border: 0px
-		    position: absolute
-		    top: 50%
-		    right: 30px
-		    transform: translateY(-50%)
-		    font-size: 15px
-		    @include tablet 
-		    	content: ''
-		    
+			display: inline-block
+			width: auto
+			height: auto
+			font-family: "FontAwesome"
+			margin-left: 5px
+			vertical-align: middle
+			content: "\f107"
+			border: 0px
+			position: absolute
+			top: 50%
+			right: 30px
+			transform: translateY(-50%)
+			font-size: 15px
+			@include tablet 
+				content: ''
+			
 		
 	
 	&.open 
 		> a 
 			&:after 
-			    content: "\f106"
-			    @include tablet 
-			    	content: ''
-			    
+				content: "\f106"
+				@include tablet 
+					content: ''
+				
 			
 		
 	
@@ -801,7 +801,7 @@
 	
 
 .navbar-nav > li.color-6
-	> a:hover  span
+	> a:hover	span
 		color: $color6
 	
 	&.singleDrop
@@ -857,7 +857,7 @@
 
 .bb-fixed-header .navbar-nav > li.dropdown.open > a:after
 	@include tablet
-	    top: 83px
+		top: 83px
 	
 
 #menuBar
@@ -874,13 +874,13 @@
 		.navbar-brand
 			@include mobile
 				height: auto
-			    padding: 15px
-			    width: 160px
+				padding: 15px
+				width: 160px
 			
 			@include tablet
 				height: auto
-			    padding: 20px 15px
-			    width: 190px
+				padding: 20px 15px
+				width: 190px
 			
 		
 		.navbar-nav > li > a

@@ -1,12 +1,12 @@
- //=====================================//=================================================
---> 13. CHECKOUT
-//=====================================//=================================================== 
-========== 13.1 CHECKOUT PROGRESS ==========
+//=================================================
+// --& > 13. CHECKOUT
+//=================================================== 
+// ========== 13.1 CHECKOUT PROGRESS ==========
 .progress-wizard 
 	margin-top: 40px
 	margin: 40px 0 70px 0
 	padding: 0 0 30px 0
-	> .progress-wizard-step
+	& > .progress-wizard-step
 		padding: 0
 		position: relative
 		height: 105px
@@ -17,13 +17,13 @@
 			margin-bottom: 0
 			height: 100px
 		
-		> .progress 
+		& > .progress 
 			position: relative
 			border-radius: 0px
 			height: 5px
 			box-shadow: none
 			margin: 20px 0
-			> .progress-bar 
+			& > .progress-bar 
 				width:0px
 				box-shadow: none
 				@include mobile-all
@@ -35,58 +35,63 @@
 			
 		
 		&.complete
-			> .progress
-				> .progress-bar 
-					width:100%
+			& > .progress
+				& > .progress-bar 
+					width: 100%
 				
 			
 		
 		&.active 
-			> .progress 
-				> .progress-bar 
-					width:50%
+			& > .progress 
+				& > .progress-bar 
+					width: 50%
 				
 			
 		
 	
 
 .progress-wizard 
-	> .progress-wizard-step 
-		> .progress 
-			> .progress-bar 
-				width:0%
+	& > .progress-wizard-step 
+		& > .progress 
+			& > .progress-bar 
+				width: 0%
 			
 		
 	
 
 .progress-wizard 
-	> .progress-wizard-step:first-child.active 
-		> .progress 
-			> .progress-bar width:0%
+	& > .progress-wizard-step:first-child.active 
+		& > .progress 
+			& > .progress-bar width: 0%
 		
 	
 
 .progress-wizard 
-	> .progress-wizard-step:last-child.active 
-		> .progress 
-			> .progress-bar width: 100%
+	& > .progress-wizard-step:last-child.active 
+		& > .progress 
+			& > .progress-bar 
+				width: 100%
 		
 	
 
 
 .progress-wizard 
-	> .progress-wizard-step:first-child  
-		> .progress left: 50% width: 50%
+	& > .progress-wizard-step:first-child
+		& > .progress
+			left: 50%
+			width: 50%
 	
 
 .progress-wizard 
-	> .progress-wizard-step:last-child  
-		> .progress width: 50%
+	& > .progress-wizard-step:last-child
+		& > .progress
+			width: 50%
 	
 
 .progress-wizard 
-	> .progress-wizard-step.disabled 
-		a.progress-wizard-dot pointer-events: none 
+	& > .progress-wizard-step.disabled 
+		a.progress-wizard-dot 
+			pointer-events: none 
 	
 
 .progress
@@ -94,12 +99,12 @@
 		background-color: transparent
 	
 	@include tablet
-    background-color: #f8f8f8
+		background-color: #f8f8f8
 	
 
 .progress-wizard 
-	> .progress-wizard-step 
-		> .progress-wizard-dot 
+	& > .progress-wizard-step 
+		& > .progress-wizard-dot 
 			display: block
 			background-color: $white-color
 			@include border-radius(100%)
@@ -145,8 +150,8 @@
 	
 
 .progress-wizard 
-	> .progress-wizard-step.incomplete 
-		> .progress-wizard-dot 
+	& > .progress-wizard-step.incomplete 
+		& > .progress-wizard-dot 
 			border-color: #f8f8f8
 			color: $text-color
 			i
@@ -156,8 +161,8 @@
 	
 
 .progress-wizard 
-	> .progress-wizard-step.complete 
-		> .progress-wizard-dot
+	& > .progress-wizard-step.complete 
+		& > .progress-wizard-dot
 			i
 				color: $white-color
 				background-color: $color3
@@ -184,7 +189,7 @@
 	
 
 
-========== 13.2 CHECKOUT INFO  ==========
+// ========== 13.2 CHECKOUT INFO ==========
 .checkoutInfo
 	&.panel
 		border: none

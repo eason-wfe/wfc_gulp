@@ -35,6 +35,48 @@
 .cap-section-title 
 	padding-bottom: 15px
 	margin-bottom: 0
+	position: relative
+	&.had-clear
+		.is-clear
+			display: block
+		
+	
+
+@media (max-width: 430px)
+	.had-clear
+		.sectionTitle
+			h2 span:nth-child(2)
+				float: none
+				text-align: right
+				font-size: 20px
+				padding: 
+					left: 0
+					right: 106px
+				
+			
+		
+	
+
+// BTN CLEAR
+.is-clear 
+	display: none
+	position: absolute
+	border-radius: 18px
+	font-size: 14px
+	padding: 5px 13px
+
+@media (max-width: 991px)
+	.is-clear
+		top: 19px
+		right: 23px
+	
+
+@media (min-width: 992px)
+	.is-clear
+		top: 40px
+		right: 50px
+	
+
 
 
 //================================================
@@ -46,12 +88,6 @@
 //================================================
 
 // CAP LAYOUT MAIN
-//.cap-layout-main 
-
-//@media (max-width: 991px) 
-	//.cap-layout-main 
-	
-
 @media (min-width: 992px) 
 	.cap-layout-main 
 		background-color: #fff

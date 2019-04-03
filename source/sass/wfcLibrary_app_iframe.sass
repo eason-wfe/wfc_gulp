@@ -1,0 +1,249 @@
+// eason
+@import "usual/im"
+@import "usual/color"
+//========================================
+//========================================
+//========================================
+//========================================
+//========================================
+@import "uikit/tmp-dropdown"
+@import "_fwe_kr/lib-hightlight"
+//========================================
+//========================================
+//========================================
+//========================================
+//========================================
+body
+	font-family: arial,"微軟正黑體",Microsoft JhengHei!important 
+	padding: 0 20px
+	color: #333
+
+*
+	box-sizing: border-box
+
+.sectionTitle 
+	height: 26px
+	h2
+		margin-bottom: 0
+		span
+			color: $color2
+			font:
+				size: 24px
+				weight: bold
+			
+			&:first-child,&:last-child
+				display: none!important
+			
+		
+	
+
+.layout-content
+	margin-bottom: 24px
+	ol
+		margin-left: 20px
+	
+
+.hight-light
+	margin-top: 5px
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.layout-main
+	img
+		width: 100%
+		margin-bottom: 18px
+	
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+// drop down
+.dropGeneral
+	width: 100px
+	display: inline-block
+	.sbHolder
+		background-color: $color2
+		border-color: $color2
+	
+	.sbSelector:link
+		color: #fff!important
+	
+	.sbToggle
+		background:
+			image: url(../img/wfclibrary/down-arrow-white.png)
+		
+	
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+// btn
+.layout-btn
+	border-radius: 18px
+	width: 200px
+	vertical-align: top
+	height: 32px
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.wfcl-clear
+	clear: both
+
+// @media (max-width: 413px)
+	.wfcl-login
+		& > *
+			display: inline-block
+			margin-bottom: 4px
+		
+		text-align: right
+	
+// 
+// @media (min-width: 414px)
+//	.wfcl-login
+//		float: right
+//		
+// 
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.wfcl-btn
+	font-size: 0
+	margin:
+		top: 18px
+	
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.layout-title-level-3
+	@include img-path-ratio("wfclibrary/icon1.png",2)
+	display: block
+	background:
+		repeat: no-repeat
+		position: 0 0
+	
+	min-height: 42px
+	padding-top: 20px
+	padding-left: 50px
+	&.icon2
+		@include img-path-ratio("wfclibrary/icon2.png",2)
+	
+	&.icon3
+		@include img-path-ratio("wfclibrary/icon3.png",2)
+	
+	&.icon4
+		@include img-path-ratio("wfclibrary/icon4.png",2)
+	
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.main-vision
+	width: calc( 100% + 46px)!important
+	margin: -23px 0 0 -23px
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.is-blue
+	color: #3092ca
+	overflow: hidden
+	li
+		float:left
+		position: relative
+		padding-left: 13px
+		&:before
+			content: "*"
+			position: absolute
+			top: 3px
+			left: 0
+		
+	
+
+.layout-title-level-3
+	&:before
+		display: none
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.dropGeneral
+	position: relative
+	z-index: 1035
+
+.tabmenu
+	z-index: 1036
+	
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.sectionTitle h2 span
+	text-align: center
+	display: block!important
+
+.layout-title-level-3.icon1.mt-0
+	font-weight: bold
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.container
+	margin-top: 80px
+
+.is-close
+	line-height: 40px
+	width: 40px
+	text-align: center
+	background-color: #000
+	color: #fff
+	border-radius: 50%
+	font:
+		size: 20px
+		weight: bold
+	
+	position: absolute
+	top: 20px
+	right: 23px
+
+//========================================
+//========================================
+//========================================
+//========================================
+//======================================== 
+.btn.layout-btn.btn-block.color-2
+	background-color: $color2
+	color: #fff!important
+	box-shadow: none!important
+	line-height: 32px
+	padding:
+		top: 0
+		bottom: 0
+	
+	margin-left: 8px
+	&:hover
+		background-color: $color2-dark
+	

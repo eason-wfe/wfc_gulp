@@ -145,3 +145,21 @@
 		border-top: none;
 	}
 }
+
+.main-msg{
+	word-break: break-all;
+}
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// before SASS
+.is-sets{
+	@include img-path-ratio("activity/sprite.png", 4);
+	padding-left: 24px;
+	background-repeat: no-repeat;
+	background-position: -52px -54px;
+}

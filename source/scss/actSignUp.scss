@@ -87,3 +87,67 @@ step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
 		opacity: .6;
 	}
 }
+/*
+========================================
+========================================
+========================================
+========================================
+========================================
+*/
+// before SASS
+@media (max-width: 991px){
+	.act-areabox-struc,.act-areabox-address {
+		width: calc(100% - 75px);
+	}
+	.act-areabox-adsbox{
+		min-height: 55px;
+	}
+}
+
+////
+.area-map,
+.area-sets{
+	@include img-path-ratio("activity/sprite.png", 4);
+	padding-left: 24px;
+	line-height: 24px;
+	position: absolute;
+	border: solid 1px #555;
+	border-radius: 19px;
+	font-size: 13px;
+	color: #555;
+	background-repeat: no-repeat;
+	transition: .5s;
+	&:hover{
+		color: #fff;
+		background-color: #555;
+		transition: .5s;
+	}
+}
+.area-map{
+	width: 58px;
+	background-position: 3px 2px;
+}
+.area-sets{
+	width: 70px;
+	background-position: -51px -52px;
+}
+@media (max-width: 991px){
+	.area-map{
+		right: 0;
+		top: 0;
+	}
+	.area-sets{
+		right: 0;
+		top: 30px;
+	}
+}
+@media (min-width: 992px){
+	.area-map{
+		top: 0;
+		right: 0px;
+	}
+	.area-sets{
+		top: 0;
+		right: 65px;
+	}
+}	

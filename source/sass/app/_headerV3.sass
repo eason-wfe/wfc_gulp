@@ -1,14 +1,14 @@
-======== 3.5 HEADER V3 ========
+// ======== 3.5 HEADER V3 ========
 .headerV3 
-	position:absolute
-	width:100%
-	top:0
+	position: absolute
+	width: 100%
+	top: 0
 	.lightHeader 
-	    background-color:rgba(47, 60, 67, 0.502)
-	    box-shadow:none
+	background-color: rgba(47, 60, 67, 0.502)
+	box-shadow: none
 	
 	#menuBar.menu-sm 
-	  background-color:rgba($black-color,0.8)
+	background-color: rgba($black-color,0.8)
 	
 	.navbar-secondary
 		.navbar-nav
@@ -33,26 +33,26 @@
 	
 	.lightHeader .navbar-nav > li > a 
 		@include desktops
-		   color: $white-color !important
+		color: $white-color !important
 		
 	
 
 	.navbar-right .dropdown-menu-left 
 		@include tablet
-	    right: auto
-	    left: -50%
+	right: auto
+	left: -50%
 		
 	
 	.navbar-right .dropdown-menu-right
 		@include tablet
-		    left: auto
-		    right: -50%
+		left: auto
+		right: -50%
 		
 	
 
 .version3
 	#menuBar.bb-fixed-header 
-	  background-color:rgba($black-color,0.8)
+	background-color: rgba($black-color,0.8)
 		@include desktops
 			height: 90px !important
 		
@@ -78,16 +78,16 @@
 
 .navbar-secondary
 	.navbar-header .navbar-brand 
-	  @include mobile-all
-	  	height: auto
-	    padding: 15px
-	    width: 160px
-	  
-	  @include desktops
-	  	height: 110px
-	  	padding: 30px 15px
-	  	width: 196px
-	  
+	@include mobile-all
+		height: auto
+	padding: 15px
+	width: 160px
+	
+	@include desktops
+		height: 110px
+		padding: 30px 15px
+		width: 196px
+	
 	
 
 	//menu item color
@@ -285,12 +285,12 @@
 		// Navbar collapse
 		.navbar-nav
 			height: 340px
-			overflow-x:hidden
+			overflow-x: hidden
 			@include transition(height 0.3s ease)
 			@include desktops
 				height: auto
-				overflow-x:visible
-				overflow-y:visible
+				overflow-x: visible
+				overflow-y: visible
 			
 			margin: 0 0 0 -15px
 			>li
@@ -427,7 +427,7 @@
 			padding-bottom: 10px
 		
 		.collapse.in
-			display:block !important
+			display: block !important
 		
 
 	
