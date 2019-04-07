@@ -24,7 +24,7 @@
 			box-shadow: none
 			margin: 20px 0
 			& > .progress-bar 
-				width:0px
+				width: 0px
 				box-shadow: none
 				@include mobile-all
 					background-color: transparent
@@ -62,7 +62,8 @@
 .progress-wizard 
 	& > .progress-wizard-step:first-child.active 
 		& > .progress 
-			& > .progress-bar width: 0%
+			& > .progress-bar 
+				width: 0%
 		
 	
 
@@ -240,8 +241,9 @@
 		
 	
 
-.panel-body .form-group
-	display:inline
+.panel-body
+	.form-group
+		display: inline
 
 
 .continueBtnArea
@@ -289,7 +291,7 @@
 	
 
 .card-img
-	text-align:center
+	text-align: center
 	img
 		display: inline-block
 		margin-bottom: 7px

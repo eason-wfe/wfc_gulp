@@ -4,11 +4,11 @@
 	width: 100%
 	top: 0
 	.lightHeader 
-	background-color: rgba(47, 60, 67, 0.502)
-	box-shadow: none
+		background-color: rgba(47, 60, 67, 0.502)
+		box-shadow: none
 	
 	#menuBar.menu-sm 
-	background-color: rgba($black-color,0.8)
+		background-color: rgba($black-color,0.8)
 	
 	.navbar-secondary
 		.navbar-nav
@@ -52,12 +52,12 @@
 
 .version3
 	#menuBar.bb-fixed-header 
-	background-color: rgba($black-color,0.8)
+		background-color: rgba($black-color,0.8)
 		@include desktops
 			height: 90px !important
 		
-		.navbar-nav > li > a 
-			@include tablet 
+		.navbar-nav > li > a
+			@include tablet
 				color: #000
 			
 			@include desktops 
@@ -78,20 +78,20 @@
 
 .navbar-secondary
 	.navbar-header .navbar-brand 
-	@include mobile-all
-		height: auto
-	padding: 15px
-	width: 160px
-	
-	@include desktops
-		height: 110px
-		padding: 30px 15px
-		width: 196px
+		@include mobile-all
+			height: auto
+		padding: 15px
+		width: 160px
+		
+		@include desktops
+			height: 110px
+			padding: 30px 15px
+			width: 196px
 	
 	
 
 	//menu item color
-	.navbar-nav > li.color-1
+	.navbar-nav>li.color-1
 		>a:hover span
 			color: $color1 !important
 		
@@ -126,7 +126,7 @@
 
 	.navbar-nav > li.color-3
 
-		>a:hover span
+		> a:hover span
 			color: $color3 !important
 		
 		&.singleDrop
@@ -234,8 +234,8 @@
 	
 	.navbar-nav
 		padding-top: 15px
-			.dropdown-menu
-				border: none !important
+		.dropdown-menu
+			border: none !important
 			
 		li
 			a
@@ -266,7 +266,7 @@
 
 .navbar-secondary.bb-fixed-header .navbar-nav > li.dropdown.open > a:after
 	@include tablet
-			top: 36px
+		top: 36px
 	
 
 @media (max-width: 990px) 

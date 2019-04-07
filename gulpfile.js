@@ -44,11 +44,11 @@ gulp.task('partials', ()=>
 );
 
 // =======================
-// ---- SCSS
+// ---- SASS
 // =======================
-gulp.task('scssClone', function () {
-	gulp.src('./public/scss/**/*')
-	.pipe(gulp.dest('./source/scss'))
+gulp.task('sassClone', function () {
+	gulp.src('./public/sass/**/*')
+	.pipe(gulp.dest('./source/sass'))
 });
 
 
@@ -100,7 +100,7 @@ gulp.task('default', ['pug','partials','watch']);
 // =======================
 // ---- UPDATE	
 // =======================
-gulp.task('update', ['scssClone','imageClone','jsClone']);
+gulp.task('update', ['sassClone','imageClone','jsClone']);
 
 
 // =======================
@@ -141,6 +141,9 @@ gulp.task('env', function () {
 	// TO SCSS
 	gulp.src('./source/scss/**/*.scss')
 		.pipe(gulp.dest('./public/scss'))
+	// TO SASS
+	gulp.src('./source/sass/**/*.sass')
+		.pipe(gulp.dest('./public/sass'))
 	// TO .GIT
 	gulp.src('./.tmp/git/.git/**/*')
 		.pipe(gulp.dest('./public/.git'))
