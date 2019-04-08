@@ -139,8 +139,8 @@ gulp.task('env', function () {
 	gulp.src('./source/js/**/*.js')
 		.pipe(gulp.dest('./public/js'))
 	// TO SCSS
-	gulp.src('./source/scss/**/*.scss')
-		.pipe(gulp.dest('./public/scss'))
+	// gulp.src('./source/scss/**/*.scss')
+	// 	.pipe(gulp.dest('./public/scss'))
 	// TO SASS
 	gulp.src('./source/sass/**/*.sass')
 		.pipe(gulp.dest('./public/sass'))
