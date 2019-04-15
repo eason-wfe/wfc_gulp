@@ -135,6 +135,9 @@ gulp.task('env', function () {
 	// TO ASSETS
 	gulp.src('./source/assets/**/*')
 		.pipe(gulp.dest('./public/assets'))
+	// TO IMAGE
+	gulp.src('./source/image/**/*')
+		.pipe(gulp.dest('./public/image'))
 	// TO JS
 	gulp.src('./source/js/**/*.js')
 		.pipe(gulp.dest('./public/js'))
@@ -159,3 +162,8 @@ gulp.task('env', function () {
 });
 
 gulp.task('build', ['env','pug','partials','image']);
+
+gulp.task('cssDef',function(){
+	gulp.src('./.tmp/css_def/*')
+	.pipe(gulp.dest('./public/css'))
+})
