@@ -27,40 +27,32 @@
 @import "_mywfc_kr/mypage-under-btn"
 // LIGHT BOX
 @import "lightbox/lightbox-mypage-cap-details-kr"
-
 //================================================
 //================================================
 //================================================
 //================================================
 //================================================
-
 // @import "uikit/uikit-checkbox-radio"
 // @import "cap/cap-bookbox-item"
-
 //================================================
 //================================================
 //================================================
 //================================================
-
 // CARD ITEM
 .act-state
 	position: absolute
-
 .cap-bookbox-icon-write,
 .cap-bookbox-icon-studio
 	vertical-align: -5px
 	margin-right: 3px
 	margin: 0 3px 0 0
 	display: inline-block
-
 .mypage-child
 	font-size: 12px
 	color: #ed1e79
 	position: absolute
 	span
 		padding-right: 3px
-	
-
 .layout-card
 	.layout-card-item
 		.layout-card-link
@@ -68,113 +60,78 @@
 				color: #aaa
 				display: inline-block
 				margin: 0 5px
-			
-		
-	
-
 @media (max-width: 991px)
 	.layout-card-item
 		padding-top: 45px
-	
 	.layout-card-link
 		padding-bottom: 0
-	
 	//
 	.act-state
 		top: 16px
 		left: 14px
-	
 	.mypage-child
 		top: 23px
 		right: 15px
-	
-
 @media (min-width: 992px)
 	.layout-card-item
 		padding:
 			left: 57px
 			top: 38px
-		
-	
 	//
 	.act-state
 		top: 39px
-	
 	.mypage-child
 		top: 22px
 		left: 0
-	
-
-
 //================================================
 //================================================
 //================================================
 //================================================
 //================================================
-
 // BTN ICON
 .cd-btnbox-icon
 	@include img-path-ratio("mypage/icon02.png",2)
 	width: 48px
 	height: 43px
 	float: right
-
 @media (max-width: 991px)
 	.cd-btnbox-icon
 		display: none
-	
-
 @media (min-width: 992px)
 	.cd-btnbox-icon
 		margin-top: -6px
-	
-
-
 //=================================================
 //=================================================
 //=================================================
 //=================================================
 //=================================================
-
 // DROPDOWN
 .layout-card
 	margin-top: 0
-
 .mypage-switchbox
 	padding-top: 25px
 	text-align: right
 	font-size: 0
-
 .dropGeneral
 	.sbHolder
 		background-color: #fff
-	
-
 @media (max-width: 991px)
 	.mypage-switchbox
 		font-size: 0
 		padding:
 			left: 15px
 			right: 15px
-		
-	
 	.dropGeneral
 		width: 100%
-	
-
 @media (min-width: 992px)
 	.dropGeneral
 		width: 100px
 		vertical-align: top
-	
-
-
 //================================================
 //================================================
 //================================================
 //================================================
 //================================================
-
 // RADIO
 @media (max-width: 991px)
 	.uikit-radio
@@ -184,34 +141,24 @@
 		margin-bottom: 6px
 		&.is-3rd
 			margin-bottom: 20px
-		
-	
-
 @media (min-width: 992px)
 	.uikit-radio
 		width: 128px
 		display: inline-block
 		&.is-1st
 			border-radius: 16px 0 0 16px
-		
 		&.is-2nd
 			border-left: solid 2px #fff
 			border-radius: 0
-		
 		&.is-3rd
 			border-left: solid 2px #fff
 			border-radius: 0 16px 16px 0
 			margin-right: 10px
-		
-	
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 // HISTORY
 .cd-history
 	line-height: 32px
@@ -219,7 +166,6 @@
 	color: #333
 	background:
 		color: $color5-light
-	
 	padding: 0 20px
 	border-radius: 16px
 	display: inline-block
@@ -227,87 +173,59 @@
 	&:hover
 		background:
 			color: $color5
-		
 		color: #333
-	
-
 @media (max-width: 991px)
 	.cd-history
 		margin-top: 10px
-	
-
 @media (min-width: 992px)
 	.cd-history
 		margin-left: 10px
-	
-
-
 //================================================
 //================================================
 //================================================
 //================================================
 //================================================
-
 // SPAN
 .is-b
 	display: block
 	color: #ed1e79!important
 	margin-top: 5px
 	font-size: 13px
-
 .is-ib
 	display: inline-block
 	font-size: 15px
 	font-weight: bold
-
 .is-name
 	// color: #3ea7ec!important
 	margin-bottom: 8px
 	opacity: .7
-
-
 //================================================
 //================================================
 //================================================
 //================================================
 //================================================
-
 .is-lb
 	.layout-card-link span
 		color: $cap-color-1
-	
-
 .is-b
 	.layout-card-link span
 		color: $cap-color-2
-	
-
 .is-g
 	.layout-card-link span
 		color: $cap-color-3
-	
-
 .is-lg
 	.layout-card-link span
 		color: $cap-color-4
-	
-
 .is-y
 	.layout-card-link span
 		color: $cap-color-5
-		
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 // IE HACK
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
 	.act-state .act-state-word
 		padding:
 			bottom: 4px
-		
-	

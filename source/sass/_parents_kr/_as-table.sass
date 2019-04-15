@@ -1,108 +1,75 @@
 .retable
 	background:
 		color: #fafafa
-	
 	border-bottom: solid 2px #eee
 	margin-bottom: 20px
 	&:last-child
 		margin-bottom: 0
-	
 	input
 		&.is-pw,&.is-mail
 			height: 35px
 			text-indent: 10px			
-		
 		&.is-mail
 			width: 140px
-		
-	
 	label
 		margin:
 			bottom: 0
 			right: 10px
-		
-	
 	select
 		height: 35px
 		vertical-align: top
 		max-width: 140px
 		width: 60px
-	
-
 .retable-title
 	font-size: 13px
 	background:
 		color: #fffeec
-	
-
 .retable-title,.retable-content
 	height: 47px
 	line-height: 1.3
-
 .myprofile-email-current
 	word-break: break-all
 	padding-bottom: 5px
 	line-height: 1.1
-
 @media (max-width: 359px)
 	.retable
 		input
 			&.is-mail
 				width: 98px
-			
-		
 		select
 			width: 98px
-		
 		label
 			font-size: 13px
-		
-	
-
 @media (max-width: 767px)
 	.retable
 		input
 			&.is-pw
 				width: 100%
 				margin-bottom: 5px
-			
 			&.is-mail
 				margin-bottom: 5px
-			
-		
 		select
 			margin-bottom: 5px
-		
-	
-
 @media (min-width: 768px)
 	.retable
 		input
 			&.is-pw
 				width: calc( (100% - 90px)/3 - 5px )
-			
-		
-	
-
-
 //======================================
 //======================================
 //======================================
 //======================================
 //======================================
 //======================================
-
 // LIST
 .myprofile-ul
 	padding-left: 20px
-
 .myprofile-li
 	position: relative
 	line-height: 1.2
 	margin-bottom: 5px
 	&:last-child
 		margin: 0
-	
 	&:before
 		content: ""
 		display: block
@@ -111,26 +78,19 @@
 		border-radius: 50%
 		background:
 			color: #555
-		
 		position: absolute
 		left: -10px
 		top: 9px
-	
-
 // BR
 @media (max-width: 767px)
 	.brdisplay: block
-
 @media (min-width: 768px)
 	.brdisplay: inline
-
 // BTN
 .layout-btn
 	font-size: 13px
-
 .myprofile-email,
 .myprofile-pw
 	.layout-btn
 		width: 90px
 		vertical-align: top
-	

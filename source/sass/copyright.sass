@@ -2,34 +2,25 @@
 @import "usual/unit1"
 .color-1.layout-navbar-arrow-pc:after
 	display: none
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 .layout-content
 	padding: 
 		left: 16px
 		bottom: 25px
-	
 	line-height: 1.5
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 .card
 	margin-top: 12px
-
 .carditem
 	margin-bottom: 20px
-
 .cardlink
 	display: block
 	overflow: hidden
@@ -37,66 +28,45 @@
 	border: solid 2px $color1
 	img
 		width: 100%
-	
 	&:hover
 		opacity: .8
-	
-
 .cardmsg
 	padding: 8px 12px
 	background-color: #f0f0f0
 	overflow: hidden
 	border-radius: 0 0 12px 12px
-	// border: solid 2px #efefef
 	border-top: none
 	& > *
 		float: left
-	
-
 .cardleft
 	width: calc( 100% - 73px )
 	border-right: dotted 1px #ccc
-
 .cardtitle
 	font:
 		size: 17px
 		weight: bold
-	
 	img
 		width: 20px
 		vertical-align: 0px
 		margin-left: 5px
-	
-
 .cardsub
 	color: #888
-
 .cardright
 	width: 73px
 	.btn
 		padding: 3px 10px 3px 5px
 		margin-top: 10px
 		float: right
-	
-
 @media (max-width: 639px)
 	.cardtitle
 		font-size: 15px
-	
 	.cardsub
 		font-size: 12px
-	
-
 @media (min-width: 640px)
 	.card
 		overflow: hidden
-	
 	.carditem
 		float: left
 		width: 49%
-		// display: none
 		&:nth-child(odd)
 			margin-right: 2%
-		
-	
- 

@@ -1,36 +1,27 @@
 .art-list-f2-link
 	font-size: 14px
 	padding: 9px 9px
-
 ////
 .art-list-f2-title,
 .art-list-f2-link
 	color: #555
-
 ////
 .art-list-f2-item,
 .art-list-f3-item
 	border-bottom: dotted 1px #dfdfdf
 	&:last-child
 		border: none
-	
-
 ////
 .art-list-f2-link,
 .art-list-f3-link
-	
 	&:hover
-		// background-color: $color2-light
 		&:after
 			border-left-color: $color2
-				
-	
 	&.now
 		color: $color2-dark
 		background-color: $color2-light
 		&:after
 			display: none
-		
 		&:before
 			content: ""
 			display: block
@@ -40,22 +31,15 @@
 			right: -13px
 			bottom: 0
 			@include img-path-ratio("fwe/arrow.png",2)
-		
-	
-
-
 //======================================
 //======================================
 //======================================
 //======================================
 //======================================
-
 // ASIDE LIGHTBOX (IN MOBILE)
 .aside-lb-close
 	color: $color2
-
 .aside-lb-open
 	background-color: $color2
-
 .aside-lb-hamber
 	background-color: #ffecb8// from image color

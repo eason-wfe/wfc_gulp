@@ -18,64 +18,43 @@
 @media (max-width: 767px)
 	.container-main
 		margin-bottom: 20px
-	
-
-
 // step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
 // step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
 // step1 & step2 & step 3 | step1 & step2 & step 3 | step1 & step2 & step 3 |
-
 .act-step2 
 	.act-state 
 		display: none
-	
-
 .act-step2,
 .act-step3 
 	.act-titlebox-btnbox 
 		display: none
-	
-
 @media (max-width: 359px) 
 	.layout-main 
 		padding: 16px
-	
-
 @media (max-width: 991px) 
 	.act-step1,
 	.act-step3 
 		.act-state 
 			margin-bottom: 10px
-		
-	
-
 @media (min-width: 992px) 
 	.act-step2 
 		.act-titlebox-info 
 			margin-top: 37px
-		
-	
 	.act-step1,
 	.act-step3 
 		.act-state 
 			position: absolute
 			left: 289px
 			top: 108px
-		
-	
-
 @import "activity/signup-step1"
 @import "activity/signup-step2"
-
-//=========================================
-//=========================================
-//=========================================
-//=========================================
-//=========================================
-
+// ========================================
+// ========================================
+// ========================================
+// ========================================
+// ========================================
 .act-attention-arrow.is-1st
 	bottom: 18px
-
 .is-repeat
 	.act-timebox-time:before
 		content: ""
@@ -85,27 +64,20 @@
 		background-color: #fff
 		transform: translateY(-1px)
 		opacity: .6
-//========================================
-//========================================
-//========================================
-//========================================
-//========================================
+// ========================================
+// ========================================
+// ========================================
+// ========================================
+// ========================================
 @media (max-width: 991px)
 	.act-areabox-struc,.act-areabox-address 
-		width: calc(100% - 75px)
-	
-	.act-areabox-adsbox
-		min-height: 55px
-	
-
-
+		width: calc(100% - 65px)
 ////
 .area-map,
 .area-sets
 	@include img-path-ratio("activity/sprite.png", 4)
 	padding-left: 24px
 	line-height: 24px
-	position: absolute
 	border: solid 1px #555
 	border-radius: 19px
 	font-size: 13px
@@ -116,33 +88,34 @@
 		color: #fff
 		background-color: #555
 		transition: .5s
-	
-
 .area-map
 	width: 58px
 	background-position: 3px 2px
-
+	position: absolute
 .area-sets
-	width: 70px
-	background-position: -51px -52px
-
+	display: inline-block
+	vertical-align: 1px
+	margin-left: 5px
 @media (max-width: 991px)
 	.area-map
 		right: 0
 		top: 0
-	
 	.area-sets
-		right: 0
-		top: 30px
-	
-
+		width: 88px
+		background-position: -45px -49px
+		line-height: 32px
+		padding-left: 32px
 @media (min-width: 992px)
 	.area-map
 		top: 0
 		right: 0px
-	
 	.area-sets
-		top: 0
-		right: 65px
-	
-	
+		width: 70px
+		background-position: -51px -52px
+		height: 26px
+@media (max-width: 359px)
+	.area-sets
+		width: 60px
+		background-image: none
+		padding-left: 0
+		text-align: center

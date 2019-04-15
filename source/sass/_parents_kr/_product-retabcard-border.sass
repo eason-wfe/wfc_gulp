@@ -1,46 +1,31 @@
 // BORDER DISPLAY
 .retabcard-cell
 	vertical-align: top
-
 @media (max-width: 991px)
 	$table-cell: solid 1px #aaa
 	.retabcard-row
 		border-bottom: none
-	
 	.retabcard-cell
 		border-bottom: $table-cell
 		display: table
 		width: 100%
-	
 	.retabcard-cell-title
 		display: table-cell
 		border-right: $table-cell
 		width: 45px
-	
 	.retabcard-content
 		display: table-cell
-		
-
 @media (min-width: 992px)
 	.retabcard-row-title
 		height: 27px
 		background-color: transparent
-		
-
 @media (min-width: 992px) and (max-width: 1199px)
 	.retabcard-cell
-		// width: calc( (100% - 160px) / 4 )
 		width: 130px
 		&:first-child
 			width: 160px
-		
-	
-
 @media (min-width: 1200px)
 	.retabcard-cell
-		// width: calc( (100% - 190px) / 4 )
 		width: 145px
 		&:first-child
 			width: 190px
-		
-	

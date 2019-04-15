@@ -1,55 +1,34 @@
-
-// KOREA TAB BAR KOREA TAB BAR KOREA TAB BAR
-// KOREA TAB BAR KOREA TAB BAR KOREA TAB BAR
-// BACK TO TOP FOR KOREA
-// BACK TO TOP FOR KOREA
-// BACK TO TOP FOR KOREA
-
 .tabmenu
 	background-color: #fafafa
 	position: fixed
 	z-index: 1034
-
 .tabmenu-li
 	text-align: center
 	i
 		font: normal normal normal 14px/1 FontAwesome
-	
-
 .tabmenu-link
 	color: #fff
 	&:hover
 		color: #fff
-	
-
 .tabmenu-1
 	background-color: $color1
-
 .tabmenu-2
 	background-color: $color2
-
 .tabmenu-3
 	background-color: $color3-dark
-
 .tabmenu-4
 	background-color: $color4
-
 .tabmenu-5
 	background-color: $color5
-
 //
 .tabmenu-1,.tabmenu-2,.tabmenu-3,.tabmenu-4,.tabmenu-5
 	transition: .5s
 	&:hover
 		transition: .5s
-	
-
 @media (max-width: 767px)
 	.tabmenu
 		width: 100%
 		border-top: solid 2px #fff
-	
-
 	.tabmenu-li
 		float: right
 		width: 25%
@@ -57,16 +36,11 @@
 		height: 40px
 		&:nth-child(-n+3)
 			border-left: solid 1px #dadada
-		
-	
 	.tabmenu-2,
 	.tabmenu-3
 		padding-top: 14px
-		
 	.tabmenu-link
 		line-height: 1
-	
-
 @media (min-width: 768px)
 	.tabmenu
 		overflow: hidden
@@ -78,21 +52,16 @@
 		border-width: 2px 0 2px 2px
 		border-color: #fff transparent #fff #fff
 		box-shadow: 0 0 8px rgba(0,0,0,.7)
-	
 	.tabmenu-li
 		height: 52px
 		&:nth-child(-n+3)
 			border-bottom: solid 2px #fff
-		
 		i
 			display: inline-block
 			margin-bottom: 3px
-		
-	
 	.tabmenu-2,
 	.tabmenu-3
 		padding-top: 10px
-	
 	.tabmenu-link
 		display: block
 		font-size: 16px
@@ -101,20 +70,14 @@
 		padding: 10px 7px
 		text-align: center
 		line-height: 1
-	
 	//
 	.tabmenu-1:hover
 		background-color: $color1-dark
-	
 	.tabmenu-2:hover
 		background-color: $color2-dark
-	
 	.tabmenu-3:hover
 		background-color: $color3-dark-deep
-	
 	.tabmenu-4:hover
 		background-color: $color4-dark
-	
 	.tabmenu-5:hover
 		background-color: $color5-dark
-	

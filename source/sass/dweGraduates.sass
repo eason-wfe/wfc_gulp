@@ -5,140 +5,97 @@
 @import "uikit/tmp-dropdown"
 @import "uikit/tmp-pager"
 $info-color: #006e9e
-
 //============================================
 //============================================
 //============================================
 //============================================
 //============================================
-
 // DROP-BOX
 .dweg-dropbox-item 
 	& > * 
 		display: inline-block
 		vertical-align: top
-	
 	.dropGeneral 
 		border-radius: 20px
 		.sbOptions
 			z-index: 100
-		
-	
-
 .dweg-dropbox-p 
 	padding: 10px 5px 0 0
-	
-
 .dweg-dropbox-age
 	width: 100px
-	
 @media (max-width: 413px) 
 	.dweg-dropbox-item
 		text-align: left
-	
 	.dweg-dropbox-item + .dweg-dropbox-item
 		margin-top: 15px
-	
 	//
 	.dweg-dropbox-year
 		width: 100px
-	
-
 @media (min-width: 414px) 
 	.dweg-dropbox
 		text-align: right
-	
 	.dweg-dropbox-item 
 		display: inline-block
-	
 	.dweg-dropbox-item + .dweg-dropbox-item
 		margin-left: 20px
-	
 	//
 	.dweg-dropbox-year
 		width: 80px
-	
-
-
 //============================================
 //============================================
 //============================================
 //============================================
 //============================================
-
 // LIST
 .dweg-list 
 	font-size: 0
-
 .dweg-item 
 	display: inline-block
-
-//.dweg-link 
-
 .dweg-img 
 	width: 100%
 	background:
 		size: cover
 		position: center center
-	
-
 .dweg-info 
 	background-color: #d4f4ff
 	color: $info-color
-
 .dweg-name 
 	color: $info-color
 	font-weight: bold
-
 @media (max-width: 359px) 
 	.dweg-info 
 		padding: 8px 5px
-	
-
 @media (min-width: 360px) and (max-width: 991px) 
 	.dweg-info 
 		padding: 14px
-	
-
 @media (max-width: 991px) 
 	.dweg-list 
 		margin-top: 15px
-	
 	.dweg-item 
 		width: calc(50% - 8px)
 		margin: 
 			right: 16px
 			bottom: 16px
-		
 		&:nth-child(even) 
 			margin-right: 0
-		
-	
 	.dweg-info 
 		font-size: 12px
 		line-height: 15px
-	
 	.dweg-name 
 		font-size: 12px
 		margin-bottom: 2px
-	
-
 @media (min-width: 992px) 
 	.dweg-item 
 		width: calc(25% - 15px)
 		margin: 
 			right: 20px
 			bottom: 20px
-		
 		&:nth-child(4n) 
 			margin-right: 0
-		
-	
 	.dweg-info 
 		padding: 25px 30px
 		font-size: 15px
 		line-height: 20px
-	
 	.dweg-name 
 		font-size: 17px
 		line-height: 1

@@ -1,0 +1,424 @@
+$main-color: #9a6217
+%main-bg
+	display: table
+	position: relative
+	width: 100%
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	background-size: cover
+	-o-background-size: cover
+@mixin color-bg()
+	background:
+		image: image-url('../image/2019/color_-bg.jpg')
+		size: image-width('../image/2019/color_-bg.jpg')/2 image-height('../image/2019/color_-bg.jpg')/2
+	border-radius: 20px
+	padding: 10px
+	&>*
+		background-color: rgba(255,249,233,.88)
+		border-radius: 14px
+		overflow: hidden
+		padding: 10px
+
+body,
+h1,h2,h3,h4
+	font-family: "Helvetica Neue",Helvetica,Arial,"蘋果儷中黑","Apple LiGothic","微軟正黑體","Microsoft JhengHei",sans-serif!important
+	font-family: "蘋果儷中黑","微軟正黑體","Apple LiGothic","Microsoft JhengHei",Helvetica,Arial,sans-serif!important\9
+
+h1,h2,h3,h4
+	font-weight: bold
+
+.sc .header
+	@extend %main-bg
+	background: url(../image/2019/main.png) no-repeat center center scroll
+
+.sc_apply .header
+	@extend %main-bg
+	height: 12em
+	background: url(../image/2019/main_apply.png) no-repeat center -127px scroll
+	h2, h1
+		color: #fff
+		text-shadow: 0 0 5px #333
+	h2
+		margin-top: 40px
+	
+.sc
+	.header
+		h4  
+			text-shadow: 0px 0px 10px #4d7fff
+		h1, h3
+			color: #fff!important
+			text-shadow: 0 0 5px #333
+
+	.table-out
+		@include color-bg()
+		margin-bottom: 30px
+
+	table  
+		font-weight: bold
+		font-size: 1.5em
+		margin-bottom: 0
+
+.navbar
+	position: relative
+	z-index: 1000
+
+.navbar-inverse
+	background: #fff
+	border-bottom: transparent
+
+	.navbar-brand
+		color: #00bce7//*#00bce7*/
+		padding:
+			right: 0
+			bottom: 0
+		&:hover,&:focus
+			color: #3d9ac9//*#3d9ac9*/
+			background-color: transparent
+		a
+			display: block
+		img
+			width: 100%
+
+	.navbar-text
+		color: #00bce7
+
+	.navbar-nav
+		& > li > a
+			color: #00bce7 //*#00bce7*/ 
+			&:hover,
+			&:focus
+				color: #ff6600
+				background-color: transparent
+
+		& > .active > a,
+			&:hover,
+			&:focus
+				color: #ef3f23//*orange-red*/
+				background-color: transparent
+
+		& > .disabled > a,
+			&:hover,
+			&:focus
+				color: #444
+				background-color: transparent
+
+	.navbar-toggle
+		border-color: transparent//*cute blue*/
+		background-color: #00bce7//*deep cute blue*/
+		color: #fff
+		margin-bottom: 0
+
+		&:hover,&:focus
+			background-color: #3d9ac9//*deep cute blue*/
+
+		& .icon-bar
+			background-color: #fff
+
+	.navbar-collapse,
+	.navbar-form
+		border-color: transparent//*deep cute blue*/
+@media (max-width: 767px)
+	.sc 
+		.header
+			position: relative
+			.is-mobi
+				width: 100%
+			.is-pc
+				display: none
+
+			h1, h3
+				position: absolute
+				left: 0
+				right: 0
+				padding:
+					left: 15px
+					right: 15px
+			h1
+				bottom: 35px
+				
+			h3
+				bottom: 105px
+				font-weight: normal
+
+	.navbar
+		min-height: 50px
+
+	.navbar-brand
+		padding:
+			left: 0
+			top: 20px
+		a
+			width: 190px
+
+	.navbar-inverse
+		.navbar-toggle
+			margin-top: 15px
+
+@media (min-width: 768px)
+	.sc 
+		.header
+			padding-bottom: 20px
+			height: 35em
+			.is-mobi
+				display: none
+			.is-pc
+				width: 320px
+				margin-right: 315px
+				display: inline-block
+				img
+					width: 100%
+
+	.navbar
+		min-height: 85px
+
+	.navbar-brand
+		padding:
+			top: 27px
+			left: 15px
+		a
+			width: 290px
+	.navbar-inverse
+		.navbar-collapse
+			display: none!important
+
+/*--------------container------------------*/
+/*-- .sc_apply 1-活動介紹頁面 --*/
+.sc 
+	.story
+		font-size: 1.8em
+		padding: 20px 10px
+		margin-top: 10px
+		color: $main-color
+
+	.main
+		background: #fff
+	
+	table
+		font-size: 1.1em
+		tr
+			td:first-child
+				width: 60px
+
+	.schedule,.place,.echelon  
+		margin-bottom: 2em
+	
+	.schedule h4,.place h4,.eligibility h4,
+	.echelon h4,.rules h4  
+		background: url(../image/2019/icon2.png) no-repeat left 5px
+		background:
+			size: image-width('../image/2019/icon2.png')/4 image-height('../image/2019/icon2.png')/4
+		color: $main-color
+		padding-left: 38px
+		line-height: 30px
+		
+	.rules .price
+		color: #d9534f
+
+	.placeName  
+		font-size: 1.7em
+		color: #d9534f
+
+	.echelon
+		@include color-bg()
+		margin-top: 30px
+
+	.echelon ul li
+		list-style-type: none
+		font-size: 1.2em
+
+	.echelon ol li
+		list-style-type: circle
+
+	.echelon span  
+		color: #d9534f
+		margin-right: 2em
+
+	.eligibility .note
+		color: #d9534f
+
+	.special
+		text-align: center
+		font-weight: bold
+		a
+			display: block
+		img
+			width: 100%
+
+
+/*-- .sc_apply 2-登記頁面 --*/
+.sc_apply
+	h3  
+		color: $main-color
+	h4  
+		font-weight: bold
+		font-size: 1em 
+	.amount
+		border-top: 3px solid #d9534f
+		padding: 1em
+		color: #d9534f
+		margin-bottom: 1em
+		font-size: 1.2em
+		font-weight: bold
+	.note_full  
+		color: #d9534f
+		margin-left: 1em
+
+
+.actionLine
+	text-align: center
+	margin-bottom: 20px
+
+
+/*-- .2016sc_success 2016夏令營報名成功訊息--*/
+.sc_success
+	margin: 30px
+	border: 5px solid #af925d
+	font-size: 1.5em
+	padding: 2em
+	border-radius: 10px
+	.myNo
+		color: #d9534f
+		border: 1px solid #d65251
+		padding: 4px 6px
+		border-radius: 3px
+	.registerTime  
+		font-size: 0.8em
+
+/*-- .sc_form 2016夏令營報名表--*/
+.sc_form
+	h1
+		font-size: 1.6em 
+		text-align: center  
+	.note
+		color: #1686be//#d65251
+		font-weight: bold
+	.note2
+		color: #1686be//#d65251
+		border-bottom: 1px solid #1686be
+		font-weight: bold
+		margin: 5px 8px
+		padding: 0px 10px
+	ul.myData
+		span  
+			color: #d65251
+			font-weight: bold
+			padding-right: 10px
+		.note  
+			border-bottom: 1px solid #d65251
+	.registerNo
+		line-height: 30px
+	.registerData ul li  
+		list-style-type: Square
+	.myNo
+		color: #d65251
+		border: 1px solid #d65251
+		padding: 4px 6px
+		border-radius: 3px
+		font-size: 1.2em
+		margin-right: 3.2em
+	.note-s  
+		font-size: 8px
+	table
+		border: 1px solid #000
+		width: 850px
+		th
+			text-align: center
+			border: 1px solid #000
+		td  
+			border: 1px solid #000
+			padding: 5px
+
+
+
+/*--------------container------------------*/
+#call-us
+	font-size: 1.2em
+	color: #111
+
+.telephone,
+.telephone a
+	color: #ef3f23
+	font-size: 1.3em
+
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px)
+	.flex-video
+		padding-top: 0 
+
+@media (max-width: 800px)
+	.sc .main 
+		background: none
+
+@media (max-width: 480px)
+	.sc_success
+		margin: 30px
+		border: 5px solid #fdff63
+		font-size: 1em
+		padding: 2em
+		border-radius: 10px
+
+	.sc
+		header img
+			width: 67%
+		.main
+			background: none
+		.story  
+			font-size: 1.5em
+
+		.echelon span
+			display: block
+
+		.SC_illustrator2 img  
+			width: 100%
+
+
+/*-----------------------------------------------------------------*/
+html, body
+	height: 100%
+
+.wrap
+	min-height: 100%
+	*display: table //* For IE7 Hack */
+	*height: 100% //* For IE7 Hack */
+
+.main
+	padding-bottom: 20px //* must be same height as the footer */
+
+footer
+	position: relative
+	height: 150px
+	clear: both
+	background: #ffd08f
+	min-height: 150px
+	.container
+		color: #fff
+
+.text-vertical-center
+	display: table-cell
+	text-align: center
+	vertical-align: middle
+	h1
+		margin: 0
+		padding: 0
+		font-weight: 700
+
+@media (max-width: 767px)
+	.text-vertical-center
+		h1
+			font-size: 2.3em
+	footer
+		.container
+			padding-top: 35px
+
+@media (min-width: 768px)
+	.text-vertical-center
+		h1
+			font-size: 3.5em
+	footer
+		.container
+			padding-top: 55px
+
+@media (max-width: 359px)
+	.text-vertical-center
+		h1
+			font-size: 2em

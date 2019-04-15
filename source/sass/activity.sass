@@ -5,90 +5,63 @@
 ////
 @import "activity/act-state"
 @import "activity/act-color-set"
-
 //===============================================
 //===============================================
 //===============================================
 //===============================================
 //===============================================
-
 // ACT SORT BAR COLOR
 .act-sortbar 
 	font-size: 30px
 	line-height: 1
-
 .act-sort-1 
 	background-color: #a6d5b0
 	.act-sortbar 
 		color: #305d39
-	
-
 .act-sort-2 
 	background-color: #f7bb92
 	.act-sortbar 
 		color: #593b27
-	
-
 .act-sort-3 
 	background-color: #e4c5ef
 	.act-sortbar 
 		color: #691388
-	
-
 .act-sort-4 
 	background-color: #efca9a
 	.act-sortbar 
 		color: #553103
-	
-
 .act-sort-5
 	background-color: #ffbdf9
 	.act-sortbar
 		color: #c900b7
-	
-
 @media (max-width: 991px) 
 	.act-sortbox 
 		padding: 20px
 		margin-bottom: 15px
-	
 	.act-sortbar 
 		margin: 
 			bottom: 10px
-		
-	
-
 @media (min-width: 992px) 
 	.act-sortbox 
 		padding: 25px 25px 10px
 		margin-bottom: 30px
-	
 	.act-sortbar 
 		margin: 
 			bottom: 19px
-		
-	
-
-
 //===============================================
 //===============================================
 //===============================================
 //===============================================
 //===============================================
-
 .act-listbox 
 	font-size: 0
-
 .act-listbox-item 
 	font-size: 0
 	background: 
 		color: #fff
-	
 	position: relative
-
 .act-listbox-link 
 	display: block
-
 .act-listbox-sort 
 	display: inline-block
 	font-size: 13px
@@ -99,7 +72,6 @@
 	border-radius: 11px
 	padding-right: 13px
 	overflow: hidden
-
 .act-listbox-icon 
 	display: inline-block
 	text-transform: uppercase
@@ -108,67 +80,50 @@
 	line-height: 22px
 	text-align: center
 	border-radius: 50%
-
 // img
 .act-listbox-img 
 	display: inline-block
-
 .act-listbox-img-mobi 
 	width: 65px
 	height: 65px
 	border-radius: 50%
-
 .act-listbox-img-pc 
 	width: 115px
 	height: 115px
 	border-radius: 5px 0 0 5px
-
 // info box
 .act-listbox-info 
 	display: inline-block
 	vertical-align: top
 	& > * 
 		margin-bottom: 0
-	
-
 .act-listbox-title 
 	font-size: 21px
-
 %set1 
 	font-size: 14px
 	line-height: 18px
-
 .act-listbox-title-english 
 	opacity: 0.7
 	@extend %set1
-
 .act-listbox-age 
 	@extend %set1
-
 @media (max-width: 991px) 
 	.act-listbox-item 
 		width: 100%
 		margin-bottom: 8px
-	
 	.act-listbox-link 
 		padding: 12px
-	
 	.act-listbox-sort 
 		margin-bottom: 8px
 		max-width: 100%
-	
 	// clear
 	.act-listbox-clear 
 		width: 100%
-	
 	.act-listbox-img-pc 
 		display: none
-	
 	.act-listbox-info 
 		margin-left: 10px
 		width: calc(100% - 75px)
-	
-
 @media (min-width: 992px) 
 	.act-listbox-item 
 		display: inline-block
@@ -176,28 +131,19 @@
 		margin-bottom: 24px
 		&:nth-child(odd) 
 			margin-right: 24px
-		
-	
 	.act-listbox-link 
 		padding: 24px
-	
 	.act-listbox-sort 
 		position: absolute
 		left: 152px
 		max-width: calc( 100% - 24px - 152px)
-	
 	.act-listbox-title 
 		padding-top: 30px
-	
 	.act-listbox-img-mobi 
 		display: none
-	
 	.act-listbox-info 
 		margin-left: 15px
 		width: calc(100% - 115px - 15px)
-	
-
-
 //=================================================
 //=================================================
 //=================================================
@@ -207,57 +153,35 @@
 //=================================================
 //=================================================
 //=================================================
-
 // act-state
 .act-state
 	margin-left: 5px
-
 .actstatebox 
 	position: absolute
-	// background-color: red
-
 @media (max-width: 991px) 
 	.actstatebox 
 		bottom: 12px
 		right: 12px
-	
-
 @media (min-width: 992px) 
 	.actstatebox 
 		bottom: 26px
 		right: 26px
-	
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 $color-def: #ed1e79
 $colo-2nd: #187bc1
 .act-state-word, .act-state-data
 	font-size: 13px!important
-
 .is-blue
 	border-color: $colo-2nd
 	.act-state-word, .act-state-data
 		background-color: $colo-2nd
-	
-
 @media (max-width: 991px)
-	// .is-2nd
-	//	right: 73px
-	// 
 	.act-listbox-link
 		padding-bottom: 41px
-	
-
 @media (min-width: 992px)
-	// .is-2nd
-	//	right: 86px
-	// 
 	.act-listbox-link
 		padding-bottom: 46px
-	

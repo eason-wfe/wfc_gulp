@@ -4,59 +4,44 @@
 @import "usual/unit2"
 // share
 @import "no_sort/wfc-library-share"
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 .layout-title-level-3
 	@include img-path-ratio("wfclibrary/icon1.png",2)
 	display: block
 	background:
 		repeat: no-repeat
 		position: 0 0
-	
 	min-height: 42px
 	padding-top: 20px
 	padding-left: 50px
 	&.icon2
 		@include img-path-ratio("wfclibrary/icon2.png",2)
-	
 	&.icon3
 		@include img-path-ratio("wfclibrary/icon3.png",2)
-	
 	&.icon4
 		@include img-path-ratio("wfclibrary/icon4.png",2)
-	
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 @media (max-width: 767px)
 	.main-vision
 		width: calc( 100% + 46px)!important
 		margin: -23px 0 0 -23px
-	
-
 @media (min-width: 768px)
 	.main-vision
 		width: calc( 100% + 100px)!important
 		margin: -50px 0 0 -50px
-	
-
-
 //=========================================
 //=========================================
 //=========================================
 //=========================================
 //=========================================
-
 .is-blue
 	color: #3092ca
 	overflow: hidden
@@ -69,9 +54,6 @@
 			position: absolute
 			top: 3px
 			left: 0
-		
-	
-
 .layout-title-level-3
 	&:before
 		display: none
@@ -84,6 +66,5 @@
 	.dropGeneral 
 		position: relative 
 		z-index: 1035
-	
 	.tabmenu 
 		z-index: 1036

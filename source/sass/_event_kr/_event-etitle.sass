@@ -4,40 +4,27 @@
 	&.icon1
 		.etitle-icon
 			@include img-path("event/icon01.png")
-		
-	
 	&.icon2
 		.etitle-icon
 			@include img-path("event/icon02.png")
-		
-	
 	&.icon3
 		.etitle-icon
 			@include img-path("event/icon03.png")
-		
-	
 	&.icon4
 		.etitle-icon
 			@include img-path("event/icon04.png")
-		
-		
-
 .etitle-icon
 	background:
 		repeat: no-repeat
-	
-
 .etitle-w
 	font-size: 15px
 	display: inline-block
 	border-radius: 3px
-
 @media (max-width: 991px)
 	$demo-pic: "event/icon01.png"
 	$demo-ratio: 2.5
 	.etitle
 		position: relative
-	
 	.etitle-icon
 		@include img-ratio($demo-pic,$demo-ratio)
 		width: image-width($demo-pic) / $demo-ratio
@@ -45,41 +32,31 @@
 		display: inline-block
 		position: relative
 		z-index: 1
-	
 	.etitle-w
 		padding: 0 15px 0 25px		
 		line-height: 31px
 		position: absolute
 		top: 1px
 		left: 15px
-		
-
 @media (min-width: 992px)
 	$demo-pic: "event/icon01.png"
 	.etitle
 		display: inline-block
-	
 	.etitle-icon
 		@include img-ratio($demo-pic,1)
 		width: image-width($demo-pic)
 		height: image-height($demo-pic)
 		margin: 0 auto
-	
 	.etitle-w
 		padding: 0 10px
 		text-align: center
 		min-width: 95px
 		line-height: 27px
-	
-
 // SKIN
 @media (max-width: 991px)
 	.etitle-w
 		border: solid 1px #ccc
 		color: #ccc
-	
-
 @media (min-width: 992px)
 	.etitle-w
 		background-color: #ccc
-	
