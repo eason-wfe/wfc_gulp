@@ -13,18 +13,26 @@ block head-self
 	link(href='assets/plugins/animate/animate.css', rel='stylesheet')
 	// IT
 	link(href='css/index.css', rel='stylesheet')
+	link(href='css/index_2019sc.css', rel='stylesheet')
 
 block container
 	//
 		====================================
-		——— SLIDE SHOW
+		——— SLIDE SHOW - ORG
 		=====================================
-	section.bannercontainer.bannercontainerV1
+	section.bannercontainer.bannercontainerV1#sc2019
 		.fullscreenbanner-container
 			.fullscreenbanner
 				ul
-					// ONE
 					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+						img(src='img/index/slide_sc2019.png', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+						.slider-caption.container
+							.tp-caption.rs-caption-1.sft.start(data-hoffset='0', data-x='center', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+								| Zippy’s Cowboy Adventure 牛仔大冒險
+							.tp-caption.rs-caption-2.sft(data-hoffset='0', data-x='center', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
+								| 2019 Summer Camp
+					// ONE
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide1.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start(data-hoffset='0', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
@@ -32,7 +40,7 @@ block container
 							.tp-caption.rs-caption-2.sft(data-hoffset='0', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 讓孩子與美語叔叔、阿姨在活動中歡笑聲不斷，開心說美語！
 					// TWO
-					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide2.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start.text-center(data-hoffset='0', data-x='center', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
@@ -40,7 +48,7 @@ block container
 							.tp-caption.rs-caption-2.sft.text-center(data-hoffset='0', data-x='center', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 一年舉辦1200場以上充滿歡樂的全美語活動！
 					// THREE
-					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide3.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start.text-right(data-hoffset='0', data-x='right', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
@@ -48,7 +56,7 @@ block container
 							.tp-caption.rs-caption-2.sft.text-right(data-hoffset='0', data-x='right', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 提供完善的會員服務，讓孩子的學習沒有後顧之憂！
 					// FOUR
-					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide4.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start(data-hoffset='0', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
@@ -56,7 +64,7 @@ block container
 							.tp-caption.rs-caption-2.sft(data-hoffset='0', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 藉由寰宇家庭俱樂部的社群平台，互相交流分享，讓親子共學共玩的路上不孤單！
 					// FIVE
-					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide5.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start.text-center(data-hoffset='0', data-x='center', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
@@ -64,13 +72,15 @@ block container
 							.tp-caption.rs-caption-2.sft.text-center(data-hoffset='0', data-x='center', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 配合孩子的年齡與學習的進度，選擇合適自己的美語學習方式。
 					// SIX
-					li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
+					//li(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='Slide 2')
 						img(src='img/index/slide6.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
 						.slider-caption.container
 							.tp-caption.rs-caption-1.sft.start.text-right(data-hoffset='0', data-x='right', data-speed='800', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
 								| 特別保證制度
 							.tp-caption.rs-caption-2.sft.text-right(data-hoffset='0', data-x='right', data-speed='1000', data-start='1500', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off')
 								| 可大膽讓寶貝們使用，提供產品保固制度，享受令人安心的服務。
+
+	
 	//
 		====================================
 		——— SECTION LINK
@@ -358,3 +368,23 @@ block js
 	script(src='assets/plugins/waterfall/masonry.js')
 	// UI controler from IT
 	script(src='js/index.js')
+	script.
+		$(function(){
+			// sc
+			if ( $('.header-wrapper').width() < 750) {
+				// mobi
+				$('.rs-caption-1').attr('data-y', '380');
+				$('.rs-caption-2').attr('data-y', '310');
+			} else {
+				// pc
+				$('.rs-caption-1').attr('data-y', '360');
+				$('.rs-caption-2').attr('data-y', '330');
+			};
+
+			// summer camp 2019 link
+			setTimeout(function(){
+				$('#sc2019').click(function(){
+						window.open('https://www.worldfamilyclub.com.tw/2019SC.html')
+				});
+			}),500;
+		});

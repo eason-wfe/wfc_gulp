@@ -1,18 +1,19 @@
 // 1070823
 // FOR INDEX ONLY
 $(function () {
-    // SLIDE SHOW
+    // 首頁 SLIDE SHOW 文字垂直向座標
+    // .rs-caption-1 為小標，-2為大標
     var headerArea = $('.header-wrapper');
+    // org
     if (headerArea.width() < 750) {
         // mobi
-        $('.rs-caption-1').attr('data-y', '410');
-        $('.rs-caption-2').attr('data-y', '480');
+        $('.rs-caption-1').attr('data-y', '410');//410
+        $('.rs-caption-2').attr('data-y', '480');//480
     } else {
-        // PC
-        $('.rs-caption-1').attr('data-y', '300');
-        $('.rs-caption-2').attr('data-y', '350');
+        // pc
+        $('.rs-caption-1').attr('data-y', '300');// 300
+        $('.rs-caption-2').attr('data-y', '350');// 350
     };
-
 
     // IG
     var igItemWidth = $('.ig-grid-item').width();
