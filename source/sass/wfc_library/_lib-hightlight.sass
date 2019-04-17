@@ -1,0 +1,32 @@
+.hight-light
+	padding: 5px
+	border: solid 3px $color2
+	border-radius: 17px
+	margin:
+		bottom: 18px
+.height-light-box
+	border: solid 1px $color2
+	text-align: center
+	background-color: $color2-light 
+	border-radius: 12px
+	line-height: 1.5
+	font:
+		size: 15px
+		weight: bold
+	padding: 10px
+	span
+		display: block
+		font:
+			size: 50px
+		line-height: 38px
+		&.first
+			transform: translateY(7px)
+		&.second
+			transform: translateY(15px)
+		&.first,&.second
+			display: none
+	b
+		color: $color5-dark
+@media (max-width: 767px)
+	.height-light-box
+		line-height: 1.3

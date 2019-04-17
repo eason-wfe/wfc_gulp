@@ -1,0 +1,65 @@
+// CUSTOMER
+.faqbox-idx
+	vertical-align: middle
+.faqbox-title
+	vertical-align: middle
+	padding: 10px 25px 10px 10px
+	&:after
+		bottom: 10px
+		right: 10px
+.faqbox-con
+	padding: 15px
+@media (max-width: 991px)
+	.faqbox-idx
+		background:
+			position: 10px 11px
+		width: 45px
+		padding:
+			top: 39px
+			left: 3px
+	.faqbox-con
+		padding: 15px 15px 15px 47px 
+		&:after
+			top: 11px
+			left: 15px
+@media (min-width: 992px)
+	.faqbox-idx
+		background:
+			position: 7px 8px
+		width: 82px
+		padding: 10px 0 10px 38px
+	.faqbox-con
+		padding: 15px 0 15px 83px
+		&:after
+			top: 13px
+			left: 49px
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+.faqbox-item:nth-child(6n+1)
+	.faqbox-idx
+		@include img-path("mypage/icon01.png")
+.faqbox-item:nth-child(6n+2)
+	.faqbox-idx
+		@include img-path("mypage/icon02.png")
+.faqbox-item:nth-child(6n+3)
+	.faqbox-idx
+		@include img-path("mypage/icon03.png")
+.faqbox-item:nth-child(6n+4)
+	.faqbox-idx
+		@include img-path("mypage/icon04.png")
+.faqbox-item:nth-child(6n+5)
+	.faqbox-idx
+		@include img-path("mypage/icon05.png")
+.faqbox-item:nth-child(6n)
+	.faqbox-idx
+		@include img-path("mypage/icon06.png")
+////
+.faqbox-idx
+	background-color: #fff5d9
+.faqbox-title
+	background-color: #ffecb8
+.faqbox-con
+	background-color: #fff9f0

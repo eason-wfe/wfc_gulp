@@ -1,97 +1,6921 @@
-//====== index =====
-// 1. COMMON
-// 2. UI KIT
-// 2.1 BUTTON
-// 2.2 SECTION TITLE
-// 2.3 FORM
-// 2.4 ACCORDION
-// 2.5 TABS
-// 2.6 THUMBNAIL
-// 2.7 MODAL
-// 2.8 PORDUCT QUICK VIEW MODAL
-// 2.9 LIST
-// 2.10 CART
-// 2.11 PAGER
-// 2.12 ALERT
-// 2.13 LABELS
-// 2.14 BADGES
-// 2.15 PROGRESS BAR
-// 2.16 LIST GROUP
-// 2.17 PANEL
-// 2.18 JAMBOTRON
-// 2.19 TOOLTIP
-// 2.20 EXTRA
+*
+  outline: 0
+  margin: 0
+  padding: 0
 
-// 3. HEADER
-// 3.1 TOP COLOR BAR
-// 3.2 TOP INFO BAR
-// 3.3 HEADER TRANSPARENT
-// 3.4 LIGHT HEADER
-// 3.5 HEADER V3
-// 4. FOOTER
-// 4.1 FOOTER INFO
-// 4.2 COPY RIGHT
-// 4.3 FOOTER V2
-// 5. HOME
-// 5.1 BANNER
-// 5.2 FEATURES SECTION
-// 5.3 PROMOTION
-// 5.4 ABOUT SCHOOL
-// 5.5 SERVICES SECTION
-// 5.6 COURSES SECTION
-// 5.7 TEAM SECTION
-// 5.8 EVENT SECTION
-// 5.9 COUNT UP SECTION
-// 5.10 HOME GALLERY SECTION
-// 5.11 COMMENT SECTION
-// 5.12 MAP AREA SECTION
-// 5.13 HOME CONTACT SECTION
-// 5.14 BANNER 2
-// 5.15 BANNER BOTTOM
-// 5.16 PRODUCT SECTION
-// 5.17 BRAND SECTION
-// 5.18 BANNER 3
-// 5.19 ABOUT SCHOOL
-// 5.20 BANNER 4
+body
+  font-size: 15px
+  line-height: 21px
+  color: #666
+  font-weight: 400
 
-// 6. COURSE
-// 6.1 COURSE LEFT SIDEBAR
-// 6.2 COURSE LIST
-// 6.3 COURSE RIGHT SIDE BAR
-// 6.4 COURSE COUNTER
-// 7. BLOG
-// 8. COMING SOON
-// 9. SERVICES
-// 10. TESTIMONIAL
-// 11. CART PAGE
-// 12. PRICING TABLE
-// 13. CHECKOUT
-// 13.1 CHECKOUT PROGRESS
-// 13.2 CHECKOUT INFO
-// 14. SINGLE PRODUCT
-// 14.1 PRODUCT GALLERY
-// 14.2 PRODUCT REVIEWS
-// 15. CATEGORY
-//======================================== 
+ul
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
 
-@import "partials/mixins"
-@import "partials/variables"
-@import "partials/media-query"
-@import "app/common_app"
-@import "app/ui-kit"
-@import "app/header"
-@import "app/footer"
-@import "app/home"
-@import "app/homev2"
-@import "app/homev3"
-@import "app/homev4"
-@import "app/course"
-@import "app/blog"
-@import "app/comingsoon"
-@import "app/services"
-@import "app/testimonial"
-@import "app/cart"
-@import "app/pricing-table"
-@import "app/checkout-step"
-@import "app/category"
-@import "app/single-product" 
+p
+  font-size: 14px
+  color: #666
+  font-weight: 400
+  line-height: 21px
+
+h1, h2, h3, h4, h5
+  color: #202020
+  margin-top: 0
+  font-weight: 700
+
+h4
+  font-size: 18px
+  margin-bottom: 25px
+  font-weight: 400
+
+h5
+  font-weight: 400
+  font-size: 16px
+  text-transform: capitalize
+
+.form-control
+  box-shadow: none
+
+.main-wrapper
+  background-color: #ffffff
+
+body
+  &.bodyColor
+    &.wrapper
+      margin: 0 auto
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
+    #menuBar.bb-fixed-header
+      right: auto
+      left: auto
+  &.static #menuBar.bb-fixed-header
+    display: none
+
+@media (min-width: 480px)
+  body.bodyColor.wrapper
+    max-width: 450px
+
+@media (min-width: 768px)
+  body.bodyColor.wrapper
+    max-width: 750px
+
+@media (min-width: 992px)
+  body.bodyColor.wrapper
+    max-width: 970px
+
+@media (min-width: 1200px)
+  body.bodyColor.wrapper
+    max-width: 1260px
+
+@media (min-width: 480px)
+  body.bodyColor .header-wrapper
+    max-width: 450px
+
+@media (min-width: 768px)
+  body.bodyColor .header-wrapper
+    max-width: 750px
+
+@media (min-width: 992px)
+  body.bodyColor .header-wrapper
+    max-width: 970px
+
+@media (min-width: 1200px)
+  body.bodyColor .header-wrapper
+    max-width: 1260px
+
+@media (min-width: 480px)
+  body.bodyColor .color-bar
+    max-width: 450px
+
+@media (min-width: 768px)
+  body.bodyColor .color-bar
+    max-width: 750px
+
+@media (min-width: 992px)
+  body.bodyColor .color-bar
+    max-width: 970px
+
+@media (min-width: 1200px)
+  body.bodyColor .color-bar
+    max-width: 1260px
+
+@media (min-width: 480px)
+  body.bodyColor #menuBar.bb-fixed-header
+    max-width: 450px
+    width: 100%
+
+@media (min-width: 768px)
+  body.bodyColor #menuBar.bb-fixed-header
+    max-width: 750px
+
+@media (min-width: 992px)
+  body.bodyColor #menuBar.bb-fixed-header
+    max-width: 970px
+
+@media (min-width: 1200px)
+  body.bodyColor #menuBar.bb-fixed-header
+    max-width: 1260px
+
+.btn
+  display: inline-block
+  padding: 11px 20px
+  margin-bottom: 0
+  font-size: 16px
+  font-weight: 600
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-image: none
+  border: 1px solid transparent
+  color: #fff
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+  border-radius: 6px
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  &:hover
+    border: 1px solid transparent
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3) !important
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3) !important
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3) !important
+  &:focus, &.active, &:active
+    border: 1px solid transparent
+    outline: 0
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+
+a
+  color: #ea7066
+  text-decoration: none !important
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  &:hover, &:focus
+    outline: 0
+
+.main-wrapper
+  position: relative
+
+.form-control:focus
+  box-shadow: none
+
+.color-1
+  color: #f0c24b !important
+
+.bg-color-1
+  background-color: #f0c24b !important
+
+.border-color-1
+  border-color: #f0c24b !important
+
+.color-2
+  color: #b5d56a !important
+
+.bg-color-2
+  background-color: #b5d56a !important
+
+.border-color-2
+  border-color: #b5d56a !important
+
+.color-3
+  color: #ea7066 !important
+
+.bg-color-3
+  background-color: #ea7066 !important
+
+.border-color-3
+  border-color: #ea7066 !important
+
+.color-4
+  color: #84bed6 !important
+
+.bg-color-4
+  background-color: #84bed6 !important
+
+.border-color-4
+  border-color: #84bed6 !important
+
+.color-5
+  color: #a597e7 !important
+
+.bg-color-5
+  background-color: #a597e7 !important
+
+.border-color-5
+  border-color: #a597e7 !important
+
+.color-6
+  color: #ea77ad !important
+
+.bg-color-6
+  background-color: #ea77ad !important
+
+.border-color-6
+  border-color: #ea77ad !important
+
+.bg-color-7
+  background-color: #2f3c43
+
+.full-width
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+.p-n
+  padding: 0
+
+.p-t-n
+  padding-top: 0 !important
+
+.table-curved
+  border-collapse: separate
+  border: solid #ccc 1px
+  border-radius: 6px
+  border-left: 0px
+  border-top: 0px
+  > thead:first-child > tr
+    &:first-child > th
+      border-bottom: 0px
+      border-top: 0
+    > th
+      &:first-child
+        border-left: 1px solid #f0c24b
+      &:last-child
+        border-right: 1px solid #ea77ad
+  td, th
+    border-left: 1px solid #ccc
+    border-top: 1px solid #ccc
+  >
+    \:first-child > :first-child >
+      \:first-child
+        border-radius: 6px 0 0 0
+      \:last-child
+        border-radius: 0 6px 0 0
+    \:last-child > :last-child >
+      \:first-child
+        border-radius: 0 0 0 6px
+      \:last-child
+        border-radius: 0 0 6px 0
+
+.bodyColor.wrapper .main-wrapper
+  position: relative
+  background-color: #fff
+  margin: 0 auto
+  overflow-x: hidden
+
+@media (min-width: 480px)
+  .bodyColor.wrapper .main-wrapper
+    max-width: 520px
+
+@media (min-width: 768px)
+  .bodyColor.wrapper .main-wrapper
+    padding: 0px 0 0
+    max-width: 728px
+
+@media (min-width: 992px)
+  .bodyColor.wrapper .main-wrapper
+    padding: 0px 0 0
+    max-width: 970px
+
+@media (min-width: 1200px)
+  .bodyColor.wrapper .main-wrapper
+    padding: 0px 0 0
+    max-width: 1260px
+
+.margin-top
+  margin-top: 40px
+
+.margin-bottom
+  margin-bottom: 40px
+
+.space-25
+  margin-bottom: 25px
+
+.space-50
+  margin-bottom: 50px
+
+.not-rounded
+  border-radius: 0 !important
+
+aside
+  margin-bottom: 25px
+
+.btn-xl
+  font-size: 20px
+  padding: 9px 10px
+
+.btn-lg
+  font-size: 15px
+  padding: 10px 12px !important
+
+.btn-sm
+  font-size: 12px
+  padding: 7px 6px !important
+
+.btn-xs
+  font-size: 10px
+  padding: 5px 8px !important
+
+.btn-rounded
+  border-radius: 5px !important
+
+.btn-pill
+  border-radius: 50px !important
+
+.btn-circle
+  border-radius: 50% !important
+  height: 40px
+  width: 40px
+  padding: 3px !important
+
+.btn-square
+  height: 40px
+  width: 40px
+  border-radius: 5px
+  padding: 3px !important
+
+.btn-link
+  color: #9875ab
+  &:hover, &:focus
+    color: #7c618a
+    text-decoration: none
+
+.btn-primary
+  background-color: #ea7066 !important
+  border: 2px solid #ea7066 !important
+  color: #fff
+  > i
+    margin-right: 10px
+    padding-left: 7px
+
+.btn-square
+  border-radius: 0 !important
+
+.btn-outline-success
+  color: #5cb85c
+  background-color: transparent
+  border-color: #5cb85c
+  &:hover
+    color: #fff
+    background-color: #5cb85c
+    border-color: #5cb85c
+
+.btn-outline-info
+  color: #5bc0de
+  background-color: transparent
+  border-color: #5bc0de
+  &:hover
+    color: #fff
+    background-color: #5bc0de
+    border-color: #5bc0de
+
+.btn-outline-warning
+  color: #f0ad4e
+  background-color: transparent
+  border-color: #f0ad4e
+  &:hover
+    color: #fff
+    background-color: #f0ad4e
+    border-color: #f0ad4e
+
+.btn-outline-primary
+  color: #ea7066
+  background-color: transparent
+  border-color: #ea7066
+  &:hover
+    color: #fff
+    background-color: #ea7066
+    border-color: #ea7066
+
+.btn span
+  margin-left: 10px
+  margin-right: 10px
+
+.box-info .btn-primary
+  background-color: #ffffff !important
+  border: none !important
+
+#buttons
+  .btn, .btn-social
+    margin: 5px 9px
+
+.btn-social
+  font-size: 13px
+  padding: 8px 15px
+  letter-spacing: 0.5px
+  vertical-align: middle
+  -moz-transition: 0.2s ease-in
+  -o-transition: 0.2s ease-in
+  -webkit-transition: 0.2s ease-in
+  -ms-transition: 0.2s ease-in
+  transition: 0.2s ease-in
+  span
+    margin-left: 10px
+
+.btn-facebook
+  color: #4e68a1
+  background: transparent
+  border: 2px solid #4e68a1
+  &:active, &:focus
+    color: #4e68a1
+    background: transparent
+    border: 2px solid #4e68a1
+  &:hover
+    color: white !important
+    background: #4e68a1
+    border: 2px solid #4e68a1
+
+.btn-facebook-filled
+  color: white
+  background: #4e68a1
+  border: 2px solid #4e68a1
+  &:active, &:focus
+    color: white
+    background: #4e68a1
+    border: 2px solid #4e68a1
+  &:hover
+    color: white
+    background: #3b4f7a
+    border: 2px solid #3b4f7a
+
+.btn-facebook-link
+  color: #4e68a1
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #4e68a1
+    background: transparent
+    border: none
+  &:hover
+    color: #3b4f7a
+
+.btn-twitter
+  color: #65b5f2
+  background: transparent
+  border: 2px solid #65b5f2
+  &:active, &:focus
+    color: #65b5f2
+    background: transparent
+    border: 2px solid #65b5f2
+  &:hover
+    color: white
+    background: #65b5f2
+    border: 2px solid #65b5f2
+
+.btn-twitter-filled
+  color: white
+  background: #65b5f2
+  border: 2px solid #65b5f2
+  &:active, &:focus
+    color: white
+    background: #65b5f2
+    border: 2px solid #65b5f2
+  &:hover
+    color: white
+    background: #5294c6
+    border: 2px solid #5294c6
+    color: white
+    background: #5294c6
+    border: 2px solid #5294c6
+
+.btn-twitter-link
+  color: #65b5f2
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #65b5f2
+    background: transparent
+    border: none
+  &:hover
+    color: #5294c6
+
+.btn-google
+  color: #e05d4b
+  background: transparent
+  border: 2px solid #e05d4b
+  &:active, &:focus
+    color: #e05d4b
+    background: transparent
+    border: 2px solid #e05d4b
+  &:hover
+    color: white
+    background: #e05d4b
+    border: 2px solid #e05d4b
+
+.btn-google-filled
+  color: white
+  background: #e05d4b
+  border: 2px solid #e05d4b
+  &:active, &:focus
+    color: white
+    background: #e05d4b
+    border: 2px solid #e05d4b
+  &:hover
+    color: white
+    background: #b94c3d
+    border: 2px solid #b94c3d
+
+.btn-google-link
+  color: #e05d4b
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #e05d4b
+    background: transparent
+    border: none
+  &:hover
+    color: #b94c3d
+
+.btn-linkedin
+  color: #2083bc
+  background: transparent
+  border: 2px solid #2083bc
+  &:active, &:focus
+    color: #2083bc
+    background: transparent
+    border: 2px solid #2083bc
+  &:hover
+    color: white
+    background: #2083bc
+    border: 2px solid #2083bc
+
+.btn-linkedin-filled
+  color: white
+  background: #2083bc
+  border: 2px solid #2083bc
+  &:active, &:focus
+    color: white
+    background: #2083bc
+    border: 2px solid #2083bc
+  &:hover
+    color: white
+    background: #186592
+    border: 2px solid #186592
+
+.btn-linkedin-link
+  color: #2083bc
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #2083bc
+    background: transparent
+    border: none
+  &:hover
+    color: #186592
+
+.btn-pinterest
+  color: #d2373b
+  background: transparent
+  border: 2px solid #d2373b
+  &:active, &:focus
+    color: #d2373b
+    background: transparent
+    border: 2px solid #d2373b
+  &:hover
+    color: white
+    background: #d2373b
+    border: 2px solid #d2373b
+
+.btn-pinterest-filled
+  color: white
+  background: #d2373b
+  border: 2px solid #d2373b
+  &:active, &:focus
+    color: white
+    background: #d2373b
+    border: 2px solid #d2373b
+  &:hover
+    color: white
+    background: #ad2c2f
+    border: 2px solid #ad2c2f
+
+.btn-pinterest-link
+  color: #d2373b
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #d2373b
+    background: transparent
+    border: none
+  &:hover
+    color: #ad2c2f
+
+.btn-dribbble
+  color: #ec5f94
+  background: transparent
+  border: 2px solid #ec5f94
+  &:active, &:focus
+    color: #ec5f94
+    background: transparent
+    border: 2px solid #ec5f94
+  &:hover
+    color: white
+    background: #ec5f94
+    border: 2px solid #ec5f94
+
+.btn-dribbble-filled
+  color: white
+  background: #ec5f94
+  border: 2px solid #ec5f94
+  &:active, &:focus
+    color: white
+    background: #ec5f94
+    border: 2px solid #ec5f94
+  &:hover
+    color: white
+    background: #b4446e
+    border: 2px solid #b4446e
+
+.btn-dribbble-link
+  color: #ec5f94
+  background: transparent
+  border: none
+  &:active, &:focus
+    color: #ec5f94
+    background: transparent
+    border: none
+  &:hover
+    color: #b4446e
+
+.backToTop
+  position: fixed
+  bottom: 20px
+  right: 20px
+  width: 50px
+  height: 50px
+  text-align: center
+  line-height: 45px
+  background-color: #ea7066
+  border: 2px solid #fff
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+  color: #fff
+  display: block
+  font-size: 16px
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+  filter: alpha(opacity = 0)
+  -moz-opacity: 0
+  -khtml-opacity: 0
+  opacity: 0
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  &:hover, &:focus, &:active
+    color: #fff
+
+@media (min-width: 320px)
+  .whiteSection, .mainContent, .lightSection, .colorSection
+    padding: 50px 0
+
+@media (min-width: 768px)
+  .whiteSection, .mainContent, .lightSection, .colorSection
+    padding: 100px 0
+
+.whiteSection, .mainContent
+  background-color: #fff
+
+.lightSection
+  background-color: #f5f5f5
+
+.sectionTitle
+  h2
+    font-size: 36px
+    color: #ea7066
+    float: left
+    width: 100%
+    span
+      padding: 0 15px
+  &.alt h2
+    color: #fff
+
+@media (min-width: 320px)
+  .sectionTitle h2 span
+    display: block
+    width: 100%
+    float: left
+
+@media (min-width: 768px)
+  .sectionTitle h2 span
+    display: inline-block
+    width: auto
+    float: none
+
+@media (min-width: 320px)
+  .sectionTitle h2
+    margin-bottom: 30px
+
+@media (min-width: 768px)
+  .sectionTitle h2
+    margin-bottom: 70px
+
+.sectionTitleSmall
+  margin-bottom: 40px
+  h2
+    text-align: center
+    margin: 0 0 12px 0
+    color: #fff
+  p
+    color: #fff
+    text-align: center
+    font-size: 15px
+
+.pageTitleSection
+  background-image: url("img/page-title/page-title-bg.jpg")
+  width: 100%
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-position: center center
+  color: #ffffff
+  padding: 75px 0
+  .pageTitleInfo
+    text-align: center
+    h2
+      font-size: 40px
+      line-height: 33px
+      color: #fff
+      margin-bottom: 40px
+      margin: 0 0 8px 0
+      font-weight: 600
+    .breadcrumb
+      background-color: transparent
+      li
+        color: #fff
+        font-size: 15px
+        a
+          color: #fff
+          font-size: 15px
+      > li + li::before
+        content: " \276F\00a0 "
+
+.homeContactContent form
+  .btn
+    float: right
+    width: auto
+  .formBtnArea .btn
+    float: none
+    width: auto
+
+.searchArea
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  background-color: #f8f8f8
+  margin-bottom: 70px
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  height: 55px
+  >
+    .input-group-addon
+      background-color: transparent
+      border: none
+      min-width: 60px
+      font-size: 18px
+      color: #666
+      &.button
+        height: 55px
+        border: none
+        line-height: 45px
+        background-color: #ea7066
+        font-size: 14px
+        color: #fff
+        -webkit-transition: all 0.3s ease-in-out
+        -moz-transition: all 0.3s ease-in-out
+        -ms-transition: all 0.3s ease-in-out
+        -o-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+        font-weight: 600
+        display: inline-block
+        width: 25%
+        position: absolute
+        right: 0
+        z-index: 9
+        &:hover
+          background-color: #ea7066
+    .form-control
+      width: 100%
+      background-color: transparent
+      border: none
+      box-shadow: none
+      height: 55px
+      font-size: 13px
+      color: #222222
+
+@media (min-width: 768px)
+  .searchArea
+    height: 70px
+
+@media (min-width: 768px)
+  .searchArea > .input-group-addon.button
+    height: 70px
+    font-size: 18px
+    line-height: 45px
+    width: 20%
+
+@media (min-width: 768px)
+  .searchArea > .form-control
+    height: 70px
+    font-size: 15px
+
+.resultInfo h3
+  color: #666
+  font-size: 28px
+  margin-bottom: 40px
+
+.formPanel.panel
+  border: 0
+  margin-bottom: 30px
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  .panel-heading
+    -webkit-border-radius: 7px 7px 0 0
+    -moz-border-radius: 7px 7px 0 0
+    border-radius: 7px 7px 0 0
+    .panel-title
+      font-size: 24px
+      color: #fff
+      font-weight: 700
+  .panel-body
+    border: 1px solid #dedede
+    border-top: 0
+    -webkit-border-radius: 0 0 7px 7px
+    -moz-border-radius: 0 0 7px 7px
+    border-radius: 0 0 7px 7px
+    .media-list
+      li
+        padding: 10px 0
+        margin: 0
+        .media-left.iconContent
+          width: 45px
+          height: 45px
+          line-height: 45px
+          text-align: center
+          color: #fff
+          -webkit-border-radius: 100%
+          -moz-border-radius: 100%
+          border-radius: 100%
+          display: inline-block
+          float: left
+          padding: 0
+          margin-right: 20px
+          font-size: 16px
+        .media-body.iconContent
+          .media-heading
+            font-size: 20px
+            font-weight: 700
+          p
+            font-weight: 600
+            margin-bottom: 0
+      &.blogListing li .media-heading a
+        font-weight: 600
+        font-size: 14px
+        color: #666
+        &:hover
+          color: #a597e7 !important
+
+.formField
+  .form-control
+    height: 50px
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    color: #222222
+    border-color: #e4e4e4
+    box-shadow: none
+    margin-bottom: 15px
+  .btn-primary
+    margin-bottom: 15px
+    &:focus
+      outline: 0
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .help-block
+    text-align: center
+    margin-bottom: 0
+    a:hover
+      color: #ea7066
+
+.errorSpace .form-control
+  border-color: rgba(102, 102, 102, 0.2)
+  margin-bottom: 40px
+
+.not-brdr-radius
+  border-radius: 0 !important
+
+.accordionCommon
+  .panel
+    margin-bottom: 30px
+    border: none
+  .panel-heading
+    display: block
+    padding: 15px 20px
+    -webkit-border-radius: 8px
+    -moz-border-radius: 8px
+    border-radius: 8px
+    font-weight: 600
+    color: #fff
+    font-size: 14px
+    position: relative
+    span.iconBlock
+      width: 20px
+      height: 20px
+      line-height: 20px
+      text-align: center
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+      background-color: #fff
+      color: #666
+      display: inline-block
+      float: right
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      &.iconTransparent
+        background-color: transparent
+        box-shadow: none
+        color: #fff
+  span.separator
+    width: 1px
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.25)
+    position: absolute
+    top: 0
+    right: 60px
+  .panel-body
+    padding: 30px
+    background-color: #f8f8f8
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    border-top: none !important
+    -webkit-border-radius: 0 0 8px 8px
+    -moz-border-radius: 0 0 8px 8px
+    border-radius: 0 0 8px 8px
+    p
+      margin-bottom: 35px
+      &:last-child
+        margin-bottom: 0
+
+.tabCommon
+  .nav
+    border-bottom: none
+    text-align: center
+    li
+      display: inline-block
+      float: none
+      a
+        padding: 0 25px
+        height: 40px
+        font-size: 14px
+        line-height: 40px
+        color: #222222
+        font-weight: 600
+        display: inline-block
+        -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+        -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+        background-color: #f8f8f8
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        border-radius: 4px
+      &.active a
+        background-color: #ea7066
+        color: #fffefe
+  .tab-content
+    padding-top: 50px
+  .tab-pane
+    border: 3px solid rgba(234, 112, 102, 0.3)
+    -webkit-border-radius: 8px
+    -moz-border-radius: 8px
+    border-radius: 8px
+  .media-left img
+    width: 100%
+  .media-body
+    .media-heading
+      font-size: 28px
+      color: #ea7066
+      margin: 0 0 25px 0
+    p
+      color: #222222
+      margin-bottom: 30px
+  &.tabLeft
+    .nav
+      padding-right: 10px
+      li
+        display: block
+        padding: 0 0 10px 0
+        &.active a
+          position: relative
+          &:after
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 10px 0 10px 10px
+            border-color: transparent transparent transparent #ea7066
+            position: absolute
+            right: -9px
+            top: 10px
+            -webkit-border-radius: 8px
+            -moz-border-radius: 8px
+            border-radius: 8px
+            -webkit-transition: all 0.3s ease-in-out
+            -moz-transition: all 0.3s ease-in-out
+            -ms-transition: all 0.3s ease-in-out
+            -o-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+    .tab-content
+      display: table-cell
+      padding: 0
+
+@media (min-width: 320px)
+  .tabCommon .nav li
+    padding: 6px 2px
+
+@media (min-width: 768px)
+  .tabCommon .nav li
+    padding: 0 2px
+
+@media (min-width: 320px)
+  .tabCommon .media-left
+    display: block
+    float: left
+    width: 100%
+    padding-right: 0
+
+@media (min-width: 768px)
+  .tabCommon .media-left
+    display: block
+    float: left
+    width: 100%
+    padding-right: 0
+
+@media (min-width: 992px)
+  .tabCommon .media-left
+    display: inline-block
+    float: left
+    width: auto
+    padding-right: 10px
+
+@media (min-width: 320px)
+  .tabCommon .media-body
+    padding: 30px
+
+@media (min-width: 768px)
+  .tabCommon .media-body
+    padding: 30px
+
+@media (min-width: 992px)
+  .tabCommon .media-body
+    padding: 30px
+
+@media (min-width: 1200px)
+  .tabCommon .media-body
+    padding: 50px 30px 0 0
+
+@media (min-width: 320px)
+  .tabCommon.tabLeft .nav
+    display: block
+
+@media (min-width: 768px)
+  .tabCommon.tabLeft .nav
+    display: table-cell
+
+.thumbnail
+  padding: 0
+  border: none
+  -webkit-border-radius: 9px
+  -moz-border-radius: 9px
+  border-radius: 9px
+  position: relative
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  > a img, img
+    border-radius: 9px 9px 0 0
+    width: 100%
+
+.customModal
+  .modal-content
+    -webkit-border-radius: 8px
+    -moz-border-radius: 8px
+    border-radius: 8px
+  .formPanel.panel
+    margin-bottom: 0 !important
+
+@media (min-width: 320px)
+  .customModal .modal-dialog
+    width: 100%
+
+@media (min-width: 768px)
+  .customModal .modal-dialog
+    width: 350px
+
+.modal.quick-view.in .modal-dialog
+  -webkit-transform: translate(0, 25%)
+  -ms-transform: translate(0, 25%)
+  -o-transform: translate(0, 25%)
+  transform: translate(0, 25%)
+
+@media (max-width: 480px)
+  .quick-view .modal-dialog
+    width: 280px
+    margin: 0 auto
+
+@media (min-width: 480px)
+  .quick-view .modal-dialog
+    width: 450px
+    margin: 0 auto
+
+@media (min-width: 768px)
+  .quick-view .modal-dialog
+    width: 750px
+
+@media (min-width: 992px)
+  .quick-view .modal-dialog
+    width: 950px
+
+@media (min-width: 1200px)
+  .quick-view .modal-dialog
+    width: 1030px
+
+.quick-view .modal-content
+  padding: 50px 30px
+  img
+    margin: auto
+  .close
+    font-size: 40px
+    margin-top: -20px
+
+@media (max-width: 480px)
+  .quick-view .modal-content .add-to-cart.btn-primary
+    margin-top: 15px
+
+.topList li
+  color: rgba(255, 255, 255, 0.8)
+  i
+    width: 21px
+    height: 21px
+    display: inline-block
+    color: #fff
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    text-align: center
+    line-height: 21px
+  a
+    color: rgba(255, 255, 255, 0.8)
+  &:last-child
+    margin-right: 0
+
+@media (min-width: 768px)
+  .topList li
+    margin-right: 5px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .topList li
+    margin-right: 10px
+    font-size: 14px
+
+@media (min-width: 1200px)
+  .topList li
+    margin-right: 20px
+
+@media (min-width: 768px)
+  .topList li i
+    margin-right: 5px
+
+@media (min-width: 992px)
+  .topList li i
+    margin-right: 5px
+
+@media (min-width: 1200px)
+  .topList li i
+    margin-right: 10px
+
+@media (min-width: 768px)
+  .topList li a
+    font-size: 10px
+
+@media (min-width: 992px)
+  .topList li a
+    font-size: 14px
+
+@media (min-width: 768px)
+  .functionList
+    width: 100%
+    float: left
+
+@media (min-width: 992px)
+  .functionList
+    width: 100%
+    float: left
+
+@media (min-width: 1200px)
+  .functionList
+    width: 92%
+    float: right
+
+.functionList > li
+  color: rgba(255, 255, 255, 0.8)
+  float: left
+  span
+    margin: 0 5px
+  i
+    width: 21px
+    height: 21px
+    display: inline-block
+    color: #fff
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    text-align: center
+    line-height: 21px
+  &:last-child
+    margin-right: 0
+  a
+    color: rgba(255, 255, 255, 0.8)
+    font-weight: 600
+  &.LanguageList
+    width: 22%
+  &:first-child
+    margin-right: 0
+    i
+      margin-right: 0
+
+@media (min-width: 768px)
+  .functionList > li
+    margin-right: 5px
+    padding: 0
+    font-size: 10px
+
+@media (min-width: 992px)
+  .functionList > li
+    margin-right: 10px
+    padding: 0
+    font-size: 14px
+
+@media (min-width: 1200px)
+  .functionList > li
+    margin-right: 15px
+    padding: 0 5px
+
+@media (min-width: 768px)
+  .functionList > li i
+    margin-right: 5px
+
+@media (min-width: 992px)
+  .functionList > li i
+    margin-right: 10px
+
+.navbar-default .cart-dropdown
+  position: absolute
+  top: 26px
+  right: 90px
+
+@media (min-width: 768px)
+  .navbar-default .cart-dropdown
+    display: none
+
+.cart-dropdown > a
+  color: rgba(255, 255, 255, 0.8)
+  font-weight: 600
+  i
+    width: 21px
+    height: 21px
+    display: inline-block
+    color: #fff
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    text-align: center
+    line-height: 21px
+    margin-right: 0
+
+.display-block
+  display: block
+
+.display-none
+  display: none
+
+.shop-cart
+  color: rgba(255, 255, 255, 0.8)
+  font-weight: 600
+  margin-right: 0
+  width: 26px
+  height: 26px
+  line-height: 26px
+  border-radius: 5px
+  margin-top: 0
+  display: block
+  text-align: center
+  position: relative
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  i
+    color: #fff
+    margin-right: 0
+  .badge
+    position: absolute
+    top: -5px
+    right: -15px
+
+.cart-dropdown .dropdown-menu
+  width: 300px
+  border-top: 4px solid #ea7066
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175)
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175)
+  margin-top: 18px
+  padding: 20px 10px
+  height: 450px
+  right: -76px
+  overflow-y: scroll
+  li
+    &:first-child
+      font-size: 24px
+      color: #222222
+      padding-top: 0
+      padding-bottom: 10px
+      font-weight: 700
+      i
+        color: #222222
+        font-size: 20px
+        margin-right: 15px
+    padding: 25px 0
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+    position: relative
+    a
+      padding: 0
+      background-color: #fff
+      color: #666
+    .cancel
+      margin: 0
+      i
+        position: absolute
+        top: 25px
+        right: 0
+        color: #666
+        font-size: 18px
+        margin-right: 0
+    &:last-child
+      border: none
+      span
+        font-size: 24px
+        color: #222222
+        font-weight: 700
+        display: inline-block
+      .cart-total
+        float: left
+      .cart-price
+        float: right
+  .cart-button
+    clear: both
+    margin-top: 25px
+    width: 100%
+    float: left
+    .btn-primary
+      width: 120px
+      padding: 0 10px
+      &:first-child
+        margin-right: 10px
+      &:last-child
+        background-color: #f8f8f8
+        color: #666
+  .media-left
+    width: 90px
+    height: 100px
+    line-height: 100px
+    text-align: center
+    background-color: #f3f3f3
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    padding: 0
+    float: left
+    margin-right: 10px
+  .media-body
+    h4
+      font-size: 20px
+      color: #222222
+      margin-bottom: 10px
+      font-weight: 700
+    .price span
+      margin-bottom: 7px
+  span
+    margin-left: 0
+    margin-right: 0
+  &:before
+    border-left: 9px solid transparent
+    border-right: 9px solid transparent
+    border-bottom: 7px solid #ea7066
+    margin-left: -10px
+    content: ""
+    display: inline-block
+    right: 6px
+    position: absolute
+    top: -11px
+
+@media (min-width: 768px)
+  .cart-dropdown .dropdown-menu
+    width: 400px
+    padding: 25px
+    height: auto
+    overflow-y: inherit
+    margin-top: 11px
+    right: 21px
+
+@media (min-width: 768px)
+  .cart-dropdown .dropdown-menu .cart-button .btn-primary
+    width: 162px
+    padding: 10px 20px
+
+@media (min-width: 768px)
+  .cart-dropdown .dropdown-menu .cart-button .btn-primary:first-child
+    margin-right: 20px
+
+@media (min-width: 768px)
+  .cart-dropdown .dropdown-menu .media-left
+    margin-right: 20px
+
+@media (min-width: 768px)
+  .LanguageList .sbSelector
+    font-size: 10px
+
+@media (min-width: 992px)
+  .LanguageList .sbSelector
+    font-size: 14px
+
+.pagerArea > .pager
+  display: inline-block
+  margin: 50px auto 20px
+  text-align: left
+  li
+    padding: 0 8px
+    a
+      height: 45px
+      border: none
+      line-height: 45px
+      padding: 0
+      background-color: transparent
+      font-size: 12px
+      color: #666
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+      font-weight: 600
+      &:hover
+        color: #ea7066
+    &.active a
+      color: #ea7066
+    &.prev a, &.next a
+      width: 80px
+      padding: 0 10px
+      background-color: #ea7066
+      color: #fff
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -webkit-border-radius: 6px
+      -moz-border-radius: 6px
+      border-radius: 6px
+    &.prev a:hover, &.next a:hover
+      color: #fff
+    &.prev
+      padding-left: 0
+      a i
+        margin-right: 10px
+    &.next
+      padding-right: 0
+      a i
+        margin-left: 10px
+
+@media (min-width: 992px)
+  .pagerArea > .pager
+    text-align: center
+    margin: 80px auto 20px
+
+@media (min-width: 992px)
+  .pagerArea > .pager li
+    padding: 0 15px
+
+@media (min-width: 992px)
+  .pagerArea > .pager li a
+    font-size: 16px
+
+@media (min-width: 992px)
+  .pagerArea > .pager li
+    &.prev a, &.next a
+      width: 114px
+      padding: 0 20px
+
+.alerts
+  margin-bottom: 100px
+  .tab-pane
+    border: none
+
+.alert-default
+  color: #ea7066
+  background-color: #fadbd9
+  border-color: #f5b8b3
+
+.label
+  font-weight: 400
+  padding: 5px 10px
+  font-size: 12px
+  margin-right: 17px
+  margin-bottom: 15px
+  display: inline-block
+
+.label-default
+  background-color: #ea7066 !important
+
+.label-outline-default
+  color: #ea7066
+  background-color: transparent
+  border: 1px solid #ea7066
+
+.label-outline-primary
+  color: #337ab7
+  background-color: transparent
+  border: 1px solid #337ab7
+
+.label-outline-success
+  color: #5cb85c
+  background-color: transparent
+  border: 1px solid #5cb85c
+
+.label-outline-info
+  color: #5bc0de
+  background-color: transparent
+  border: 1px solid #5bc0de
+
+.label-outline-warning
+  color: #f0ad4e
+  background-color: transparent
+  border: 1px solid #f0ad4e
+
+.label-outline-danger
+  color: #d9534f
+  background-color: transparent
+  border: 1px solid #d9534f
+
+.badge-link
+  color: #000
+  display: inline-block
+  padding-right: 15px
+  &:hover, &:focus
+    color: #ea7066
+
+.badge
+  color: #ffffff
+  background-color: #ea7066
+  font-size: 10px
+  font-weight: 400
+  border-radius: 10px
+  padding: 3px 7px
+
+.active .badge
+  color: #ea7066 !important
+
+.nav-pills li
+  margin-right: 15px
+  display: inline-block
+
+.nav.nav-pills a
+  color: #000
+  &:hover, &:focus
+    color: #ffffff
+    background-color: #ea7066
+
+.nav-pills > li.active > a
+  color: #ffffff
+  background-color: #ea7066
+  &:focus, &:hover
+    color: #ffffff
+    background-color: #ea7066
+
+.progress-bar-default
+  background-color: #777777 !important
+
+.list-group-item.active
+  color: white
+  background-color: #ea7066
+  border-color: #ea7066
+  &:focus, &:hover
+    color: white
+    background-color: #ea7066
+    border-color: #ea7066
+  .list-group-item-text
+    color: #fff
+
+.panel-primary
+  border-color: #ea7066
+  > .panel-heading
+    color: white
+    background-color: #ea7066
+    border-color: #ea7066
+
+.jumbotron
+  h1
+    color: #ea7066
+    font-weight: 400
+    margin-top: 0
+    margin-bottom: 25px
+    font-size: 32px
+  p
+    font-size: 15px
+    font-weight: 400
+    margin-bottom: 25px
+    line-height: 20px
+
+#tooltip .btn
+  margin: 0 auto 30px
+  display: block
+
+@media (min-width: 768px)
+  #tooltip .btn
+    display: inline-block
+    margin: 0 15px 30px
+
+.errorMsg
+  text-align: center
+
+.errorInfo
+  h3
+    font-size: 48px
+    color: #222222
+    margin-bottom: 25px
+  p
+    font-size: 28px
+    color: #202020
+    margin-bottom: 55px
+    line-height: 34px
+
+.navbar .container
+  position: relative
+
+.bb-fixed-header
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  z-index: 999
+
+.color-bar
+  width: 100%
+  .col-sm-1
+    height: 3px
+    text-indent: -99999px
+
+.top-fixed
+  position: fixed
+  z-index: 2000
+
+.top-info-bar
+  padding: 15px 0 12px 0
+  display: block
+  width: 100%
+  z-index: 1000
+  position: relative
+  top: 3px
+  -webkit-transition: height 0.15s ease
+  -moz-transition: height 0.15s ease
+  -ms-transition: height 0.15s ease
+  -o-transition: height 0.15s ease
+  transition: height 0.15s ease
+  height: 53px
+
+.navbar-default
+  background-color: transparent
+  border: none
+  border-radius: 0
+  margin-bottom: 0
+  z-index: 1032
+
+.navbar-header .navbar-brand
+  float: left
+  > img
+    width: 100%
+
+@media (min-width: 320px)
+  .navbar-header .navbar-brand
+    height: auto
+    padding: 15px
+    width: 160px
+
+@media (min-width: 768px)
+  .navbar-header .navbar-brand
+    height: 110px
+    padding: 30px 15px
+    width: 196px
+
+.navbar-default .navbar-nav
+  background-color: #fff
+  margin-bottom: 0
+  > li
+    > a
+      text-transform: capitalize
+      font-weight: 600
+      font-size: 15px
+      &:hover, &:focus
+        background-color: transparent !important
+      >
+        i
+          width: 35px
+          height: 35px
+          line-height: 35px
+          text-align: center
+          border-radius: 100%
+          display: block
+          color: #fff
+          font-size: 16px
+        span
+          padding: 0
+          line-height: 16px
+          text-align: center
+          text-transform: capitalize
+    &:last-child > a > span
+      width: auto
+    &.active > a
+      background-color: transparent
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+      &:hover, &:focus
+        background-color: transparent
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 1)
+        -moz-opacity: 1
+        -khtml-opacity: 1
+        opacity: 1
+    &.open > a
+      background-color: transparent
+      &:hover > a:focus
+        background-color: transparent
+    &.dropdown .dropdown-menu a
+      padding: 3px 20px
+      margin-bottom: 0
+
+@media (min-width: 320px)
+  .navbar-default .navbar-nav
+    margin-top: 0
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav
+    height: auto
+    background-color: transparent
+
+@media (min-width: 320px)
+  .navbar-default .navbar-nav.navbar-right
+    margin-right: -15px
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav.navbar-right
+    margin-right: 0
+
+@media (min-width: 320px)
+  .navbar-default .navbar-nav > li > a
+    color: #000
+    padding: 12px
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav > li > a
+    margin: 0
+    padding: 23px 0
+
+@media (min-width: 320px)
+  .navbar-default .navbar-nav > li > a > i
+    display: inline-block
+    margin: 0 10px 0 0
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav > li > a > i
+    display: block
+    margin: 0 auto 12px auto
+
+@media (min-width: 320px)
+  .navbar-default .navbar-nav > li > a > span
+    display: inline-block
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav > li > a > span
+    width: auto
+    padding: 0 15px
+    display: block
+
+@media (min-width: 992px)
+  .navbar-default .navbar-nav > li > a > span
+    width: 110px
+    padding: 0
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav > li:last-child > a > span
+    padding-left: 15px
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.open > a:after
+    display: none
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.open > a:after
+    border-left: 9px solid transparent
+    border-right: 9px solid transparent
+    margin-left: -10px
+    content: ""
+    display: inline-block
+    left: 50%
+    position: absolute
+    top: 102px
+
+.navbar-nav > li
+  &.color-1.dropdown a:after
+    border-bottom: 7px solid #f0c24b
+  &.color-2.dropdown.megaDropMenu > a:after
+    border-bottom: 7px solid #b5d56a
+  &.color-3.dropdown a:after
+    border-bottom: 7px solid #ea7066
+  &.color-4.dropdown a:after
+    border-bottom: 7px solid #84bed6
+  &.color-5.dropdown a:after
+    border-bottom: 7px solid #a597e7
+  &.color-6.dropdown a:after
+    border-bottom: 7px solid #ea77ad
+  &.color-3.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    border-right: 7px solid #ea7066
+  &.color-4.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    border-right: 7px solid #84bed6
+  &.color-5.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    border-right: 7px solid #a597e7
+  &.color-6.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    border-right: 7px solid #ea77ad
+  &.color-1.singleDrop > .dropdown-menu li.active a
+    background-color: transparent
+    &:hover
+      background-color: #f0c24b
+  &.dropdown
+    &.megaDropMenu
+      position: static
+      .dropdown-menu
+        margin: -2px auto 0 auto
+        right: 15px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        .list-unstyled
+          width: 100%
+          float: left
+          li
+            &.listHeading, &:first-child
+              float: left
+            a
+              color: #666
+              font-size: 14px
+              float: left
+              width: 100%
+              background-color: transparent
+              &:hover
+                padding-left: 22px
+      &.open > a > span
+        color: #b5d56a
+    &.singleDrop
+      .dropdown-menu
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        margin-top: 0
+        padding: 5px
+        li
+          a
+            color: #666
+            font-size: 14px
+            float: none
+            width: 100%
+            background-color: transparent
+            &:hover
+              padding-left: 22px
+          .dropdown-menu
+            margin-left: 15px
+            width: 95%
+            li a:hover
+              padding-left: 22px
+      > a
+        display: block
+        position: relative
+        &:after
+          display: inline-block
+          width: auto
+          height: auto
+          font-family: "FontAwesome"
+          margin-left: 5px
+          vertical-align: middle
+          content: "\f107"
+          border: 0px
+          color: inherit
+          position: absolute
+          top: 50%
+          right: 30px
+          transform: translateY(-50%)
+          font-size: 15px
+      &.open > a:after
+        content: "\f106"
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    display: none
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu .dropdown-menu:after
+    border-top: 8px solid transparent
+    border-bottom: 8px solid transparent
+    top: 20%
+    margin-top: -10px
+    content: ""
+    display: inline-block
+    left: -11px
+    position: absolute
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu
+    left: 0
+    padding: 0
+    width: 100%
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu
+    left: 15px
+    padding: 10px 5px 0
+    width: 720px
+
+@media (min-width: 992px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu
+    width: 940px
+
+@media (min-width: 1200px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu
+    width: 1140px
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled
+    padding-left: 10px
+    padding-bottom: 5px
+    position: relative
+    &:before
+      position: absolute
+      width: 3px
+      left: 10px
+      height: 60%
+      content: ''
+      background-color: #D3D3D3
+      top: 34%
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled
+    padding-bottom: 15px
+    position: relative
+    &:before
+      position: absolute
+      content: none
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li
+    &.listHeading, &:first-child
+      padding: 10px 12px 10px 0
+      font-size: 14px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li
+    &.listHeading, &:first-child
+      font-weight: 700
+      padding: 10px 12px
+      font-size: 24px
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a
+    padding: 6px 20px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a
+    padding: 10px 12px
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu
+    min-width: 230px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu
+    min-width: 210px
+
+@media (min-width: 1200px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu
+    min-width: 230px
+
+@media (min-width: 320px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu li a
+    padding: 6px 12px 6px 24px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu li a
+    padding: 10px 12px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu li .dropdown-menu
+    margin-left: 4px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop .dropdown-menu li .dropdown-menu li a
+    padding: 10px 12px
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop > a:after
+    content: ''
+
+@media (min-width: 768px)
+  .navbar-nav > li.dropdown.singleDrop.open > a:after
+    content: ''
+
+.dropdown-submenu
+  position: relative
+  a
+    position: relative
+    i
+      display: none !important
+  > .dropdown-menu
+    top: 0
+    margin-top: 0 !important
+    margin-left: -1px
+    -webkit-border-radius: 0 6px 6px 6px
+    -moz-border-radius: 0 6px 6px 6px
+    border-radius: 0 6px 6px 6px
+  &.pull-left
+    float: none
+    > .dropdown-menu
+      left: -100%
+      margin-left: 10px
+      -webkit-border-radius: 6px 0 6px 6px
+      -moz-border-radius: 6px 0 6px 6px
+      border-radius: 6px 0 6px 6px
+
+@media (min-width: 768px)
+  .dropdown-submenu a i
+    position: absolute
+    right: 10px
+    top: 13px
+    display: block !important
+
+@media (min-width: 480px)
+  .dropdown-submenu > .dropdown-menu
+    left: 0
+
+@media (min-width: 768px)
+  .dropdown-submenu > .dropdown-menu
+    left: 100%
+
+.navbar-toggle
+  margin-top: 20px
+  background-color: #fff
+
+.navbar-default .navbar-nav
+  height: 340px
+  overflow-x: hidden
+  -webkit-transition: height 0.3s ease
+  -moz-transition: height 0.3s ease
+  -ms-transition: height 0.3s ease
+  -o-transition: height 0.3s ease
+  transition: height 0.3s ease
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav
+    height: auto
+    overflow-x: visible
+    overflow-y: visible
+
+.navbar-collapse
+  &.in
+    overflow-y: visible
+  li.dropdown
+    .dropdown-menu
+      box-shadow: none
+    &.open .dropdown-menu
+      display: flex
+      flex-direction: column
+    &.dropdown-submenu.open .dropdown-menu
+      display: block
+
+@media (min-width: 320px)
+  .navbar-collapse
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+
+@media (min-width: 768px)
+  .navbar-collapse
+    border-color: #fff
+    box-shadow: none
+
+@media (min-width: 320px)
+  .navbar-collapse li.dropdown .dropdown-menu
+    position: relative
+    width: 100%
+    border: 0
+
+@media (min-width: 320px) and (min-width: 768px)
+  .navbar-collapse li.dropdown .dropdown-menu
+    float: left
+
+@media (min-width: 768px)
+  .navbar-collapse li.dropdown .dropdown-menu
+    position: absolute
+    float: left
+    display: none
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175)
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175)
+
+@media (min-width: 768px)
+  .navbar-collapse li.dropdown.open .dropdown-menu
+    display: block
+
+@media (min-width: 320px)
+  .navbar-collapse li.dropdown.dropdown-submenu .dropdown-menu
+    position: relative
+    width: 100%
+    float: left
+    border: 0
+    display: block
+    &:before
+      position: absolute
+      width: 3px
+      left: 10px
+      height: 80%
+      content: ''
+      background-color: #D3D3D3
+      top: 50%
+      transform: translateY(-50%)
+
+@media (min-width: 768px)
+  .navbar-collapse li.dropdown.dropdown-submenu .dropdown-menu
+    position: absolute
+    float: left
+    display: none
+    &:before
+      content: none
+
+.navbar-default.lightHeader
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  background-color: #fff
+  .navbar-nav > li
+    > a
+      color: #000
+    &.active
+      &.color-1 > a
+        color: #f0c24b
+      &.color-2 > a
+        color: #b5d56a
+      &.color-3 > a
+        color: #ea7066
+      &.color-4 > a
+        color: #84bed6
+      &.color-5 > a
+        color: #a597e7
+      &.color-6 > a
+        color: #ea77ad
+
+@media (min-width: 320px)
+  .navbar-default.lightHeader
+    height: 70px
+    top: 3px
+
+@media (min-width: 768px)
+  .navbar-default.lightHeader
+    height: 110px
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-1 > a > span
+    border-right: 2px solid #f0c24b
+
+.navbar-nav > li
+  &.color-1
+    > a
+      &:hover span
+        color: #f0c24b
+      &:active span
+        color: #f0c24b !important
+    &.singleDrop
+      > .dropdown-menu li
+        a:hover
+          background-color: #f0c24b
+          color: #fff
+        &.active
+          > a, li.active a
+            color: #f0c24b
+          a:hover, li.active a:hover
+            color: #fff
+      &.open a > span
+        color: #f0c24b
+  &.color-2
+    > a:hover span
+      color: #b5d56a
+    &.dropdown.megaDropMenu
+      .dropdown-menu .list-unstyled li
+        &.listHeading, &:first-child
+          color: #666
+        a:hover
+          background-color: #b5d56a
+          color: #fff
+        &.active
+          > a, li.active a
+            color: #b5d56a
+          a:hover, li.active a:hover
+            color: #fff
+      .open a > span
+        color: #b5d56a
+      > a
+        display: block
+        position: relative
+        &:after
+          display: inline-block
+          width: auto
+          height: auto
+          font-family: "FontAwesome"
+          margin-left: 5px
+          vertical-align: middle
+          content: "\f107"
+          border: 0px
+          position: absolute
+          top: 50%
+          right: 30px
+          transform: translateY(-50%)
+          font-size: 15px
+      &.open > a:after
+        content: "\f106"
+  &.color-3
+    > a:hover span
+      color: #ea7066
+    &.singleDrop
+      > .dropdown-menu li
+        a:hover
+          background-color: #ea7066
+          color: #fff
+        &.active
+          > a, li.active a
+            color: #ea7066
+            background: transparent
+          a:hover
+            color: #fff
+      &.open a > span
+        color: #ea7066
+  &.color-4
+    > a:hover span
+      color: #84bed6
+    &.singleDrop
+      > .dropdown-menu li
+        a:hover
+          background-color: #84bed6
+          color: #fff
+        &.active
+          > a, li.active a
+            background-color: transparent
+            color: #84bed6
+          a:hover
+            color: #fff
+      &.open a > span
+        color: #84bed6
+  &.color-5
+    > a:hover span
+      color: #a597e7
+    &.singleDrop
+      > .dropdown-menu li
+        a:hover
+          background-color: #a597e7
+          color: #fff
+        &.active
+          > a, li.active a
+            background-color: transparent
+            color: #a597e7
+          a:hover
+            color: #fff
+      &.open a > span
+        color: #a597e7
+  &.color-6
+    > a:hover span
+      color: #ea77ad
+    &.singleDrop
+      > .dropdown-menu li
+        a:hover
+          background-color: #ea77ad
+          color: #fff
+        &.active
+          > a, li.active a
+            color: #ea77ad
+            background-color: transparent
+          a:hover
+            color: #fff
+      &.open a > span
+        color: #ea77ad
+  &:last-child > a > span
+    border-right: none
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-1.singleDrop > .dropdown-menu
+    border-top: 4px solid #f0c24b
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-1.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #f0c24b
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-2 > a > span
+    border-right: 2px solid #b5d56a
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu
+    border-top: 4px solid #b5d56a
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li
+    &.listHeading, &:first-child
+      color: #b5d56a
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-2.dropdown.megaDropMenu > a:after
+    content: ''
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-2.dropdown.megaDropMenu.open > a:after
+    content: ''
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-3 > a > span
+    border-right: 2px solid #ea7066
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-3.singleDrop > .dropdown-menu
+    border-top: 4px solid #ea7066
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-3.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #ea7066
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-4 > a > span
+    border-right: 2px solid #84bed6
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-4.singleDrop > .dropdown-menu
+    border-top: 4px solid #84bed6
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-4.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #84bed6
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-5 > a > span
+    border-right: 2px solid #a597e7
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-5.singleDrop > .dropdown-menu
+    border-top: 4px solid #a597e7
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-5.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #a597e7
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-6.singleDrop > .dropdown-menu
+    border-top: 4px solid #ea77ad
+
+@media (min-width: 768px)
+  .navbar-nav > li.color-6.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #ea77ad
+
+.navbar-right
+  margin-right: 0
+
+.navbar-default .navbar-toggle
+  background-color: #ea7066
+  border-color: #ea7066
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  &:focus, &:hover
+    background-color: #ea7066
+    border-color: #ea7066
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .icon-bar, &:focus .icon-bar, &:hover .icon-bar
+    background-color: #fff
+
+@media (min-width: 768px)
+  .bb-fixed-header .navbar-nav > li.dropdown.open > a:after
+    top: 83px
+
+#menuBar.bb-fixed-header
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  z-index: 1030 !important
+  top: 3px
+
+@media (min-width: 480px)
+  #menuBar.bb-fixed-header
+    height: 70px
+
+@media (min-width: 768px)
+  #menuBar.bb-fixed-header
+    height: 90px
+
+@media (min-width: 480px)
+  #menuBar.bb-fixed-header .navbar-brand
+    height: auto
+    padding: 15px
+    width: 160px
+
+@media (min-width: 768px)
+  #menuBar.bb-fixed-header .navbar-brand
+    height: auto
+    padding: 20px 15px
+    width: 190px
+
+@media (min-width: 320px)
+  #menuBar.bb-fixed-header .navbar-nav > li > a
+    padding: 12px
+
+@media (min-width: 768px)
+  #menuBar.bb-fixed-header .navbar-nav > li > a
+    padding: 13px 0
+
+footer
+  position: relative
+  .color-bar
+    position: absolute
+    top: 0
+
+.footerInfoArea
+  background-attachment: fixed
+  width: 100%
+  background-repeat: repeat
+  padding: 60px 0
+
+.footerTitle
+  display: block
+  margin-bottom: 30px
+  a
+    width: 150px
+    height: 46px
+    display: block
+    img
+      width: 100%
+  h4
+    color: #fff
+    font-size: 20px
+    margin: 0
+    font-weight: 700
+    text-transform: capitalize
+
+.footerInfo
+  p
+    margin-bottom: 30px
+    color: #d8e3f0
+  .input-group
+    border-radius: 5px
+    margin-bottom: 30px
+    -webkit-box-shadow: 0 4px 0 rgba(255, 255, 255, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(255, 255, 255, 0.1)
+    box-shadow: 0 4px 0 rgba(255, 255, 255, 0.1)
+    .form-control
+      background-color: #f5f5f5
+      border: 0
+      color: #666
+      height: 40px
+      width: 80%
+    .input-group-addon
+      border-radius: 0 4px 4px 0
+      background-color: #ea7066
+      border: 0
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+      display: inline-block
+      float: left
+      width: 20%
+      height: 40px
+      i
+        color: #fff
+      &:hover
+        background-color: #ea7066
+        border-color: #ea7066
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 1)
+        -moz-opacity: 1
+        -khtml-opacity: 1
+        opacity: 1
+
+.footerList > li > a
+  color: #d8e3f0
+  i
+    margin: 0 10px 25px 0
+
+.postLink li
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+  margin-bottom: 20px
+  padding-bottom: 20px
+  &:last-child
+    border-bottom: none
+  .media-body
+    .media-heading
+      font-size: 14px
+      font-size: 14px
+      font-weight: 400
+      line-height: 16px
+      text-transform: capitalize
+      text-overflow: none
+      white-space: normal
+      overflow: hidden
+      a
+        color: #d8e3f0
+    p
+      margin-bottom: 0
+  .media-left .img-rounded
+    border-width: 2px
+    border-style: solid
+    border-radius: 12px
+    width: 60px
+    height: 60px
+
+.copyRight
+  display: block
+  background-color: #041319
+  padding: 20px 0
+  .list-inline li a
+    display: block
+    text-align: center
+    border-radius: 100%
+    color: #fff
+    &:hover
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+
+@media (min-width: 320px)
+  .copyRight .list-inline
+    text-align: center
+    margin-bottom: 20px
+
+@media (min-width: 768px)
+  .copyRight .list-inline
+    text-align: right
+    margin: 0
+
+@media (min-width: 768px)
+  .copyRight .list-inline li
+    padding: 2px
+
+@media (min-width: 992px)
+  .copyRight .list-inline li
+    padding: 0 2px
+
+@media (min-width: 1200px)
+  .copyRight .list-inline li
+    padding: 0 5px
+
+@media (min-width: 320px)
+  .copyRight .list-inline li a
+    width: 35px
+    height: 35px
+    line-height: 35px
+    font-size: 14px
+
+@media (min-width: 768px)
+  .copyRight .list-inline li a
+    width: 25px
+    height: 25px
+    line-height: 25px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .copyRight .list-inline li a
+    width: 28px
+    height: 28px
+    line-height: 28px
+    font-size: 14px
+
+.copyRightText p
+  margin-bottom: 0
+  color: #d8e3f0
+  a
+    color: #d8e3f0
+    &:hover
+      color: #ea7066
+
+@media (min-width: 320px)
+  .copyRightText p
+    font-size: 11px
+    text-align: center
+    line-height: 21px
+
+@media (min-width: 768px)
+  .copyRightText p
+    font-size: 13px
+    text-align: left
+    line-height: 28px
+
+.bg-image
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-position: center center
+
+.footer-2
+  .footerInfoArea
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    background: #f8f8f8
+  .copyRight
+    background: #f8f8f8
+  .footerInfo p, .footerList > li > a, .postLink li .media-body .media-heading a, .copyRightText p
+    color: #666
+  .footerInfo .input-group
+    .form-control
+      background-color: #ffffff
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    &:hover
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3)
+  .copyRightText p a
+    color: #ea7066
+
+.bannercontainer
+  .tp-rightarrow.default
+    z-index: 98
+  .fullscreenbanner-container
+    width: 100%
+    position: relative
+    padding: 0
+    .tp-bullets.preview4
+      opacity: 1
+      height: auto
+      .bullet
+        display: none !important
+    .tparrows.preview4 .tp-arr-iwrapper
+      display: none !important
+
+@media (min-width: 992px)
+  .bannercontainer .fullscreenbanner-container .tp-bullets.preview4
+    bottom: 30px !important
+
+.tp-bullets
+  z-index: 99
+
+@media (min-width: 768px)
+  .tparrows.preview4:hover:after, .tp-leftarrow.preview4:hover:after
+    -webkit-transform: rotateY(0)
+    transform: rotateY(0)
+
+.fullscreenbanner
+  color: #fff
+  width: 100%
+  position: relative
+
+.tp-caption
+  &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+    white-space: normal !important
+    width: inherit
+  &.rs-caption-1 a.btn-primary
+    color: #fff
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
+    &:hover, &:focus
+      color: #fff
+      height: 35px
+      line-height: 35px
+      padding: 0 10px
+  &.rs-caption-2 a.btn-primary
+    color: #fff
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
+    &:hover, &:focus
+      color: #fff
+      height: 35px
+      line-height: 35px
+      padding: 0 10px
+  &.rs-caption-3 a.btn-primary
+    color: #fff
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
+    &:hover, &:focus
+      color: #fff
+      height: 35px
+      line-height: 35px
+      padding: 0 10px
+  &.rs-caption-1
+    text-transform: capitalize
+    font-weight: 700
+    span
+      color: #ea7066
+  &.rs-caption-2
+    font-weight: 400
+    padding: 0 10px !important
+  &.rs-caption-3
+    padding: 0 10px !important
+
+@media (min-width: 320px)
+  .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 90%
+
+@media (min-width: 768px)
+  .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 85%
+
+@media (min-width: 992px)
+  .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 70%
+
+@media (min-width: 1200px)
+  .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 55%
+
+@media (min-width: 768px)
+  .tp-caption
+    &.rs-caption-1 a.btn-primary
+      padding: 0 10px
+      margin-top: -20px
+      &:hover, &:focus
+        padding: 0 10px
+        margin-top: -20px
+    &.rs-caption-2 a.btn-primary
+      padding: 0 10px
+      margin-top: -20px
+      &:hover, &:focus
+        padding: 0 10px
+        margin-top: -20px
+    &.rs-caption-3 a.btn-primary
+      padding: 0 10px
+      margin-top: -20px
+      &:hover, &:focus
+        padding: 0 10px
+        margin-top: -20px
+
+@media (min-width: 992px)
+  .tp-caption
+    &.rs-caption-1 a.btn-primary
+      height: 45px
+      line-height: 45px
+      padding: 0 20px
+      &:hover, &:focus
+        height: 45px
+        line-height: 45px
+        padding: 0 20px
+    &.rs-caption-2 a.btn-primary
+      height: 45px
+      line-height: 45px
+      padding: 0 20px
+      &:hover, &:focus
+        height: 45px
+        line-height: 45px
+        padding: 0 20px
+    &.rs-caption-3 a.btn-primary
+      height: 45px
+      line-height: 45px
+      padding: 0 20px
+      &:hover, &:focus
+        height: 45px
+        line-height: 45px
+        padding: 0 20px
+
+@media (min-width: 320px)
+  .tp-caption.rs-caption-1
+    font-size: 30px !important
+    line-height: 2px !important
+    padding: 0 10px !important
+
+@media (min-width: 768px)
+  .tp-caption.rs-caption-1
+    font-size: 45px !important
+    line-height: 40px !important
+    padding: 0
+
+@media (min-width: 992px)
+  .tp-caption.rs-caption-1
+    font-size: 50px !important
+    line-height: 40px !important
+
+@media (min-width: 320px)
+  .tp-caption.rs-caption-2
+    font-size: 15px !important
+    line-height: 17px !important
+    padding: 0 10px !important
+
+@media (min-width: 768px)
+  .tp-caption.rs-caption-2
+    display: block
+    font-size: 14px !important
+    line-height: 17px !important
+    padding: 0
+
+@media (min-width: 1200px)
+  .tp-caption.rs-caption-2
+    font-size: 22px !important
+    line-height: 31px !important
+
+.fullscreenbanner .tp-dottedoverlay.twoxtwo
+  background: transparent
+  background-image: none !important
+  z-index: 1
+
+.tparrows.preview4
+  width: 47px
+  height: 47px
+  &:after
+    line-height: 47px
+    width: 47px
+    height: 47px
+    background-color: #fff
+    color: #666
+    -webkit-border-radius: 13px
+    -moz-border-radius: 13px
+    border-radius: 13px
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+
+.tp-rightarrow.preview4
+  right: 3% !important
+  &:after
+    content: '\e81e'
+
+.tp-leftarrow.preview4
+  left: 3% !important
+  &:after
+    content: '\e81f'
+
+.featureSection
+  position: relative
+
+@media (min-width: 320px)
+  .featureSection
+    padding: 50px 0
+
+@media (min-width: 768px)
+  .featureSection
+    padding: 60px 0
+
+.linkIcon, .locateArrow
+  display: block
+  position: absolute
+  left: 50%
+  margin-left: -50px
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+
+.linkSection
+  width: 100%
+  z-index: 500
+
+@media (min-width: 320px)
+  .linkSection
+    position: relative
+
+@media (min-width: 768px)
+  .linkSection
+    margin-top: -90px
+
+.sectionLink
+  width: 100%
+  height: 190px
+  display: block
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+  text-align: center
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .linkIcon
+    width: 100px
+    height: 100px
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    background-color: #fff
+    border-width: 6px
+    border-style: solid
+    top: -50px
+    font-size: 30px
+    line-height: 90px
+    color: #666
+  .linkText
+    line-height: 190px
+    display: block
+    font-size: 32px
+    font-weight: 400
+    color: #fff
+    letter-spacing: 1px
+  .locateArrow
+    font-size: 18px
+    color: #fff
+    bottom: 27px
+    margin-left: -10px
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 0)
+    -moz-opacity: 0
+    -khtml-opacity: 0
+    opacity: 0
+  &:hover
+    .border-color-1
+      color: #f0c24b
+    .border-color-2
+      color: #b5d56a
+    .border-color-3
+      color: #ea7066
+    .border-color-4
+      color: #84bed6
+    .locateArrow
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+
+@media (min-width: 320px)
+  .sectionLink
+    margin-bottom: 75px
+
+@media (min-width: 768px)
+  .sectionLink
+    margin-bottom: 0
+
+.media-body h3.media-heading
+  font-size: 24px
+  line-height: 30px
+  color: #fff
+  font-weight: 700
+  text-transform: capitalize
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.featuresContent
+  margin-bottom: 40px
+  .media-left
+    width: 76px
+    height: 76px
+    padding: 6px
+    margin-right: 20px
+    display: inline-block
+    float: left
+    -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    i
+      width: 62px
+      height: 62px
+      line-height: 62px
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      border: 2px solid #fff
+      text-align: center
+      font-size: 22px
+      color: #fff
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+    &:hover i
+      -webkit-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      transform: rotate(360deg)
+
+.promotionWrapper
+  width: 100%
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  color: #ffffff
+  padding: 75px 0
+  .promotionInfo
+    text-align: center
+    h2
+      font-size: 36px
+      color: #fff
+      margin-bottom: 40px
+      margin: 0 0 23px 0
+      text-transform: capitalize
+    p
+      margin: 0 0 30px 0
+      color: #fff
+
+@media (min-width: 768px)
+  .promotionWrapper .promotionInfo h2
+    line-height: 36px
+
+@media (min-width: 768px)
+  .promotionWrapper .promotionInfo h2
+    line-height: 33px
+
+@media (min-width: 768px)
+  .promotionWrapper .promotionInfo p
+    line-height: 22px
+    font-size: 15px
+
+@media (min-width: 768px)
+  .promotionWrapper .promotionInfo p
+    line-height: 15px
+    font-size: 18px
+
+.schoolInfo
+  h2
+    font-size: 36px
+    line-height: 42px
+    text-transform: capitalize
+    color: #ea7066
+    font-weight: 700
+  p
+    font-size: 15px
+    color: #222222
+    margin-bottom: 25px
+  .btn-primary
+    margin-top: 20px
+
+@media (min-width: 320px)
+  .schoolInfo h2
+    margin: 25px 0
+
+@media (min-width: 768px)
+  .schoolInfo h2
+    margin: 0 0 25px 0
+
+.para-list.list-unstyled
+  margin-bottom: 35px
+  li
+    color: #666
+    font-size: 15px
+    margin-bottom: 10px
+    i
+      margin-right: 10px
+
+.servicesSection
+  width: 100%
+  background-repeat: repeat
+  height: auto
+  padding-bottom: 60px
+
+.servicesContent
+  margin-bottom: 40px
+  .media-left
+    width: auto
+    height: auto
+    padding: 0
+    margin-right: 20px
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    border: 2px solid #fff
+    text-align: center
+    display: inline-block
+    float: left
+    i
+      color: #fff
+      font-size: 20px
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+      width: 70px
+      height: 70px
+      line-height: 70px
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+    &:hover i
+      -webkit-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      transform: rotate(360deg)
+  .media-body p
+    color: rgba(255, 255, 255, 0.7)
+
+@media (min-width: 320px)
+  .servicesContent.rightAlign .media-left
+    float: left
+    margin: 0 20px 0 0
+
+@media (min-width: 768px)
+  .servicesContent.rightAlign .media-left
+    float: right
+    margin: 0 0 0 20px
+
+@media (min-width: 320px)
+  .servicesContent.rightAlign .media-body
+    .media-heading, > p
+      text-align: left
+
+@media (min-width: 768px)
+  .servicesContent.rightAlign .media-body
+    .media-heading, > p
+      text-align: right
+
+.block
+  h3
+    text-transform: capitalize
+    font-weight: 700
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    margin: 0 0 6px 0
+    a
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+      display: block
+  .list-unstyled, .list-inline
+    margin-bottom: 0
+  .list-unstyled li, .list-inline li
+    line-height: 21px
+    color: #666
+    margin-bottom: 5px
+  .list-unstyled li i, .list-inline li i
+    margin-right: 6px
+  .list-unstyled li a
+    color: #666
+  .list-inline
+    li a
+      color: #666
+    .btn-primary
+      background-color: #fff !important
+      color: #666
+      border: 2px solid transparent !important
+      &:hover
+        color: #fff
+        background-color: #f0c24b !important
+    .btn-link
+      text-transform: capitalize
+      font-size: 14px
+      color: #666
+      font-weight: 600
+      box-shadow: none
+      padding-left: 0
+      &:hover
+        box-shadow: none !important
+    &.btn-yellow
+      .btn-primary:hover
+        background-color: #f0c24b
+      .btn-link:hover
+        color: #f0c24b
+    &.btn-green
+      .btn-primary:hover
+        background-color: #b5d56a !important
+      .btn-link:hover
+        color: #b5d56a
+    &.btn-red
+      .btn-primary:hover
+        background-color: #ea7066 !important
+      .btn-link:hover
+        color: #ea7066 !important
+    &.btn-sky
+      .btn-primary:hover
+        background-color: #84bed6 !important
+      .btn-link:hover
+        color: #84bed6
+    &.btn-purple
+      .btn-primary:hover
+        background-color: #a597e7 !important
+      .btn-link:hover
+        color: #a597e7
+    &.btn-pink
+      .btn-primary:hover
+        background-color: #ea77ad !important
+      .btn-link:hover
+        color: #ea77ad
+
+@media (min-width: 320px)
+  .block h3
+    font-size: 24px
+
+@media (min-width: 992px)
+  .block h3
+    font-size: 24px
+
+@media (min-width: 1200px)
+  .block h3
+    font-size: 24px
+
+.coursesSection
+  padding-bottom: 80px
+
+.sticker
+  position: absolute
+  left: 20px
+  top: 20px
+  width: 65px
+  height: 65px
+  -webkit-border-radius: 100%
+  -moz-border-radius: 100%
+  border-radius: 100%
+  text-align: center
+  line-height: 65px
+  color: #fff
+  font-weight: 600
+  font-size: 24px
+  cursor: pointer
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  &:hover
+    -webkit-transform: scale(1.2, 1.2)
+    -o-transform: scale(1.2, 1.2)
+    transform: scale(1.2, 1.2)
+
+.thumbnailContent
+  &.alt
+    box-shadow: none
+    > .caption
+      background-color: transparent
+      .table
+        border-color: #dedede !important
+        &.table-curved
+          thead tr th
+            color: #fff
+            text-align: center
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: 700
+            padding: 0
+            height: 44px
+            line-height: 44px
+            &:first-child
+              font-size: 20px
+              i
+                color: #c09933
+          tbody tr td
+            padding: 0
+            text-align: center
+            height: 109px
+            vertical-align: middle
+            font-size: 14px
+            color: #666
+            border-color: #dedede !important
+            &:first-child
+              font-weight: 600
+            span
+              display: block
+              font-size: 18px
+              font-weight: 700
+              margin-bottom: 15px
+      .imagesPart
+        display: block
+        width: 100%
+        img
+          display: inline-block
+          float: left
+          width: 49%
+          margin: 15px 2% 25px 0
+          &:last-child
+            margin-right: 0
+  .caption
+    border-top: 5px solid #fff
+    background-color: #f8f8f8
+    padding: 15px
+
+.owl-carousel.teamSlider
+  .owl-nav
+    height: 0px
+  &:hover .owl-nav
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 1)
+    -moz-opacity: 1
+    -khtml-opacity: 1
+    opacity: 1
+
+@media (min-width: 320px)
+  .owl-carousel.teamSlider .owl-nav
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 1)
+    -moz-opacity: 1
+    -khtml-opacity: 1
+    opacity: 1
+
+@media (min-width: 768px)
+  .owl-carousel.teamSlider .owl-nav
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 0)
+    -moz-opacity: 0
+    -khtml-opacity: 0
+    opacity: 0
+
+@media (min-width: 320px)
+  .teamSlider.owl-carousel .owl-prev
+    margin-left: 0 !important
+
+@media (min-width: 768px)
+  .teamSlider.owl-carousel .owl-prev
+    margin-left: -50px !important
+
+@media (min-width: 320px)
+  .teamSlider.owl-carousel .owl-next
+    margin-right: 0 !important
+
+@media (min-width: 768px)
+  .teamSlider.owl-carousel .owl-next
+    margin-right: -50px !important
+
+.teamSection
+  width: 100%
+  background-repeat: repeat
+  height: auto
+
+.teamImage
+  width: 150px
+  height: 150px
+  display: block
+  -webkit-border-radius: 100%
+  -moz-border-radius: 100%
+  border-radius: 100%
+  position: relative
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .maskingContent
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.45)
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 0)
+    -moz-opacity: 0
+    -khtml-opacity: 0
+    opacity: 0
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    .list-inline
+      text-align: center
+      li a
+        line-height: 150px
+        color: #fff
+
+.teamInfo
+  h3
+    font-size: 20px
+    color: #fff
+    text-transform: capitalize
+    margin: 15px 0 10px 0
+    text-align: center
+    font-weight: 600
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    a
+      color: #222222
+      &:hover
+        color: #ea7066
+  p
+    font-size: 15px
+    color: #fff
+    margin: 0
+    text-align: center
+  &.teamTeacher
+    margin-bottom: 50px
+    p
+      color: rgba(34, 34, 34, 0.7)
+
+.teamContent
+  width: 150px
+  margin: 0 auto
+  .teamInfo h3 a
+    color: #fff
+  &:hover
+    .teamImage .maskingContent
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+    .teamInfo h3 a
+      color: #f0c24b
+  &.teamAdjust
+    margin: 0 auto
+    .teamInfo h3 a
+      color: #ea7066
+      &:hover
+        color: #ea7066
+
+@media (min-width: 320px)
+  .teamStyle
+    margin-bottom: 30px
+
+@media (min-width: 768px)
+  .teamStyle
+    margin-bottom: 80px
+
+@media (min-width: 320px)
+  .teamStyle .media-left
+    width: 100%
+    display: block
+    float: left
+    padding: 0 0 30px 0
+
+@media (min-width: 768px)
+  .teamStyle .media-left
+    width: 150px
+    display: inline-block
+    float: left
+    padding-right: 30px
+
+.teamStyle
+  .media-left img
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .media-body
+    h4
+      font-size: 20px
+      color: #222222
+      text-transform: capitalize
+      font-weight: 600
+      margin-bottom: 12px
+      a
+        color: #222222
+        &:hover
+          color: #ea7066
+    h5
+      color: rgba(34, 34, 34, 0.7)
+      font-size: 15px
+    .list-inline
+      text-align: left
+      li a
+        display: block
+        text-align: center
+        border-radius: 100%
+        color: #fff
+        &:hover
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+          filter: alpha(opacity = 1)
+          -moz-opacity: 1
+          -khtml-opacity: 1
+          opacity: 1
+
+@media (min-width: 320px)
+  .teamStyle .media-body .list-inline
+    margin-bottom: 20px
+
+@media (min-width: 768px)
+  .teamStyle .media-body .list-inline
+    margin: 0
+
+@media (min-width: 768px)
+  .teamStyle .media-body .list-inline li
+    padding: 2px
+
+@media (min-width: 992px)
+  .teamStyle .media-body .list-inline li
+    padding: 0 2px
+
+@media (min-width: 1200px)
+  .teamStyle .media-body .list-inline li
+    padding: 0 5px
+
+@media (min-width: 320px)
+  .teamStyle .media-body .list-inline li a
+    width: 35px
+    height: 35px
+    line-height: 35px
+    font-size: 14px
+
+@media (min-width: 768px)
+  .teamStyle .media-body .list-inline li a
+    width: 25px
+    height: 25px
+    line-height: 25px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .teamStyle .media-body .list-inline li a
+    width: 28px
+    height: 28px
+    line-height: 28px
+    font-size: 14px
+
+.teachersPhoto
+  width: 100%
+  img
+    width: 100%
+
+.teachersInfo
+  h3
+    color: #ea7066
+    text-transform: capitalize
+    font-weight: 700
+    font-size: 28px
+    margin: 0 0 25px 0
+  p
+    margin: 0 0 25px 0
+  .list-inline
+    text-align: left
+    li a
+      display: block
+      text-align: center
+      border-radius: 100%
+      color: #fff
+      &:hover
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 1)
+        -moz-opacity: 1
+        -khtml-opacity: 1
+        opacity: 1
+
+@media (min-width: 320px)
+  .teachersInfo .list-inline
+    margin-bottom: 20px
+
+@media (min-width: 768px)
+  .teachersInfo .list-inline
+    margin: 0 0 45px 0
+
+@media (min-width: 768px)
+  .teachersInfo .list-inline li
+    padding: 2px
+
+@media (min-width: 992px)
+  .teachersInfo .list-inline li
+    padding: 0 2px
+
+@media (min-width: 1200px)
+  .teachersInfo .list-inline li
+    padding: 0 5px
+
+@media (min-width: 320px)
+  .teachersInfo .list-inline li a
+    width: 35px
+    height: 35px
+    line-height: 35px
+    font-size: 14px
+
+@media (min-width: 768px)
+  .teachersInfo .list-inline li a
+    width: 25px
+    height: 25px
+    line-height: 25px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .teachersInfo .list-inline li a
+    width: 28px
+    height: 28px
+    line-height: 28px
+    font-size: 14px
+
+.teachersProfession, .professionDetails
+  width: 100%
+  height: 50px
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  text-indent: 30px
+  line-height: 50px
+  font-weight: 600
+
+.teachersProfession
+  color: #fff
+  text-transform: uppercase
+
+.professionDetails
+  background-color: #fff
+  margin-bottom: 15px
+  font-size: 20px
+  text-transform: capitalize
+
+.eventSection
+  padding-bottom: 70px
+
+.eventContent
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+  margin-bottom: 30px
+  .media-left
+    border-radius: 13px 0 0 13px
+    position: relative
+    width: 100%
+    display: block
+    padding-right: 0
+    img
+      width: 100%
+      box-shadow: none
+  .media-body
+    h3 a, .list-unstyled li
+      color: #fff
+    p
+      color: #fff
+      margin-bottom: 25px
+  .list-inline
+    a
+      font-size: 14px
+    .btn-primary
+      background-color: #fff
+      color: #666
+      font-weight: 600
+      padding: 8px 15px
+      &:hover
+        background-color: #fff !important
+    &.btn-yellow .btn-primary:hover
+      color: #f0c24b
+      background-color: #fff !important
+    &.btn-green .btn-primary:hover
+      color: #b5d56a
+      background-color: #fff !important
+    &.btn-red .btn-primary:hover
+      color: #ea7066
+      background-color: #fff !important
+    &.btn-sky .btn-primary:hover
+      color: #84bed6
+      background-color: #fff !important
+    &.btn-purple .btn-primary:hover
+      color: #a597e7
+      background-color: #fff !important
+    &.btn-pink .btn-primary:hover
+      color: #ea77ad
+      background-color: #fff !important
+
+@media (min-width: 992px)
+  .eventContent .media-left
+    float: left
+    width: 50%
+    display: inline-block
+    padding-right: 10px
+    overflow: hidden
+
+@media (min-width: 768px)
+  .eventContent .media-left img
+    -webkit-box-shadow: 4px 0 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 4px 0 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 4px 0 0 rgba(0, 0, 0, 0.1)
+
+@media (min-width: 992px)
+  .eventContent .media-left img
+    width: 260px
+
+@media (min-width: 320px)
+  .eventContent .media-body
+    width: 100%
+    display: block
+    padding: 20px
+
+@media (min-width: 992px)
+  .eventContent .media-body
+    padding: 14px 10px 10px 10px
+    display: inline-block
+    float: left
+    width: 50%
+    overflow: visible
+
+@media (min-width: 1200px)
+  .eventContent .media-body
+    width: auto
+    display: table-cell
+    padding: 20px 10px 0 20px
+    width: 50%
+
+.sticker-round
+  width: 70px
+  padding: 10px 0
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
+  background-color: #84bed6
+  display: block
+  text-align: center
+  position: absolute
+  left: 20px
+  top: 20px
+  font-size: 16px
+  line-height: 20px
+  font-weight: 600
+  color: #fff
+
+.countUpSection
+  background-image: url("img/home/countup.jpg")
+  width: 100%
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-position: center center !important
+  background-attachment: fixed
+  color: #ffffff
+  padding: 80px 0
+  .counter
+    width: 145px
+    height: 145px
+    line-height: 145px
+    display: inline-block
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    border: 4px solid #fff
+  .counterInfo
+    line-height: 40px
+    height: 40px
+    border: none
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    background-color: #ea7066
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    border-radius: 6px
+    font-size: 16px
+    text-transform: uppercase
+    color: #fff
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    font-weight: 600
+    width: 129px
+    display: inline-block
+
+@media (min-width: 320px)
+  .countUpSection .counter
+    font-size: 32px
+    display: block
+    margin: 0 auto 25px auto
+
+@media (min-width: 768px)
+  .countUpSection .counter
+    font-size: 52px
+    display: inline-block
+    margin: 0 0 25px 0
+
+@media (min-width: 320px)
+  .countUpSection .counterInfo
+    font-size: 13px
+
+@media (min-width: 768px)
+  .countUpSection .counterInfo
+    font-size: 15px
+
+@media (min-width: 320px)
+  .countUpSection .text-center
+    margin-bottom: 30px
+
+@media (min-width: 768px)
+  .countUpSection .text-center
+    margin-bottom: 0
+
+.filter-container
+  padding: 0 20px 30px 20px
+
+@media (min-width: 320px)
+  .isotopeFilters ul.filter > li
+    padding: 6px 2px
+
+@media (min-width: 768px)
+  .isotopeFilters ul.filter > li
+    padding: 0 2px
+
+.isotopeFilters ul.filter > li
+  a
+    padding: 0 25px
+    height: 40px
+    font-size: 14px
+    line-height: 40px
+    color: #222222
+    text-transform: uppercase
+    font-weight: 600
+    display: inline-block
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    background-color: #f8f8f8
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+  &.active a
+    background-color: #ea7066
+    color: #fff
+
+.fancybox-lock .fancybox-overlay
+  background-color: rgba(0, 0, 0, 0.75)
+
+.isotopeSelector
+  img
+    width: 100%
+  &:hover img
+    -moz-transform: scale(1.2) rotate(0)
+    -o-transform: scale(1.2) rotate(0)
+    -ms-transform: scale(1.2) rotate(0)
+    -webkit-transform: scale(1.2) rotate(0)
+    transform: scale(1.2) rotate(0)
+  figure
+    position: relative
+    margin-bottom: 30px
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+  .overlay-background
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+  .overlay
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    position: absolute
+    left: 0
+    top: 0
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+    filter: alpha(opacity = 0)
+    -moz-opacity: 0
+    -khtml-opacity: 0
+    opacity: 0
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    a
+      width: 100%
+      height: 100%
+      display: block
+      text-align: center
+      i
+        width: 40px
+        height: 40px
+        display: block
+        text-align: center
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        border-radius: 4px
+        border: 2px solid #fff
+        color: #fff
+        line-height: 35px
+        font-size: 15px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        -webkit-transition: all 0.3s ease-in-out
+        -moz-transition: all 0.3s ease-in-out
+        -ms-transition: all 0.3s ease-in-out
+        -o-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+  &:hover
+    .overlay
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+      .overlayInfo
+        -moz-transform: translate(-50%, -50%)
+        -o-transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+    h4
+      color: #ea7066
+
+.fancybox-image-wrap .fancybox-image
+  padding: 15px
+  background-color: #f9f9f9
+
+.btnArea
+  width: 100%
+  display: block
+  float: left
+  margin-top: 20px
+  text-align: center
+  .btn-primary
+    display: inline-block
+
+.commentSection
+  width: 100%
+  background-repeat: repeat
+  height: auto
+
+@media (min-width: 320px)
+  .commentContent
+    padding: 0
+
+@media (min-width: 768px)
+  .commentContent
+    padding: 0 100px
+
+.commentContent
+  i
+    font-size: 130px
+    color: #fff
+    margin-bottom: 40px
+  h2
+    font-size: 22px
+    font-weight: 300
+    font-style: italic
+    line-height: 36px
+    color: #fff
+    margin: 0 0 40px 0
+    text-transform: capitalize
+  h3
+    font-size: 16px
+    color: #fff
+    text-transform: capitalize
+    margin: 0 0 12px 0
+    font-weight: 600
+  p
+    color: #fff
+    margin-bottom: 0
+
+.mapArea
+  width: 100%
+  display: block
+  #map
+    width: 100%
+    height: 420px
+
+.newsSection .block
+  .list-unstyled li, .list-inline li
+    display: inline-block
+
+.homeContactContent
+  h2
+    font-size: 36px
+    line-height: 4px1
+    color: #ea7066
+    text-transform: capitalize
+    margin: 0 0 20px 0
+  p
+    font-size: 15px
+    color: #222222
+    margin: 0 0 15px 0
+  address > p
+    color: rgba(34, 34, 34, 0.65)
+    >
+      i
+        width: 30px
+        height: 30px
+        line-height: 30px
+        margin-right: 10px
+        -webkit-border-radius: 100%
+        -moz-border-radius: 100%
+        border-radius: 100%
+        text-align: center
+        color: #fff
+        font-size: 16px
+      a
+        color: rgba(34, 34, 34, 0.65)
+  .form-group
+    position: relative
+    .input-group-addon
+      z-index: 100
+      position: absolute
+      top: 0
+      right: 0
+      width: 50px
+      height: 50px
+      line-height: 50px
+      text-align: center
+      color: #888888
+      border: none
+      background-color: transparent
+    i
+      z-index: 100
+      position: absolute
+      top: 0
+      right: 0
+      width: 50px
+      height: 50px
+      line-height: 50px
+      text-align: center
+      color: #888888
+    .form-control
+      position: relative
+      padding-right: 50px
+      height: 50px
+      border-width: 3px
+      -webkit-border-radius: 10px
+      -moz-border-radius: 10px
+      border-radius: 10px
+      color: #222222
+      background-color: transparent
+    textarea.form-control
+      height: 147px
+      line-height: 30px
+
+@media (min-width: 320px)
+  .homeContactContent form .btn-primary
+    float: left
+    width: 100%
+
+@media (min-width: 768px)
+  .homeContactContent form .btn-primary
+    float: right
+    width: auto
+
+.eventSidebar .homeContactContent .form-group
+  display: block
+  i
+    left: -5px
+  .form-control
+    padding-left: 30px
+
+.addressContent
+  margin-bottom: 25px
+  .media-left
+    width: 85px
+    height: 85px
+    line-height: 85px
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    text-align: center
+    font-size: 30px
+    padding-right: 0
+    color: #fff
+  .media-body
+    .media-heading
+      font-weight: 700
+      text-transform: capitalize
+      margin-bottom: 16px
+      color: #202020
+    p
+      font-weight: 600
+      a
+        color: #666
+
+@media (min-width: 320px)
+  .addressContent .media-left
+    display: inline-block
+    margin: 0 10px 6px 0
+    float: left
+
+@media (min-width: 768px)
+  .addressContent .media-left
+    display: block
+    margin: 0 10px 6px 0
+    float: none
+
+@media (min-width: 992px)
+  .addressContent .media-left
+    display: inline-block
+    margin: 0 10px 6px 0
+    float: left
+
+.areaPadding
+  padding: 90px 0 100px 0
+
+.homeContactContent .formBtnArea
+  text-align: center
+
+@media (min-width: 320px)
+  .homeContactContent .formBtnArea .btn-primary
+    float: left
+    display: block
+
+@media (min-width: 768px)
+  .homeContactContent .formBtnArea .btn-primary
+    float: none
+    display: inline-block
+
+.sectionTitle h2 span
+  &.shape
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background: #ffffff
+    display: inline-block
+    padding: 0
+    position: relative
+    float: none
+    &:after, &:before
+      content: ""
+      height: 2px
+      background: #ffffff
+      display: inline-block
+      position: absolute
+      border-radius: 2px
+    &:after
+      content: ""
+      width: 70px
+      top: 6px
+    &:before
+      content: ""
+      width: 55px
+      top: 11px
+  &.shape-left
+    &:before, &:after
+      right: 3px
+  &.shape-right
+    &:before, &:after
+      left: 3px
+  &.bg-color-4
+    background-color: #9fccdf !important
+    &:after, &:before
+      background-color: #9fccdf !important
+  &.bg-color-3
+    background-color: #ee8d85 !important
+    &:after, &:before
+      background-color: #ee8d85 !important
+
+.smooth-loader-wrapper
+  background-color: #fff
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 700000
+  .smooth-loader
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 2100
+    line-height: 0
+    transform: translate(-50%, 50%)
+    .loader
+      position: relative
+      width: 110px
+    .dot
+      display: inline-block
+      width: 20px
+      height: 20px
+      border-radius: 10px
+      background: #ccc
+      position: absolute
+    .dot-1
+      animation: animateDot1 1.5s linear infinite
+      left: 30px
+      background: #f0c24b
+    .dot-2
+      animation: animateDot2 1.5s linear infinite
+      animation-delay: .5s
+      left: 60px
+      background: #b5d56a
+    .dot-3
+      animation: animateDot3 1.5s linear infinite
+      left: 30px
+      background: #ea7066
+    .dot-4
+      animation: animateDot4 1.5s linear infinite
+      animation-delay: .5s
+      left: 60px
+      background: #84bed6
+
+.loaded #preloader
+  opacity: 0
+  visibility: hidden
+  -webkit-transition: all 0.7s ease-out
+  -moz-transition: all 0.7s ease-out
+  -ms-transition: all 0.7s ease-out
+  -o-transition: all 0.7s ease-out
+  transition: all 0.7s ease-out
+
+@keyframes animateDot1
+  0%
+    transform: rotate(0deg) translateX(-30px)
+
+  25%
+    transform: rotate(180deg) translateX(-30px)
+
+  75%
+    transform: rotate(180deg) translateX(-30px)
+
+  100%
+    transform: rotate(360deg) translateX(-30px)
+
+
+@keyframes animateDot2
+  0%
+    transform: rotate(0deg) translateX(-30px)
+
+  25%
+    transform: rotate(-180deg) translateX(-30px)
+
+  75%
+    transform: rotate(-180deg) translateX(-30px)
+
+  100%
+    transform: rotate(-360deg) translateX(-30px)
+
+
+@keyframes animateDot3
+  0%
+    transform: rotate(0deg) translateX(30px)
+
+  25%
+    transform: rotate(180deg) translateX(30px)
+
+  75%
+    transform: rotate(180deg) translateX(30px)
+
+  100%
+    transform: rotate(360deg) translateX(30px)
+
+
+@keyframes animateDot4
+  0%
+    transform: rotate(0deg) translateX(30px)
+
+  25%
+    transform: rotate(-180deg) translateX(30px)
+
+  75%
+    transform: rotate(-180deg) translateX(30px)
+
+  100%
+    transform: rotate(-360deg) translateX(30px)
+
+
+.bannercontainerV2 .tp-caption
+  &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+    width: 90%
+  &.rs-caption-1
+    color: #fff
+    line-height: 55px !important
+  &.rs-caption-2
+    color: #fff
+
+@media (min-width: 480px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 70%
+
+@media (min-width: 768px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 60%
+
+@media (min-width: 1200px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1, &.rs-caption-2, &.rs-caption-3
+      width: 50%
+
+@media (min-width: 320px)
+  .bannercontainerV2 .tp-caption.rs-caption-1 br
+    display: none
+
+@media (min-width: 992px)
+  .bannercontainerV2 .tp-caption.rs-caption-1 br
+    display: block
+
+@media (min-width: 320px)
+  .bannercontainerV2 .tp-caption.rs-caption-1 span
+    color: #ffd86c !important
+
+@media (min-width: 320px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 30% !important
+
+@media (min-width: 768px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 40% !important
+
+@media (min-width: 992px)
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 53% !important
+
+@media (min-width: 320px)
+  .bannercontainerV2 .tp-caption.rs-caption-2
+    font-size: 14px !important
+
+@media (min-width: 768px)
+  .bannercontainerV2 .tp-caption.rs-caption-2
+    font-size: 20px !important
+
+@media (min-width: 320px)
+  .bannercontainerV2 .tp-caption.rs-caption-3 .btn-default
+    padding: 6px 12px !important
+    font-size: 14px
+    background-color: #fff !important
+    color: #e7655a !important
+    font-weight: 900
+
+@media (min-width: 768px)
+  .bannercontainerV2 .tp-caption.rs-caption-3 .btn-default
+    font-size: 16px
+    padding: 11px 50px !important
+
+@media (min-width: 992px)
+  .bannercontainerV2 .tp-caption.rs-caption-3 .btn-default
+    font-size: 18px
+
+.banner-bottom
+  width: 100%
+  float: left
+
+.banner-bottom-inner
+  position: relative
+  z-index: 500
+  width: 100%
+  float: left
+  .colContent
+    position: relative
+    img
+      -webkit-border-radius: 9px
+      -moz-border-radius: 9px
+      border-radius: 9px
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      display: block
+  .colContent-info
+    position: absolute
+    h3
+      font-size: 20px
+      color: #fff
+      text-transform: capitalize
+      line-height: 34px
+      padding: 0 10px
+      display: inline-block
+      margin-bottom: 5px
+    p
+      font-size: 12px
+      color: #666
+      margin: 0
+      padding: 7px 10px
+      width: 90%
+      background: #f2f2f2
+    &.text-left
+      top: 25px
+      h3, p
+        border-radius: 0 6px 6px 0
+    &.text-center
+      bottom: 0
+      left: 20%
+      h3
+        border-radius: 6px
+      p
+        margin: 0 auto
+        border-radius: 6px 6px 0 0
+    &.text-right
+      right: 0
+      top: 25px
+      h3
+        border-radius: 6px 0 0 6px
+      p
+        border-radius: 6px 0 0 6px
+        margin-right: 0
+        margin-left: auto
+
+@media (min-width: 480px)
+  .banner-bottom-inner
+    top: -30px
+
+@media (min-width: 768px)
+  .banner-bottom-inner
+    top: -90px
+
+@media (min-width: 992px)
+  .banner-bottom-inner .colContent-info h3
+    font-size: 30px
+    line-height: 44px
+    padding: 0 25px
+
+@media (min-width: 992px)
+  .banner-bottom-inner .colContent-info p
+    font-size: 14px
+    width: 75%
+    padding: 7px 25px
+
+@media (min-width: 992px)
+  .banner-bottom-inner .colContent-info.text-left
+    top: 55px
+
+@media (min-width: 992px)
+  .banner-bottom-inner .colContent-info.text-right
+    top: 55px
+
+.promotionWrapper .promotionInfo .btn-default
+  background-color: #fff
+  color: #ea7066 !important
+  padding: 13px 28px !important
+  font-weight: 700
+  > i
+    margin-right: 10px
+    padding-left: 7px
+
+@media (max-width: 480px)
+  .productSection .col-xs-6
+    width: 100%
+
+.box
+  -webkit-border-radius: 12px
+  -moz-border-radius: 12px
+  border-radius: 12px
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  margin-bottom: 30px
+
+.box-img
+  border-radius: 12px 12px 0 0
+  border: 4px solid transparent
+  background: #fff
+  padding: 30px 0
+  position: relative
+  img
+    border-radius: 12px 12px 0 0
+    display: inline-block
+    margin: 0 auto
+    max-height: 132px
+  .btn-block
+    position: absolute
+    bottom: 0
+    height: 55px
+    line-height: 55px
+    color: #fff
+    background: #ea7066
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -ms-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    -moz-transform: translate(0%, 50%)
+    -o-transform: translate(0%, 50%)
+    -ms-transform: translate(0%, 50%)
+    -webkit-transform: translate(0%, 50%)
+    transform: translate(0%, 50%)
+    z-index: -1
+    i
+      margin-right: 7px
+
+.box:hover .box-img .btn-block
+  -moz-transform: translate(0%, 0%)
+  -o-transform: translate(0%, 0%)
+  -ms-transform: translate(0%, 0%)
+  -webkit-transform: translate(0%, 0%)
+  transform: translate(0%, 0%)
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  z-index: 1
+
+.box-info
+  padding: 30px
+  h4
+    font-size: 20px
+    color: #fff
+    text-transform: capitalize
+    margin-bottom: 15px
+    font-weight: 700
+    a
+      color: #fff
+  .btn-primary
+    font-size: 14px
+    background-color: #fff
+    color: #666
+    font-weight: 600
+    &:hover
+      background-color: #fff
+
+.price span
+  font-size: 27px
+  color: #fff
+  text-transform: capitalize
+  margin-bottom: 15px
+  font-weight: 600
+  display: inline-block
+  del
+    color: rgba(255, 255, 255, 0.7)
+
+.box .sticker-round
+  width: auto
+  padding: 10px
+  left: 7px
+  top: 7px
+  font-size: 13px
+
+.productSection .tabCommon .tab-pane
+  border: 0
+  border-radius: 0
+
+.brandSection
+  margin-bottom: 90px
+  .owl-carousel .owl-item
+    height: 150px
+  .partnersLogoSlider .slide
+    display: table
+    width: 200px
+    margin: 0 auto
+    height: 145px
+    background: #f8f8f8
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -webkit-border-radius: 9px
+    -moz-border-radius: 9px
+    border-radius: 9px
+    .partnersLogo
+      display: table-cell
+      vertical-align: middle
+      text-align: center !important
+      width: 200px
+      img
+        width: auto
+        margin: 0 auto
+
+@media (min-width: 768px)
+  .brandSection .partnersLogoSlider .slide
+    width: 100%
+
+@media (min-width: 768px)
+  .brandSection .owl-nav
+    display: none
+
+.headerV3
+  position: absolute
+  width: 100%
+  top: 0
+  .lightHeader
+    background-color: rgba(47, 60, 67, 0.502)
+    box-shadow: none
+  #menuBar.menu-sm
+    background-color: rgba(0, 0, 0, 0.8)
+  .navbar-secondary .navbar-nav li
+    a span
+      color: #000
+    &.active a span
+      color: #f0c24b !important
+
+@media (min-width: 992px)
+  .headerV3 .navbar-secondary .navbar-nav li a span
+    color: #fff !important
+
+@media (min-width: 992px)
+  .headerV3 .lightHeader .navbar-nav > li > a
+    color: #fff !important
+
+@media (min-width: 768px)
+  .headerV3 .navbar-right .dropdown-menu-left
+    right: auto
+    left: -50%
+
+@media (min-width: 768px)
+  .headerV3 .navbar-right .dropdown-menu-right
+    left: auto
+    right: -50%
+
+.version3 #menuBar.bb-fixed-header
+  background-color: rgba(0, 0, 0, 0.8)
+
+@media (min-width: 992px)
+  .version3 #menuBar.bb-fixed-header
+    height: 90px !important
+
+@media (min-width: 768px)
+  .version3 #menuBar.bb-fixed-header .navbar-nav > li > a
+    color: #000
+
+@media (min-width: 992px)
+  .version3 #menuBar.bb-fixed-header .navbar-nav > li > a
+    color: #fff
+
+@media (min-width: 768px)
+  .navbar-secondary.lightHeader
+    height: 75px !important
+
+@media (min-width: 992px)
+  .navbar-secondary.lightHeader
+    height: 110px !important
+
+@media (min-width: 320px)
+  .navbar-secondary .navbar-header .navbar-brand
+    height: auto
+    padding: 15px
+    width: 160px
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-header .navbar-brand
+    height: 110px
+    padding: 30px 15px
+    width: 196px
+
+.navbar-secondary .navbar-nav
+  > li
+    &.color-1
+      > a:hover span
+        color: #f0c24b !important
+      &.singleDrop
+        > .dropdown-menu li
+          a:hover
+            background-color: #f0c24b !important
+            color: #fff !important
+          &.active
+            > a, li.active a
+              color: #f0c24b !important
+            a:hover, li.active a:hover
+              color: #fff !important
+        &.open a > span
+          color: #f0c24b !important
+    &.color-3
+      > a:hover span
+        color: #ea7066 !important
+      &.singleDrop
+        > .dropdown-menu li
+          a:hover
+            background-color: #ea7066 !important
+          &.active
+            > a, li.active a
+              color: #ea7066 !important
+        &.open a > span
+          color: #ea7066 !important
+    &.color-2
+      > a:hover span
+        color: #b5d56a !important
+      &.dropdown.megaDropMenu
+        .dropdown-menu .list-unstyled li
+          &.listHeading, &:first-child
+            color: #b5d56a !important
+          a:hover
+            background-color: #b5d56a !important
+            color: #fff !important
+          &.active
+            > a, li.active a
+              color: #b5d56a !important
+            a:hover, li.active a:hover
+              color: #fff !important
+        .open a > span
+          color: #b5d56a !important
+  padding-top: 15px
+  .dropdown-menu
+    border: none !important
+  li
+    a
+      i
+        display: inline-block !important
+      span
+        border-right: none !important
+        display: inline-block !important
+        text-align: left
+        padding-left: 5px !important
+        width: auto
+        padding-right: 24px
+    &:last-child a span
+      padding-right: 0px
+  > li.dropdown.singleDrop .dropdown-menu li a
+    padding: 6px 12px 6px 24px !important
+  .dropdown .dropdown-submenu i
+    display: none !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-1.singleDrop > .dropdown-menu
+    border-top: 4px solid #f0c24b !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-1.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #f0c24b !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-3.singleDrop > .dropdown-menu
+    border-top: 4px solid #ea7066 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-3.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #ea7066 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu
+    border-top: 4px solid #b5d56a !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-4.singleDrop > .dropdown-menu
+    border-top: 4px solid #84bed6 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-4.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #84bed6 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-5.singleDrop > .dropdown-menu
+    border-top: 4px solid #a597e7 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-5.singleDrop > .dropdown-menu li .dropdown-menu
+    border-left: 4px solid #a597e7 !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.color-6.singleDrop > .dropdown-menu
+    border-top: 4px solid #ea77ad !important
+
+@media (min-width: 768px)
+  .navbar-secondary.bb-fixed-header .navbar-nav > li.dropdown.open > a:after
+    top: 36px
+
+@media (max-width: 990px) and (min-width: 480px)
+  .navbar-secondary .dropdown-submenu > .dropdown-menu
+    left: 0
+
+@media (max-width: 990px) and (min-width: 992px)
+  .navbar-secondary .dropdown-submenu > .dropdown-menu
+    left: 100%
+
+@media (max-width: 990px)
+  .navbar-secondary .navbar-nav
+    height: 340px
+    overflow-x: hidden
+    -webkit-transition: height 0.3s ease
+    -moz-transition: height 0.3s ease
+    -ms-transition: height 0.3s ease
+    -o-transition: height 0.3s ease
+    transition: height 0.3s ease
+    margin: 0 0 0 -15px
+
+@media (max-width: 990px) and (min-width: 992px)
+  .navbar-secondary .navbar-nav
+    height: auto
+    overflow-x: visible
+    overflow-y: visible
+
+@media (max-width: 990px) and (min-width: 320px)
+  .navbar-secondary .navbar-nav > li a
+    color: #000
+    padding: 12px !important
+
+@media (max-width: 990px) and (min-width: 992px)
+  .navbar-secondary .navbar-nav > li a
+    margin: 0
+    padding: 23px 0
+
+@media (max-width: 990px)
+  .navbar-secondary
+    .navbar-nav .singleDrop .dropdown-menu .dropdown-submenu .dropdown-menu:before
+      position: absolute
+      width: 3px
+      left: 10px
+      height: 80%
+      content: ''
+      background-color: #D3D3D3
+      top: 50%
+      transform: translateY(-50%)
+    .navbar-collapse li.dropdown .dropdown-menu
+      position: relative
+      box-shadow: none
+    .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled
+      position: relative
+      &:after
+        position: absolute
+        width: 3px
+        left: 10px
+        height: 60%
+        content: ''
+        background-color: #D3D3D3
+        top: 29%
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled:after
+    top: 27%
+
+@media (max-width: 990px)
+  .navbar-secondary .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li:first-child
+    font-size: 14px
+    font-weight: 400
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li:first-child
+    margin-left: -15px
+
+@media (max-width: 990px)
+  .navbar-secondary
+    .navbar-nav > li.dropdown.singleDrop .dropdown-menu li .dropdown-menu
+      margin-left: 15px !important
+    .navbar-collapse li.dropdown.open .dropdown-menu
+      display: flex
+      flex-direction: column
+      position: relative
+      left: 0 !important
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-collapse li.dropdown.open .dropdown-menu
+    margin-left: 10px
+
+@media (max-width: 990px)
+  .navbar-secondary .navbar-collapse li.dropdown.open .dropdown-menu:after
+    display: none
+    content: ''
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-nav > li.dropdown.singleDrop > a:after
+    content: "\f107" !important
+    color: #222
+    left: auto
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-nav > li.color-2.dropdown.megaDropMenu > a:after
+    content: "\f107" !important
+    color: #222
+    left: auto
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-right .dropdown-menu-left
+    right: auto
+    left: 0%
+
+@media (max-width: 990px) and (min-width: 768px)
+  .navbar-secondary .navbar-right .dropdown-menu-right
+    left: auto
+    right: 0%
+
+@media (max-width: 990px)
+  .navbar-secondary
+    .navbar-header
+      float: none
+    .navbar-left, .navbar-right
+      float: none !important
+    .navbar-toggle
+      display: block
+    .navbar-collapse.collapse
+      display: none !important
+    .navbar-nav
+      float: none !important
+      background-color: #fff !important
+      > li
+        float: none
+        > a
+          padding-top: 10px
+          padding-bottom: 10px
+    .collapse.in
+      display: block !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav > li.dropdown.singleDrop .dropdown-menu li a
+    padding: 10px 12px !important
+
+@media (min-width: 992px)
+  .navbar-secondary .navbar-nav .dropdown .dropdown-submenu i
+    display: block !important
+
+.bannercontainerV3
+  width: 100%
+  position: relative
+  padding: 0
+  .tp-caption
+    &.rs-caption-1 span
+      color: #ffd86c !important
+    &.rs-caption-3 .btn-default
+      padding: 8px 20px !important
+      background-color: #fff !important
+      color: #e7655a !important
+      font-size: 14px
+
+@media (min-width: 992px)
+  .bannercontainerV3 .tp-caption.rs-caption-3 .btn-default
+    padding: 12px 25px !important
+    font-weight: 900
+    font-size: 18px
+
+.courseSidebar .panel-body .input-group .input-group-addon .bg-color-1
+  border: none !important
+
+.courseList .media-body .list-inline.btnPart.btn-yellow > li a.btn-primary:hover
+  background-color: #f0c24b !important
+  border: none !important
+
+.priceRange .progress
+  .progress-bar, .bulet
+    background-color: #b5d56a !important
+    border: none !important
+
+.courseList .media-body .list-inline.btnPart
+  &.btn-green > li a.btn-primary:hover
+    background-color: #b5d56a !important
+    border: none !important
+  &.btn-sky > li a.btn-primary:hover
+    background-color: #84bed6 !important
+    border: none !important
+
+.tableVertical .priceBtn.alt .btn-primary
+  background-color: #ffffff !important
+  color: #666666 !important
+  border: none !important
+
+@media (min-width: 320px)
+  .aboutSchool
+    padding: 50px !important
+
+@media (min-width: 992px)
+  .aboutSchool
+    padding: 100px 0px 0px 0px !important
+
+.aboutSchool .schoolInfo
+  h2
+    text-transform: uppercase
+    color: #e7655a
+    font-size: 30px
+    span
+      color: #666
+      font-size: 38px
+  p
+    color: #222222 !important
+    font-weight: 600
+    font-size: 18px
+  .aboutP2
+    color: #666666 !important
+    font-weight: 600
+    font-size: 18px
+
+@media (min-width: 992px)
+  .version4 #menuBar.bb-fixed-header
+    height: 90px !important
+
+.version4
+  .navbar-secondary.secondary-light .navbar-nav li
+    a span
+      color: #000
+    &.active a span
+      color: #f0c24b
+  .bannercontainerV2 .tp-caption
+    &.rs-caption-1
+      color: #222222
+    &.rs-caption-2
+      color: #666
+    &.rs-caption-3
+      display: none
+
+@media (min-width: 320px)
+  .version4 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 30% !important
+
+@media (min-width: 768px)
+  .version4 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 40% !important
+
+@media (min-width: 992px)
+  .version4 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 45% !important
+
+@media (min-width: 1200px)
+  .version4 .tp-caption
+    &.rs-caption-1.custom, &.rs-caption-2.custom, &.rs-caption-3.custom
+      left: 53% !important
+
+@media (min-width: 768px)
+  .version4 .bannercontainerV2 .tp-caption.rs-caption-3
+    display: block
+
+.padding-LR-4
+  padding-left: 4px !important
+  padding-right: 4px !important
+
+.categoris .box
+  .box-img
+    background-color: transparent !important
+    overflow: hidden
+    border-radius: 10px !important
+    height: 240px !important
+    img
+      margin-top: 13px
+      max-height: 175px
+  .box-info
+    padding-bottom: 25px !important
+    h4
+      margin-bottom: 0px !important
+
+.bg-gray
+  background-color: #f8f8f8
+
+@media (min-width: 320px)
+  .single-category
+    padding: 50px 0 !important
+
+@media (min-width: 992px)
+  .single-category
+    padding: 100px 0 !important
+
+.single-category
+  .single-cat-border
+    border: 1px solid rgba(222, 222, 222, 0.5)
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.15)
+    padding: 10px 20px 0px 20px !important
+    border-radius: 5px
+    overflow: hidden
+  .category-menu
+    .category-title
+      text-align: left
+      color: #fff
+      padding: 17px
+      border-radius: 5px
+      background: #f0c24b
+      text-transform: capitalize
+      font-size: 24px
+    ul
+      text-align: left !important
+      padding: 20px
+      li
+        padding: 5px 0
+        a
+          color: #222
+          font-size: 14px
+          font-weight: 600
+    &.color-1 ul li a:hover
+      color: #f0c24b
+    &.color-2 ul li a:hover
+      color: #b5d56a
+    &.color-3 ul li a:hover
+      color: #ea7066
+    &.color-4 ul li a:hover
+      color: #84bed6
+  .category-Slider
+    .owl-carousel .owl-controls .owl-nav
+      padding: 0 10px
+    .single-item
+      position: relative
+  .box
+    box-shadow: none !important
+    border-radius: 7px !important
+    margin-bottom: 10px !important
+    .border-color-1, .border-color-2, .border-color-3, .border-color-4
+      border: 2px solid transparent
+
+@media (min-width: 768px)
+  .single-category .category-Slider .single-item img
+    height: 414px
+
+@media (min-width: 992px)
+  .single-category .category-Slider .single-item img
+    height: 564px
+
+@media (min-width: 1200px)
+  .single-category .category-Slider .single-item img
+    height: 605px
+
+@media (min-width: 320px)
+  .single-category .category-Slider .single-item .slide-cat-info
+    position: absolute
+    bottom: 10px
+    left: 50%
+    padding: 10px 20px
+    text-align: center
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+    width: 100%
+
+@media (min-width: 768px)
+  .single-category .category-Slider .single-item .slide-cat-info
+    position: absolute
+    bottom: 30px
+    left: 50%
+    z-index: 1
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+    width: 217px
+    opacity: .890
+    padding: 20px
+    border-radius: 5px
+
+@media (min-width: 320px)
+  .single-category .category-Slider .single-item .slide-cat-info h2
+    color: #fff !important
+    font-size: 14px !important
+    text-transform: capitalize
+    margin: 0 !important
+
+@media (min-width: 768px)
+  .single-category .category-Slider .single-item .slide-cat-info h2
+    font-size: 20px !important
+
+@media (min-width: 320px)
+  .single-category .category-Slider .single-item .slide-cat-info h2 span
+    font-size: 18px !important
+    display: block
+
+@media (min-width: 768px)
+  .single-category .category-Slider .single-item .slide-cat-info h2 span
+    font-size: 25px !important
+
+@media (min-width: 320px)
+  .single-category .box .box-img
+    border-top-left-radius: 7px !important
+    border-top-right-radius: 7px !important
+    height: 126px !important
+    padding: 0 !important
+    background-color: #fcfcfc
+
+@media (min-width: 992px)
+  .single-category .box .box-img
+    height: 170px !important
+
+@media (min-width: 1200px)
+  .single-category .box .box-img
+    height: 209px !important
+
+@media (min-width: 320px)
+  .single-category .box .box-img img
+    max-height: 122px !important
+
+@media (min-width: 768px)
+  .single-category .box .box-img img
+    max-height: 125px !important
+    width: 150px
+
+@media (min-width: 992px)
+  .single-category .box .box-img img
+    max-height: 166px !important
+    width: 181px
+
+@media (min-width: 1200px)
+  .single-category .box .box-img img
+    max-height: 206px !important
+    width: 181px
+
+@media (min-width: 320px)
+  .single-category .box .box-info
+    padding: 5px !important
+
+@media (min-width: 768px)
+  .single-category .box .box-info
+    padding: 10px !important
+
+@media (min-width: 992px)
+  .single-category .box .box-info
+    padding: 16px !important
+
+@media (min-width: 320px)
+  .single-category .box .box-info h4
+    font-size: 14px !important
+    font-weight: 700
+    margin: 0 !important
+    margin-bottom: 8px
+
+@media (min-width: 768px)
+  .single-category .box .box-info h4
+    font-size: 14px !important
+
+@media (min-width: 992px)
+  .single-category .box .box-info h4
+    font-size: 18px !important
+
+@media (min-width: 320px)
+  .single-category .box .box-info h3
+    font-size: 15px
+    margin-top: 8px
+    color: #fff
+    margin-bottom: 0 !important
+
+@media (min-width: 768px)
+  .single-category .box .box-info h3
+    font-size: 16px
+
+@media (min-width: 992px)
+  .single-category .box .box-info h3
+    font-size: 23px
+    margin-top: 12px
+    margin-bottom: 0 !important
+
+.courseSidebar
+  border: none
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  .panel-heading
+    -webkit-border-radius: 7px 7px 0 0
+    -moz-border-radius: 7px 7px 0 0
+    border-radius: 7px 7px 0 0
+    .panel-title
+      font-size: 24px
+      color: #fff
+      text-transform: capitalize
+  .panel-body
+    border: 1px solid #dedede
+    border-top: none
+    -webkit-border-radius: 0 0 7px 7px
+    -moz-border-radius: 0 0 7px 7px
+    border-radius: 0 0 7px 7px
+    > .input-group
+      border-bottom: 1px solid #dedede
+      margin: 20px 0 10px 0
+      padding-bottom: 10px
+      .form-control
+        height: 49px
+        border: none
+        padding: 0 12px 0 12px
+        color: #666
+      .input-group-addon
+        background-color: transparent
+        padding: 0
+        border: none
+        .btn-primary
+          width: 75px
+          padding: 10px
+    .categoryItem li a
+      display: block
+      width: 100%
+      height: 50px
+      line-height: 50px
+      font-weight: 600
+      color: #666
+      font-size: 14px
+      border: 1px solid #dedede
+      -webkit-border-radius: 12px
+      -moz-border-radius: 12px
+      border-radius: 12px
+      margin: 5px 0
+      text-indent: 20px
+      float: left
+
+.priceRange
+  .progress
+    margin: 20px 0 25px 0
+    height: 4px
+    background-color: #252525
+    position: relative
+    overflow: visible
+    .progress-bar
+      background-color: #b5d56a !important
+    .bulet
+      width: 16px
+      height: 16px
+      background-color: #b5d56a !important
+      border: 2px solid #b5d56a !important
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      left: 0px
+      top: -5px
+      position: absolute
+      &.next
+        left: 60px
+  .priceLabel
+    float: right
+    line-height: 30px
+    color: #202020
+  position: relative
+  display: inline-block
+  width: 100%
+  float: left
+  margin-top: 20px
+  .price-slider-inner
+    display: block
+    margin: 15px 0 25px 0
+    .amount-wrapper
+      position: absolute
+      bottom: 14px
+      right: 0
+      font-size: 14px
+      width: 120px
+      input
+        background-color: transparent
+        border: 0
+        width: 28%
+        font-size: 14px
+        color: #666
+        font-weight: 400
+        text-align: right
+    .ui-widget-content
+      background: none
+      border: 0
+      background-color: #eeeeee
+      height: 5px
+      clear: both
+      border-radius: 0
+      -webkit-border-radius: 2px
+      -moz-border-radius: 2px
+      border-radius: 2px
+      margin: 0 5px 0 9px
+      .ui-slider-range
+        background-color: #b5d56a
+        border: none
+        border-radius: 0
+      .ui-slider-handle
+        border-radius: 50%
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 3px
+        background: none
+        border: 3px solid #b5d56a
+        background-color: #b5d56a
+        top: -6px
+        width: 16px
+        height: 16px
+        outline: none
+  .btn-primary
+    border: none !important
+
+@media (min-width: 480px)
+  .priceRange .priceLabel
+    font-size: 14px
+
+@media (min-width: 768px)
+  .priceRange .priceLabel
+    font-size: 5px
+
+@media (min-width: 992px)
+  .priceRange .priceLabel
+    font-size: 14px
+
+.courseList
+  background-color: #f8f8f8
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  margin-bottom: 30px
+  border: none
+  .media-left
+    position: relative
+    padding: 0
+    float: left
+    img
+      width: 100%
+    .sticker
+      position: absolute
+      left: 20px
+      top: 20px
+      width: 65px
+      height: 65px
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      text-align: center
+      line-height: 65px
+      color: #fff
+      font-weight: 600
+      font-size: 24px
+  .media-body
+    .media-heading a
+      text-transform: capitalize
+      font-weight: 700
+      line-height: 20px
+      margin: 0 0 20px 0
+      width: 100%
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+      display: block
+    .list-inline
+      margin-bottom: 15px
+      li
+        line-height: 21px
+        color: #666
+        margin-bottom: 5px
+        i
+          margin-right: 6px
+      &.btnPart
+        margin-bottom: 0
+        > li a
+          &.btn-primary
+            font-size: 14px
+            background-color: #fff !important
+            color: #666
+            border: none !important
+            &:hover
+              color: #fff
+          &.btn-link
+            text-transform: capitalize
+            font-size: 14px
+            color: #666
+            font-weight: 600
+            text-decoration: underline !important
+            box-shadow: none !important
+            padding-left: 0
+        &.btn-yellow > li a
+          &.btn-primary:hover
+            background-color: #f0c24b !important
+          &.btn-link:hover
+            color: #f0c24b !important
+        &.btn-green > li a
+          &.btn-primary:hover
+            background-color: #b5d56a !important
+          &.btn-link:hover
+            color: #b5d56a !important
+        &.btn-red > li a
+          &.btn-primary:hover
+            background-color: #ea7066 !important
+          &.btn-link:hover
+            color: #ea7066 !important
+        &.btn-sky > li a
+          &.btn-primary:hover
+            background-color: #84bed6 !important
+          &.btn-link:hover
+            color: #84bed6 !important
+        &.btn-purple > li a
+          &.btn-primary:hover
+            background-color: #a597e7 !important
+          &.btn-link:hover
+            color: #a597e7 !important
+        &.btn-pink > li a
+          &.btn-primary:hover
+            background-color: #ea77ad !important
+          &.btn-link:hover
+            color: #ea77ad !important
+
+@media (min-width: 320px)
+  .courseList .media-left
+    margin: 0 0 5px 0
+    border-right: none
+    display: block
+    width: 100%
+
+@media (min-width: 768px)
+  .courseList .media-left
+    margin: 0 0 5px 0
+    border-right: none
+    display: block
+    width: 100%
+
+@media (min-width: 992px)
+  .courseList .media-left
+    margin: 0 25px 0 0
+    display: inline-block
+    width: 50%
+
+@media (min-width: 320px)
+  .courseList .media-body
+    padding: 20px
+
+@media (min-width: 768px)
+  .courseList .media-body
+    padding: 20px
+
+@media (min-width: 992px)
+  .courseList .media-body
+    padding: 0
+    padding-right: 20px
+
+@media (min-width: 320px)
+  .courseList .media-body .media-heading a
+    margin: 0 0 20px 0
+
+@media (min-width: 768px)
+  .courseList .media-body .media-heading a
+    margin: 15px 0
+
+@media (min-width: 320px)
+  .courseList.couresListPage .media-left
+    margin: 0 0 5px 0
+    border-right: none
+    display: block
+    width: 100%
+
+@media (min-width: 768px)
+  .courseList.couresListPage .media-left
+    margin: 0 0 5px 0
+    border-right: none
+    display: block
+    width: 100%
+
+@media (min-width: 992px)
+  .courseList.couresListPage .media-left
+    margin: 0 25px 0 0
+    display: inline-block
+    width: 50%
+
+@media (min-width: 1200px)
+  .courseList.couresListPage .media-left
+    margin: 0 25px 0 0
+    display: inline-block
+    width: auto
+
+@media (min-width: 992px)
+  .blog-full .courseList .media-left
+    width: 35%
+
+@media (min-width: 992px)
+  .blog-full .courseList .media-body
+    padding-right: 20px
+
+.rightSidebar
+  .panel
+    border: 0
+    margin-bottom: 30px
+    .panel-heading
+      -webkit-border-radius: 7px 7px 0 0
+      -moz-border-radius: 7px 7px 0 0
+      border-radius: 7px 7px 0 0
+      .panel-title
+        font-size: 24px
+        color: #fff
+        text-transform: capitalize
+        font-weight: 700
+    .panel-body
+      border: 1px solid #dedede
+      border-top: 0
+      -webkit-border-radius: 0 0 7px 7px
+      -moz-border-radius: 0 0 7px 7px
+      border-radius: 0 0 7px 7px
+      padding: 0
+      .media-list
+        li
+          padding: 20px 0 20px 20px
+          border-bottom: 1px solid #dedede
+          margin: 0
+          &:last-child
+            border: 0
+          .media-left.iconContent
+            width: 45px
+            height: 45px
+            line-height: 45px
+            text-align: center
+            color: #fff
+            -webkit-border-radius: 100%
+            -moz-border-radius: 100%
+            border-radius: 100%
+            display: inline-block
+            float: left
+            padding: 0
+            margin-right: 20px
+            font-size: 16px
+          .media-body.iconContent
+            .media-heading
+              font-size: 20px
+              font-weight: 700
+            p
+              font-weight: 600
+              margin-bottom: 0
+        &.blogListing li .media-heading a
+          font-weight: 600
+          font-size: 14px
+          text-transform: capitalize
+          color: #666
+          &:hover
+            color: #a597e7 !important
+  > .btnPart
+    margin-bottom: 30px
+    .btn-primary
+      border: none !important
+
+.eventSidebar.panel
+  border: 0
+  margin-bottom: 30px
+  .panel-heading
+    -webkit-border-radius: 7px 7px 0 0
+    -moz-border-radius: 7px 7px 0 0
+    border-radius: 7px 7px 0 0
+    .panel-title
+      font-size: 24px
+      color: #fff
+      text-transform: capitalize
+      font-weight: 700
+  .panel-body
+    border: 1px solid #dedede
+    border-top: 0
+    -webkit-border-radius: 0 0 7px 7px
+    -moz-border-radius: 0 0 7px 7px
+    border-radius: 0 0 7px 7px
+    .media-list
+      li
+        padding: 10px 0
+        margin: 0
+        .media-left.iconContent
+          width: 45px
+          height: 45px
+          line-height: 45px
+          text-align: center
+          color: #fff
+          -webkit-border-radius: 100%
+          -moz-border-radius: 100%
+          border-radius: 100%
+          display: inline-block
+          float: left
+          padding: 0
+          margin-right: 20px
+          font-size: 16px
+        .media-body.iconContent
+          .media-heading
+            font-size: 20px
+            font-weight: 700
+          p
+            font-weight: 600
+            margin-bottom: 0
+        .btn-primary
+          border: none !important
+      &.blogListing li .media-heading a
+        font-weight: 600
+        font-size: 14px
+        text-transform: capitalize
+        color: #666
+        &:hover
+          color: #a597e7 !important
+
+.coursesCounter
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 330px
+  overflow: hidden
+  background: url(../img/course-single/course-count.jpg) no-repeat center top
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  border-radius: 7px
+  padding: 10px
+  .counterInner
+    width: 100%
+    height: 100%
+    display: block
+    border: 1px solid #fff
+    -webkit-border-radius: 7px
+    -moz-border-radius: 7px
+    border-radius: 7px
+    text-align: center
+    h3
+      font-size: 26px
+      font-weight: 700
+      color: #fff
+      text-transform: capitalize
+      text-align: center
+      margin: 40px 0
+    > .btn-primary
+      background-color: #fff !important
+      border: none !important
+      color: #84bed6 !important
+
+.coursesCountStart
+  padding: 0 0 35px 0
+  .courseCountTimer
+    width: 100%
+    margin: 0 auto
+    color: #fff
+    text-align: center
+    .table-cell
+      display: inline-block
+      margin: 0 5px
+      .tab-val
+        width: 45px
+        height: 45px
+        line-height: 45px
+        font-size: 20px
+        font-weight: 700
+        display: block
+        margin-bottom: 5px
+        -webkit-border-radius: 7px
+        -moz-border-radius: 7px
+        border-radius: 7px
+        background-color: rgba(255, 255, 255, 0.1)
+        border: 1px solid #fff
+      .tab-metr
+        font-size: 12px
+        font-weight: 400
+        color: #fff
+        text-transform: capitalize
+        font-weight: 600
+
+.singleBlog
+  p, .blogInfo
+    margin-bottom: 30px !important
+
+.thumbnailContent > .caption.singleBlog h3
+  line-height: 34px
+  text-transform: capitalize
+  font-weight: 700
+  margin: 0 0 20px 0
+  width: 100%
+  text-overflow: ellipsis
+  white-space: normal
+  overflow: hidden
+  display: block
+
+.socailLink.list-inline
+  text-align: left
+  li a
+    display: block
+    text-align: center
+    border-radius: 100%
+    color: #fff !important
+    &:hover
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+    i
+      margin: 0 !important
+
+@media (min-width: 768px)
+  .socailLink.list-inline li
+    padding: 2px
+
+@media (min-width: 992px)
+  .socailLink.list-inline li
+    padding: 0 2px
+
+@media (min-width: 1200px)
+  .socailLink.list-inline li
+    padding: 0 5px
+
+@media (min-width: 320px)
+  .socailLink.list-inline li a
+    width: 35px
+    height: 35px
+    line-height: 35px
+    font-size: 14px
+
+@media (min-width: 768px)
+  .socailLink.list-inline li a
+    width: 25px
+    height: 25px
+    line-height: 25px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .socailLink.list-inline li a
+    width: 28px
+    height: 28px
+    line-height: 28px
+    font-size: 14px
+
+.blogComments
+  background-color: #f8f8f8
+  padding: 15px
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -webkit-border-radius: 9px
+  -moz-border-radius: 9px
+  border-radius: 9px
+  margin-bottom: 20px
+  h3
+    font-size: 24px
+    color: #ea7066
+    font-weight: 700
+    text-transform: capitalize
+    margin-bottom: 30px
+
+.commentsList
+  .media
+    padding-bottom: 20px
+    margin-top: 20px
+    border-bottom: 1px solid #dedede
+  li:last-child
+    border: none
+  .media-left
+    padding-right: 25px
+    img
+      width: 50px
+      height: 50px
+      margin-bottom: 15px
+  .media-body
+    overflow: visible
+    padding: 0
+    position: relative
+    .media-heading
+      font-weight: 600
+      font-size: 14px
+      color: #666
+      margin-bottom: 15px
+      text-transform: capitalize
+    p
+      font-size: 13px
+      margin-bottom: 20px
+  cite
+    display: block
+    font-size: 14px
+    color: #999
+    font-weight: normal
+    font-style: normal
+    margin-top: 9px
+    &:before
+      display: inline-block
+      vertical-align: middle
+      content: ""
+      width: 20px
+      height: 1px
+      background-color: #999
+      margin-right: 9px
+
+.comingSoonBg
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 80px8
+  overflow: hidden
+  background: no-repeat center top fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-color: #fff
+
+.comingTitle
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  padding: 35px 0
+  text-align: center
+  img
+    width: 200px
+    height: 60px
+
+@media (min-width: 320px)
+  .comingTitle
+    padding: 15px 0
+
+@media (min-width: 768px)
+  .comingTitle
+    padding: 35px 0
+
+.comingContent
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  h1
+    font-weight: 700
+    color: #222222
+    font-size: 4px1
+    text-transform: capitalize
+  p
+    color: #202020
+    margin-bottom: 20px
+  .input-group
+    margin: 0 auto
+    margin-bottom: 20px
+    .form-control
+      height: 50px
+      box-shadow: none
+      background-color: transparent
+      border-color: rgba(165, 151, 231, 0.5)
+      border-width: 3px
+      color: #222222
+      border-right: none
+      -webkit-border-radius: 8px 0 0 8px
+      -moz-border-radius: 8px 0 0 8px
+      border-radius: 8px 0 0 8px
+      width: 92%
+    .input-group-addon
+      height: 50px
+      background-color: transparent
+      color: #888888
+      border: 3px solid rgba(165, 151, 231, 0.5)
+      border-left: none
+      -webkit-border-radius: 0 8px 8px 0
+      -moz-border-radius: 0 8px 8px 0
+      border-radius: 0 8px 8px 0
+      padding: 6px 10px
+      display: inline-block
+      float: left
+      width: 8%
+  .list-inline li a
+    display: block
+    text-align: center
+    border-radius: 100%
+    color: #fff !important
+    &:hover
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+      filter: alpha(opacity = 1)
+      -moz-opacity: 1
+      -khtml-opacity: 1
+      opacity: 1
+    i
+      margin: 0 !important
+
+@media (min-width: 320px)
+  .comingContent
+    width: 100%
+    min-width: 100%
+    padding: 0 10px
+
+@media (min-width: 768px)
+  .comingContent
+    width: auto
+    min-width: 557px
+    padding: 0
+
+@media (min-width: 320px)
+  .comingContent h1
+    font-size: 30px
+    margin: 20px 0 15px 0
+
+@media (min-width: 768px)
+  .comingContent h1
+    font-size: 40px
+    margin: 70px 0 25px 0
+
+@media (min-width: 320px)
+  .comingContent p
+    font-size: 10px
+    line-height: 15px
+
+@media (min-width: 768px)
+  .comingContent p
+    font-size: 24px
+    line-height: 21px
+
+@media (min-width: 320px)
+  .comingContent .input-group
+    width: 100%
+
+@media (min-width: 768px)
+  .comingContent .input-group
+    width: 550px
+
+@media (min-width: 768px)
+  .comingContent .list-inline li
+    padding: 2px
+
+@media (min-width: 992px)
+  .comingContent .list-inline li
+    padding: 0 2px
+
+@media (min-width: 1200px)
+  .comingContent .list-inline li
+    padding: 0 5px
+
+@media (min-width: 320px)
+  .comingContent .list-inline li a
+    width: 35px
+    height: 35px
+    line-height: 35px
+    font-size: 14px
+
+@media (min-width: 768px)
+  .comingContent .list-inline li a
+    width: 25px
+    height: 25px
+    line-height: 25px
+    font-size: 10px
+
+@media (min-width: 992px)
+  .comingContent .list-inline li a
+    width: 28px
+    height: 28px
+    line-height: 28px
+    font-size: 14px
+
+.count-down
+  padding: 0 0 35px 0
+  #simple_timer
+    width: 100%
+    margin: 0 auto
+    color: #f0c24b
+    text-align: center
+    .table-cell
+      display: inline-block
+      .tab-val
+        font-weight: 700
+        display: block
+        margin-bottom: 20px
+        -webkit-border-radius: 7px
+        -moz-border-radius: 7px
+        border-radius: 7px
+        background-color: #f8f8f8
+        -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+        -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      .tab-metr
+        display: none
+      &.hour .tab-val
+        color: #b5d56a
+      &.minute .tab-val
+        color: #ea7066
+      &.second .tab-val
+        color: #84bed6
+
+@media (min-width: 480px)
+  .count-down #simple_timer .table-cell
+    margin: 0 10px
+
+@media (min-width: 768px)
+  .count-down #simple_timer .table-cell
+    margin: 0 10px
+
+@media (min-width: 992px)
+  .count-down #simple_timer .table-cell
+    margin: 0 10px
+
+@media (min-width: 1200px)
+  .count-down #simple_timer .table-cell
+    margin: 0 12px
+
+@media (min-width: 320px)
+  .count-down #simple_timer .table-cell .tab-val
+    width: 65px
+    height: 65px
+    line-height: 65px
+    font-size: 25px
+
+@media (min-width: 768px)
+  .count-down #simple_timer .table-cell .tab-val
+    width: 85px
+    height: 85px
+    line-height: 85px
+    font-size: 35px
+
+@media (min-width: 992px)
+  .count-down #simple_timer .table-cell .tab-val
+    width: 85px
+    height: 85px
+    line-height: 85px
+    font-size: 35px
+
+@media (min-width: 1200px)
+  .count-down #simple_timer .table-cell .tab-val
+    width: 120px
+    height: 120px
+    line-height: 120px
+    font-size: 70px
+
+.servicesStyle
+  margin-bottom: 40px
+  > .media-body
+    width: auto
+    display: inherit
+    > .media-heading
+      text-transform: capitalize
+      font-size: 24px
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+  .media-left
+    width: 76px
+    height: 76px
+    padding: 6px
+    margin-right: 20px
+    display: inline-block
+    float: left
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+    -webkit-border-radius: 7px
+    -moz-border-radius: 7px
+    border-radius: 7px
+    > i
+      width: 62px
+      height: 62px
+      line-height: 62px
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      border: 2px solid #fff
+      text-align: center
+      font-size: 22px
+      color: #fff
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+    &:hover i
+      -webkit-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      transform: rotate(360deg)
+  &.alt .media-left > i
+    border: none
+  &.alignRight
+    .media-left
+      float: right
+      margin: 0 0 0 20px
+    > .media-body
+      h3, p
+        text-align: right
+
+@media (min-width: 768px)
+  .servicesContent .media-body
+    display: block
+    margin-top: 20px
+    max-width: 198px
+    float: left
+
+@media (min-width: 992px)
+  .servicesContent .media-body
+    margin-top: 0
+    display: table-cell
+    float: none
+
+@media (min-width: 1200px)
+  .servicesContent .media-body
+    max-width: 10000px
+
+.testimonialArea
+  padding-bottom: 0 !important
+
+.testimonial-grid
+  float: left
+  margin-top: 50px
+
+.testimonialContent
+  width: 100%
+  height: 250px
+  display: block
+  -webkit-border-radius: 13px
+  -moz-border-radius: 13px
+  border-radius: 13px
+  text-align: center
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -ms-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  padding: 35px
+  margin-bottom: 80px
+  span.userSign
+    width: 100px
+    height: 100px
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+    background-color: #fff
+    border-width: 6px
+    border-style: solid
+    top: -50px
+    font-size: 30px
+    line-height: 90px
+    display: block
+    position: absolute
+    left: 50%
+    margin-left: -50px
+  p
+    color: #fff
+    margin: 25px 0
+    font-size: 16px
+  h3
+    font-weight: 600
+    color: #fff
+    margin: 0
+    font-size: 16px
+    line-height: 30px
+    small
+      margin: 0
+      font-size: 14px
+      text-transform: capitalize
+      color: rgba(255, 255, 255, 0.8)
+
+.cartInfo
+  .table-responsive .table
+    border-collapse: separate
+    thead tr
+      border-left: 1px solid #f0c24b
+      border-right: 1px solid #f0c24b
+      th
+        color: #fff
+        padding: 15px 8px
+        border-bottom: none
+        font-weight: 600
+        text-transform: uppercase
+        &:first-child
+          -webkit-border-radius: 7px 0 0 0
+          -moz-border-radius: 7px 0 0 0
+          border-radius: 7px 0 0 0
+        &:last-child
+          -webkit-border-radius: 0 7px 0 0
+          -moz-border-radius: 0 7px 0 0
+          border-radius: 0 7px 0 0
+    tbody tr
+      td
+        vertical-align: middle
+        color: #222222
+        border-top: none
+        border-bottom: 1px solid #dedede
+        &:first-child
+          border-left: 1px solid #dedede
+        &:last-child
+          border-right: 1px solid #dedede
+        .close
+          display: inline-block
+          float: left
+          margin: 17px 30px 0 0
+          opacity: 1
+          span
+            width: 30px
+            height: 30px
+            line-height: 30px
+            display: block
+            background-color: #e5e5e5
+            color: #666
+            -webkit-border-radius: 100%
+            -moz-border-radius: 100%
+            border-radius: 100%
+        input
+          width: 80px
+          height: 45px
+          text-align: center
+          line-height: 45px
+          color: #222222
+          border: 1px solid #dedede
+          -webkit-border-radius: 7px
+          -moz-border-radius: 7px
+          border-radius: 7px
+        &:last-child
+          padding-right: 30px
+      &:last-child td
+        &:first-child
+          -webkit-border-radius: 0 0 0 7px
+          -moz-border-radius: 0 0 0 7px
+          border-radius: 0 0 0 7px
+        &:last-child
+          -webkit-border-radius: 0 0 7px 0
+          -moz-border-radius: 0 0 7px 0
+          border-radius: 0 0 7px 0
+          &.btnPart
+            -webkit-border-radius: 0 0 7px 7px
+            -moz-border-radius: 0 0 7px 7px
+            border-radius: 0 0 7px 7px
+    .input-group
+      .form-control
+        width: 257px
+        height: 45px
+        text-align: left
+        margin-right: 10px
+      .input-group-addon
+        width: auto
+        -webkit-border-radius: 7px
+        -moz-border-radius: 7px
+        border-radius: 7px
+  &.cartTotal .table tbody tr td:last-child
+    padding: 25px
+    text-align: right
+
+@media (min-width: 320px)
+  .cartInfo .table-responsive .table tbody tr td
+    padding: 10px
+
+@media (min-width: 992px)
+  .cartInfo .table-responsive .table tbody tr td
+    padding: 10px
+
+@media (min-width: 1200px)
+  .cartInfo .table-responsive .table tbody tr td
+    padding: 20px 8px 20px 30px
+
+.pricingTable
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2)
+  -webkit-border-radius: 8px
+  -moz-border-radius: 8px
+  border-radius: 8px
+  background-color: #f8f8f8
+  margin-bottom: 30px
+  .priceUper
+    display: block
+    width: 100%
+  .priceLower
+    display: block
+    width: 100%
+    padding: 50px 20px 30px 20px
+    .priceBtn .btn-primary
+      border: none !important
+  &.tableVertical
+    width: 100%
+    float: left
+
+@media (min-width: 480px)
+  .pricingTable.tableVertical
+    .priceUper, .priceLower
+      display: inline-block
+      float: left
+      width: 50%
+
+.priceTitle
+  height: auto
+  padding: 35px 20px 10px 20px
+  -webkit-border-radius: 8px 8px 0 0
+  -moz-border-radius: 8px 8px 0 0
+  border-radius: 8px 8px 0 0
+  h3
+    margin: 0
+    color: #fff
+    font-size: 34px
+    font-weight: 600
+    text-transform: capitalize
+  &.alt
+    height: 90px
+    padding: 0 20px
+    h3
+      line-height: 90px
+      font-size: 36px
+  &.checkingTitle
+    height: 80px
+    padding: 0 20px
+    h3
+      line-height: 80px
+      font-size: 24px
+
+.priceInfo
+  height: 104px
+  p
+    color: #fffefe
+    padding: 0 20px
+  &.alt
+    height: 180px
+    overflow: hidden
+
+.priceOffer li
+  margin-bottom: 25px
+  color: #666
+  font-size: 18px
+  i
+    margin-right: 8px
+  &:last-child
+    margin-bottom: 35px
+
+.priceBtn
+  h4
+    display: inline-block
+    float: right
+    font-size: 34px
+    font-weight: 600
+    text-align: center
+    margin-bottom: 0
+    line-height: 20px
+    small
+      text-transform: capitalize
+      font-size: 14px
+  h5
+    font-size: 28px
+    font-weight: 600
+    color: #222222
+    span
+      color: #ea7066
+
+.tableVertical
+  .priceTitle
+    -webkit-border-radius: 8px 0 0 0
+    -moz-border-radius: 8px 0 0 0
+    border-radius: 8px 0 0 0
+  .priceInfo
+    min-height: 205px
+    -webkit-border-radius: 0 0 0 8px
+    -moz-border-radius: 0 0 0 8px
+    border-radius: 0 0 0 8px
+  .priceBtn.alt
+    padding: 20px 20px 0 20px
+    .btn-primary
+      background-color: #fff
+      color: #666
+    h4
+      color: #fff
+      small
+        color: #fff
+  .priceLower
+    padding: 20px 20px 0 20px
+
+@media (min-width: 768px)
+  .tableVertical .priceInfo
+    min-height: 135px
+
+@media (min-width: 480px)
+  .tableVertical .priceBtn.alt h4
+    float: none
+    display: block
+    margin-top: 20px
+    text-align: left
+
+@media (min-width: 768px)
+  .tableVertical .priceBtn.alt h4
+    float: right
+    display: inline-block
+    margin-top: 0
+    text-align: center
+
+.progress-wizard
+  margin-top: 40px
+  margin: 40px 0 70px 0
+  padding: 0 0 30px 0
+  > .progress-wizard-step
+    padding: 0
+    position: relative
+    height: 105px
+    > .progress
+      position: relative
+      border-radius: 0px
+      height: 5px
+      box-shadow: none
+      margin: 20px 0
+      > .progress-bar
+        width: 0px
+        box-shadow: none
+    &.complete > .progress > .progress-bar
+      width: 100%
+    &.active > .progress > .progress-bar
+      width: 50%
+    > .progress > .progress-bar, &:first-child.active > .progress > .progress-bar
+      width: 0%
+    &:last-child.active > .progress > .progress-bar
+      width: 100%
+    &:first-child > .progress
+      left: 50%
+      width: 50%
+    &:last-child > .progress
+      width: 50%
+    &.disabled a.progress-wizard-dot
+      pointer-events: none
+    > .progress-wizard-dot
+      display: block
+      background-color: #fff
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      border: 5px solid #ea7066
+      padding: 5px
+      text-align: center
+      color: #000
+      i
+        display: block
+        color: #ea7066
+        font-size: 24px
+        line-height: 90px
+        width: 90px
+        height: 90px
+        -webkit-border-radius: 100%
+        -moz-border-radius: 100%
+        border-radius: 100%
+        background-color: #ededed
+        text-align: center
+      &:hover
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 1)
+        -moz-opacity: 1
+        -khtml-opacity: 1
+        opacity: 1
+    &.incomplete > .progress-wizard-dot
+      border-color: #f8f8f8
+      color: #666
+      i
+        color: #666
+    &.complete > .progress-wizard-dot i
+      color: #fff
+      background-color: #ea7066
+  .progressInfo
+    text-align: center
+    font-weight: 600
+    font-size: 16px
+    color: #222222
+
+@media (min-width: 320px)
+  .progress-wizard > .progress-wizard-step
+    margin-bottom: 30px
+
+@media (min-width: 768px)
+  .progress-wizard > .progress-wizard-step
+    margin-bottom: 0
+    height: 100px
+
+@media (min-width: 320px)
+  .progress-wizard > .progress-wizard-step > .progress > .progress-bar
+    background-color: transparent
+
+@media (min-width: 768px)
+  .progress-wizard > .progress-wizard-step > .progress > .progress-bar
+    background: #ea7066
+
+@media (min-width: 320px)
+  .progress
+    background-color: transparent
+
+@media (min-width: 768px)
+  .progress
+    background-color: #f8f8f8
+
+@media (min-width: 320px)
+  .progress-wizard > .progress-wizard-step > .progress-wizard-dot
+    width: 110px
+    position: relative
+    top: 0
+    left: 0
+    margin: -20px auto 0 auto
+
+@media (min-width: 768px)
+  .progress-wizard > .progress-wizard-step > .progress-wizard-dot
+    width: auto
+    position: absolute
+    top: -30px
+    left: 28%
+    margin-top: -15px
+    margin-left: -15px
+
+@media (min-width: 768px)
+  .progress-wizard > .progress-wizard-step > .progress-wizard-dot i
+    line-height: 102px
+    width: 102px
+    height: 102px
+
+@media (min-width: 768px)
+  .progress-wizard .progressInfo
+    margin: 70px 0 0 0px
+
+@media (min-width: 992px)
+  .progress-wizard .progressInfo
+    margin: 70px 0 0 -40px
+
+@media (min-width: 1200px)
+  .progress-wizard .progressInfo
+    margin: 70px 0 0 -70px
+
+.checkoutInfo
+  &.panel
+    border: none
+    -webkit-border-radius: 8px
+    -moz-border-radius: 8px
+    border-radius: 8px
+  .panel-heading
+    height: 80px
+    padding: 0 30px
+    -webkit-border-radius: 8px 8px 0 0
+    -moz-border-radius: 8px 8px 0 0
+    border-radius: 8px 8px 0 0
+    .panel-title
+      font-weight: 700
+      font-size: 24px
+      color: #fff
+      line-height: 80px
+      text-transform: capitalize
+  .panel-body
+    border: 1px solid #dedede
+    border-top: none
+    -webkit-border-radius: 0 0 8px 8px
+    -moz-border-radius: 0 0 8px 8px
+    border-radius: 0 0 8px 8px
+    padding: 50px 30px
+  .form-group
+    label
+      color: #222222
+      font-weight: 400
+    .form-control
+      height: 45px
+      border-width: 3px
+      -webkit-border-radius: 7px
+      -moz-border-radius: 7px
+      border-radius: 7px
+      margin-bottom: 10px
+    textarea.form-control
+      height: 151px
+  .checkbox
+    label
+      color: #222222
+    a:hover
+      color: #ea7066
+
+.panel-body .form-group
+  display: inline
+
+.continueBtnArea .btn-primary
+  background-color: #f8f8f8 !important
+  border: none !important
+  color: #666
+  &:hover
+    background-color: #ea7066 !important
+    color: #fff !important
+
+.lowerPartTitle
+  h4
+    font-weight: 700
+    font-size: 24px
+    color: #ea7066
+    text-transform: capitalize
+    margin-top: 15px
+    margin-left: 15px
+    span
+      color: #222222
+  p
+    margin-bottom: 30px
+    color: #222222
+
+.blankLabel
+  height: 16px
+
+.addressInfo
+  dt
+    width: 70px
+    text-align: left
+    font-weight: 600
+    color: #222222
+  dd
+    margin-left: 70px
+    color: #222222
+
+.card-img
+  text-align: center
+  img
+    display: inline-block
+    margin-bottom: 7px
+
+@media (min-width: 992px)
+  .categorySection
+    padding-bottom: 0
+
+@media (min-width: 992px)
+  .categorySection .box
+    margin-bottom: 100px
+
+.categorySection .box-info
+  h4
+    margin-bottom: 0
+  padding: 25px
+
+.product-gallery
+  position: relative
+  width: 100%
+  margin-bottom: 50px
+  .product-gallery-preview
+    display: block
+    position: relative
+    list-style: none
+    padding: 0
+    width: 100%
+    text-align: center
+    li
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      margin: 0 0 0 117px
+      opacity: 0
+      padding: 70px 0
+      -webkit-border-radius: 12px
+      -moz-border-radius: 12px
+      border-radius: 12px
+      border: 4px solid rgba(0, 0, 0, 0.1)
+      img
+        display: inline-block
+      &.current
+        position: relative
+        opacity: 1
+  .product-gallery-thumblist
+    position: absolute
+    top: 0
+    left: 0
+    width: 110px
+    list-style: none
+    padding: 0
+    li
+      display: block
+      padding: 15px 10px
+      -webkit-border-radius: 12px
+      -moz-border-radius: 12px
+      border-radius: 12px
+      border: 4px solid rgba(0, 0, 0, 0.1)
+      margin-bottom: 7px
+      a
+        display: block
+        text-decoration: none
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 0.3)
+        -moz-opacity: .3
+        -khtml-opacity: .3
+        opacity: .3
+        -webkit-transition: opacity 0.3s
+        -moz-transition: opacity 0.3s
+        -ms-transition: opacity 0.3s
+        -o-transition: opacity 0.3s
+        transition: opacity 0.3s
+      &.active > a
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+        filter: alpha(opacity = 1)
+        -moz-opacity: 1
+        -khtml-opacity: 1
+        opacity: 1
+
+@media (min-width: 768px)
+  .product-gallery
+    margin-bottom: 0
+
+@media (max-width: 480px)
+  .product-gallery .product-gallery-preview li
+    margin: 0 0 0 87px
+
+@media (max-width: 480px)
+  .product-gallery .product-gallery-thumblist
+    width: 80px
+
+@media (max-width: 480px)
+  .product-gallery .product-gallery-thumblist li
+    padding: 10px 7px
+
+.product-info
+  .product-title
+    font-size: 40px
+    color: #222222
+    text-transform: capitalize
+    margin-bottom: 50px
+    font-weight: 600
+  .price span
+    font-size: 55px
+    color: #84bed6
+    margin-bottom: 45px
+    del
+      color: #e4e4e4
+      font-size: 45px
+      margin-left: 15px
+  p
+    font-size: 15px
+    margin-bottom: 45px
+
+.add-cart .count-input
+  display: inline-block
+  position: relative
+  width: 70px
+  margin-right: 10px
+  .btn-primary
+    width: 100%
+    background: #f8f8f8 !important
+    border: none !important
+    color: #666
+    position: relative
+    width: 100%
+    text-align: center
+    -webkit-appearance: none
+    -moz-appearance: none
+    -o-appearance: none
+    appearance: none
+    border-radius: 5px
+    padding: 12px 20px
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .incr-btn
+    position: absolute
+    right: 7px
+    color: #666
+    height: 14px
+    display: inline-block
+    line-height: 10px
+  .incr-up
+    top: 7px
+  .incr-down
+    bottom: 7px
+
+.product-category
+  color: #222222
+  font-size: 15px
+  margin: 45px 0
+
+.share
+  span
+    font-size: 24px
+    color: #222222
+    font-weight: 600
+    display: inline-block
+    margin-right: 10px
+  .list-inline
+    display: inline-block
+    li
+      padding: 2px
+      a
+        display: block
+        text-align: center
+        border-radius: 100%
+        width: 35px
+        height: 35px
+        line-height: 35px
+        font-size: 14px
+        color: #fff
+        &:hover
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)"
+          filter: alpha(opacity = 1)
+          -moz-opacity: 1
+          -khtml-opacity: 1
+          opacity: 1
+
+.product-review
+  .tabCommon
+    .nav
+      text-align: left
+    .tab-content
+      padding-top: 25px
+      padding-bottom: 5px
+    .tab-pane
+      border: none
+      background: #f8f8f8
+      padding: 30px 25px
+      -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1)
+  .tab-content
+    h3
+      font-size: 24px
+      color: #ea7066
+      text-transform: capitalize
+      margin-bottom: 20px
+      font-weight: 600
+    p
+      font-size: 15px
+      margin-bottom: 25px
+      color: #666
+  .para-list.list-unstyled
+    margin-bottom: 10px
+    display: inline-block
+    margin-right: 30px
+  .commentsList .media-body .media-heading
+    text-transform: uppercase
+  .product-rating
+    display: inline-block
+    color: #ffce2b
+    position: absolute
+    right: 0
+    top: 0

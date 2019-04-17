@@ -1,0 +1,161 @@
+.layout-card
+	margin-top: 10px
+.layout-card-item
+	position: relative
+	&.is-active
+		.layout-card-link span
+			color: $color1-kr
+		.is-color
+			color: $color1-kr
+	&.is-show,&.is-color
+		.layout-card-link span,
+		.is-color
+			color: $color2-kr
+	&.is-carnival
+		.layout-card-link span
+			color: $color3-kr 
+		.is-color
+			color: $color3-kr
+	&.is-camp
+		.layout-card-link span
+			color: $color4-kr
+		.is-color
+			color: $color4-kr
+	//
+	&.is-cancel,
+	&.is-done,
+	&.is-false
+		.mypage-btn-canceldisplay: none
+		.mypage-date-canceldisplay: block
+		//
+		.act-state
+			border: 1px solid #888
+			.act-state-inside,
+			.act-state-word
+				background-color: #888
+	&.is-checking
+		.act-state
+			border: 1px solid #3ea7ec
+			.act-state-inside,
+			.act-state-word
+				background-color: #3ea7ec
+.layout-card-link
+	display: block
+	line-height: 17px
+	font-size: 13px
+	&:hover
+		color: #000
+//
+.mypage-btn-cancel,
+.mypage-btn-google
+	&:hover
+		opacity: .7
+		color: #000
+@media (max-width: 991px)
+	// position v
+	.act-state,
+	.mypage-btnbox
+		position: absolute
+	.act-state
+		top: 20px
+		left: 15px
+	.mypage-btnbox
+		top: 20px
+		right: 15px
+	// customer
+	.mypage-btnbox
+		overflow: hidden
+	.mypage-btn-cancel
+		margin-left: 10px
+	.mypage-btn-google,.mypage-btn-cancel
+		float: left
+	.mypage-date
+		margin-bottom: 4px
+@media (min-width: 992px)
+	// position v
+	.act-state,
+	.mypage-btn-google,
+	.mypage-btn-cancel,
+	.mypage-date-cancel
+		position: absolute
+	.act-state
+		left: 0
+	.mypage-btn-google
+		right: 0
+		bottom: 20px
+	.mypage-btn-cancel,
+	.mypage-date-cancel
+		right: 0
+		top: 20px
+	// custom
+	.mypage-date
+		display: inline-block
+		margin:
+			right: 15px
+			top: 8px
+	.mypage-date-cancel
+		span
+			display: block
+			text-align: right
+			padding-bottom: 1px
+		.signdisplay: none
+//==============================================
+//==============================================
+//==============================================
+//==============================================
+//==============================================
+// CUSTOMIZE BTN
+%same
+	font-size: 12px
+	color: #888	
+.mypage-date
+	@extend %same
+.mypage-date-cancel
+	@extend %same
+	display: none
+//==============================================
+//==============================================
+//==============================================
+//==============================================
+//==============================================
+// STATE
+.act-state
+	.act-state-word
+		padding: 2px 4px 1px
+		font-size: 12px
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+// pc : LEFT TOP / mobi : LEFT TOP
+.mypage-lt
+	font-size: 12px
+	color: #000
+	position: absolute
+	top: 20px
+	span
+		color: #aaa
+		padding-left: 5px 
+@media (max-width: 991px)
+	.mypage-lt
+		left: 15px
+@media (min-width: 992px)
+	.mypage-lt
+		left: 0
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+// pc : RIGHT BOTTOM / mobi : RIGHT BOTTOM
+.mypage-rb
+	position: absolute
+	font-size: 15px
+	bottom: 0
+@media (max-width: 991px)
+	.mypage-rb
+		right: 15px
+@media (min-width: 992px)
+	.mypage-rb
+		right: 0

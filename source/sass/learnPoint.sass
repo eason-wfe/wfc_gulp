@@ -1,23 +1,36 @@
-$color-hl: #3092ca 
+$color-hl: #3092ca
+$shop-color-def: #e2e2e2
 @import "usual/im"
 @import "usual/color"
 @import "usual/unit5"
-// @import "usual/title-deco5-2"
 @import "uikit/tmp-pager"
 // ASIDE MENU
 @import "uikit/tmp-aside"
 @import "uikit/tmp-aside-lb"
 @import "aside/aside5"
-// TITLE
-// @import "_mywfc_kr/mypage-title-icon"
 // UI
 @import "mypage/aside-file"
-@import "learn_point/tb1"
+@import "learn_point/tb"
 // TMPLATE
-@import "uikit/uikit-collapse"
+@import "uikit/tmp-collapse"
 @import "uikit/tmp-dropdown"
 @import "learn_point/drop"
 @import "uikit/tmp-pager"
+
+// SHOP UI
+@import "usual/color-kr"
+@import "activity/act-state"
+@import "learn_point/shop-card"
+@import "learn_point/shop-block-table"
+@import "learn_point/shop-stateimg" 
+@import "learn_point/shop"
+
+// LIGHT BOX
+@import "lightbox/lightbox"
+@import "lightbox/lightbox-shop"
+@import "uikit/tmp-checkbox-radio"
+
+
 .is-blue
 	color: $color-hl
 .lb-title
@@ -52,15 +65,7 @@ $color-hl: #3092ca
 //=========================================
 //=========================================
 //=========================================
-$shop-color-def: #e2e2e2
-@import "usual/color-kr"
-// LIGHT BOX
-@import "lightbox/lightbox"
-@import "lightbox/lightbox-shop"
-// CHECK BOX
-@import "uikit/uikit-checkbox-radio"
-// SHOP UI
-@import "_comm_kr/shop"
+
 // CHECK BOX
 .shop 
 	.uikit-checkbox 
@@ -99,8 +104,7 @@ $shop-color-def: #e2e2e2
 // SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE
 // SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE  SHOP SHARE
 // for purchase list ui
-@import "no_sort/kr-shop"
-// fix no_sort/kr-shop/scss color
+// fix share/kr-shop/scss color
 .shop-item
 	&.is-selected
 		border-color: $color5
